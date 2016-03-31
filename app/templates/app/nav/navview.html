@@ -1,0 +1,41 @@
+<script type="text/template" id="navview-template">
+
+    <div id="nav-view">
+        <div class="nav-info-container"></div>
+
+
+
+        <div class="nav-slideout-container">
+
+
+            <div class="badge-container slideout-view">
+                <div class="bg-texture"></div>
+
+            </div>
+
+            <div class="progress-container slideout-view">
+                <div class="bg-texture"></div>
+            </div>
+
+            <div class="resources-container slideout-view">
+                <div class="bg-texture"></div>
+
+            </div>
+
+            <div class="sound-container slideout-view">
+                <div class="bg-texture"></div>
+            </div>
+
+        </div>
+        <div class="nav-button-container">
+            <% _.each(buttons, function(button, index) { %>
+            <div data-id="<%=button.id%>" data-tooltip="<%=button.label%>" class="<%=button.id%>-ibutton nav-button enabled"></div>
+            <% }); %>
+            <div class="nav-button info-ibutton enabled" data-id="info" data-tooltip="Directions"></div>
+        </div>
+        <div class="nav-tooltip"><p></p></div>
+
+    </div>
+
+
+</script>

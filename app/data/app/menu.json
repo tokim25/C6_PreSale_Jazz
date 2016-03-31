@@ -1,0 +1,115 @@
+{
+    "assetManifest": [
+        {"id": "graffiti1", "src": "assets/images/menu/graffiti1.png"}
+
+    ],
+    "colors": {"backgroundColor": "#854c9e"},
+
+    "elements": [
+        {
+            "id": "line-101",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 148 413.5'><polyline class='menu-path' points='0.5 0 0.5 131 145.2 131 145.2 413 127.1 413 '/></svg></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "20px",
+                "top": "735",
+                "width": "148",
+                "height": "413"
+            }
+        },
+        {
+            "id": "wall",
+            "el": "<img src='assets/images/menu/wall.png' />",
+            "props": {
+                "top": "3635",
+                "left": "55%",
+                "marginLeft": "-275px"
+            }
+        },
+        {
+            "id": "banner-1",
+            "class": "menu-banner",
+            "el": "<div><div class='content'></div></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "-441px",
+                "top": "866px"
+            }
+        },
+        {
+            "id": "mod-1",
+            "class": "menu-module",
+            "el": "<div><div class='content'></div></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "-315px",
+                "top": "1061px",
+                "rotation": "-2deg"
+            }
+        }
+
+
+    ],
+
+
+    "scenes": [
+
+        {
+            "id": "101",
+            "animations": [
+
+                {
+                    "el": "mod-1",
+                    "scene": {
+                        "offset": 175,
+                        "triggerElement": "#banner-1"
+                    },
+                    "tween": {
+                        "type": "from",
+                        "duration": 0.5,
+
+                        "props": {
+                            "scale": 0.7,
+                            "rotation": "-=10deg",
+                            "ease": "Back.easeOut"
+                        }
+                    }
+                },
+                {
+                    "el": "line-101 .menu-path",
+                    "scene": {
+                        "duration": 450,
+                        "triggerElement": "#line-101",
+                        "offset": -150
+                    },
+                    "tween": {
+                        "type": "to",
+
+                        "props": {
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
+                        }
+                    }
+                },
+                {
+                    "el": "start",
+                    "scene": {
+                        "triggerElement": "#line-101",
+                        "offset": 100
+                    },
+                    "tween": {
+                        "type": "from",
+                        "duration": 1.0,
+                        "props": {
+                            "rotation": "-5deg",
+                            "scale": 0.5,
+                            "ease": "Bounce.easeOut"
+                        }
+                    }
+                }
+
+            ]
+        }
+    ]
+}

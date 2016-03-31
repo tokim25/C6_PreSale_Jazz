@@ -1,0 +1,89 @@
+<script type="text/template" id="debugview-template">
+
+    <div id="debug-view">
+        <div id="debug-scrim" class="scrim-background"></div>
+
+        <div class="popup-view debug-popup">
+            <div class="content">
+                <h1 class="popup-title">Debugger</h1>
+                <div class="debug-label-row">
+                    <div class="debug-fold-arrow" data-id="row-change-role"></div>
+                    <p class="debug-label" >Change role:</p>
+                </div>
+
+                <div class="debug-row" id="row-change-role">
+                    <select id="debug-user-role" class="styled-select" name="foo">
+                        <% _.each(roleChooser.roles, function(role){ %>
+                        <option value="<%= _.escape(role.id)%>">
+                            <%= _.escape(role.title) %>
+                        </option>
+                        <% }); %>
+                    </select>
+                    <a class="debug-link" id="debug-change-role" data-id="apply-role" href="#">Apply</a>
+                    <a class="debug-link" id="debug-cancel-role" data-id="cancel-role" href="#">Revert</a>
+                </div>
+                <hr />
+
+                <div class="debug-label-row">
+                    <div class="debug-fold-arrow" data-id="row-mark-individual"></div>
+                    <p class="debug-label" >Change submodules individually:</p>
+                </div>
+                <div class="debug-row" id="row-mark-individual">
+                    <input type="text" id="debug-status">
+                    <a class="debug-link" id="debug-submit" data-id="apply-status" href="#">Apply</a>
+                    <a class="debug-link" id="debug-revert" data-id="cancel-status" href="#">Revert</a>
+                </div>
+
+                <hr />
+
+                <div class="debug-label-row">
+                    <div class="debug-fold-arrow" data-id="row-mark-all"></div>
+                    <p class="debug-label" >Change submodules globally:</p>
+                </div>
+                <div class="debug-row" id="row-mark-all">
+                    <a class="debug-link" id="debug-notstarted" data-id="notstarted" href="#">Not Started</a>
+                    <a class="debug-link" id="debug-started" data-id="started" href="#">Started</a>
+                    <a class="debug-link" id="debug-completed" data-id="completed" href="#">Completed</a>
+                    <a class="debug-link" id="debug-initial" data-id="initial" href="#">1|0...</a>
+                    <a class="debug-link" id="debug-last" data-id="last" href="#">...2|0</a>
+
+                    <a class="debug-link" id="debug-unlock" data-id="unlock" href="#">Unlock All</a>
+
+                </div>
+                <hr />
+
+                <div class="debug-label-row">
+                    <div class="debug-fold-arrow" data-id="row-change-question"></div>
+                    <p class="debug-label" >Submodule functionality:</p>
+                </div>
+                <div class="debug-row" id="row-change-question">
+                    <a class="debug-link" id="debug-skip-splash" data-id="skip-splash" href="#">Skip Splash</a>
+                    <a class="debug-link" id="debug-show-conclusion" data-id="show-conclusion" href="#">Show Conclusion</a>
+                    <a class="debug-link" id="debug-next-ques" data-id="next-ques" href="#">Next Q ></a>
+                    <a class="debug-link" id="debug-prev-ques" data-id="prev-ques" href="#">< Prev Q</a>
+                </div>
+                <hr />
+
+                <div class="debug-label-row">
+                    <div class="debug-fold-arrow" data-id="row-reset-values"></div>
+                    <p class="debug-label" >Reset stored values:</p>
+                </div>
+                <p>NB - This will clear all stored values and require a browser refresh.</p>
+                <div class="debug-row" id="row-reset-values">
+                    <a class="debug-link" id="debug-clear-storage" data-id="clear-storage" href="#">Clear Stored Values</a>
+                </div>
+                <div id="row-toggle-all">
+                    <a id="debug-toggle-all" href="#">Show all</a>
+                </div>
+
+
+            </div>
+
+
+            <div data-id="close" class="close-x-button"></div>
+
+        </div>
+
+    </div>
+
+</script>

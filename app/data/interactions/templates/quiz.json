@@ -1,0 +1,75 @@
+{
+    "name": "Quiz",
+
+    "assetManifest": [
+        {"id": "gofish-bg-bl", "src": "assets/images/splashpages/gofish-bg-bl.png"}
+
+    ],
+
+    "colors": {
+        "backgroundColor": "#846899"
+    },
+
+    "randomize": true,
+    "randomizeChoices": true,
+    "maxAttempts": 3,
+    "pauseBeforeNextQuestion": 4000,
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "questions": [
+        {
+            "type": "choice",
+            "text": "Question",
+            "pattern": 0,
+            "choices": [
+                {
+                    "text": "AnsText",
+                    "result": "correct",
+                    "feedback": {
+                        "title": "PosFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "AnsText",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "AnsText",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "AnsText",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                }
+            ]
+        }
+    ]
+}

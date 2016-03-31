@@ -1,0 +1,57 @@
+<script type="text/template" id="quiz-fishing-mainview-template">
+
+    <div id="gofish-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <div class="module-title color-<%= modulename %>"><h1 style="color:<%= colors.highlightColor %>;"><%= name %></h1></div>
+
+       <div class="gofish-game-bg"></div>
+        <div class="gofish-game-container">
+           <div class="gofish-wave" id="gofish-wave1">
+               <div class="gofish-distractor" id="gofish-distractor1"></div>
+               <div class="gofish-distractor" id="gofish-distractor2"></div>
+               <div class="gofish-distractor" id="gofish-distractor3"></div>
+           </div>
+           <div class="gofish-wave" id="gofish-wave2">
+               <div id="gofish-cassette"></div>
+           </div>
+           <div class="gofish-wave" id="gofish-wave3">
+               <div class="gofish-distractor" id="gofish-distractor4"></div>
+               <div class="gofish-distractor" id="gofish-distractor5"></div>
+               <div class="gofish-distractor" id="gofish-distractor6"></div>
+           </div>
+           <div class="gofish-wave" id="gofish-wave4"></div>
+            <div id="gofish-shoelace"><div id="shoelace"></div></div>
+       </div>
+
+
+        <div class="gofish-qa-container bg-<%= modulename %>">
+
+            <div class="gofish-question-box">
+                <div class="gofish-q">Q:</div>
+                <h2 class="content"></h2>
+            </div>
+
+            <div class="gofish-answer-box ">
+
+                <div class="content"></div>
+            </div>
+
+            <div class="gofish-answer gofish-answer-choice enabled proto"> </div>
+
+        </div>
+
+        <div class="scrim-background"></div>
+
+        <div class="gofish-feedback-box popup-container"></div>
+
+
+        <div class="splash-container"></div>
+
+        <div class="conclusion-container"></div>
+
+
+    </div>
+
+
+</script>

@@ -1,0 +1,56 @@
+<script type="text/template" id="ratecard-mainview-template">
+
+    <div id="ratecard-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+
+        <div class="spreadsheet-container">
+            <div class="spreadsheet-zoom-container">
+                <div class="spreadsheet-scrolling">
+                    <img class="spreadsheet-scrolling-bg"/>
+                    <div class="spreadsheet-highlights"></div>
+                </div>
+                <div class="spreadsheet-fixed">
+                    <img class="spreadsheet-fixed-bg"/>
+                    <div class="spreadsheet-highlights"></div>
+                </div>
+
+            </div>
+            <div class="zoom-button out"></div>
+            <div class="zoom-button in"></div>
+            <div class="zoom-percent"></div>
+            <div class="spreadsheet-zoom-control"></div>
+        </div>
+
+
+        <div class="ratecard-qa-container bg-<%= modulename %>">
+
+            <div class="ratecard-question-box">
+                <div class="ratecard-q">Q:</div>
+                <h2 class="content"></h2>
+            </div>
+
+            <div class="ratecard-answer-box ">
+
+                <div class="content"></div>
+            </div>
+
+            <div class="ratecard-answer ratecard-answer-choice proto-choice"> </div>
+            <input class="ratecard-answer ratecard-answer-fill-in proto-fill-in"> </input>
+
+        </div>
+
+        <div class="scrim-background"></div>
+
+        <div class="ratecard-feedback-box popup-container"></div>
+
+
+        <div class="splash-container"></div>
+
+        <div class="conclusion-container"></div>
+
+
+    </div>
+
+
+</script>

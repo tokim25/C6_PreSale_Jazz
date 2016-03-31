@@ -1,0 +1,94 @@
+#ta-view {
+  @extend %view;
+  & .ta-popup {
+    @include center-align;
+    width: 625px;
+    background: rgba(255,255,255,0.8);
+    @include border-radius(12px);
+
+    & .popup-body {
+      max-height: 450px;
+      overflow-y: auto;
+      padding-right: 25px;
+
+
+    }
+
+    & .content {
+      padding: 20px 10px 20px 20px;
+
+      & .ta-guides {
+        //margin-left: 10px;
+      }
+      & .ta-group {
+        margin-top: 10px;
+      }
+      & p, li {
+        color: #444;
+        font-size: 1.8em;
+        font-family: $font-body;
+      }
+
+      & li {
+        line-height:120%;
+        //list-style: none;
+      }
+
+      & ul {
+        margin-left: 15px;
+      }
+      & a {
+        color: #444;
+        line-height:130%;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & h1 {
+      color: #1183c3;
+      //text-align: center;
+      font-size: 3.0em;
+    }
+
+    & hr {
+      margin: 0px 15px;
+    }
+  }
+}
+
+.ta-links {
+  margin: 10px 15px;
+  text-align: right;
+
+  & a {
+    display: inline-block;
+    color: #325cc6;
+    font-size: 16px;
+    font-family: $font-body;
+    line-height:120%;
+    text-decoration: none;
+    padding: 3px 5px;
+    font-weight: 500;
+    &:hover {
+      background: rgba(0,0,0,0.2);
+      @include border-radius(4px);
+
+    }
+  }
+
+  & .link-separator {
+    display: inline-block;
+    background: #999;
+    width: 1px;
+    height: 20px;
+    margin: 0px 2px -3px 2px;
+    border-right: 1px solid #eee;
+  }
+}
+
+#ta-scrim {
+  background: rgba(0,0,0,0.6);
+}

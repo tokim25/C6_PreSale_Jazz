@@ -1,0 +1,67 @@
+
+
+#cr-listexp-items-container {
+  @include vertical-align();
+  position: absolute;
+  margin-top: 50px;
+  left: 0px;
+  height: 400px;
+  width: 575px;
+
+  & .reveal-items-buttons-container {
+    height: 400px;
+    width: 575px;
+    @include vertical-align();
+  }
+
+  & .reveal-item {
+    height: 100px;
+    width: 575px;
+    margin-left: -60px;
+
+    cursor:pointer;
+    position: absolute;
+    &:nth-of-type(1) {
+      //background: url(../assets/images/pt_listexp104/lace-1.png) no-repeat;
+      top: 0px;
+    }
+    &:nth-of-type(2) {
+      //background: url(../assets/images/pt_listexp104/lace-2.png) no-repeat;
+      top: 70px;
+      z-index: 1;
+    }
+    &:nth-of-type(3) {
+      //background: url(../assets/images/pt_listexp104/lace-3.png) no-repeat;
+      top: 145px;
+      z-index: 2;
+    }
+    &:nth-of-type(4) {
+      //background: url(../assets/images/pt_listexp104/lace-4.png) no-repeat;
+      top: 215px;
+      z-index: 3;
+    }
+
+    & .cr-listexp-lace-label {
+      margin: 45px 0px 0px 100px;
+      font-family: $font-graffiti;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      font-size: 3em;
+    }
+
+
+    &:hover {
+      margin-left: -30px;
+    }
+    &.selected {
+      margin-left: 0px;
+    }
+
+    &.selected {
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}

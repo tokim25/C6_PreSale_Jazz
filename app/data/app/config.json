@@ -1,0 +1,93 @@
+{
+    "projectTitle": "The School of Hip Hop: Intro to Products",
+    "projectID": "products",
+    "version": "Alpha 1.0",
+    "schoolName": "Hip Hop",
+    "JIRAEnabled": true,
+    "inLMS": false,
+    "LMSType": "SCORM",
+    "hasIntro": true,
+    "hasConclusion": true,
+    "isRoleFiltered": true,
+    "defaultRole": "national",
+    "alwaysShowIntro": false,
+    "roleType": "",
+    "lockingMode": "linear",
+    "setAllComplete": false,
+    "returnToMenuAfterInteraction": true,
+    "returnToMenuAfterLastSubModule": true,
+    "viewInteractionAtCourseStart": false,
+    "showDebugger": false,
+    "muteAudio": false,
+
+    "modules": [
+        {
+            "name": "Tracking",
+            "path": "app/tracking/trackingmodule",
+            "url": ""
+        },
+        {
+            "name": "Debug",
+            "path": "app/debug/debugmodule",
+            "url": ""
+        },
+        {
+            "name": "TA",
+            "path": "app/ta/tamodule",
+            "url": "data/app/ta.json"
+        },
+        {
+            "name": "Jira",
+            "path": "app/jira/jira",
+            "url": "data/app/jira.json"
+        },
+        {
+            "name": "Preloads",
+            "path": "app/preloads/preloadmodule",
+            "url": "data/app/preloads.json"
+        },
+        {
+            "name": "Winfocus",
+            "path": "app/windowfocus/windowfocusmodule",
+            "url": ""
+        },
+        {
+            "name": "Soundmap",
+            "path": "app/soundmap/soundmapmodule",
+            "url": "data/app/soundmap.json"
+        },
+        {
+            "name": "Menu",
+            "path": "app/menu/menumodule",
+            "url": "data/app/menu.json"
+        },
+        {
+            "name": "Nav",
+            "path": "app/nav/navmodule",
+            "url": "data/app/nav.json"
+        },
+        {
+            "name": "Intro",
+            "path": "app/intro/intromodule",
+            "url": "data/app/intro.json"
+        }
+    ],
+
+    "roleChooser": {
+        "roles": [
+            {"id": "national", "title": "National Account Strategist"},
+            {"id": "national", "title": "Local Account Strategist"},
+            {"id": "national", "title": "National Campaign Specialist"},
+            {"id": "local", "title": "Local Campaign Specialist"},
+            {"id": "inside", "title": "Inside Campaign Specialist"},
+            {"id": "national", "title": "National Associate Campaign Specialist"},
+            {"id": "local", "title": "Local Associate Campaign Specialist"},
+            {"id": "inside", "title": "Inside Associate Campaign Specialist"},
+            {"id": "performance", "title": "Performance Account Manager"},
+            {"id": "performance", "title": "Performance Sales Planner"},
+            {"id": "national", "title": "ANZ Account Manager"}
+        ]
+    }
+
+
+}

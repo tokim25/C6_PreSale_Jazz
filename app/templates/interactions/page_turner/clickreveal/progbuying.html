@@ -1,0 +1,20 @@
+<script type="text/template" id="cr-progbuying-template">
+
+
+    <div id="cr-progbuying-text-box" class="reveal-text-box glow-popup">
+        <div class="content"></div>
+    </div>
+
+    <div id="cr-progbuying-items-container" class="reveal-items-container">
+        <ul class="wrapper">
+            <% _.each(items, function (item, i) { %>
+            <li class="reveal-item" data-id="<%= i %>">
+
+            </li>
+            <% }); %>
+        </ul>
+
+    </div>
+
+
+</script>

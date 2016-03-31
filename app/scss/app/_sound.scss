@@ -1,0 +1,12 @@
+#sound-view {
+  width: 100vw;
+  height: 100vh;
+  @include horizontal-align();
+}
+
+.sound-text {
+  @extend %overlay-text;
+  font-size: 150px;
+  text-align: center;
+  @include center-align;
+}

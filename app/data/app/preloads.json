@@ -1,0 +1,7 @@
+{
+    "name": "Preloads",
+    "assetManifest": [
+        {"id": "loop_menu", "src": "assets/sounds/loops/loopPlaceholder.mp3"}
+    ],
+    "modulename": "preloads"
+}

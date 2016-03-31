@@ -1,0 +1,54 @@
+{
+    "name": "Soundmap",
+    "assetManifest": [
+        {"id": "bell.mp3", "src": "assets/sounds/sfx/bell.mp3"},
+        {"id": "bleep", "src": "assets/sounds/sfx/bleep.mp3"},
+        {"id": "bloop", "src": "assets/sounds/sfx/bloop.mp3"},
+        {"id": "boink", "src": "assets/sounds/sfx/boink.mp3"},
+        {"id": "click1", "src": "assets/sounds/sfx/click1.mp3"},
+        {"id": "click2", "src": "assets/sounds/sfx/click2.mp3"},
+        {"id": "click3", "src": "assets/sounds/sfx/click3.mp3"},
+        {"id": "click4", "src": "assets/sounds/sfx/click4.mp3"},
+        {"id": "click5", "src": "assets/sounds/sfx/click5.mp3"},
+        {"id": "click6", "src": "assets/sounds/sfx/click6.mp3"},
+        {"id": "click7", "src": "assets/sounds/sfx/click7.mp3"},
+        {"id": "click8", "src": "assets/sounds/sfx/click8.mp3"},
+        {"id": "crowd_cheering", "src": "assets/sounds/sfx/crowd_cheering.mp3"},
+        {"id": "dial_turn", "src": "assets/sounds/sfx/dial_turn.mp3"},
+        {"id": "drag_dropped", "src": "assets/sounds/sfx/drag_dropped.mp3"},
+        {"id": "eject", "src": "assets/sounds/sfx/eject.mp3"},
+        {"id": "metal_door", "src": "assets/sounds/sfx/metal_door.mp3"},
+        {"id": "page_turn", "src": "assets/sounds/sfx/page_turn.mp3"},
+        {"id": "popup1", "src": "assets/sounds/sfx/popup1.mp3"},
+        {"id": "popup2", "src": "assets/sounds/sfx/popup2.mp3"},
+        {"id": "popup3", "src": "assets/sounds/sfx/popup3.mp3"},
+        {"id": "record_scratch", "src": "assets/sounds/sfx/record_scratch.mp3"},
+        {"id": "swoosh_down", "src": "assets/sounds/sfx/swoosh_down.mp3"},
+        {"id": "swoosh1", "src": "assets/sounds/sfx/swoosh1.mp3"},
+        {"id": "swoosh2", "src": "assets/sounds/sfx/swoosh2.mp3"},
+        {"id": "swoosh_quick1", "src": "assets/sounds/sfx/swoosh_quick1.mp3"},
+        {"id": "swoosh_quick2", "src": "assets/sounds/sfx/swoosh_quick2.mp3"},
+        {"id": "swoosh_quick3", "src": "assets/sounds/sfx/swoosh_quick3.mp3"},
+        {"id": "swoosh_up1", "src": "assets/sounds/sfx/swoosh_up1.mp3"},
+        {"id": "swoosh_up2", "src": "assets/sounds/sfx/swoosh_up2.mp3"},
+        {"id": "vinyl_scratch", "src": "assets/sounds/sfx/vinyl_scratch.mp3"},
+        {"id": "zzing", "src": "assets/sounds/sfx/zzing.mp3"}
+    ],
+
+    "soundmap": {
+        "record_scratch": {"id": "record_scratch", "src": "assets/sounds/sfx/record_scratch.mp3"},
+        "button_click": {"id": "click5", "src": "assets/sounds/sfx/click5.mp3"},
+        "pageturnerbutton_click": {"id": "click8", "src": "assets/sounds/sfx/click8.mp3"},
+        "button_reveal": {"id": "swoosh", "src": "assets/sounds/sfx/swoosh.mp3"},
+        "popup": {"id": "popup3", "src": "assets/sounds/sfx/popup3.mp3"},
+        "answer_click": {"id": "click6", "src": "assets/sounds/sfx/click6.mp3"},
+        "drag_drop": {"id": "drag_dropped", "src": "assets/sounds/sfx/drag_dropped.mp3"},
+        "drag_revert": {"id": "swoosh_quick2", "src": "assets/sounds/sfx/swoosh_quick2.mp3"},
+        "cassette_click": {"id": "swoosh_quick3", "src": "assets/sounds/sfx/swoosh_quick3.mp3"},
+        "eject": {"id": "eject", "src": "assets/sounds/sfx/eject.mp3"},
+        "vinyl_scratch": {"id": "vinyl_scratch", "src": "assets/sounds/sfx/vinyl_scratch.mp3"}
+
+    },
+
+    "modulename": "soundmap"
+}

@@ -1,0 +1,250 @@
+#resp1-view {
+  @extend %view;
+
+  & .coins-popup {
+    top: 150%;
+    margin-top: -250px;
+  }
+
+  & .module-title {
+    //margin-left: -345px;
+  }
+}
+
+.resp1-line-bg {
+  position: absolute;
+  @include horizontal-align();
+  background: url(../assets/images/responsibilities1/line-bg.png) no-repeat;
+  width: 1778px;
+  height: 650px;
+}
+
+
+.resp1-cases {
+  @include horizontal-align();
+  position: absolute;
+  top: 0px;
+  width: 1200px;
+  height: 450px;
+  & .resp1-cases-mask {
+    width: 1200px;
+    height: 450px;
+    top: 40px;
+    position: absolute;
+    background: url(../assets/images/responsibilities1/cases-mask.png);
+  }
+
+}
+
+.resp1-label {
+  color: white;
+  font-family: $font-main;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  text-transform: uppercase;
+  width: 400px;
+
+  transform: rotate(-7deg) skewX(40deg);
+
+  &.label-0{
+    right: 72%;
+    top: 480px;
+  }
+  &.label-1 {
+    left: 65%;
+    top: 380px;
+  }
+}
+
+.resp1-cases-shadow {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+
+#resp1-cases-ae {
+  position: absolute;
+  left: 0px;
+  bottom: -60px;
+  background-image: url(../assets/images/responsibilities1/case1.png), url(../assets/images/responsibilities1/case1-hover.png);
+  background-position: 0px 0px, 0px 370px;
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 370px;
+
+  &.dragging {
+    background-position: 0px 0px, 0px 12px;
+  }
+
+  & .drag-holder {
+    position: absolute;
+    right: 80px;
+    top: 250px;
+    width: 200px;
+    height: 100px;
+    @include rotate(10deg);
+  }
+}
+
+#resp1-cases-as {
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  background-image: url(../assets/images/responsibilities1/case2.png), url(../assets/images/responsibilities1/case2-hover.png);
+  background-position: 0px 0px, 0px 450px;
+  background-repeat: no-repeat;
+  width: 599px;
+  height: 450px;
+
+  &.dragging {
+    background-position: 0px 0px, 0px 0px;
+  }
+
+  & .drag-holder {
+    position: absolute;
+    top: 270px;
+    right: 60px;
+    width: 200px;
+    height: 100px;
+    @include rotate(-12deg);
+  }
+}
+
+.resp1-role-description {
+  position: absolute;
+  bottom: 85px;
+  right: 300px;
+  width: 275px;
+  & p {
+    font-size: 1.8em;
+    color: #333;
+  }
+}
+
+.resp1-nOFn {
+  color: white;
+  font-family: $font-body;
+  font-size: 1.6em;
+  @include horizontal-align();
+  bottom: 5%;
+
+}
+
+.resp1-final-feedback {
+  & li, p, h1 {
+    color: #2c220d;
+  }
+  & h1 {
+    font-family: $font-h1;
+  }
+  & li, p {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+  & li {
+    margin-left: 1em;
+    text-indent: -1em;
+
+  }
+}
+#resp1-final-feedback1 {
+  @include vertical-align();
+  position: absolute;
+  right: 100%;
+  background: url(../assets/images/responsibilities1/final-bg1.png) no-repeat;
+  width: 886px;
+  height: 544px;
+  & .content {
+    position: absolute;
+    width: 380px;
+    top: 160px;
+    left: 400px;
+    @include rotate(0.5deg);
+
+  }
+}
+
+#resp1-final-feedback2 {
+  @include vertical-align();
+  position: absolute;
+  top: -100%;
+  -webkit-transform: translateY(-60%);
+  -ms-transform: translateY(-60%);
+  transform: translateY(-60%);
+  left: 52%;
+  background: url(../assets/images/responsibilities1/final-bg2.png) no-repeat;
+  width: 699px;
+  height: 903px;
+  & .content {
+    position: absolute;
+    width: 300px;
+    top: 400px;
+    left: 230px;
+    @include rotate(3deg);
+
+  }
+
+  & li, p {
+    line-height: 110%;
+  }
+}
+
+.resp1-role-coin {
+  position: absolute;
+  bottom: 85px;
+  & .resp1-role-coin-shadow {
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 2px;
+    @include box-shadow(0px 0px 16px rgba(0,0,0,0.75));
+    display: none;
+  }
+  & .resp1-role-coin-center {
+    position: absolute;
+    top: 0px;
+  }
+  &:hover .resp1-role-coin-shadow {
+    display: block;
+  }
+  &.dragging .resp1-role-coin-shadow {
+    display: block;
+  }
+}
+
+.resp1-penny {
+  background: url(../assets/images/responsibilities1/penny.png) no-repeat;
+  width: 105px;
+}
+
+.resp1-nickle {
+  background: url(../assets/images/responsibilities1/nickle.png) no-repeat;
+  width: 110px;
+}
+
+.resp1-dime {
+  background: url(../assets/images/responsibilities1/dime.png) no-repeat;
+  width: 98px;
+}
+
+.resp1-quarter {
+  background: url(../assets/images/responsibilities1/quarter.png) no-repeat;
+  width: 133px;
+}
+
+.resp1-halfdollar {
+  background: url(../assets/images/responsibilities1/halfdollar.png) no-repeat;
+  width: 178px;
+}
+
+.resp1-dollar {
+  background: url(../assets/images/responsibilities1/dollar.png) no-repeat;
+  width: 188px;
+}
+

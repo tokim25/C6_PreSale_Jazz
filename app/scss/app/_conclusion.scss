@@ -1,0 +1,45 @@
+.conclusion-record-container {
+  @include horizontal-align;
+  position: relative;
+  margin: 50px 0px;
+  padding: 20px 0px 30px 30px;
+  width: 400px;
+  height: 300px;
+  border: 2px white solid;
+
+}
+
+.conclusion-record {
+  background: url(../assets/images/conclusion/conclusion-record.png) no-repeat;
+  background-size: cover;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  left: 20px;
+  display: block;
+
+}
+
+.conclusion-record-light {
+  background: url(../assets/images/conclusion/conclusion-record-light.png) no-repeat;
+  background-size: cover;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  left: 20px;
+  display: block;
+
+}
+
+.conclusion-record-arm {
+  background: url(../assets/images/conclusion/conclusion-record-arm.png) no-repeat;
+  width: 224px;
+  height: 300px;
+  right: 0px;
+  position: absolute;
+  display: block;
+}
+
+.conclusion-banner {
+
+}

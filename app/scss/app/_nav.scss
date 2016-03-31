@@ -1,0 +1,92 @@
+#nav-view {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  pointer-events: none;
+  overflow: hidden;
+
+  & .nav-button-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 38px;
+    max-width: $max-width;
+  }
+
+}
+
+.nav-button {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 8px;
+  float: left;
+  pointer-events: all;
+  &.info-ibutton {
+    float: right;
+    margin-left: 0px;
+    margin-right: 8px;
+  }
+}
+
+.nav-tooltip {
+  position: absolute;
+  top: 40px;
+  background: rgba(0,0,0,0.5);
+  @include border-radius(6px);
+  & p {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 2px 8px;
+  }
+}
+
+.overlay-title {
+  @include horizontal-align;
+  @extend %overlay-text;
+  font-size: 6.2em;
+  top: 75px;
+  & .title-icon {
+    width: 45px;
+    height: 45px;
+    background: url(../assets/images/ui/title-icons.png) no-repeat;
+    left: -55px;
+    top: 4px;
+    cursor: default;
+    position: absolute;
+  }
+  & .resources-ititle {
+    background-position: 0px -45px;
+  }
+
+}
+.nav-slideout-container {
+  @extend %view;
+  position: absolute;
+
+  pointer-events: none !important;
+  overflow: hidden;
+
+  & .slideout-view {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: $overlay-color;
+
+
+  }
+
+}
+
+
+
+
+
+
+

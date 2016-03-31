@@ -1,0 +1,17 @@
+{
+    "assetManifest": [
+        {"id": "intro-record", "src": "assets/images/intro/intro-record.png"},
+        {"id": "intro-record-arm", "src": "assets/images/intro/intro-record-arm.png"},
+        {"id": "intro-record-light", "src": "assets/images/intro/intro-record-light.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#683c7c",
+        "accentColor": "#fd3c8b"
+    },
+
+    "text": {
+        "header": "Congratulations!",
+        "body": "<p>Congrats! You made it through <b>The School of Hip Hop</b>. Get up, do a congratulatory dance and give yourself a hand.</p><p>So what’s next? If you haven’t already, schedule a debrief with your TA. Make sure you’ve completed any labs and sent them along for review.</p><p>You can even schedule shadow sessions with others on your team!</p><p>When you’re ready, move on to the next course, <b>The School of Disco.</b></p>"
+    }
+}

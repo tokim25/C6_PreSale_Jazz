@@ -1,0 +1,21 @@
+<script type="text/template" id="menuview-dev-template">
+    <div id="menu-view">
+        <div id="menu-content" style="background-color:<%= colors.backgroundColor %>;">
+            <div class="bg-texture"></div>
+            <img id="menu-dev-bg" src="assets/images/menu/menu-mock.jpg"/>
+
+
+
+            <% _.each(app.model.get('menu'), function(item, index) { %>
+            <div id="menu-dev-container<%= index %>">
+                <% _.each(item.modules, function(module) { %>
+                    <% var statusClass = module.status == 0 ? 'not-started' : module.status == 1 ? 'started' : 'completed';  %>
+                    <div id="menu-button-<%= module.moduleName %>" data-id="<%= module.moduleName %>" class="menu-button <%= statusClass %>"><div class="status-icon"></div><p><%= module.title %></p></div>
+                <%  }); %>
+            </div>
+            <%  }); %>
+
+        </div>
+    </div>
+
+</script>

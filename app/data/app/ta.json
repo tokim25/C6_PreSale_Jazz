@@ -1,0 +1,51 @@
+{
+    "text": {
+        "header": "ta Cheat Sheet",
+        "body": "<p>Download the TA guide below. Click <b>Unlock all modules</b> to get immediate access to all of the training.</p>"
+    },
+
+    "groups": [
+        {
+            "label": "TA Check-In: The Company",
+            "links": [
+                {
+                    "text": "Account Strategists and National Campaign Specialists",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1UMQRMg-g2wS9CFO4KdXjSOvp0-2_UNz5Desgk9u86Rc/edit?usp=sharing"
+                },
+                {
+                    "text": "Local Campaign Specialists",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1QwaV0QOgq61lqAi0Q1cZh5XnK9QCi6tmhPWbTswJSC8/edit?usp=sharing"
+                },
+                {
+                    "text": "Inside Campaign Specialists",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1CLGsN2rKpto_EITxdFuKO68reLWe94x2n047_GStV-M/edit?usp=sharing"
+                },
+                {
+                    "text": "Performance Account Managers",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1lhRmoqdqxtfszYc9bCX6rcNvoFSRKtC8r9Gc7QEBv7w/edit?usp=sharing"
+                }
+            ]
+        },
+        {
+            "label": "TA Check-In: Intro to Rev Ops",
+            "links": [
+                {
+                    "text": "Account Strategists and National Campaign Specialists",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1hsAhO58XDwCmxLY5e-czHZ97DZAUP7DTamqvhJgNFGM/edit?usp=sharing"
+                },
+                {
+                    "text": "Local Campaign Specialists",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1lpFUAjmdwazc25CWG8ReniR6zCP0lAI08lt98n-hDps/edit?usp=sharing"
+                },
+                {
+                    "text": "Inside Campaign Specialists",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/1i8_HWPd1RMW5eOVYic_fbw6SvgAJrsBkATLtyydds9c/edit?usp=sharing"
+                },
+                {
+                    "text": "Performance Account Managers",
+                    "url": "https://docs.google.com/a/pandora.com/document/d/129HiLNycbOs3-cWNNnfOgC_CD4DqgaufQoVjMUw1Tm8/edit?usp=sharing"
+                }
+            ]
+        }
+    ]
+}

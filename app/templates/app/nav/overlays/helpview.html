@@ -1,0 +1,46 @@
+<script type="text/template" id="help-view-template">
+
+    <div class="popup-view help-popup">
+        <div class="content">
+            <h1 class="popup-title"></h1>
+            <div class="popup-body"></div>
+        </div>
+
+        <hr />
+        <div class="help-links">
+            <div class="role-display">
+                <p id="selected-role-label">Selected Role: </p>
+                <p id="selected-role"></p>
+            </div>
+            <a class="help-link" id="help-role" data-id="role" href="#">Change role</a>
+            <div class="link-separator"></div>
+            <a class="help-link" id="help-jira" data-id="jira" href="#">Report a bug</a>
+        </div>
+
+    </div>
+    <div class="popup-view role-selection-popup">
+        <div class="content">
+            <h1 class="popup-title">Role</h1>
+            <div class="popup-body"><p>Select your role, then click Submit.</p></div>
+        </div>
+
+        <div class="help-role-selector">
+
+            <select id="help-user-role" class="styled-select" name="foo">
+                <% _.each(roleChooser.roles, function(role){ %>
+                <option value="<%= _.escape(role.id)%>">
+                    <%= _.escape(role.title) %>
+                </option>
+                <% }); %>
+            </select>
+            <button class="role-selection-button" data-id="cancel">Cancel</button>
+            <button class="role-selection-button" data-id="submit">Submit</button>
+        </div>
+
+        <div data-id="close-selection" class="close-x-button"></div>
+
+
+    </div>
+
+
+</script>

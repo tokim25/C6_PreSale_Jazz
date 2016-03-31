@@ -1,0 +1,145 @@
+
+#debug-view {
+  @extend %view;
+  pointer-events:none;
+  & .debug-popup {
+    //@include center-align;
+    left: 50%;
+    margin-left: -312px;
+    top: 100px;
+    width: 625px;
+    background: rgba(255,255,255,0.8);
+    @include border-radius(12px);
+
+    & .content {
+      padding: 20px;
+    }
+
+    & p{
+      color: #444;
+      font-size: 1.8em;
+      font-family: $font-body;
+    }
+
+    & input, select {
+      width: 400px;
+      height: 30px;
+      border: 1px solid #333;
+      @include border-radius(4px);
+      color: #555;
+      background: white;
+      font-size: 1.8em;
+      box-sizing: border-box;
+      padding: 0 10px;
+      float: left;
+    }
+
+
+    & h1 {
+      color: #000;
+      font-family: $font-body;
+      font-weight: bold;
+      font-size: 3.0em;
+      margin-top: 0;
+    }
+
+    & hr {
+      margin: 10px 0;
+    }
+
+    & .close-x-button {
+      pointer-events: all;
+    }
+
+
+    & .debug-label-row {
+
+      & .debug-fold-arrow {
+        background: url(../assets/images/ui/debug-arrow.png);
+        position: absolute;
+        right: 20px;
+        width: 18px;
+        height: 18px;
+        @include rotate(90deg);
+        &.expanded {
+          @include rotate(0deg);
+        }
+        transition: all 0.3s;
+
+        cursor: pointer;
+      }
+
+      & .debug-label {
+        font-weight: 700;
+        margin: 10px 0;
+      }
+    }
+
+    & #row-toggle-all {
+      height: 20px;
+      text-align: right;
+    }
+
+    & #debug-toggle-all{
+      display: inline-block;
+      color: #325cc6;
+      font-size: 16px;
+      font-family: $font-body;
+      line-height:120%;
+      text-decoration: none;
+      padding: 3px 5px;
+      font-weight: 500;
+      &:hover {
+        background: rgba(0,0,0,0.2);
+        @include border-radius(4px);
+
+      }
+    }
+    .debug-row {
+      height: 30px;
+
+      &#row-mark-individual, &#row-change-role {
+        text-align: right;
+      }
+
+      &#row-mark-all {
+        text-align: left;
+      }
+
+
+
+      & .debug-link {
+        display: inline-block;
+        font-size: 1.6em;
+        font-family: $font-body;
+        line-height:120%;
+        padding: 5px 10px;
+        margin: 0px;
+        font-weight: 500;
+        text-decoration: none;
+        @include gradient(#57a0c4, #5195b7);
+        @include border-radius(6px);
+        border: 1px solid #333;
+        color: white;
+        cursor: pointer;
+        bottom: 25px;
+        right: 25px;
+        margin: 0 2px;
+        &:hover {
+          @include gradient(darken(#57a0c4, 10%), darken(#5195b7, 10%));
+        }
+      }
+      & #debug-unlock, #debug-next-ques, #debug-prev-ques {
+        float: right;
+      }
+
+    }
+  }
+}
+
+
+
+#debug-scrim {
+  background: rgba(0,0,0,0.3);
+  pointer-events: none;
+}

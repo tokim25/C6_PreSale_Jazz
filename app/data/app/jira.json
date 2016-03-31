@@ -1,0 +1,26 @@
+{
+    "environment": "production",
+    "staging": {
+        "jiraTag": "<script type='text/javascript' src='https://jira-stage.savagebeast.com/s/a7c059f3153290acbdfc29a5f92681fb-T/en_USscu0g2/64022/45/1.4.26/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=59ce8678'></script>",
+        "components": {
+            "products": "15951",
+            "revops": "15955"
+        },
+        "role": "15183",
+        "version": "15182",
+        "priority": "3",
+        "description": ""
+    },
+    "production": {
+        "jiraTag": "<script type='text/javascript' src='https://jira.savagebeast.com/s/4368bc05f06a943a03c45459f133c76f-T/en_UStkolit/64022/37/1.4.26/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=1a90c0d2'></script>",
+        "components": {
+            "revops": "16124",
+            "products": "16123"
+        },
+        "role": "14772",
+        "version": "14770",
+        "priority": "3",
+        "description": ""
+    }
+
+}

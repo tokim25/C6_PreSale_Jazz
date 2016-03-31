@@ -1,0 +1,70 @@
+
+html {
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: $overlay-color;
+  max-width: $max-width;
+  background: #fff;
+}
+
+
+#site-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  max-height: 700px;
+}
+
+#app-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  position: relative;
+  margin: 0 auto;
+}
+
+#content-container {
+  max-width: $max-width;
+  max-height: $max-height;
+}
+
+#nav-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  @include horizontal-align();
+  position: fixed;
+  overflow: hidden;
+}
+
+
+
+%view {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  max-width: $max-width;
+  max-height: $max-height;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  pointer-events: none;
+
+  & :first-child {
+    pointer-events:all;
+    /*max-width: 1400px;
+    margin: 0 auto;*/
+  }
+}
+

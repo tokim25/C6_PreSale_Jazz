@@ -1,0 +1,61 @@
+<script type="text/template" id="responsibilities1-mainview-template">
+
+    <div id="resp1-view" style="background-color:<%= backgroundColor %>;">
+        <div class="bg-texture-bottom"></div><div class="bg-texture-middle"></div><div class="bg-texture-top"></div>
+
+        <h1 class="module-title"><%= name %></h1>
+        
+        <div class="resp1-line-bg unselectable"></div>
+        <div class="resp1-cases unselectable">
+            <img class="resp1-cases-shadow unselectable" src="assets/images/responsibilities1/cases-shadow.png" />
+            <% _.each(roles, function (role, index) { %>
+            <div class="resp1-case unselectable" id="resp1-cases-<%= role.id %>" data-id="<%= role.id %>">
+                <div class="drag-holder"></div>
+            </div>
+            <div class="resp1-cases-mask unselectable"></div>
+            <div class="resp1-label label-<%= index %>"><%= role.label %></div>
+            <% }); %>
+        </div>
+
+
+
+        <div class="resp1-role-description sketch-box-solid unselectable">
+            <div class="top"></div><div class="right"></div><div class="bottom"></div><div class="left"></div><div class="center"></div>
+            <div class="content"></div>
+        </div>
+
+        <div class="resp1-nOFn unselectable"></div>
+
+        <div class="resp1-role-coin">
+            <div class="resp1-role-coin-shadow"></div>
+            <div class="resp1-role-coin-center"></div>
+        </div>
+
+
+            <% _.each(roles, function (role, index) { %>
+                <div class="resp1-final-feedback" id="resp1-final-feedback<%=index+1%>">
+                    <div class="content">
+                        <h1><%= role.label %></h1>
+                        <% _.each(role.responsibilities, function (resp, index) { %>
+                            <li><%= resp.text %></li>
+                        <% }); %>
+                    </div>
+                </div>
+            <% }); %>
+
+
+        <div class="main-button submit-button" data-id="submit">Check Answers</div>
+        <div class="main-button continue-button enabled" data-id="continue">Continue</div>
+
+        <div class="scrim-background"></div>
+
+        <div class="popup-container"></div>
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+
+    </div>
+
+
+</script>

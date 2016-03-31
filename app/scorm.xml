@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+
+   <general>
+      <title>
+         <langstring>Course</langstring>
+      </title>
+      <catalogentry>
+         <catalog>ADL Course Catalogue ID</catalog>
+         <entry>
+            <langstring>1000-01-01</langstring>
+         </entry>
+      </catalogentry>
+      <description>
+         <langstring>Course</langstring>
+      </description>
+      <keyword>
+         <langstring>Course</langstring>
+      </keyword>
+   </general>
+
+   <lifecycle>
+      <version>
+         <langstring>1.1</langstring>
+      </version>
+      <status>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Final</langstring>
+         </value>
+      </status>
+   </lifecycle>
+
+   <metametadata>
+      <metadatascheme>ADL SCORM 1.2</metadatascheme> 
+   </metametadata>
+
+   <technical>
+      <format>text/html</format>
+      <location type="URI">index.html</location>
+   </technical>
+
+   <rights>
+      <cost>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">no</langstring>
+         </value>
+      </cost>
+      <copyrightandotherrestrictions>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">no</langstring>
+         </value>
+      </copyrightandotherrestrictions>
+   </rights>
+
+   <classification>
+      <purpose>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Educational Objective</langstring>
+         </value>
+      </purpose>
+      <description>
+         <langstring>Place your Course Description here</langstring>
+      </description>
+      <keyword>
+         <langstring>Place your Course Keywords here</langstring>
+      </keyword>
+   </classification>
+
+</lom>

@@ -1,0 +1,215 @@
+
+
+#lifeofdeal-view {
+  @extend %view;
+
+  & .white-box-transparent {
+    height: 525px;
+  }
+
+}
+
+
+#lifeofdeal-textbox {
+  @include vertical-align();
+  left: 53%;
+  height:560px;
+  width: 550px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background: url(../assets/images/lifeofdeal/text-bg.png) no-repeat rgba(0,0,0,0.15);
+  & .white-box-transparent {
+    & h2 {
+      margin-bottom: 20px;
+    }
+    overflow: scroll;
+
+    & li {
+      margin-bottom: 5px;
+      line-height: 130%;
+    }
+  }
+}
+
+.lifeofdeal-mixing-board {
+  @include vertical-align();
+  right: 50%;
+  top: 48%;
+  width: 655px;
+  height: 580px;
+}
+
+.lifeofdeal-mix-container {
+  position: relative;
+  top: 240px;
+  width: 500px;
+  height: 350px;
+  margin: 0px auto;
+}
+
+.lifeofdeal-roles-container {
+  float: left;
+}
+
+.lifeofdeal-phases-container {
+  height: 350px;
+  width: 100px;
+  padding-top: 80px;
+  float: left;
+}
+
+.lifeofdeal-role-label {
+  text-align: center;
+  position: absolute;
+  bottom: -10px;
+  width: 145px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2em;
+  &.selected {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.lifeofdeal-phase-label {
+  margin-bottom: 41px;
+  text-align: right;
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2em;
+  &.selected {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.lifeofdeal-role {
+  width: 135px;
+  height: 400px;
+  margin: 0px 25px;
+  position: relative;
+  float: left;
+  background: url(../assets/images/lifeofdeal/phase-bg.png) 0px 40px no-repeat;
+}
+
+.lifeofdeal-mixcomplete {
+  position: absolute;
+  top: 0px;
+  height: 20px;
+  width: 135px;
+  & .lifeofdeal-led {
+    float: left;
+  }
+  & p {
+    color: rgba(255,255,255,0.3);
+    font-size: 14px;
+    float: left;
+    margin: 3px 10px;
+  }
+  &.on {
+    & .lifeofdeal-led {
+      background-position: 0px -16px;
+    }
+    & p {
+      color: rgba(255,255,255,1);
+    }
+  }
+}
+
+.lifeofdeal-led-container {
+  position: absolute;
+  top: 96px;
+  right: -2px;
+  width: 16px;
+  & .lifeofdeal-led {
+    margin-bottom: 44px;
+  }
+}
+.lifeofdeal-led {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../assets/images/lifeofdeal/led.png) no-repeat;
+  &.on {
+    background-position: 0px -16px;
+  }
+
+}
+
+.lifeofdeal-slider {
+  width: 1px;
+  height: 240px;
+  position: absolute;
+  bottom: 55px;
+  left: 68px;
+}
+
+.lifeofdeal-slider .ui-slider-range {
+  //background: rgba(0,0,0,0.5);
+}
+.lifeofdeal-slider .ui-slider-handle {
+/*  width:94px;
+  height:70px;*/
+  width: 1px;
+  height: 1px;
+
+  //background:url(../assets/images/lifeofdeal/lifeofdeal-phase-button.png) 50% 50% no-repeat;
+  position:absolute;
+  outline:none;
+
+}
+.lifeofdeal-slider-handle {
+  position: absolute;
+  left: -48px;
+  top: -30px;
+  display: block;
+  cursor: pointer;
+}
+
+.lifeofdeal-vu-meter {
+  @include horizontal-align();
+  left: 58%;
+  width: 325px;
+  height: 198px;
+
+  top: 0px;
+  background: url(../assets/images/lifeofdeal/vu-meter.png);
+
+  & .vu-mask {
+    position: absolute;
+    width: 295px;
+    height: 134px;
+    left: 15px;
+    top: 16px;
+    overflow: hidden;
+    & #vu-needle {
+      position:absolute;
+      bottom: -25px;
+      left: 142px;
+      width: 10px;
+      height: 149px;
+      background: url(../assets/images/lifeofdeal/vu-needle.png);
+      @include rotate(-50deg);
+
+      &.on-presale {
+        @include rotate(25deg);
+      }
+      &.on-postsale {
+        @include rotate(28deg);
+      }
+      &.on-prelaunch {
+        @include rotate(30deg);
+      }
+      &.on-postlaunch {
+        @include rotate(35deg);
+      }
+      transition: all 0.3s ease-in;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+    }
+  }
+}
+
+
+
+

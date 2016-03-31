@@ -1,0 +1,52 @@
+
+
+.generic-popup {
+  position: absolute;
+
+  width: 600px;
+  height: 564px;
+  box-sizing: border-box;
+
+  & .content {
+    position: absolute;
+    top: 150px;
+    left: 125px;
+    width: 430px;
+    max-height: 5000px;
+    padding: 0px;
+  }
+
+  & .popup-button {
+    @include standard-button(white, 2.0em, #663366);
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  &.correct {
+    & h1 {
+      color: #ff61bd;
+    }
+    & {
+      .popup-button {
+        @include standard-button(white, 2.0em, #ff61bd);
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+      }
+    }
+  }
+
+
+  & p, li {
+    color: black;
+    font-size: 1.8em;
+  }
+}
+
+
+
+
+
+
+

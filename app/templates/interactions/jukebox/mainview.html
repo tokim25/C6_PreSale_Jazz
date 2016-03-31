@@ -1,0 +1,43 @@
+<script type="text/template" id="jukeboxpolicies-mainview-template">
+
+    <div id="jukebox-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <div class="module-title"><h1><%= name %></h1></div>
+
+
+        <div class="jukebox-container">
+            <div id="jukebox-bg">
+                <div id="jukebox-playing">
+                    <div class="jukebox-text-container"><h4></h4><p></p></div>
+                </div>
+            </div>
+
+
+            <div id="jukebox"></div>
+            <div class="jukebox-button-container">
+                <%  _.each(items, function (item, index) { %>
+                <div class="jukebox-button" data-id="<%= item.id %>">
+                    <p><%= item.label %></p>
+                </div>
+                <% }); %>
+            </div>
+
+            <% for (var i = 0; i<10; i++) { %>
+
+                <div class="jukebox-ring"></div>
+
+            <% };  %>
+        </div>
+
+        <div class="scrim-background"></div>
+
+        <div class="main-button continue-button enabled" data-id="continue">Continue</div>
+
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+    </div>
+
+</script>

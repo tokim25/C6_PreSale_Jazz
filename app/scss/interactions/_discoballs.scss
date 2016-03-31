@@ -1,0 +1,164 @@
+#discoballs-view {
+  @extend %view;
+
+  & .glow-pink-popup {
+    width: 850px;
+    @include center-align;
+    background: rgba(0, 0, 0, 0.8);
+
+    //bottom: 75px;
+  }
+}
+
+.discoballs-dancefloor {
+  position: absolute;
+  height: 319px;
+  width: 1500px;
+  background: url(../assets/images/discoballs/dance-floor.png) no-repeat;
+  bottom: 0px;
+}
+
+.discoballs-dryice {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: url(../assets/images/discoballs/dryice.jpg) no-repeat;
+  bottom: 0px;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.discoballs-done-check {
+  @include horizontal-align;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/images/ui/done-checkmark.png) no-repeat;
+  display: none;
+}
+
+.discoballs-balls-container {
+  @include horizontal-align;
+  top: 0px;
+  height: 300px;
+  width: 1000px;
+
+  & .discoballs-done-check {
+    bottom: 75px;
+  }
+
+  & .discoballs-ball {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    background: url(../assets/images/discoballs/balls.png) no-repeat;
+    float: left;
+    margin-top: -100px;
+
+    &:hover {
+      background-position-y: -300px;
+      margin-top: -75px;
+    }
+
+    &.selected, &.selected.completed {
+      background-position-y: -300px;
+      margin-top: -25px;
+    }
+
+    &.completed {
+      margin-top: -100px;
+      .discoballs-done-check {
+        display: block;
+      }
+    }
+
+    &:nth-of-type(1) {
+
+    }
+    &:nth-of-type(2) {
+      background-position-x: -150px;
+      margin-left: 20px;
+    }
+    &:nth-of-type(3) {
+      background-position-x: -300px;
+      margin-left: 360px;
+    }
+    &:nth-of-type(4) {
+      background-position-x: -450px;
+      margin-left: 20px;
+    }
+    transition: margin 0.3s;
+  }
+}
+
+#discoballs-details-container {
+  pointer-events: none;
+}
+.discoballs-shoes-container {
+  @include horizontal-align;
+  width: 100vw;
+  height: 250px;
+  bottom: 50px;
+  pointer-events: none;
+
+  & .discoballs-shoes {
+    list-style-type: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 250px;
+
+    margin: 0 auto;
+
+    & .discoballs-shoe {
+
+      background: url(../assets/images/discoballs/shoes.png) no-repeat;
+      width: 200px;
+      height: 250px;
+      float: left;
+      position: relative;
+      list-style-type: none;
+      cursor: pointer;
+
+      &:nth-of-type(even) {
+        margin-top: -100px;
+      }
+
+      &:hover {
+        background-position-y: -250px;
+        & .discoballs-shoe-label {
+          display: block;
+        }
+      }
+
+      &.selected {
+        background-position-y: -250px;
+        & .discoballs-shoe-label {
+          display: block;
+        }
+        cursor: default;
+      }
+
+      &.completed {
+        .discoballs-done-check {
+          display: block;
+          bottom: 25px;
+        }
+      }
+
+      & .discoballs-shoe-label {
+        display: none;
+        @include horizontal-align;
+        width: 200px;
+        top: 220px;
+        line-height: 130%;
+        text-align: center;
+        color: white;
+        font-size: 1.4em;
+        text-shadow: 2px 2px 10px rgb(85, 25, 75), -2px -2px 10px rgb(85, 25, 75);
+
+
+      }
+
+    }
+  }
+}

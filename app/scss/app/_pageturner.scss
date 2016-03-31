@@ -1,0 +1,336 @@
+#pt-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  //position: relative;
+  overflow-x: hidden;
+}
+
+#pt-main-view {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  @include horizontal-align();
+  position: fixed;
+  overflow: hidden;
+}
+
+#pt-content-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  @include horizontal-align();
+  position: fixed;
+  overflow: hidden;
+}
+
+.pt-screen {
+  width: 100vw;
+  height: 100vh;
+  //border: 1px solid white;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  //position: relative;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  & h1 {
+    color: white;
+  }
+}
+
+.pt-scroll {
+  position: absolute;
+  width: 100vw;
+  max-width: $max-width;
+  top: 0px;
+  pointer-events: none;
+}
+
+.reveal-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  overflow: hidden;
+
+}
+
+.pt-progress-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  @include horizontal-align();
+  position: fixed;
+  pointer-events: none;
+}
+
+.pt-progress-bar {
+  width: 55px;
+  width: 55px;
+  height: 100vh;
+  max-height: $max-height;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: rgba(0,0,0,0.4);
+  pointer-events: all;
+}
+
+.pt-progress {
+  @include center-align;
+  position: absolute;
+}
+
+.pt-progress-button {
+  border: white 1px solid;
+
+  @include border-radius(6px);
+  @include horizontal-align();
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0 0 5px 0;
+
+  &.completed {
+    background-color: rgba(255,255,255,.5);
+  }
+  &:hover {
+    background-color: rgba(255,255,255,.8);
+  }
+  &.active {
+    background-color: white;
+  }
+
+  cursor: pointer;
+
+}
+
+#pt-progress-next-button, #pt-progress-prev-button {
+  width: 39px;
+  height: 39px;
+  &:hover {
+    @include scale(1.15, 1.15);
+
+  }
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+    &:hover {
+
+    }
+  }
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#pt-progress-prev-button {
+  margin: 0 0 5px 0;
+  background: url(../assets/images/ui/pt-progress-prev-button.png);
+
+}
+
+#pt-progress-next-button {
+  background: url(../assets/images/ui/pt-progress-next-button.png);
+}
+
+#pt-bg {
+  position: fixed;
+  top:0px;
+  left:0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pt-element {
+  position: absolute;
+}
+
+.pt-horizontal-align {
+  @include horizontal-align;
+  position: absolute;
+}
+
+.pt-vertical-align {
+  @include vertical-align;
+  position: absolute;
+}
+
+.pt-center-align {
+  @include center-align;
+  position: absolute;
+}
+
+@mixin pageturner-text {
+  //line-height: 100%;
+  font-size: 28px;
+  color: white;
+  font-family: $font-body;
+  font-weight: 400;
+
+}
+
+.pt-text-center {
+  @include pageturner-text;
+  text-align: center;
+}
+
+.pt-text-left {
+  @include pageturner-text;
+  text-align: left;
+}
+
+.pt-text-header {
+  font-family: 'Helvetica';
+  font-size: 32px;
+  color: white;
+
+  position: absolute;
+  top: 144px;
+}
+
+.pt-text-body {
+  font-family: $font-body;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  line-height: 120%;
+
+  position: absolute;
+  top: 208px;
+}
+
+.pt-text-hr {
+  position: absolute;
+  width: 400px;
+  height: 29px;
+  background: url('../assets/images/pageturner/pt_text_hr.png') no-repeat -47px 0px;
+}
+
+
+
+
+.pt-txt-box {
+  position: absolute;
+  width: 500px;
+  top: 25%;
+  //overflow: hidden;
+  &.align-left {
+    right: 55%;
+    left: auto;
+    margin-left: 0px;
+  }
+  &.align-right {
+    left: 55%;
+    right: auto;
+    margin-left: 0px;
+  }
+  &.align-center {
+    margin-left: -250px;
+    left: 50%;
+    right: auto;
+  }
+  &.align-center-wide {
+   // top: 25%;
+    margin-left: -350px;
+    width: 700px;
+    left: 50%;
+    right: auto;
+  }
+}
+.pt-txt-header {
+  position: relative;
+  color: white;
+  font-family: $font-h1;
+  font-weight: 400;
+  font-size: 2.4em;
+  //width: 400px;
+}
+.pt-txt-body {
+  p, ul {
+    position: relative;
+    color: white;
+    font-family: $font-body;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  p, ul, li {
+    line-height: 140%;
+    font-size: 20px;
+  }
+  a {
+    color: white;
+    font-weight: bold;
+  }
+  b {
+    font-weight: bold;
+  }
+  //width: 400px;
+  position: relative;
+}
+.pt-txt-hr {
+  left: 0px;
+  right: 0px;
+  height: 9px;
+  margin: 8px 0;
+  position: relative;
+  overflow: hidden;
+  background: url('../assets/images/pageturner/pt_text_hr.png') no-repeat;
+  background-position: 0px 0px;
+}
+.pt-txt-ornament {
+  background: url('../assets/images/pageturner/hr-ornament.png');
+  left: -100px;
+  top: 30px;
+  width: 23px;
+  height: 19px;
+  position: absolute;
+}
+
+//Click Reveal Stuff
+
+.pt-callout {
+  margin-top: 15px;
+  font-weight: bold !important;
+  background: rgba(255,255,255,0.15);
+  padding: 3px 3px 3px 10px;
+}
+
+
+
+.reveal-text-box {
+  position: absolute;
+
+}
+
+.reveal-text-pointer {
+  background: url('../assets/images/pageturner_flat/reveal_text_pointer.png') no-repeat;
+  position: absolute;
+  width: 23px;
+  height: 27px;
+  //left: 30px;
+  bottom: - 35px;
+}
+
+.reveal-items-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.reveal-item {
+  cursor: pointer;
+}
+
+
+

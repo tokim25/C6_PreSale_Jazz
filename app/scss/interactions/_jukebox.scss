@@ -1,0 +1,121 @@
+#jukebox-view {
+  @extend %view;
+  & .module-title {
+    left: 75%;
+  }
+}
+
+.jukebox-container {
+  position: absolute;
+  width: 1100px;
+  height: 1100px;
+  left: -100px;
+  top: -50px;
+  & #jukebox {
+    position: absolute;
+
+
+    width: 1100px;
+    height: 1100px;
+    background: url(../assets/images/jukebox/jukebox.png) no-repeat;
+  }
+  & #jukebox-bg {
+    position: absolute;
+    width: 582px;
+    height: 275px;
+    top: 255px;
+    left: 257px;
+    background: url(../assets/images/jukebox/jukebox-bg.jpg) no-repeat;
+
+  }
+  & #jukebox-playing {
+    position: absolute;
+    width: 582px;
+    height: 275px;
+    top: 100%;
+    background: url(../assets/images/jukebox/jukebox-playing.png) no-repeat;
+
+  }
+
+  & .jukebox-ring {
+    //display: none;
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    top: 430px;
+    left: 490px;
+    @include scale(0.2, 0.2);
+
+    background: url(../assets/images/jukebox/jukebox-ring.png) no-repeat;
+  }
+}
+
+.jukebox-text-container {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  bottom: 60px;
+  & h4 {
+    color: #8b1921;
+    text-shadow: 1px 0px 4px #ffb578;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+  & p {
+    color: #5e2507;
+    text-shadow: 1px 0px 2px rgb(255, 196, 191);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+
+  }
+}
+
+.jukebox-button-container {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  top: 567px;
+  left: 305px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  & .jukebox-button {
+    width: 150px;
+    height: 48px;
+    margin: 5px 20px 0px 0px;
+    border: 1px solid rgba(95, 59, 54, 0.5);
+    box-sizing: border-box;
+    padding: 6px;
+    position: relative;
+    &:first-of-type {
+      margin-left: 0px;
+    }
+    &:hover {
+      background:rgba(220, 210, 164, 0.6);
+    }
+    &.selected, &.selected.completed {
+      background: rgba(95, 59, 54, 0.6);
+      box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+      & p {
+        color: #e5d4b3;
+      }
+    }
+    &.completed {
+      & p {
+        color: #886548;
+      }
+    }
+    cursor: pointer;
+    & p {
+      font-family: $font-monoton;
+      font-size: 13px;
+      color: #ae263a;
+      text-align: center;
+    }
+
+  }
+}
+

@@ -1,0 +1,29 @@
+<script type="text/template" id="conclusion-template">
+
+    <div class="popup-view splash-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <div class="splash-bg-elements bg-<%= modulename %>"></div>
+
+
+
+        <div class="conclusion-image-container">
+            <% if (badge != null) { %>
+            <img class="conclusion-badge" src="assets/images/badges/<%= badge.id %>.png"/>
+            <h1 class="conclusion-badge-title"><%= badge.name %></h1>
+            <% } %>
+            <h1 class="conclusion-title"><%= name %></h1>
+
+        </div>
+
+
+
+        <hr class="splash-hr" />
+        <div class="splash-text-container ">
+            <h2 class="popup-title"></h2>
+            <div class="popup-body"></div>
+        </div>
+        <hr class="splash-hr" />
+    </div>
+
+</script>

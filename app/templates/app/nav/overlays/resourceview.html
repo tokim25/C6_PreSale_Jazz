@@ -1,0 +1,23 @@
+<script type="text/template" id="resourceview-template">
+
+
+    <div id="resources-view">
+        <div class="overlay-title"><div class="resources-ititle title-icon"></div>Resources</div>
+        <div class="resource-container">
+            <div class="resource-list-temp">
+                <%  _.each(filteredGroups, function (group) { %>
+                <div class="resource-group">
+                <h2><%= group.label %></h2>
+                <ul>
+                    <%  _.each(group.links, function (link) { %>
+                        <li><a target="_blank" href="<%= link.url %>"><%= link.text %></a></li>
+                    <%  }); %>
+                </ul>
+                </div>
+                <%  }); %>
+            </div>
+        </div>
+    </div>
+    <div class="close-ibutton enabled" data-id="close"></div>
+
+</script>

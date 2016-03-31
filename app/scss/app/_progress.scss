@@ -1,0 +1,19 @@
+#progress-view {
+  @extend %view;
+}
+
+.progress-text {
+  @extend %overlay-text;
+  font-size: 150px;
+  text-align: center;
+  @include center-align;
+}
+
+.progress-text-completed {
+  @extend %overlay-text;
+  font-size: 30px;
+  text-align: center;
+  @include horizontal-align;
+  top: 50%;
+  margin-top: 175px;
+}

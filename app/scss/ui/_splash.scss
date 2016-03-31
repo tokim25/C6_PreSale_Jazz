@@ -1,0 +1,179 @@
+.splash-container {
+  position: absolute;
+  top: 0px;
+}
+
+.splash-view {
+  @extend %view;
+  position: absolute;
+  & .popup-button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    @include scale(1.2, 1.2);
+    &:hover {
+      @include scale(1.3, 1.3)
+    }
+
+    &:active {
+      @include scale(1.2, 1.2);
+    }
+  }
+}
+
+.splash-bg-elements {
+  @extend %view;
+
+  position: absolute;
+  top: 0px;
+
+}
+
+.splash-title-bg {
+  @include horizontal-align();
+  //background: url(../assets/images/ui/splashtitle-splatter-bg.png) no-repeat center center;
+  background-size: contain;
+  width: 500px;
+  height: 400px;
+  content: '';
+  mix-blend-mode: overlay;
+}
+
+.splash-image-container {
+  @include horizontal-align();
+  position: relative;
+
+  width: 500px;
+  height: 400px;
+
+  & .splash-title {
+    @include horizontal-align;
+    bottom: 0px;
+    width: 800px;
+    color: white;
+    font-family: $font-h1;
+    font-weight: 400;
+    font-size: 3.0em;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & .splash-image {
+    @include center-align;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.conclusion-image-container {
+  @include horizontal-align();
+  position: relative;
+
+  width: 500px;
+  height: 440px;
+
+  & .conclusion-badge {
+    width: 254px;
+    height: 300px;
+    display: block;
+    @include horizontal-align;
+    bottom: 90px;
+    opacity: 0;
+    transition: .5s opacity;
+  }
+  & .conclusion-badge-title {
+    @include horizontal-align;
+    bottom: 0px;
+    width: 1200px;
+    font-family: $font-h1;
+    font-weight: 700;
+    font-size: 6.0em;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s opacity;
+  }
+
+  & .conclusion-title {
+
+    @include horizontal-align;
+    bottom: 0px;
+    width: 1200px;
+    font-family: $font-h1;
+    font-weight: 700;
+    font-size: 6.0em;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    opacity: 1;
+    transition: .5s opacity;
+  }
+
+  &.show-badge {
+    & .conclusion-title {
+      opacity: 0;
+    }
+    & .conclusion-badge {
+      opacity: 1;
+    }
+    & .conclusion-badge-title {
+      opacity: 1;
+    }
+  }
+}
+
+.splash-hr {
+  width: 650px;
+  height: 3px;
+  margin: 20px 0px;
+  @include horizontal-align();
+  border: none;
+  position: relative;
+}
+
+.splash-text-container {
+  @include horizontal-align();
+  position: relative;
+  width: 650px;
+
+  & .popup-title {
+    position: relative;
+    color: attr(data-attr);
+    font-family: $font-h2;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 20px 0px 10px 0px;
+    //width: 400px;
+  }
+  & .popup-body {
+    p, ul, li, b, a {
+      color: inherit;
+      line-height: 130%;
+      font-size: 17px;
+      font-weight: 400;
+    }
+    p {
+      position: relative;
+      font-family: $font-body;
+
+      margin-bottom: 10px;
+      color: inherit;
+    }
+    a {
+      font-weight: bold;
+
+    }
+    b {
+      font-weight: bold;
+    }
+    //width: 400px;
+    position: relative;
+  }
+
+  & .instrux .popup-body{
+    font-weight: bold;
+  }
+}
+
+
+

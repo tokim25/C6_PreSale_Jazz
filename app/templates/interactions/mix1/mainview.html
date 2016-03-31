@@ -1,0 +1,37 @@
+<script type="text/template" id="mixingroom-mainview-template">
+
+    <div id="mixroom-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <div class="module-title color-<%= modulename %>"><h1 style="color:<%= colors.highlightColor %>;"><%= name %></h1></div>
+
+        <div class="mr-container">
+            <div class="mr-mixroom-bg"></div>
+            <div class="mr-record"><img id='record-disc' src='assets/images/mix104/record.png'/><img src='assets/images/mix104/record-highlight.png'/></div>
+            <div class="mr-record-arm"></div>
+
+            <% var className = 'mr-products-' + items.length %>
+            <div class="mr-products-container <%= className %>">
+                <% _.each(items, function (items, index) {  %>
+                <div class="mr-product <%= className %>" data-id="<%= items.id %>">
+                    <div class="mr-product-button mr-features"></div>
+                    <div class="mr-done-light mr-features"></div>
+                    <div class="mr-product-button mr-benefits"></div>
+                    <div class="mr-done-light mr-benefits"></div>
+                    <div class="mr-label <%= className %>"><%= items.label %></div>
+                </div>
+                <%  }); %>
+            </div>
+            <div class="info-container"></div>
+        </div>
+
+
+
+        <div class="main-button continue-button enabled" data-id="continue">Continue</div>
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+    </div>
+
+</script>

@@ -1,0 +1,173 @@
+{
+    "name": "Broadcast Processes in the Life of a Deal",
+
+    "assetManifest": [
+        {"id": "img", "src": "assets/images/instruments/img.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#620c5f"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Introduction",
+                "body": "<p>Before we play our little symphony, we need to get to know the instruments in our little orchestra! Let’s learn about some broadcast-specific concepts.</p>"
+            },
+            {
+                "header": "Directions",
+                "body": "<p>Directions text...</p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Conclusion",
+                "body": "<p>If you can't tell by now, let's repeat it again. We love radio advertisers. And we want to make advertising with us as simple as possible. There's a big world out there, beyond the radio airwaves. And you're the best person to help these clients explore it!</p>"
+            },
+            {
+                "header": "Badge Earned",
+                "body": "<p>Bravo! You’ve earned your first badge. It looks like a piece of sheet music! Keep going through the School of Classical to collect all the pieces of music! </p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "items": [
+        {
+            "id": "item1",
+            "label": "Avail Request",
+            "details": [
+                {
+                    "label": "Pre-Sale",
+                    "header": "Pre-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Sale",
+                    "header": "Post-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Pre-Launch",
+                    "header": "Pre-Launch",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Launch",
+                    "header": "Post-Launch",
+                    "body": "<p></p>"
+                }
+
+            ]
+        },
+        {
+            "id": "item2",
+            "label": "XXXXXX",
+            "details": [
+                {
+                    "label": "Pre-Sale",
+                    "header": "Pre-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Sale",
+                    "header": "Post-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Pre-Launch",
+                    "header": "Pre-Launch",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Launch",
+                    "header": "Post-Launch",
+                    "body": "<p></p>"
+                }
+
+            ]
+        },
+        {
+            "id": "itwm3",
+            "label": "XXXXXX",
+            "details": [
+                {
+                    "label": "Pre-Sale",
+                    "header": "Pre-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Sale",
+                    "header": "Post-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Pre-Launch",
+                    "header": "Pre-Launch",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Launch",
+                    "header": "Post-Launch",
+                    "body": "<p></p>"
+                }
+
+            ]
+        },
+        {
+            "id": "item4",
+            "label": "XXXXXX",
+            "details": [
+                {
+                    "label": "Pre-Sale",
+                    "header": "Pre-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Sale",
+                    "header": "Post-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Pre-Launch",
+                    "header": "Pre-Launch",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Launch",
+                    "header": "Post-Launch",
+                    "body": "<p></p>"
+                }
+
+            ]
+        },
+        {
+            "id": "item5",
+            "label": "XXXXXX",
+            "details": [
+                {
+                    "label": "Pre-Sale",
+                    "header": "Pre-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Sale",
+                    "header": "Post-Sale",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Pre-Launch",
+                    "header": "Pre-Launch",
+                    "body": "<p></p>"
+                },
+                {
+                    "label": "Post-Launch",
+                    "header": "Post-Launch",
+                    "body": "<p></p>"
+                }
+
+            ]
+        }
+    ]
+}

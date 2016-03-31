@@ -1,0 +1,29 @@
+{
+    "name": "Podcast",
+
+    "assetManifest": [
+        {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#600f51"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "videoPath": "assets/videos/products_101"
+}

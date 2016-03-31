@@ -1,0 +1,184 @@
+#gofish-view {
+  @extend %view;
+
+  & .blob1-popup {
+    left: -125px;
+    bottom: -200px;
+    right: auto;
+  }
+}
+
+.gofish-game-bg {
+  @include horizontal-align;
+  content: '';
+  top: -30px;
+  width: 1600px;
+  height: 800px;
+  background: url(../assets/images/quiz_gofish/gofish-bg.png) no-repeat;
+  mix-blend-mode: overlay;
+}
+
+.gofish-game-container {
+  position: absolute;
+  width: 1800px;
+  height: 100vh;
+  @include horizontal-align;
+  & .gofish-wave {
+    @include horizontal-align;
+    width: 1800px;
+    height: 200px;
+    &:nth-of-type(1) {
+      bottom: 125px;
+      background: url(../assets/images/quiz_gofish/wave-1.png) no-repeat;
+    }
+    &:nth-of-type(2) {
+      bottom: 75px;
+      background: url(../assets/images/quiz_gofish/wave-2.png) no-repeat;
+    }
+    &:nth-of-type(3) {
+      bottom: 25px;
+      background: url(../assets/images/quiz_gofish/wave-3.png) no-repeat;
+    }
+    &:nth-of-type(4){
+      bottom: -25px;
+      background: url(../assets/images/quiz_gofish/wave-4.png) no-repeat;
+    }
+  }
+}
+
+.gofish-distractor {
+  position: absolute;
+  width: 215px;
+  height: 200px;
+  top: -50px;
+  background: url(../assets/images/quiz_gofish/gofish-distractors.png) no-repeat;
+}
+
+#gofish-cassette {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: -80px;
+  left: 1100px;
+  background: url(../assets/images/quiz_gofish/gofish-cassette.png) no-repeat;
+}
+
+#gofish-shoelace {
+  position: absolute;
+  left: 1000px;
+  top: -700px;
+
+  & #shoelace {
+    position: absolute;
+    width: 325px;
+    height: 1050px;
+    left: 0px;
+    top: 0px;
+    background: url(../assets/images/quiz_gofish/gofish-shoelace.png) no-repeat;
+
+    &.completed {
+      background-position: -325px 0px;
+    }
+  }
+
+
+}
+
+.gofish-qa-container {
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  margin-left: -360px;
+  top: 190px;
+
+  & .gofish-question-box{
+    position: absolute;
+    width: 550px;
+
+    & .gofish-q {
+      margin-left: -35px;
+      margin-top: 5px;
+      color: #ffa;
+      font-family: $font-h1;
+      font-size: 2.8em;
+    }
+    & .content {
+      position: absolute;
+      top: 2px;
+      margin-left: 15px;
+      color: #ffa;
+      font-family: $font-work;
+      //font-weight: bold;
+      font-size: 1.8em;
+      font-weight: 400;
+    }
+  }
+
+}
+
+.gofish-answer-box {
+  position: absolute;
+  left: 15px;
+  & .content {
+    width: 550px;
+    position: absolute;
+  }
+  & .gofish-answer-letter {
+    color: #ffa;
+    font-family: $font-h1;
+    font-size: 2.2em;
+    margin-top: 1px;
+    position: absolute;
+  }
+
+  & .gofish-answer-choice {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    width: 255px;
+    margin: 0 15px 8px 0;
+    padding: 5px 0px 0px 10px;
+    background: rgba(255,255,255,0.3);
+
+    cursor: pointer;
+
+    & .content {
+      padding: 20px;
+    }
+
+    &.selected, &:hover.enabled {
+      & p {
+        color: #56e7f5;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+        //font-weight: 700
+      }
+      & .gofish-answer-letter {
+        color: #56e7f5;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+      }
+      background: rgba(255,255,255,0.1);
+    }
+
+    &.disabled {
+      opacity: 0.4 !important;
+
+      cursor: default;
+    }
+
+  }
+
+  & .ans-content {
+    padding: 15px;
+  }
+
+  & p {
+    color: #ffa;
+    font-family: $font-body;
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 110%;
+    margin-left: 35px;
+  }
+}

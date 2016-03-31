@@ -1,0 +1,35 @@
+#winfocus-container {
+  @extend %view;
+  position: absolute;
+  pointer-events: none;
+}
+
+#winfocus-scrim {
+  background: rgba(0,0,0,0.6);
+}
+
+#winfocus-resume-button {
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.7);
+  @include border-radius(10px);
+  font-family: $font-osterich;
+  font-size: 5em;
+  font-weight: 700;
+  border: 2px solid white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  color: #333;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-left: -112px;
+  cursor: pointer;
+
+  &:hover {
+    @include scale(1.2, 1.2);
+  }
+
+  transition: all 0.3s;
+
+  z-index: 50;
+}
+

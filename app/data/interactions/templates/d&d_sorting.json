@@ -1,0 +1,62 @@
+{
+    "name": "Play Me a Song",
+
+    "assetManifest": [
+
+    ],
+
+    "backgroundColor": "#bab2a5",
+
+    "classes": ["resp1-penny", "resp1-nickle", "resp1-dime", "resp1-quarter", "resp1-halfdollar", "resp1-dollar"],
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "roles": [
+        {
+            "id": "ae",
+            "label": "Account Executive",
+            "responsibilities": [
+                {
+                    "id": "",
+                    "class": "",
+                    "text": "<p>One item</p>"
+                },
+                {
+                    "id": "",
+                    "class": "",
+                    "text": "<p>Another item</p>"
+                }
+            ]
+        },
+        {
+            "id": "as",
+            "label": "Account Strategist",
+            "responsibilities": [
+                {
+                    "id": "",
+                    "class": "",
+                    "text": "<p>One item</p>"
+                },
+                {
+                    "id": "",
+                    "class": "",
+                    "text": "<p>Another item</p>"
+                }
+            ]
+        }
+    ]
+}

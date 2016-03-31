@@ -1,0 +1,297 @@
+#menu-view {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1500px;
+  max-height: $max-height;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#menu-content {
+  position: absolute;
+  width: 100vw;
+  max-width: $max-width;
+  height: 6000px;
+  //overflow: hidden;
+}
+
+.menu-element {
+  position: absolute;
+  //pointer-events: none;
+}
+
+.menu-scroll-container {
+  @include horizontal-align();
+  max-width: $max-width;
+  width: 100vw;
+  height: 6000px;
+}
+
+#menu-dev-bg {
+  position: absolute;
+  @include horizontal-align;
+  top: 0px;
+
+}
+
+.menu-module {
+  & .content {
+    position: absolute;
+    left: 50px;
+    top: 85px;
+  }
+}
+
+#mod-1 {
+  background: url(../assets/images/menu/mod-bg-1.png);
+  width: 478px;
+  height: 174px;
+  & .content {
+    left: 50px;
+    top: 50px;
+  }
+}
+#mod-2 {
+  background: url(../assets/images/menu/mod-bg-2.png);
+  width: 469px;
+  height: 497px;
+  & .content {
+    left: 30px;
+    top: 85px;
+  }
+  &.performance {
+    background: url(../assets/images/menu/mod-bg-2-performance.png);
+    width: 474px;
+    height: 170px;
+    & .content {
+      left: 30px;
+      top: 70px;
+    }
+  }
+}
+#mod-3 {
+  background: url(../assets/images/menu/mod-bg-3.png);
+  width: 555px;
+  height: 195px;
+}
+#mod-4 {
+  background: url(../assets/images/menu/mod-bg-4.png);
+  width: 603px;
+  height: 257px;
+  & .content {
+    left: 100px;
+    top: 50px;
+  }
+}
+#mod-5 {
+  background: url(../assets/images/menu/mod-bg-5.png);
+  width: 589px;
+  height: 263px;
+  & .content {
+    top: 100px;
+    left: 40px;
+  }
+}
+#mod-6 {
+  background: url(../assets/images/menu/mod-bg-6.png);
+  width: 475px;
+  height: 425px;
+
+}
+#mod-7 {
+  background: url(../assets/images/menu/mod-bg-7.png);
+  width: 474px;
+  height: 170px;
+  & .content {
+    top: 70px;
+  }
+}
+
+#menu-dev-container0 {
+  position: absolute;
+  width: 350px;
+  top: 1120px;
+  left: 50%;
+  margin-left: -260px;
+}
+
+#menu-dev-container1 {
+  position: absolute;
+  width: 400px;
+  top: 2050px;
+  left: 50%;
+  margin-left: 210px;
+}
+
+#menu-dev-container2 {
+  position: absolute;
+  width: 350px;
+  top: 2635px;
+  left: 50%;
+  margin-left: -580px;
+  @include rotate(-8deg);
+}
+
+#menu-dev-container3 {
+  position: absolute;
+  width: 400px;
+  top: 3452px;
+  left: 50%;
+  margin-left: -320px;
+  @include rotate(4deg);
+}
+
+#menu-dev-container4 {
+  position: absolute;
+  width: 400px;
+  top: 4120px;
+  left: 50%;
+  margin-left: 115px;
+  @include rotate(-4deg);
+}
+
+#menu-dev-container5 {
+  position: absolute;
+  width: 400px;
+  top: 4672px;
+  left: 50%;
+  margin-left: -610px;
+  @include rotate(-5deg);
+}
+
+.menu-button {
+
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 12px;
+
+  & p:hover {
+    margin-left: 5px;
+    text-decoration: underline;
+  }
+  & p {
+    transition: margin .2s;
+    color: #333;
+    font-family: $font-body;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+  }
+
+  & .status-icon {
+    position: absolute;
+    left: 8px;
+    top: -2px;
+    width: 16px;
+    height: 20px;
+    background: url('../assets/images/menu/menu-status-icons.png') no-repeat;
+  }
+
+  &.locked {
+    & p {
+      opacity: 0.6;
+    }
+    cursor: default;
+    pointer-events: none;
+    & .status-icon {
+      background-position: 0px -48px;
+    }
+  }
+  &.not-started.locked {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+    & .status-icon {
+      background-position: 0px -60px;
+    }
+  }
+  &.not-started {
+    & .status-icon {
+      background-position: 0px 0px;
+    }
+  }
+  &.started {
+    & .status-icon {
+      background-position: 0px -20px;
+    }
+  }
+  &.completed {
+    & .status-icon {
+      background-position: 0px -40px;
+    }
+  }
+}
+
+.menu-path {
+  fill:none;
+  stroke-width:3;
+  stroke:#fff;
+  stroke-miterlimit:10;
+}
+
+.menu-banner {
+  background: url(../assets/images/menu/banner-bg-blue.png);
+  width: 571px;
+  height: 264px;
+  pointer-events: none;
+  & .content {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+  }
+  & h2 {
+    font-family: 'avenir-black';
+    color:white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    margin: 0px;
+  }
+}
+
+.course-title {
+  font-size: 16px;
+}
+
+.module-name {
+  font-size: 27px;
+}
+
+#scroll-arrow {
+  &.active {
+    animation: bounce 1s infinite;
+  }
+}
+
+@-webkit-keyframes bounce {
+  from, to {transform: translateY(0px);}
+  50% {transform: translateY(5px);}
+}
+@keyframes bounce {
+  from, to {transform: translateY(0px);}
+  50% {transform: translateY(5px);}
+}
+
+#tv {
+  width: 646px;
+  height: 425px;
+  & #tv-screen {
+    background: url(../assets/images/menu/tv-screen.png) no-repeat;
+    width: 646px;
+    height: 425px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+  &.active #tv-screen {
+    animation: tvplay .6s steps(4) infinite;
+  }
+}
+
+@keyframes tvplay {
+  100% { background-position:0px -1700px; }
+}
+
+

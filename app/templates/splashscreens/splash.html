@@ -1,0 +1,24 @@
+<script type="text/template" id="splash-template">
+
+    <div class="popup-view splash-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <div class="splash-bg-elements bg-<%= modulename %>"></div>
+
+        <div class="splash-title-bg"></div>
+
+        <div class="splash-image-container color-<%= modulename %>">
+            <div class="splash-image "  style="background-image: url(assets/images/splashpages/<%= modulename %>.png);"></div>
+            <div class="splash-title" style="color:<%= colors.highlightColor %>;"><%= name %></div>
+        </div>
+
+        <hr class="splash-hr"  style="background-color:<%= colors.accentColor %>;" />
+        <div class="splash-text-container ">
+            <h2 class="popup-title" style="color:<%= colors.highlightColor %>;"></h2>
+            <div class="popup-body" style="color:<%= colors.highlightColor %>;"></div>
+        </div>
+        <hr class="splash-hr"  style="background-color:<%= colors.accentColor %>;" />
+
+    </div>
+
+</script>

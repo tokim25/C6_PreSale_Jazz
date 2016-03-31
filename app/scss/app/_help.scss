@@ -1,0 +1,142 @@
+.nav-info-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0,0,0,0.6);
+
+  & .role-selection-popup {
+    @include center-align;
+    width: 625px;
+    background: rgba(255,255,255,0.8);
+    @include border-radius(12px);
+
+
+    & .content {
+      padding: 20px;
+      & p, li {
+        color: black;
+        font-size: 1.8em;
+      }
+    }
+
+    & h1 {
+      color: #1183c3;
+      //text-align: center;
+      font-size: 3.0em;
+    }
+    & .help-role-selector  {
+      margin: 0px 20px 20px 20px;
+      height: 40px;
+    }
+    & .role-selection-button {
+      padding: 4px 15px;
+      @include gradient(#57a0c4, #5195b7);
+      @include border-radius(6px);
+      border: 1px solid #333;
+      color: white;
+      font-family: $font-body;
+      font-size: 18px;
+      cursor: pointer;
+      bottom: 25px;
+      right: 25px;
+      float: right;
+      margin-left: 15px;
+      &:hover {
+        @include gradient(darken(#57a0c4, 10%), darken(#5195b7, 10%));
+      }
+    }
+
+    & #help-user-role{
+      width: 310px;
+      height: 34px;
+      overflow: hidden;
+      background-color: white;
+      font-size: 20px;
+      border: 1px solid #ccc;
+      float: left;
+    }
+  }
+
+  & .help-popup {
+    @include center-align;
+    width: 625px;
+    background: rgba(255,255,255,0.8);
+    @include border-radius(12px);
+
+    & .popup-body {
+      max-height: 450px;
+      overflow-y: auto;
+      padding-right: 25px;
+    }
+
+    & .content {
+      padding: 20px 10px 20px 20px;
+      & p, li {
+        color: black;
+        font-size: 1.8em;
+      }
+    }
+
+    & h1 {
+      color: #1183c3;
+      //text-align: center;
+      font-size: 3.0em;
+    }
+    & .popup-button {
+      @include standard-button(#333, 2.0em);
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+    }
+
+    & hr {
+      margin: 0px 15px;
+    }
+  }
+}
+.role-display {
+  float: left;
+  & #selected-role-label, #selected-role {
+    font-family: $font-body;
+    color: #333;
+    font-size: 16px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+    text-transform: capitalize;
+  }
+}
+.help-links {
+  margin: 10px 15px;
+  text-align: right;
+
+  & a {
+    display: inline-block;
+    color: #325cc6;
+    font-size: 16px;
+    font-family: $font-body;
+    line-height:120%;
+    text-decoration: none;
+    padding: 3px 5px;
+    font-weight: 500;
+    &:hover {
+      background: rgba(0,0,0,0.2);
+      @include border-radius(4px);
+
+    }
+  }
+
+  & .link-separator {
+    display: inline-block;
+    background: #999;
+    width: 1px;
+    height: 20px;
+    margin: 0px 2px -3px 2px;
+    border-right: 1px solid #eee;
+  }
+
+
+}
+

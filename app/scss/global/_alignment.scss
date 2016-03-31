@@ -1,0 +1,16 @@
+.vertical-center {
+  @include vertical-align();
+  position: absolute;
+}
+
+.horizontal-center {
+  @include horizontal-align();
+  position: absolute;
+}
+
+.center-center {
+  @include center-align();
+
+  position: absolute;
+}
+

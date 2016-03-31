@@ -1,0 +1,33 @@
+<script type="text/template" id="pt-mainview-template">
+
+
+
+    <div id="pt-container" >
+        <div id="pt-main-view" style="background-color:<%= colors.backgroundColor %>;">
+            <div class="bg-texture"></div>
+            <div class="module-title color-<%= modulename %>"><h1 style="color:<%= colors.highlightColor %>;"><%= name %></h1></div>
+
+        </div>
+        <div id="pt-content-container"></div>
+
+        <div class="pt-scroll"></div>
+        <div class="pt-progress-container">
+            <div class="pt-progress-bar">
+                <div class="pt-progress">
+                    <div id="pt-progress-prev-button"></div>
+                    <% _.each(scenes, function (scene, i) { %>
+                    <div id="progress<%= i %>" data-id="<%= i %>" class="pt-progress-button"></div>
+                    <% }); %>
+                    <div id="pt-progress-next-button"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-button continue-button" data-id="continue">Continue</div>
+
+    </div>
+
+
+
+
+</script>

@@ -1,0 +1,14 @@
+/* In this file you should centralize your imports.
+
+   base.scss will handle application wide imports including:-
+      - Compass reset
+      - Compass CSS3
+      - Compass utilities
+      - BikeStore stylings */
+@import "global/base";
+/* Place course specific interaction or other styling imports here. */
+@import "ui/popup";
+@import "ui/splash";
+@import "ui/uielements";
+
+@import "interactions/video";

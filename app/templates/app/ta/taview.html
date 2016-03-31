@@ -1,0 +1,39 @@
+<script type="text/template" id="taview-template">
+
+    <div id="ta-view">
+        <div id="winfocus-scrim" class="scrim-background"></div>
+
+        <div class="popup-view ta-popup">
+            <div class="content">
+                <h1 class="popup-title"><%= text.header %></h1>
+                <div class="popup-body">
+                    <p><%= text.body %></p>
+                    <div class="ta-guides">
+                        <%  _.each(groups, function (group) { %>
+                        <p class="ta-group"><b><%= group.label %></b></p>
+                        <ul>
+                            <%  _.each(group.links, function (link) { %>
+                            <li><a target="_blank" href="<%= link.url %>"><%= link.text %></a></li>
+                            <%  }); %>
+                        </ul>
+                        <%  }); %>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr />
+            <div class="ta-links">
+
+                <a class="ta-link" id="ta-unlock" data-id="unlock" href="#">Unlock all modules</a>
+
+            </div>
+
+            <div data-id="close" class="close-x-button"></div>
+
+        </div>
+
+    </div>
+
+</script>

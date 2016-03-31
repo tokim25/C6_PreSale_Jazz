@@ -1,0 +1,57 @@
+<script type="text/template" id="lifeofdeal-mainview-template">
+
+    <div id="lifeofdeal-view" style="background-color:<%= backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <h1 class="module-title"><%= name %></h1>
+
+        <div class="lifeofdeal-mixing-board">
+
+            <div class="lifeofdeal-vu-meter">
+                <div class="vu-mask">
+                    <div id="vu-needle"></div>
+                </div>
+            </div>
+
+            <div class="lifeofdeal-mix-container" style="width:<%= 100 + 185 * roles.length %>px">
+
+                <div class="lifeofdeal-phases-container">
+                    <% _.each(text.labels.phases, function (phase, index) { %>
+                        <h2 class="lifeofdeal-phase-label label-<%= phase.id %>"><%= phase.label %></h2>
+                    <% }); %>
+
+                </div>
+
+                <div class="lifeofdeal-roles-container">
+                    <% _.each(roles, function (role, index) { %>
+                        <div class="lifeofdeal-role" id="lifeofdeal-role-<%= role.id %>">
+                            <div class="lifeofdeal-mixcomplete" id="mixcomplete-<%= role.id %>"><div class="lifeofdeal-led"></div><p>Mix Complete</p></div>
+                            <div class="lifeofdeal-slider" id="lifeofdeal-slider-<%= role.id %>" data-id="<%= role.id %>"></div>
+                            <div class="lifeofdeal-led-container">
+                                <% _.each(text.labels.phases, function (phase, index) { %>
+                                    <div class="lifeofdeal-led lifeofdeal-led-<%= 4 - index %>" data-id="<%= phase.id %>"></div>
+                                <% }); %>
+                            </div>
+                            <h2 class="lifeofdeal-role-label label-<%= role.id %>" ><%= role.label %></h2>
+                        </div>
+                    <% }); %>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-button continue-button">Continue</div>
+
+        <div id="lifeofdeal-textbox" class="popup-container">
+
+        </div>
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+
+    </div>
+
+
+</script>

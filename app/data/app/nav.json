@@ -1,0 +1,29 @@
+{
+    "name": "Nav",
+    "buttons": [
+        {
+            "label": "Main Menu",
+            "id": "menu"
+        },
+        {
+            "label": "Badges",
+            "id": "badge"
+        },
+        {
+            "label": "Resources",
+            "id": "resources"
+        },
+        {
+            "label": "Overall Progress",
+            "id": "progress"
+        },
+        {
+            "label": "Mute Music",
+            "id": "sound"
+        },
+        {
+            "label": "Unmute Music",
+            "id": "mute"
+        }
+    ]
+}

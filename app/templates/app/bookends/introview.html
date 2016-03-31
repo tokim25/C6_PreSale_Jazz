@@ -1,0 +1,35 @@
+<script type="text/template" id="introview-template">
+
+    <div id="intro-view" style="background-color:<%= colors.backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+
+        <div class="intro-container">
+            <div class="intro-elements"></div>
+
+            <div id="intro-rolechooser-container">
+                <h2 class="intro-rolechooser-title"><%= roleChooserLabel %></h2>
+                <div class="intro-rolechooser-input">
+                    <div class="input-item">
+                        <div class="input-label">name</div>
+                        <input id="intro-user-name" value="" type="text"/>
+                    </div>
+                    <div class="input-item">
+                        <div class="input-label">role</div>
+                        <select id="intro-user-role" class="styled-select" name="foo">
+                            <% _.each(roleChooser.roles, function(role){ %>
+                            <option value="<%= _.escape(role.id)%>">
+                                <%= _.escape(role.title) %>
+                            </option>
+                            <% }); %>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="intro-continue-button" class="main-button continue-button" data-id="continue">Continue</div>
+        </div>
+
+
+    </div>
+
+</script>

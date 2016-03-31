@@ -1,0 +1,49 @@
+{
+    "menu": [
+        {
+            "name": "Intro to Products",
+            "id": "101",
+            "modules": [
+                {
+                    "title": "Intro to Products",
+                    "moduleName": "IntroPodcast",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/intro_podcast.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Module2",
+            "id": "102",
+            "modules": [
+                {
+                    "title": "Module2 Title",
+                    "moduleName": "Mod2Name",
+                    "path": "interactions/pageturner/module",
+                    "url": "data/interactions/pageturner_overview102.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Graduation",
+            "id": "107",
+            "modules": [
+                {
+                    "title": "Conclusion",
+                    "moduleName": "Conclusion",
+                    "path": "app/conclusion/conclusionmodule",
+                    "url": "data/app/conclusion.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        }
+    ]
+}

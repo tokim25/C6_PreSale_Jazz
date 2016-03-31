@@ -1,0 +1,68 @@
+{
+    "name": "Resources",
+    "groups": [
+        {
+            "label": "Third Party Served",
+            "role": "all",
+            "links": [
+                {
+                    "type": "link",
+                    "text": "Pandora Advertising Product Specs",
+                    "url": "http://advertising.pandora.com/products-specs/"
+                },
+                {
+                    "type": "link",
+                    "text": "Creative Specs Wiki Page",
+                    "url": "https://wiki.savagebeast.com/display/SALESOPS/Creative+Specs"
+                },
+                {
+                    "type": "link",
+                    "text": "Creative Asset Specifications",
+                    "url": "https://wiki.savagebeast.com/display/CS/Creative+Asset+Specs"
+                },
+                {
+                    "type": "link",
+                    "text": "Third Party Vendor Acceptance Matrix",
+                    "url": "https://wiki.savagebeast.com/display/SALESOPS/3rd+Party+Vendor+Acceptance+Matrix"
+                },
+                {
+                    "type": "link",
+                    "text": "Product Guides",
+                    "url": "https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&searchTerm=product%20guide&shepherdToken=VmpFPSxNakF4TlMwd055MHlPVlF4T0RveU5Ub3lPUzR4TVRkYSxwRFFOLE9XUmlPREl4&searchExtensions=%5B%5D&searchWorkspaceIds=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&resultsListType=s&searchRefreshFacets=false"
+                }
+            ]
+        },
+        {
+            "label": "YieldMax Pricing Guidance Tool",
+            "role": ["performance"],
+            "links": [
+                {
+                    "type": "link",
+                    "text": "YieldMax Pricing Guidance Tool",
+                    "url": "https://sv5-tableauqa-1.savagebeast.com/views/PricingGuide_YieldMax/NEWImpressionDistribution?:embed=y&:display_count=no"
+                },
+                {
+                    "type": "link",
+                    "text": "YieldMax Pricing Guidance document",
+                    "url": "https://docs.google.com/spreadsheets/d/1TNr88VNf_sWxQhhEqjwRAAVEE4oxToJjafGDx8uSdOs/edit#gid=2112918301&vpid=A1"
+                },
+                {
+                    "type": "link",
+                    "text": "PYM's policies for performance campaigns",
+                    "url": "https://pandora.my.salesforce.com/06940000001cZjs"
+                }
+            ]
+        },
+        {
+            "label": "Advertiser Objectives Matrix",
+            "role": "all",
+            "links": [
+                {
+                    "type": "link",
+                    "text": "Using the Advertiser Objectives Matrix and Marketing Funnel",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026kLr"
+                }
+            ]
+        }
+    ]
+}

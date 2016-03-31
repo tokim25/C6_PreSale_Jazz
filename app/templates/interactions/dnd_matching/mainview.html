@@ -1,0 +1,50 @@
+<script type="text/template" id="mainview-template">
+
+    <div id="players-view" style="background-color:<%= backgroundColor %>;">
+        <div class="bg-texture"></div>
+
+        <h1 class="module-title unselectable"><%= name %></h1>
+
+        <div class="players-hrule"></div>
+        <div class="players-description-container" style="width:<%=items.length * 456%>px;">
+
+            <% _.each(items, function (item, index) { %>
+            <div class="players-description" id="players-description-<%= item.id %>" data-id="<%= item.id %>" >
+                <div class="content unselectable"><%= item.description %></div>
+                <div class="players-polaroid" data-snap="snapped-<%= index %>">
+                    <div class="players-shadow"></div>
+                    <img class="players-polaroid-pic" src="assets/images/players/<%= item.id %>.jpg" />
+                    <div class="players-polaroid-frame snapped-<%= index %>"></div>
+                    <div class="players-polaroid-label unselectable"><%= item.title %></div>
+
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        <div class="players-polaroid-container" style="width:<%=items.length * 300%>px;">
+            <% items = _.shuffle(items) %>
+            <% _.each(items, function (item, index) { %>
+            <div class="players-polaroid players-polaroid-<%= index %>" data-id="<%= item.id %>">
+                <div class="players-shadow"></div>
+                <img class="players-polaroid-pic" src="assets/images/players/<%= item.id %>.jpg" />
+                <div class="players-polaroid-frame"></div>
+                <div class="players-polaroid-label unselectable"><%= item.title %></div>
+
+            </div>
+            <% }); %>
+        </div>
+
+        <div class="main-button submit-button">Check Answers</div>
+
+        <div class="scrim-background"></div>
+
+        <div class="popup-container"></div>
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+
+    </div>
+
+
+</script>

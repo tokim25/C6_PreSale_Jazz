@@ -1,0 +1,88 @@
+#creative-view {
+  @extend %view;
+}
+
+.creative-radio-container {
+  @include center-align;
+  width: 850px;
+  height: 607px;
+  background: url(../assets/images/creativepolicies/cta-bg.png) no-repeat;
+}
+
+.creative-radio-station-label {
+  position: absolute;
+  bottom: 115px;
+  color: #ff6;
+  left: 215px;
+  font-family: 'Codystar';
+  font-size: 30px;
+  width: 320px;
+  text-align: center;
+}
+
+.creative-submit-button {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  right: 212px;
+  bottom: 103px;
+  background: url(../assets/images/creativepolicies/cta-submit-button.png) no-repeat;
+  cursor: pointer;
+  &:hover {
+    background-position: 0 -66px;
+  }
+
+  &::after {
+    content: 'SUBMIT';
+    font-family: $font-body;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    color: white;
+    @include horizontal-align;
+    bottom: -16px;
+  }
+}
+
+.creative-buttons {
+  @include horizontal-align;
+  bottom: 25px;
+  height: 32px;
+  width: 518px;
+  & .creative-cta-button {
+    position: relative;
+    width: 70px;
+    height: 34px;
+    background: url(../assets/images/creativepolicies/cta-button.png) no-repeat;
+    margin-right: 4px;
+    float: left;
+    cursor: pointer;
+    &:last-of-type {
+      margin-left: 0px;
+    }
+    &:hover {
+      background-position: 0 -34px;
+      & p {
+        color: #ffc;
+      }
+    }
+    &.selected {
+      background-position: 0 -68px;
+      & p {
+        color: #ff76d6;
+      }
+    }
+    & p {
+      text-align: center;
+      padding: 3px;
+      color: rgba(255,255,255,0.6);
+    }
+  }
+
+}
+
+.creative-question-container {
+  color: white;
+  width: 500px;
+  @include horizontal-align;
+  bottom: 220px;
+}

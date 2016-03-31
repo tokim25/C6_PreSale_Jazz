@@ -1,0 +1,39 @@
+{
+    "name": "Third Party Served",
+
+    "assetManifest": [
+        {"id": "popup-bg", "src": "assets/images/ui/popup/splatter_box/splatter-top.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#bb27dd"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "items": [
+        {
+            "id": "case1",
+            "header": "Title",
+            "subheader": "Subhead",
+            "body": [
+                "<p></p>"
+            ]
+
+        }
+    ]
+}

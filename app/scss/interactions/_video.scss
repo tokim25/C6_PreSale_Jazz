@@ -1,0 +1,63 @@
+#video-view {
+  @extend %view;
+
+  & .main-button {
+    right: 3%;
+    bottom: 3%;
+  }
+}
+
+.video-container {
+  @include center-align();
+  width: 75%;
+
+  pointer-events: none;
+
+  & video {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  box-sizing: border-box;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #f707d2;
+    @include border-radius(4px);
+    box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5);
+  }
+
+  border: 3px solid #f707d2;
+  box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5);
+
+
+}
+
+.video-embedded-container {
+  pointer-events: none;
+  @include center-align();
+  width: 1000px;
+  height: 563pxpx;
+  pointer-events: none;
+  box-sizing: border-box;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #f707d2;
+    @include border-radius(4px);
+    box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5);
+  }
+
+  border: 3px solid #f707d2;
+  box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5);
+
+}

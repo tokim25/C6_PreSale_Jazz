@@ -1,0 +1,83 @@
+{
+    "name": "Audio 2.0",
+
+    "assetManifest": [
+        {"id": "audio2-bg-bl", "src": "assets/images/splashpages/audio2-bg-bl.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#3d8c95",
+        "highlightColor": "#FFFF66",
+        "accentColor": "#ff58ee"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "questions": [
+        {
+            "question": "<p></p>",
+            "platform": 0,
+            "everywhere": 6,
+            "feedback": {
+                "correct": {
+                    "header": "That's right!",
+                    "body": ["<p>This is the correct feedback...</p>"]
+                },
+                "wrong": {
+                    "header": "Try again.",
+                    "body": ["<p>This is the incorrect feedback...</p>"]
+                }
+            },
+            "slots": [
+                {
+                    "accept": [
+                        "everywhere",
+                        "platform"
+                    ]
+                },
+                {
+                    "accept": [
+                        "everywhere"
+                    ]
+                },
+                {
+                    "accept": [
+                        "everywhere",
+                        "platform"
+                    ]
+                },
+                {
+                    "accept": [
+                        "everywhere"
+                    ]
+                },
+                {
+                    "accept": [
+                        "everywhere",
+                        "platform"
+                    ]
+                },
+                {
+                    "accept": [
+                        "everywhere",
+                        "platform"
+                    ]
+                }
+            ]
+        }
+    ]
+}

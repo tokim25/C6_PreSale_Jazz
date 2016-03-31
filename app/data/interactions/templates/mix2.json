@@ -1,0 +1,118 @@
+{
+    "name": "Mix It Up",
+    "assetManifest": [
+        {
+            "id": "image2",
+            "src": "assets/images/players/player2.jpg"
+        },
+        {
+            "id": "image2",
+            "src": "assets/images/players/player3.jpg"
+        }
+    ],
+
+    "backgroundColor": "#c95f46",
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "labels": {
+            "phases": [
+                {
+                    "id": "postlaunch",
+                    "label": "Post-Launch"
+                },
+                {
+                    "id": "prelaunch",
+                    "label": "Pre-Launch"
+                },
+                {
+                    "id": "postsale",
+                    "label": "Post-Sale"
+                },
+                {
+                    "id": "presale",
+                    "label": "Pre-Sale"
+                }
+            ]
+        }
+    },
+    "roles": [
+        {
+            "id": "ae",
+            "label": "Account Executive",
+            "phases": {
+                "presale": {
+                    "header": "Pre-Sale",
+                    "body": "<p><b>The AE will be responsible for:</b></p><p><ul><li>owning direct client communication on all account RFPs</li><li>communicating with the account strategist on Market Reports and including the AS on all client communication</li><li>sending the media plan and proposal deck to the client</li></ul></p>"
+                },
+                "postsale": {
+                    "header": "Post-Sale",
+                    "body": "<p><b>The AE will be responsible for:</b></p><p><ul><li>staying aware of communication from pod, where they may need assistance managing through challenging situations with client</li></ul></p>"
+                },
+                "prelaunch": {
+                    "header": "Pre-Launch",
+                    "body": "<p><b>The AE will be responsible for:</b></p><p><ul><li>assisting the Account Strategist to build the kickoff call agendas</li></ul></p>"
+                },
+                "postlaunch": {
+                    "header": "Post-Launch",
+                    "body": "<p><b>The AE will be responsible for:</b></p><p><ul><li>managing the day-to-day communications with the client</li><li>supervising optimization recommendations, incremental media plans and mid-campaign reports made by the account strategist</li><li>submitting and managing any PYM make-good cases</li><li>supervising the campaign wrap up report made by the account strategist</li><li>sending the wrap up report, upsell recommendations and renewal recommendations to the client</li></ul></p>"
+                }
+            }
+        },
+        {
+            "id": "as",
+            "label": "Account Strategist",
+            "phases": {
+                "presale": {
+                    "header": "Pre-Sale",
+                    "body": "<p><b>The AS will be responsible for:</b></p><p><ul><li>providing support on RFPs or instances where the AE can not respond</li><li>supervising the media planning process made by the campaign specialist</li><li>pulling screenshots and creating the proposal deck</li><li>submitting PYM pricing approval and COGS approval requests</li><li>supervising the Slingshot order management process done by the campaign specialist</li><li>identifying strategic initiatives and opportunities to align with client KPIs, both inside and outside of a formal RFP process, and presenting those to the AE to deliver to the client</li></ul></p>"
+                },
+                "postsale": {
+                    "header": "Post-Sale",
+                    "body": "<p><b>The AS will be responsible for:</b></p><p><ul><li>supervising the internal IO approval process done by the campaign specialist</li><li>supervising any sponsorship requests made by the campaign specialist</li></ul></p>"
+                },
+                "prelaunch": {
+                    "header": "Pre-Launch",
+                    "body": "<p><b>The AS will be responsible for:</b></p><p><ul><li>leading the internal kickoff call process</li><li>leading the external kickoff call process</li><li>managing day-to-day communication with the account executive about products, assets, timelines, etc.</li><li>submitting ad guidelines review requests</li><li>submitting approval to run requests</li></ul></p>"
+                },
+                "postlaunch": {
+                    "header": "Post-Launch",
+                    "body": "<p><b>The AS will be responsible for:</b></p><p><ul><li>respond to Account Executive inquiries on campaign status and performance</li><li>analyzing campaign delivery and performance against client objectives and KPIs</li><li>making optimization recommendations</li><li>building and sending incremental/upsell media plans to the AE</li><li>building and sending mid-campaign report to the AE</li><li>creating campaign wrap reports</li><li>adding billing notes for nuances during the post-launch phase</li><li>managing month end billing close and responding to billing cases</li></ul></p>"
+                }
+            }
+        },
+        {
+            "id": "cs",
+            "label": "Campaign Specialist",
+            "phases": {
+                "presale": {
+                    "header": "Pre-Sale",
+                    "body": "<p><b>The CS will be responsible for:</b></p><p><ul><li>pulling inventory forecasts/avails</li><li>creating and revising media plans</li><li>completing the client’s media plan template and spec sheet</li><li>entering plan details into third party order management systems</li><li>pulling and analyzing research requests for pitches, wrap ups or ad hoc needs</li><li>booking sponsorship requests</li></ul></p>"
+                },
+                "postsale": {
+                    "header": "Post-Sale",
+                    "body": "<p><b>The CS will be responsible for:</b></p><p><ul><li>managing the IO approval process</li><li>confirming sponsorship requests</li></ul></p>"
+                },
+                "prelaunch": {
+                    "header": "Pre-Launch",
+                    "body": "<p><b>The CS will be responsible for:</b></p><p><ul><li>creating ad ops castles in Salesforce and campaign folders on the Shared Drive</li><li>building and sending the client timelines for creative deliverables, asset requests, ad spec sheets, and creative production requirements</li><li>responding to client inquiries regarding products, assets, timelines, etc.</li><li>confirming third party billing ad server login details</li><li>reviewing and validating third party tags</li><li>submitting Creative Services JIRA tasks</li><li>managing communication with creative production vendors</li><li>managing client approval of Pandora produced display and audio creative</li><li>submitting and managing AdTech, Trafficking and Theorem requests</li><li>trafficking line items</li><li>testing, taking and managing screenshots</li></ul></p>"
+                },
+                "postlaunch": {
+                    "header": "Post-Launch",
+                    "body": "<p><b>The CS will be responsible for:</b></p><p><ul><li>pulling and sending launch reports and live confirmation emails to the client</li><li>maintaining the ad ops castle</li><li>monitoring campaign delivery and performance</li><li>pulling campaign delivery reports</li><li>managing the RIO approval process</li><li>updating placement-level billing ad server information</li></ul></p>"
+                }
+            }
+        }
+    ]
+}

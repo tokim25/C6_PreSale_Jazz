@@ -1,0 +1,116 @@
+@mixin content-container {
+  width: 100%;
+  max-width: $max-width;
+  position: absolute;
+  top: 0px;
+}
+
+@mixin border-radius ($val1){
+  -moz-border-radius: $val1;
+  -webkit-border-radius: $val1;
+  border-radius: $val1;
+}
+
+@mixin box-shadow ($val1, $val2:0px 0px 0px){
+  -moz-box-shadow:$val1, $val2;
+  -webkit-box-shadow:$val1, $val2;
+
+
+  box-shadow:$val1,$val2;
+}
+
+@mixin scale_x-y ($x, $y) {
+  left: percentage($x / $max-width);
+  top: percentage($y / $max-height);
+}
+
+
+@mixin scale_w-h ($width, $height) {
+  position: absolute;
+  width: percentage($width / $max-width);
+  height: percentage($height / $max-height);
+}
+
+@mixin scale_x-y-w-h ($x, $y, $width, $height) {
+  @include scale_x-y($x, $y);
+  @include scale_w-h($width, $height);
+}
+
+@mixin scaleX ($percent) {
+  -moz-transform: scaleX($percent);
+  -o-transform: scaleX($percent);
+  -webkit-transform: scaleX($percent);
+  transform: scaleX($percent);
+}
+@mixin scaleY ($percent) {
+  -moz-transform: scaleY($percent);
+  -o-transform: scaleY($percent);
+  -webkit-transform: scaleY($percent);
+  transform: scaleY($percent);
+}
+
+@mixin scale ($percentX, $percentY) {
+  -webkit-transform: scale($percentX, $percentY);
+  transform: scale($percentX, $percentY);
+}
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin center-align {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+@mixin gradient ($color1, $color2) {
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(top,  $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $color1 0%,$color2 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $color1 0%,$color2 100%); /* W3C */
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+
+@mixin transparent-button ($width, $height) {
+  width: $width;
+  height: $height;
+  opacity: 0.0;
+  cursor: pointer;
+}
+
+%unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+

@@ -1,0 +1,57 @@
+.scrim-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  background: rgba(0,0,0,0.3);
+
+
+}
+
+
+.bg-texture {
+  background: url(../assets/images/textures/bg-texture.jpg) repeat-y;
+  @include horizontal-align();
+  position: absolute;
+  width: 100vw;
+  max-width: $max-width;
+  top: 0px;
+  bottom: 0px;
+  mix-blend-mode: multiply;
+}
+
+.module-title {
+  @include horizontal-align();
+
+  width: 800px;
+  height: 40px;
+  top: 2%;
+  @extend %unselectable;
+  & h1 {
+    text-align: center;
+    font-size: 2.8em;
+    margin: 3px 0px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+  }
+  /*&::before {
+    position: absolute;
+    background: url(../assets/images/ui/title-splatter-bg.png) no-repeat center center;
+    background-size: contain;
+    width: 402px;
+    height: 253px;
+    top: -110px;
+    //left: -15px;
+    z-index: -1;
+    content: '';
+  }*/
+
+
+}
+
+
+.unselectable {
+  @extend %unselectable;
+}
