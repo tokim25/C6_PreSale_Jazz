@@ -1,0 +1,98 @@
+{
+    "name": "Broadcast Processes in the Life of a Deal",
+
+    "assetManifest": [
+        {"id": "img", "src": "assets/images/instruments/img.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#620c5f"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Introduction",
+                "body": "<p>I feel it in my fingers, I feel it in my toes! IPAW is all around you, so your time savings grow! Let's see where IPAW pops up in the Order Entry Wizard and the Plan View. </p>"
+            },
+            {
+                "header": "Directions",
+                "body": "<p>Click on the icons to learn more!</p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Conclusion",
+                "body": "<p>Ya see, kids? We don’t lie- IPAW *is* everywhere in Slingshot! Now let’s paint this town with the next jive.</p>"
+            },
+            {
+                "header": "Badge Earned",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "items": [
+        {
+            "id": "item1",
+            "hotspot": {"x": "", "y": ""},
+            "image": {
+                "id": "",
+                "coords": {"x": "", "y": ""}
+            },
+            "label": "Calculations Field",
+            "body": "<p>List rates display in Slingshot in the calculations field. These are the same rates from your rate card!</p>"
+        },
+        {
+            "id": "item2",
+            "hotspot": {"x": "", "y": ""},
+            "image": {
+                "id": "",
+                "coords": {"x": "", "y": ""}
+            },
+            "label": "CPM/CPP Field",
+            "body": "<p>Rates will highlight in red if they are beyond the discount threshold.</p>"
+        },
+        {
+            "id": "item3",
+            "hotspot": {"x": "", "y": ""},
+            "image": {
+                "id": "",
+                "coords": {"x": "", "y": ""}
+            },
+            "label": "Product List",
+            "body": "<p>Each ad product you build for your order shows up in this product list view. If the rate is beyond the discount threshold, that product's total will highlight in red.</p>"
+        },
+        {
+            "id": "item4",
+            "hotspot": {"x": "", "y": ""},
+            "image": {
+                "id": "",
+                "coords": {"x": "", "y": ""}
+            },
+            "label": "CPM/CPP Column",
+            "body": "<p>In case you missed it in the Order Entry Wizard view, any troublesome rates will pop up here! If your product's rate is beyond the discount threshold, it'll highlight in red.</p>"
+        },
+        {
+            "id": "item5",
+            "hotspot": {"x": "", "y": ""},
+            "image": {
+                "id": "",
+                "coords": {"x": "", "y": ""}
+            },
+            "label": "PYM Status Bar",
+            "body": "<p>This status bar tells you your Deal Score and Average Line Spend. If either value has a pricing approval issue, it'll underline in red. </p>"
+        },
+        {
+            "id": "item6",
+            "hotspot": {"x": "", "y": ""},
+            "image": {
+                "id": "",
+                "coords": {"x": "", "y": ""}
+            },
+            "label": "Submit For Approval",
+            "body": "<p>If your order needs PYM approval, you'll need to submit it to PYM for approval before sending it to the client. A Submit for PYM Approval button appears if your deal score or average line spend have pricing approval issues.</p>"
+        }
+    ]
+}

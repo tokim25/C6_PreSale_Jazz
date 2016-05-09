@@ -1,0 +1,270 @@
+{
+    "name": "PYM Approvals",
+
+    "assetManifest": [
+        {
+            "id": "img1",
+            "src": "assets/images/pt-directory/img1.png"
+        }
+    ],
+    "colors": {
+        "backgroundColor": "#5bbcc8"
+    },
+
+    "behavior": {
+        "enter_down": "enter",
+        "leave_down": "leave",
+        "enter_up": "reverse",
+        "leave_up": "reverse"
+    },
+
+    "elements": [
+        {
+            "id": "img-1",
+            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "props": {
+                "left": "0px",
+                "top": "5%"
+            }
+        }
+    ],
+
+    "scenes": [
+        
+        {
+            "id": "s1",
+            "bg_color": "#993333",
+            "text": {
+                "header": "PYM Approvals",
+                "body": "<p>Every now and then, your recommended media plan might have a pricing approval issue. Hey, it happens! If that happens, you'll submit your plan to PYM for approval through Slingshot. But what happens after that?</p><p>Move the timeline from left to right to see the basic steps for pricing approval</p>",
+                "class": "align-center-wide"
+            },
+            "interaction": {
+                "name": "cr_pym_s1",
+                "id": "cr-pym-s1",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Step 1",
+                        "body": "<p>When you submit an order for PYM approval, Slingshot generates a Salesforce approval case. This is what alerts PYM that your plan need their attention.</p>"
+                    },
+                    {
+                        "header": "Step 2",
+                        "body": "<p>You might need to revise your plan a few times for PYM to approve it. Any following submissions or resubmissions go to the same approval case. And each new submission becomes a new comment. This makes it easy for PYM to track what's been going on with your plan.	</p>"
+                    },
+                    {
+                        "header": "Step 3",
+                        "body": "<p>Congrats! Your plan's approved and the Export feature has unlocked! Now, you can export your media plan to the client! You can also generate an insertion order or submit an insertion order for approval.</p>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-pym-s1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-pym-s1 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-pym-s1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-pym-s1 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "bg_color": "#993333",
+            "text": {
+                "header": "",
+                "body": "<p></p>",
+                "class": "align-center-wide"
+            },
+            "interaction": {
+                "name": "cr_pym_s2",
+                "id": "cr-pym-s2",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "",
+                        "body": "<p>Sponsorships (Matterhorn request)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>High Share of Voice (Matterhorn request)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Product Minimum Spend (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Added Value is greater than 10 percent, or if it falls outside of Pandora’s Added Value Policy (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Inventory booking issues (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Makegoods (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Make wholes (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Probono (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Third party verification (Salesforce approval case)</p>"
+                    },
+                    {
+                        "header": "",
+                        "body": "<p>Under-delivery (Salesforce approval case)</p>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-pym-s2",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-pym-s2 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-pym-s2",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-pym-s2 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s3",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Nice Work!",
+                "body": "<p>You did it! Pricing approvals aren't that scary. And with resources like Slingshot to keep you in the clear, it should make sales planning a cinch!</p><p>If you want any practice with pricing approvals before working on a real campaign, don't sweat it! Just practice in our Slingshot training environment! </p>",
+                "class": "align-right"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s4",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Resources",
+                "body": "<ul><li><a href='https://wiki.savagebeast.com/display/eng/Integrated+Pricing+Approvals+Workflow+%28IPAW%29+FAQ' target='_blank'>IPAW FAQ Wiki page</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0dzJWbVN5V1ppVUE/view?usp=sharing' target='_blank'>IPAW in the Order Entry Wizard for Digital Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0WlZRNFBCemFyQk0/view?usp=sharing' target='_blank'>IPAW in the Order Entry Wizard for Broadcast Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0OTZTODFOeDVXRjQ/view?usp=sharing' target='_blank'>IPAW in the Plan View for Digital Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0MjJCcHpSamFxNjQ/view?usp=sharing' target='_blank'>IPAW in the Plan View for Broadcast Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0eHEwM2ZvRjBWQ3M/view?usp=sharing' target='_blank'>Submitting IPAW Cases</a></li></ul>",
+                "class": "align-right"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        }
+
+    ]
+}

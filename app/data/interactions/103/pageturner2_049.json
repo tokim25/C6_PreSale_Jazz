@@ -1,5 +1,5 @@
 {
-    "name": "Overview",
+    "name": "The IPAW Laws",
 
     "assetManifest": [
         {
@@ -30,74 +30,37 @@
     ],
 
     "scenes": [
+        
         {
-            "id": "basic",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            }
-        },
-        {
-            "id": "basicWithItems",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            },
-            "enter": [
-                {
-                    "id": "img-1",
-                    "type": "from",
-                    "duration": 0.5,
-                    "startTime": 0.3,
-                    "props": {
-                        "autoAlpha": 0.0,
-                        "right": "80%",
-                        "ease": "Back.easeOut"
-                    }
-                }
-            ],
-            "leave": [
-                {
-                    "id": "img-1",
-                    "type": "to",
-                    "duration": 0.5,
-                    "startTime": 0.3,
-                    "props": {
-                        "autoAlpha": 0.0
-                    }
-                }
-            ]
-        },
-        {
-            "id": "lifeofdeal",
+            "id": "s1",
             "bg_color": "#993333",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "header": "The IPAW Laws",
+                "body": "<p>There are no actual laws for IPAW. But if you want your plan's pricing to auto-approve, you'll need to make sure that it's following three rules. </p><p>Click on each rule to find out more about the IPAW rules.</p>",
+                "class": "align-center-wide"
             },
             "interaction": {
-                "name": "cr_process",
-                "id": "css-item-container",
+                "name": "cr_ipaw2_s1",
+                "id": "cr-ipaw2-s1",
                 "type": "clickReveal",
                 "items": [
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "Rule Number 1",
+                        "body": "<p>Keep the average of all non-$0 lines, including flighted lines, greater than $500.</p>"
                     },
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "Rule Number 2",
+                        "body": "<p>The CPM rates for some line items can be below the discount threshold. That's as long as other CPM rates make up the difference in revenue.</p>"
+                    },
+                    {
+                        "header": "Rule Number 3",
+                        "body": "<p>Some CPPs can be below the SQAD range Gross CPP Low, as long as other CPPs make up the difference in revenue. </p>"
                     }
                 ]
             },
             "enter": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-ipaw2-s1",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -106,7 +69,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-ipaw2-s1 .reveal-item",
                     "type": "staggerFrom",
                     "duration": 0.3,
                     "startTime": 0.8,
@@ -118,7 +81,7 @@
             ],
             "leave": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-ipaw2-s1",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -127,7 +90,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-ipaw2-s1 .reveal-item",
                     "type": "staggerTo",
                     "duration": 0.3,
                     "startTime": 0.8,

@@ -1,5 +1,5 @@
 {
-    "name": "Shake it Like a Polaroid",
+    "name": "Benefits of IPAW",
 
     "assetManifest": [
         {
@@ -11,13 +11,21 @@
     "text": {
         "splash": [
             {
+                "header": "Introduction",
+                "body": "<p>Line item spends! Deal scores! Discount thresholds! Oh my! All this seems like a lot to balance to get a media plan to a client. Let's see how IPAW and Slingshot benefit the everyone involved in the pre-sale phase.</p>"
+            },
+            {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Click on each icon to read how IPAW benefits each </p>"
             }
         ],
         "conclusion": [
             {
-                "header": "Directions",
+                "header": "Conclusion",
+                "body": "<p>Conclusion Text Now that you know how to track pricing for your orders with IPAW, it’s time to jive on, Slick!</p>"
+            },
+            {
+                "header": "Badge Earned",
                 "body": "<p></p>"
             }
         ],
@@ -26,19 +34,19 @@
 
     "items": [
         {
-            "id": "player1",
-            "title": "The Client",
-            "description": "<p></p>"
+            "id": "item1",
+            "title": "PYM",
+            "description": "<p>The good ol' Pricing and Yield Management team! Pricing approvals through Slingshot mean client services submits fewer orders to PYM. That means they can focus on orders with negative deal scores and low average line item spends. That's a faster turnaround time for everyone!</p>"
         },
         {
-            "id": "player2",
-            "title": "The Media Buyer",
-            "description": "<p></p>"
+            "id": "item2",
+            "title": "Client Services",
+            "description": "<p>Less waiting for pricing approvals means faster sales planning! Slingshot simplifies the pricing approval process. That's because it integrates the discount threshold and the deal score, among other details. That'll help you make faster pricing decisions and to get that plan to your client asap!</p>"
         },
         {
-            "id": "player3",
-            "title": "The Publisher",
-            "description": "<p></p>"
+            "id": "item3",
+            "title": "Clients",
+            "description": "<p>Ain't nobody got time for that! We might be one of many publishers that are bidding for their budget. They want our media plan options now! With Slingshot's automated pricing approvals, it'll speed up the deal approval process. Fo sho.</p>"
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "name": "Overview",
+    "name": "IPAW",
 
     "assetManifest": [
         {
@@ -31,21 +31,12 @@
 
     "scenes": [
         {
-            "id": "basic",
+            "id": "s1",
             "bg_color": "#44aade",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            }
-        },
-        {
-            "id": "basicWithItems",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "header": "Overview",
+                "body": "<p>In the Pre-Sale phase, you'll need to make sure your media plan pricing meets or exceeds our thresholds. And you definitely have to make sure this happens before sending it to the client.</p><p>Discounting products and entire orders are a normal part of selling. That's what discount thresholds and added values are for. That gives you and your account executives the freedom to make quick pricing decisions. But if your pricing goes way under, you risk losing more money than generating.</p><p>That's why we have a simple solution to help track pricing for your orders. We call it the Integrated Pricing Approval Workflow, or IPAW for short.  </p>",
+                "class": "align-right"
             },
             "enter": [
                 {
@@ -73,31 +64,39 @@
             ]
         },
         {
-            "id": "lifeofdeal",
+            "id": "s2",
             "bg_color": "#993333",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "header": "What is IPAW",
+                "body": "<p>IPAW is a pricing approval system that's built right into Slingshot. It helps you during sales planning to save time and keep accountable. Let's see how!</p><p>Click on each icon to uncover how you'll see IPAW working in your Slingshot order.</p>",
+                "class": "align-left"
             },
             "interaction": {
-                "name": "cr_process",
-                "id": "css-item-container",
+                "name": "cr_ipaw1_s2",
+                "id": "cr-ipaw1-s2",
                 "type": "clickReveal",
                 "items": [
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "Auto-Approval and Submissions",
+                        "body": "<p>PYM can check every Slingshot orders for rates and line item minimum spends. If your plan meets their requirements, Slingshot auto-approves it! If it doesn't, Slingshot can submit it for PYM to review. Nice, right?</p>"
                     },
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "Up-to-date Rates",
+                        "body": "<p>Slingshot syncs the rates and discount thresholds from the rate card. And the user interface shows if the rate is lower than the threshold rate. That might be okay, depending on your average line item spend. But IPAW should help you to make better pricing decisions. </p>"
+                    },
+                    {
+                        "header": "Average Line Item Spend",
+                        "body": "<p>Sometimes, you might need to discount a line item by a lot! We get it, that happens. Chances are, your plan might still be auto-approved! Why? Slingshot verifies that the average line item spend is greater than $500 for the entire order. If it is, then you're in luck! If not, then you'll need to submit for PYM approval before you can export the plan for your client.</p>"
+                    },
+                    {
+                        "header": "The Deal Score",
+                        "body": "<p>On top of the average line item spend, keep an eye out for your order's Deal Score. The deal score calculates the difference between the expected revenue from your planned rates and the expected revenue from discount threshold rates. If that difference is positive, you're in the clear! If it's negative, you'll need to submit for PYM approval.</p>"
                     }
                 ]
             },
             "enter": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-ipaw1-s2",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -106,7 +105,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-ipaw1-s2 .reveal-item",
                     "type": "staggerFrom",
                     "duration": 0.3,
                     "startTime": 0.8,
@@ -118,7 +117,7 @@
             ],
             "leave": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-ipaw1-s2",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -127,7 +126,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-ipaw1-s2 .reveal-item",
                     "type": "staggerTo",
                     "duration": 0.3,
                     "startTime": 0.8,
