@@ -1,0 +1,40 @@
+{
+    "name": "Title",
+
+    "assetManifest": [
+        {"id": "", "src": "assets/images/INTERACTION/IMAGE.png"}
+    ],
+
+    "colors": {
+        "backgroundColor": "#3eb2de"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "items": [
+        {
+            "id": "itemID",
+            "audioID": "audioID",
+            "title": "ItemTitle",
+            "result": "correct|wrong",
+            "feedback": {
+                "title": "feedbackTitle",
+                "body": "feedbackBody"
+            }
+        }
+    ]
+}

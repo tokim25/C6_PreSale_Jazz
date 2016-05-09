@@ -1,0 +1,28 @@
+{
+    "name": "Digital Media Plans 2",
+
+    "assetManifest": [
+    ],
+
+    "colors": {
+        "backgroundColor": "#600f51"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "videoPath": "assets/videos/video2_045"
+}

@@ -1,53 +1,151 @@
 {
     "assetManifest": [
-        {"id": "graffiti1", "src": "assets/images/menu/graffiti1.png"}
+        {"id": "menu-bg", "src": "assets/images/menu/menu-mock.jpg"}
 
     ],
-    "colors": {"backgroundColor": "#854c9e"},
+    "colors": {"backgroundColor": "#e1e0e0"},
 
     "elements": [
         {
+            "id": "menu-dev-bg",
+            "el": "<img src='assets/images/menu/menu-mock.jpg'/>",
+            "props": {
+            }
+        },
+        {
             "id": "line-101",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 148 413.5'><polyline class='menu-path' points='0.5 0 0.5 131 145.2 131 145.2 413 127.1 413 '/></svg></div>",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "20px",
-                "top": "735",
-                "width": "148",
-                "height": "413"
+                "marginLeft": "-155px",
+                "top": "585",
+                "width": "306",
+                "height": "837"
             }
         },
         {
-            "id": "wall",
-            "el": "<img src='assets/images/menu/wall.png' />",
+            "id": "line-102",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
             "props": {
-                "top": "3635",
-                "left": "55%",
-                "marginLeft": "-275px"
+                "left": "50%",
+                "marginLeft": "-242px",
+                "top": "1635",
+                "width": "653",
+                "height": "563"
             }
         },
         {
-            "id": "banner-1",
-            "class": "menu-banner",
-            "el": "<div><div class='content'></div></div>",
+            "id": "line-103",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-441px",
-                "top": "866px"
+                "marginLeft": "-263px",
+                "top": "2430",
+                "width": "612",
+                "height": "550"
+            }
+        },
+        {
+            "id": "line-104",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "-306px",
+                "top": "3255",
+                "width": "612",
+                "height": "551"
+            }
+        },
+        {
+            "id": "line-105",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "-650px",
+                "top": "3830",
+                "width": "386",
+                "height": "877"
+            }
+        },
+        {
+            "id": "line-106",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "-264px",
+                "top": "4882",
+                "width": "666",
+                "height": "839"
+            }
+        },
+        {
+            "id": "line-107",
+            "class": "menu-line",
+            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "props": {
+                "left": "50%",
+                "marginLeft": "-264px",
+                "top": "4882",
+                "width": "666",
+                "height": "839"
             }
         },
         {
             "id": "mod-1",
             "class": "menu-module",
-            "el": "<div><div class='content'></div></div>",
+            "el": "<div><div class='content'><h1 id='banner-1' class='menu-mod-header'></h1></div></div>",
             "props": {
-                "left": "50%",
-                "marginLeft": "-315px",
-                "top": "1061px",
-                "rotation": "-2deg"
+            }
+        },
+        {
+            "id": "mod-2",
+            "class": "menu-module",
+            "el": "<div><div class='content'><h1 id='banner-2' class='menu-mod-header'></h1></div></div>",
+            "props": {
+            }
+        },
+        {
+            "id": "mod-3",
+            "class": "menu-module",
+            "el": "<div><div class='content'><h1 id='banner-3' class='menu-mod-header'></h1></div></div>",
+            "props": {
+            }
+        },
+        {
+            "id": "mod-4",
+            "class": "menu-module",
+            "el": "<div><div class='content'><h1 id='banner-4' class='menu-mod-header'></h1></div></div>",
+            "props": {
+            }
+        },
+        {
+            "id": "mod-5",
+            "class": "menu-module",
+            "el": "<div><div class='content'><h1 id='banner-5' class='menu-mod-header'></h1></div></div>",
+            "props": {
+            }
+        },
+        {
+            "id": "mod-6",
+            "class": "menu-module",
+            "el": "<div><div class='content'><h1 id='banner-6' class='menu-mod-header'></h1></div></div>",
+            "props": {
+            }
+        },
+        {
+            "id": "mod-7",
+            "class": "menu-module",
+            "el": "<div><div class='content'><h1 id='banner-7' class='menu-mod-header'></h1></div></div>",
+            "props": {
             }
         }
+
 
 
     ],
@@ -60,28 +158,11 @@
             "animations": [
 
                 {
-                    "el": "mod-1",
-                    "scene": {
-                        "offset": 175,
-                        "triggerElement": "#banner-1"
-                    },
-                    "tween": {
-                        "type": "from",
-                        "duration": 0.5,
-
-                        "props": {
-                            "scale": 0.7,
-                            "rotation": "-=10deg",
-                            "ease": "Back.easeOut"
-                        }
-                    }
-                },
-                {
                     "el": "line-101 .menu-path",
                     "scene": {
-                        "duration": 450,
+                        "duration": 600,
                         "triggerElement": "#line-101",
-                        "offset": -150
+                        "offset": 100
                     },
                     "tween": {
                         "type": "to",
@@ -91,24 +172,117 @@
                             "ease": "Linear.easeNone"
                         }
                     }
-                },
+                }
+            ]
+        },
+        {
+            "id": "102",
+            "animations": [
+
                 {
-                    "el": "start",
+                    "el": "line-102 .menu-path",
                     "scene": {
-                        "triggerElement": "#line-101",
-                        "offset": 100
+                        "duration": 600,
+                        "triggerElement": "#line-102",
+                        "offset": 20
                     },
                     "tween": {
-                        "type": "from",
-                        "duration": 1.0,
+                        "type": "to",
+
                         "props": {
-                            "rotation": "-5deg",
-                            "scale": 0.5,
-                            "ease": "Bounce.easeOut"
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
                         }
                     }
                 }
+            ]
+        },
+        {
+            "id": "103",
+            "animations": [
 
+                {
+                    "el": "line-103 .menu-path",
+                    "scene": {
+                        "duration": 600,
+                        "triggerElement": "#line-103",
+                        "offset": 20
+                    },
+                    "tween": {
+                        "type": "to",
+
+                        "props": {
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "104",
+            "animations": [
+
+                {
+                    "el": "line-104 .menu-path",
+                    "scene": {
+                        "duration": 500,
+                        "triggerElement": "#line-104",
+                        "offset": 20
+                    },
+                    "tween": {
+                        "type": "to",
+
+                        "props": {
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "105",
+            "animations": [
+
+                {
+                    "el": "line-105 .menu-path",
+                    "scene": {
+                        "duration": 600,
+                        "triggerElement": "#line-105",
+                        "offset": 20
+                    },
+                    "tween": {
+                        "type": "to",
+
+                        "props": {
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "106",
+            "animations": [
+
+                {
+                    "el": "line-106 .menu-path",
+                    "scene": {
+                        "duration": 600,
+                        "triggerElement": "#line-106",
+                        "offset": 20
+                    },
+                    "tween": {
+                        "type": "to",
+
+                        "props": {
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
+                        }
+                    }
+                }
             ]
         }
     ]

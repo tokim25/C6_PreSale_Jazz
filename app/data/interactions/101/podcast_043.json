@@ -1,0 +1,22 @@
+{
+    "name": "Pre-Sale at Pandora",
+
+    "assetManifest": [
+    ],
+
+    "colors": {
+        "backgroundColor": "#600f51"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p>Hey daddy-o, join Tony and Erin during this smooth jam sesh to learn about what info RFPs have, and what media plans are for. Ready? Go!</p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "videoPath": "assets/videos/podcast_043_A"
+}

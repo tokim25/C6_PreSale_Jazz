@@ -1,0 +1,378 @@
+{
+    "name": "Overview",
+
+    "assetManifest": [
+        {
+            "id": "img1",
+            "src": "assets/images/102/img1.png"
+        }
+    ],
+    "colors": {
+        "backgroundColor": "#5bbcc8"
+    },
+
+    "behavior": {
+        "enter_down": "enter",
+        "leave_down": "leave",
+        "enter_up": "reverse",
+        "leave_up": "reverse"
+    },
+
+    "elements": [
+        {
+            "id": "img-1",
+            "el": "<img src='assets/images/102/img1.png'/>",
+            "props": {
+                "left": "0px",
+                "top": "5%"
+            }
+        }
+    ],
+
+    "scenes": [
+        {
+            "id": "s1",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Overview",
+                "body": "<p>The core deliverable of the pre-sale phase is the <b>media plan</b>. The core deliverable of the pre-sale phase is the media plan. </p><p>It’s like the first beats of song. That’s because it's our first opportunity to create a solid impressions. And it's our first chance to recommend strategies to meet their goals. They send out their RFP to multiple publishers, looking to invest in the best media plans. </p><p>That's why we want our media plan to showcase:</p><ul><li>our expertise with our ad product catalog</li><li>our media strategy skills</li><li>the badassery that is you and your pod</li></ul>",
+                "class": "align-right"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Who Does What?",
+                "body": "<p>Remember! Media plans don't guarantee that clients will run their campaign with us. Media plans are just proposals that we send back to the client. Clients choose us to run their campaigns when we sign an insertion order. </p><p>In this lesson, let's focus on who does what when building a media plan. Let's also highlight the core resources and systems needed in the pre-sale phase.</p>",
+                "class": "align-left"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s3",
+            "bg_color": "#993333",
+            "text": {
+                "header": "Media Planning Roles",
+                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. Many of these tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p><p>Click on each role to get a list of the media planning responsibilities owned by each role.</p>",
+                "class": "align-center-wide"
+            },
+            "interaction": {
+                "name": "cr_mediaplans_s3",
+                "id": "cr-mediaplans-s3",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Account Executive",
+                        "body": "<ul><li>Engages Client Services with the RFP</li><li>Develops initial media plan recommendations</li><li>Reviews media plan with the client for RFP alignment</li><li>Sends the media plan to the client</li><li>Submits and manages PYM pricing approval cases</li><li>Submits and manages COGS approval requests</li></ul>"
+                    },
+                    {
+                        "header": "Account Strategist",
+                        "body": "<ul><li>Develops initial media plan recommendations</li><li>Reviews media plan with the client for RFP alignment</li><li>Sends the media plan to the client</li><li>Submits and manages PYM pricing approval cases</li><li>Submits and manages COGS approval requests</li></ul>"
+                    },
+                    {
+                        "header": "Campaign Specialist",
+                        "body": "<ul><li>Enters first version of media plan into Slingshot</li><li>Pulls inventory forecasts</li><li>Revises media plan based on client feedback</li><li>Formats media plans using client templates</li><li>Enters plan details into the client's third party order management system</li></ul>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-mediaplans-s3",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-mediaplans-s3 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-mediaplans-s3",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-mediaplans-s3 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s4",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Teamwork",
+                "body": "<p>In a typical month, you might be a few media plans for some huge campaigns. Or you might be working on a ton of smaller campaigns at the same time.</p><p>That's why knowing how your team works together is critical. Teamwork is an important part of making the dream work. Knowing who handles what will help to start building trust between you and your pod. </p>",
+                "class": "align-right"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s5",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Third Party Media Plans and Media Buying Systems",
+                "body": "<p>Third party media plans are a common ask from clients during the media planning process. <b>Third party media plan templates</b> are also known as agency spec sheets. Many larger agencies might request us to format our media plans with their templates. That's so they can compare media plans across publishers without worrying about formatting issues. They want to make the metrics, products and budgets easy to compare across media plans. </p><p>Clients might also ask us to build media plans right into their own order management system. Just like we use Slingshot to make media planning easy, clients might use their own system too. Some examples of media planning systems they might use include STRATA, MediaOcean and Prisma. </p><p>In your pod, the campaign specialist handles both of these tasks. </p>",
+                "class": "align-right|align-left|align-center|align-center-wide"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        
+        {
+            "id": "s6",
+            "bg_color": "#993333",
+            "text": {
+                "header": "Media Planning Resources",
+                "body": "<p>Knowing who handles what task is only half the battle. Lucky for you we have tons of tools and resources to help you develop the best media plans for your clients. </p><p>Click on each of the tools listed for more details.</p>",
+                "class": "align-left"
+            },
+            "interaction": {
+                "name": "cr_mediaplans_s6",
+                "id": "cr-mediaplans-s6",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Product Guides",
+                        "body": "<p><a href='https://pandora.my.salesforce.com/sfc/#workspaceView?selectedWorkspaceId=05840000000HBNZ' target='_blank'>These documents</a> provide features, benefits, advertising objectives and specifications for our products. You can find them in the Salesforce Libraries.</p>"
+                    },
+                    {
+                        "header": "Avails Tool",
+                        "body": "<p>Use <a href='http://slingshot/aap/slingshot/forecast' target='_blank'>this tool</a> for quick spot checks of the available impression inventory. You'll get real-time avails data to help with client conversations.</p>"
+                    },
+                    {
+                        "header": "Slingshot",
+                        "body": "<p>Your <a href='http://slingshot/aap/slingshot/login?next=/slingshot/' target='_blank'>main tool</a> to build media plans. It’s also where you’ll go to pull avails for your entire order. You can even submit pricing approval requests, all in one place.</p>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-mediaplans-s6",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-mediaplans-s6 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-mediaplans-s6",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-mediaplans-s6 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s7",
+            "bg_color": "#993333",
+            "text": {
+                "header": "Title",
+                "body": "<p>The basic workflow for creating a media plan in Slingshot can be different for each media plan. Why? A big reason is it depends if you're building a Pandora media plan, or a media plan that uses an agency spec sheet. Let's try to figure out the core steps in the process!</p><p>First, let's learn about the Pandora Media Plan. Click each step of the workflow to uncover more details.</p>",
+                "class": "align-right|align-left|align-center|align-center-wide"
+            },
+            "interaction": {
+                "name": "cr_mediaplans_s7",
+                "id": "cr-mediaplans-s7",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Step 1: Create Media Plan and Pull Avails in Slingshot",
+                        "body": "<p>Campaign specialists plan out line items in Slingshot and pull the avails. That's how you figure out the percentage of inventory that's still available. Work with your pod to recommend revisions. Afterwards campaign specialists make the appropriate revisions to the media plan.</p>"
+                    },
+                    {
+                        "header": "Step 2: Revise Media Plan and Re-Pull Avails in Slingshot",
+                        "body": "<p>Some line items in your plan might not have enough inventory for your budget. Revise these line items and re-pull the impressions within Slingshot. You might need to revise your media plan a few times. </p><p>Afterwards, the account strategist or account executive sends it to the client. Media plan revisions can also occur after client feedback.</p>"
+                    },
+                    {
+                        "header": "Step 3: Recheck Avails after getting all Insertion Order signatures ",
+                        "body": "<p>After everyone's signed the insertion order, campaign specialists recheck impression inventory. This is to make sure that the inventory is still available to book in Slingshot.</p>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-mediaplans-s7",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-mediaplans-s7 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-mediaplans-s7",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-mediaplans-s7 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        }
+
+    ]
+}

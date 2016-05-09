@@ -1,0 +1,45 @@
+{
+    "name": "Shake it Like a Polaroid",
+
+    "assetManifest": [
+        {
+            "id": "image1","src": "assets/images/players/player1.jpg"}
+    ],
+
+    "backgroundColor": "#df476a",
+
+    "text": {
+        "splash": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Directions",
+                "body": "<p></p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "items": [
+        {
+            "id": "player1",
+            "title": "The Client",
+            "description": "<p></p>"
+        },
+        {
+            "id": "player2",
+            "title": "The Media Buyer",
+            "description": "<p></p>"
+        },
+        {
+            "id": "player3",
+            "title": "The Publisher",
+            "description": "<p></p>"
+        }
+    ]
+}
+

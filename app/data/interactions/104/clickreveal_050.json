@@ -1,12 +1,12 @@
 {
-    "name": "Third Party Served",
+    "name": "Title",
 
     "assetManifest": [
-        {"id": "popup-bg", "src": "assets/images/ui/popup/splatter_box/splatter-top.png"}
+        {"id": "", "src": "assets/images/INTERACTION/IMAGE.png"}
     ],
 
     "colors": {
-        "backgroundColor": "#bb27dd"
+        "backgroundColor": "#3eb2de"
     },
 
     "text": {
@@ -25,15 +25,16 @@
         "onscreenDirections": ""
     },
 
-    "elements": [
+    "items": [
         {
-            "id": "case1",
-            "header": "Third Party Creativity",
-            "subheader": "Why serve creative through a third party ad server?",
-            "body": [
-                "<p></p>"
-            ]
-
+            "id": "itemID",
+            "audioID": "audioID",
+            "title": "ItemTitle",
+            "result": "correct|wrong",
+            "feedback": {
+                "title": "feedbackTitle",
+                "body": "feedbackBody"
+            }
         }
     ]
 }

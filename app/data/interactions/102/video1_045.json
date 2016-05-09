@@ -1,8 +1,7 @@
 {
-    "name": "Podcast",
+    "name": "Digital Media Plans 1",
 
     "assetManifest": [
-        {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
     ],
 
     "colors": {
@@ -25,5 +24,5 @@
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/video1_045"
 }
