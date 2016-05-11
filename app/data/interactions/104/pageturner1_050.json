@@ -31,20 +31,11 @@
 
     "scenes": [
         {
-            "id": "basic",
+            "id": "s1",
             "bg_color": "#44aade",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            }
-        },
-        {
-            "id": "basicWithItems",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
+                "header": "Overview",
+                "body": "<p>You might know the Matterhorn as a mountain in the Swiss Alps, or as one of the best rides at Disneyland. At Pandora, Matterhorn is a reservation request system!</p><p>Let’s learn what Matterhorn is and when to use it. During your next check-in, ask your TA to give you a demonstration of how to use this tool for your campaigns. </p>",
                 "class": "align-right|align-left|align-center|align-center-wide"
             },
             "enter": [
@@ -73,31 +64,64 @@
             ]
         },
         {
-            "id": "lifeofdeal",
+            "id": "s2",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "What is Matterhorn?",
+                "body": "<p>Matterhorn is an internal reservation request system managed by PYM. Client Services uses this tool for campaigns that have heavy-ups, takeovers and/or sponsorship opportunities. Don't know what those terms mean? It's okay, we'll get to that in a little bit!</p><p>After Client Services requests a reservation, PYM can approve or deny it. They decide using a lot of different variables, like revenue and competing reservations. </p>",
+                "class": "align-right|align-left|align-center|align-center-wide"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s3",
             "bg_color": "#993333",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
+                "header": "Who uses Matterhorn?",
+                "body": "<p>Some client services teams might use Matterhorn for different purposes. Let's see how your team uses Matterhorn for your campaigns!</p><p>Click on both icons to see how different teams at Pandora use Matterhorn for their campaigns.</p>",
                 "class": "align-right|align-left|align-center|align-center-wide"
             },
             "interaction": {
-                "name": "cr_process",
-                "id": "css-item-container",
+                "name": "cr_matterhorn_s3",
+                "id": "cr-matterhorn-s3",
                 "type": "clickReveal",
                 "items": [
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "National, Local and Inside teams",
+                        "body": "<p>These teams use Matterhorn to request impression reservations. If PYM approves their request, client services can move forward with their campaign. If PYM denies their request, whoever submitted the Matterhorn request needs to withdraw it.</p>"
                     },
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "Performance team",
+                        "body": "<p>Account managers track Matterhorn's calendar to see which ad products are in high demand. Matterhorn lets them narrow down sponsorship reservations for specific products and demos. That's how account managers can optimize campaigns and make better product recommendations. Pretty cool, right?</p>"
                     }
                 ]
             },
             "enter": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-matterhorn-s3",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -106,7 +130,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-matterhorn-s3 .reveal-item",
                     "type": "staggerFrom",
                     "duration": 0.3,
                     "startTime": 0.8,
@@ -118,7 +142,7 @@
             ],
             "leave": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-matterhorn-s3",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -127,7 +151,151 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-matterhorn-s3 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s4",
+            "bg_color": "#993333",
+            "text": {
+                "header": "When to use Matterhorn?",
+                "body": "<p>So… when’s the right time to put in a reservation request? Usually, this happens in the pre-sale phase of your deal (duh).</p><p>Click on each icon to learn more.</p>",
+                "class": "align-right|align-left|align-center|align-center-wide"
+            },
+            "interaction": {
+                "name": "cr_matterhorn_s4",
+                "id": "cr-matterhorn-s4",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Developing a Media Mix",
+                        "body": "<p>While developing media plans, your pod might recommend a solution that requires a Matterhorn reservation. For instance, you may want to recommend a sponsorship product to your client. Or, you may want to recommend a product with a high share of voice.</p>"
+                    },
+                    {
+                        "header": "Client Services",
+                        "body": "<p>Campaign specialists create Matterhorn requests. This happens soon after account executives create Salesforce opportunities. </p><p>You can't pitch a campaign without making sure the impressions are available. You can only pitch your campaign after PYM approves your Matterhorn reservation request. If the client is accepts your plan, these impressions are yours to book! </p>"
+                    },
+                    {
+                        "header": "A Request is not a Reservation",
+                        "body": "<p>Booking a Matterhorn request doesn't guarantee a reservation. Other pods may book competing reservations with your opportunity. PYM will look at all requests and decide which to approve between conflicting reservations. That's why it's important to book your request as early in the pre-sale process as possible.</p>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-matterhorn-s4",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-matterhorn-s4 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-matterhorn-s4",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-matterhorn-s4 .reveal-item",
+                    "type": "staggerTo",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s5",
+            "bg_color": "#993333",
+            "text": {
+                "header": "Matterhorn Reservation Types",
+                "body": "<p>What's the difference between a takeover and heavy-up? What's a Pandora sponsorship and a DFP sponsorship? Let's explore what these terms mean, and how they fit into Matterhorn!</p><p>Click on the icons to learn more about each Matterhorn reservation type.</p>",
+                "class": "align-right|align-left|align-center|align-center-wide"
+            },
+            "interaction": {
+                "name": "cr_matterhorn_s5",
+                "id": "cr-matterhorn-s5",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Takeovers",
+                        "body": "<p>Takeovers are ad products that have a 100 percent share of voice. Takeover products include animated overlays, interstitials, billboards, first impressions and front door takeovers.</p>"
+                    },
+                    {
+                        "header": "Heavy Ups",
+                        "body": "<p>A heavy up is a way of saying that your ad product will have a share of voice, or SOV, higher than what PYM recommends. That means an SOV higher than 20 percent for audio products and 30 percent for non-audio products.</p>"
+                    },
+                    {
+                        "header": "Genre Stations",
+                        "body": "<p>It's time to break out the Pandora Latin Christmas genre station, and get our eggnog on! But only one advertiser can sponsor a genre station at a time. And we have a limited amount of genre stations. That's why you'll need to request a genre station reservation in Matterhorn!</p><p>The genre stations type here aren't just seasonal, like the Black History Month stations. You can also request reservations for ongoing genre stations, like a decades station!</p>"
+                    },
+                    {
+                        "header": "New Initiatives",
+                        "body": "<p>We're always coming out with new ways to delight advertisers and listeners. For example, Pandora was the first streaming service to provide Serial season 2! We even created native ad experiences like Sponsored Listening that only we can provide. Some clients jump at the chance to advertise with these new products. The demand may be way higher than the supply. That's why PYM sets up a reservation requests for new initiatives.</p>"
+                    }
+                ]
+            },
+            "enter": [
+                {
+                    "id": "cr-matterhorn-s5",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-matterhorn-s5 .reveal-item",
+                    "type": "staggerFrom",
+                    "duration": 0.3,
+                    "startTime": 0.8,
+                    "staggerOffset": 0.15,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "cr-matterhorn-s5",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0
+                    }
+                },
+                {
+                    "id": "cr-matterhorn-s5 .reveal-item",
                     "type": "staggerTo",
                     "duration": 0.3,
                     "startTime": 0.8,

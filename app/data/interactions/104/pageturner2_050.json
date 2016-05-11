@@ -31,20 +31,11 @@
 
     "scenes": [
         {
-            "id": "basic",
+            "id": "s1",
             "bg_color": "#44aade",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            }
-        },
-        {
-            "id": "basicWithItems",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
+                "header": "Using Matterhorn",
+                "body": "<p>Now that you have all the Matterhorn details, the last thing you need to know is how to use it!</p><p>Matterhorn reservations begin with a Salesforce opportunity and a conversation with your pod. Make sure you’re all on the same page about the media plan recommendations for this client. Afterwards, use the <b>Create Sponsorship</b> button in the opportunity to request a Matterhorn reservation.</p><p>Check out this video to walk you through the Matterhorn user interface</p>",
                 "class": "align-right|align-left|align-center|align-center-wide"
             },
             "enter": [
@@ -73,67 +64,34 @@
             ]
         },
         {
-            "id": "lifeofdeal",
-            "bg_color": "#993333",
+            "id": "s2",
+            "bg_color": "#44aade",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
+                "header": "See it!",
+                "body": "<p>The best way to learn how to use Matterhorn is to see it in person! Make sure you ask your TA to show you how Matterhorn works during your next check-in. </p>",
                 "class": "align-right|align-left|align-center|align-center-wide"
-            },
-            "interaction": {
-                "name": "cr_process",
-                "id": "css-item-container",
-                "type": "clickReveal",
-                "items": [
-                    {
-                        "header": "",
-                        "body": "<p></p>"
-                    },
-                    {
-                        "header": "",
-                        "body": "<p></p>"
-                    }
-                ]
             },
             "enter": [
                 {
-                    "id": "css-item-container",
+                    "id": "img-1",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "css-item-container .reveal-item",
-                    "type": "staggerFrom",
-                    "duration": 0.3,
-                    "startTime": 0.8,
-                    "staggerOffset": 0.15,
-                    "props": {
-                        "autoAlpha": 0
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "css-item-container",
+                    "id": "img-1",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "css-item-container .reveal-item",
-                    "type": "staggerTo",
-                    "duration": 0.3,
-                    "startTime": 0.8,
-                    "staggerOffset": 0.15,
-                    "props": {
-                        "autoAlpha": 0
+                        "autoAlpha": 0.0
                     }
                 }
             ]

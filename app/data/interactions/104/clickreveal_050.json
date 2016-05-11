@@ -1,24 +1,31 @@
 {
-    "name": "Title",
+    "name": "Matterhorn Reservation Statuses",
 
     "assetManifest": [
-        {"id": "", "src": "assets/images/INTERACTION/IMAGE.png"}
+        {
+            "id": "image1","src": "assets/images/players/player1.jpg"}
     ],
 
-    "colors": {
-        "backgroundColor": "#3eb2de"
-    },
+    "backgroundColor": "#df476a",
 
     "text": {
         "splash": [
             {
+                "header": "Introduction",
+                "body": "<p>Many reservation requests might compete against each other for the same impression inventory. Luckily, Matterhorn makes it easy to keep track reservation statuses. That'll help you to track your request and other conflicting requests.</p>"
+            },
+            {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Click each of the four icons to learn about each Matterhorn reservation status</p>"
             }
         ],
         "conclusion": [
             {
-                "header": "Directions",
+                "header": "Conclusion",
+                "body": "<p></p>"
+            },
+            {
+                "header": "Badge Earned",
                 "body": "<p></p>"
             }
         ],
@@ -27,14 +34,25 @@
 
     "items": [
         {
-            "id": "itemID",
-            "audioID": "audioID",
-            "title": "ItemTitle",
-            "result": "correct|wrong",
-            "feedback": {
-                "title": "feedbackTitle",
-                "body": "feedbackBody"
-            }
+            "id": "item1",
+            "title": "Pending",
+            "description": "<p>This sponsorship doesn't have any conflicts or violate restrictions, but is awaiting PYM approval.</p>"
+        },
+        {
+            "id": "item2",
+            "title": "Pending Conflicts",
+            "description": "<p>This sponsorship may conflict or violate restrictions, and is awaiting PYM approval.</p>"
+        },
+        {
+            "id": "item3",
+            "title": "Pitched",
+            "description": "<p>PYM approved this sponsorship and reserved these impressions for your order. Now, you can pitch this campaign to your client!</p>"
+        },
+        {
+            "id": "item3",
+            "title": "Sold",
+            "description": "<p>Your pod closed the deal and the Salesforce probability greater than 100 percent! </p>"
         }
     ]
 }
+
