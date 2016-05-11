@@ -1,5 +1,5 @@
-video1.json{
-    "name": "Podcast",
+{
+    "name": "Segmented Market Reach Tool",
 
     "assetManifest": [
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
@@ -13,7 +13,7 @@ video1.json{
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Can you dig it? The Segmented Market Reach tool is the most popular sales research tool at Pandora. You best get hip with it! Watch and learn.</p>"
             }
         ],
         "conclusion": [
@@ -25,5 +25,5 @@ video1.json{
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/video_055"
 }

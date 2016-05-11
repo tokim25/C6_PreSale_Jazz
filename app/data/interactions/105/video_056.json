@@ -1,5 +1,5 @@
-video1.json{
-    "name": "Podcast",
+{
+    "name": "User Engagement Tool",
 
     "assetManifest": [
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
@@ -13,7 +13,7 @@ video1.json{
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>The User Engagement tool is 18 karat! Watch this video to learn what User Engagement is and how to use the tool to let clients know how active our listeners are.</p>"
             }
         ],
         "conclusion": [
@@ -25,5 +25,5 @@ video1.json{
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/video_056"
 }

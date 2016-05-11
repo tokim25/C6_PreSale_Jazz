@@ -1,5 +1,5 @@
-video1.json{
-    "name": "Podcast",
+{
+    "name": "comScore",
 
     "assetManifest": [
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
@@ -13,17 +13,11 @@ video1.json{
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
-            }
-        ],
-        "conclusion": [
-            {
-                "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Hey hip cat! Interested in learning about comScore, the target marketing tool used across the digital industry for media planning, buying and selling? Watch this video, and let us begin your education!</p>"
             }
         ],
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/video_054"
 }

@@ -1,5 +1,5 @@
 {
-    "name": "Podcast",
+    "name": "Media Plans: Flighted Lines",
 
     "assetManifest": [
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
@@ -13,17 +13,11 @@
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
-            }
-        ],
-        "conclusion": [
-            {
-                "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Listen to this smooth podcast to learn what the Sales Research team and tools can do for you. Can you dig it? </p>"
             }
         ],
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/podcast_053"
 }

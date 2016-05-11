@@ -1,5 +1,5 @@
-video1.json{
-    "name": "Podcast",
+{
+    "name": "Performance Orders",
 
     "assetManifest": [
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
@@ -13,17 +13,11 @@ video1.json{
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
-            }
-        ],
-        "conclusion": [
-            {
-                "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Know how to create CPM-based performance orders in Slingshot using the Order Entry Wizard View? No? You came to the right place, offay! Watch this video and learn.</p>"
             }
         ],
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/video_052"
 }

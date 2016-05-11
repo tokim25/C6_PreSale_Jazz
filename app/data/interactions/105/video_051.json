@@ -1,5 +1,5 @@
 {
-    "name": "Podcast",
+    "name": "Flighted Lines",
 
     "assetManifest": [
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
@@ -13,7 +13,7 @@
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Watch this video to get in the mix with Flighted Lines, ya dig?</p>"
             }
         ],
         "conclusion": [
@@ -25,5 +25,5 @@
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/products_101"
+    "videoPath": "assets/videos/video_051"
 }

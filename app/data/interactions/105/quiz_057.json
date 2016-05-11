@@ -1,5 +1,5 @@
 {
-    "name": "Quiz",
+    "name": "Quiz: Sales Research",
 
     "assetManifest": [
         {"id": "gofish-bg-bl", "src": "assets/images/splashpages/gofish-bg-bl.png"}
@@ -19,13 +19,13 @@
         "splash": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>So you think you got the chops to use the Sales Research Tools. Alright, hepcat. Let’s see if you’re hep to jive!  If you fail, you won't be able to keep going with the School of Jazz. But don't fret! You can use your notes and any resources you want, so take your time! In fact, we strongly recommend it!</p>"
             }
         ],
         "conclusion": [
             {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Click on the correct answer and click submit.</p>"
             }
         ],
         "onscreenDirections": ""
@@ -34,11 +34,11 @@
     "questions": [
         {
             "type": "choice",
-            "text": "Question",
+            "text": "This sales research tool helps you figure out how many MUVs Pandora has for our third party audience segments. Examples include Midsize Car Intenders, Savvy Investors and Non Glade Air Freshening Shoppers (for real).",
             "pattern": 0,
             "choices": [
                 {
-                    "text": "AnsText",
+                    "text": "Third Party Audience Segmentation",
                     "result": "correct",
                     "feedback": {
                         "title": "PosFeedbackTitle",
@@ -46,7 +46,7 @@
                     }
                 },
                 {
-                    "text": "AnsText",
+                    "text": "Zip Code Radius",
                     "result": "wrong",
                     "feedback": {
                         "title": "NegativeFeedbackTitle",
@@ -54,7 +54,7 @@
                     }
                 },
                 {
-                    "text": "AnsText",
+                    "text": "Industry Display Benchmark CTRs",
                     "result": "wrong",
                     "feedback": {
                         "title": "NegativeFeedbackTitle",
@@ -62,7 +62,202 @@
                     }
                 },
                 {
-                    "text": "AnsText",
+                    "text": "User Engagement",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "choice",
+            "text": "This sales research tool helps you report key engagement metrics by demo and DMA. Examples include thumbs, stations created, station shares and time spent listening.",
+            "pattern": 0,
+            "choices": [
+                {
+                    "text": "User Engagement",
+                    "result": "correct",
+                    "feedback": {
+                        "title": "PosFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Segmented Market Reach",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Historical Monthly Update",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Share of Ear Tool",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "choice",
+            "text": "This external tool helps connect media consumption with buying behaviors by providing insights into a Website’s audience profile. It uses a measurement known as an index score.",
+            "pattern": 0,
+            "choices": [
+                {
+                    "text": "Nielsen Scarborough",
+                    "result": "correct",
+                    "feedback": {
+                        "title": "PosFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "User Engagement",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Historical Monthly Update",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Third Party Audience Segmentation",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "choice",
+            "text": "This salesforce chatter topic contains digestible sales research data to provide to a client.",
+            "pattern": 0,
+            "choices": [
+                {
+                    "text": "#researchnuggets",
+                    "result": "correct",
+                    "feedback": {
+                        "title": "PosFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "#rorocall",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "#successstories",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "#shakeyourbooty",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "choice",
+            "text": "Which sales research wiki page would you visit to pull pre-made one-sheeter insights for Pandora’s gaming audience?",
+            "pattern": 0,
+            "choices": [
+                {
+                    "text": "Consumer Insights",
+                    "result": "correct",
+                    "feedback": {
+                        "title": "PosFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "External Tools",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Ad Effectiveness",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Industry Research",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "choice",
+            "text": "This sales research tool reports the most popular artists by stations created in the previous month and by demographic.",
+            "pattern": 0,
+            "choices": [
+                {
+                    "text": "Artist Popularity",
+                    "result": "correct",
+                    "feedback": {
+                        "title": "PosFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Genre Station/Sponsorship Tool",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Share of Ear Tool",
+                    "result": "wrong",
+                    "feedback": {
+                        "title": "NegativeFeedbackTitle",
+                        "body": "feedbackBody"
+                    }
+                },
+                {
+                    "text": "Top Genre by Demo/Geo",
                     "result": "wrong",
                     "feedback": {
                         "title": "NegativeFeedbackTitle",
