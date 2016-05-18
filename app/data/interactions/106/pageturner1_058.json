@@ -1,5 +1,5 @@
 {
-    "name": "Overview",
+    "name": "Proposal Decks",
 
     "assetManifest": [
         {
@@ -31,21 +31,12 @@
 
     "scenes": [
         {
-            "id": "basic",
+            "id": "s1",
             "bg_color": "#44aade",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            }
-        },
-        {
-            "id": "basicWithItems",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "header": "Overview",
+                "body": "<p>Sometimes, your solid media plan recommendations might not be enough. To woo some clients, you might need to give them more than a media plan document. They might want mock ups of what their campaign would look like on Pandora. Or user engagement metrics from our Sales Research tools. Maybe even ComScore index scores to help round it out. </p><p>That sounds like a lot of information. If only there was an easy way to gather all this information into a simple presentation. Enter, the proposal deck!</p>",
+                "class": "align-center-wide"
             },
             "enter": [
                 {
@@ -73,31 +64,105 @@
             ]
         },
         {
-            "id": "lifeofdeal",
+            "id": "s2",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "A Team Effort",
+                "body": "<p>Building a proposal deck is a team effort. That's because these decks bring together research, statistics, mocks and plans into one document. That's a lot of moving pieces!</p><p>You might even need to pull in someone outside your pod to help out! That's because your recommendations might include custom or complex products. They might even include a Pandora-sponsored event. If so, your account executive might loop in the Sales Dev team to help make extra slides for your deck.</p>",
+                "class": "align-left"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s3",
+            "bg_color": "#44aade",
+            "text": {
+                "header": "Content and Resources",
+                "body": "<p>et's learn what's in a proposal deck and what resources you have to make one. Afterwards, download the resources for yourself! Look through the Salesforce libraries to scout out some good examples. And connect with your TA to help you learn how they build proposal decks!</p>",
+                "class": "align-right"
+            },
+            "enter": [
+                {
+                    "id": "img-1",
+                    "type": "from",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0,
+                        "right": "80%",
+                        "ease": "Back.easeOut"
+                    }
+                }
+            ],
+            "leave": [
+                {
+                    "id": "img-1",
+                    "type": "to",
+                    "duration": 0.5,
+                    "startTime": 0.3,
+                    "props": {
+                        "autoAlpha": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "s4",
             "bg_color": "#993333",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "header": "Proposal Deck FAQs",
+                "body": "<p>Let’s start by answering the most frequently asked questions about proposal decks.</p><p>Click each button to find answers to these frequently asked questions.</p>",
+                "class": "align-right"
             },
             "interaction": {
-                "name": "cr_process",
-                "id": "css-item-container",
+                "name": "cr_proposaldeck_s4",
+                "id": "cr-proposaldeck-s4",
                 "type": "clickReveal",
                 "items": [
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "What is it?",
+                        "body": "<p>The media plan is a line-by-line invoice of what the client we're recommending. Then, the proposal deck is the marketing for why it’s worth their investment.</p>"
                     },
                     {
-                        "header": "",
-                        "body": "<p></p>"
+                        "header": "Why is it important?",
+                        "body": "<p>The goal of a proposal deck isn't to make it jam-packed full of numbers and figures. It's to tell your client a story to prove why we're the best place to spend their advertising budget. These decks personalize the Pandora advertising experience. And the content you add into a proposal deck is there to back it up!</p>"
+                    },
+                    {
+                        "header": "How do you start one?",
+                        "body": "<p>The starting point to a proposal deck is the client's RFP. Pods brainstorm how to personalize the look, language and content of a deck using the RFP. </p>"
+                    },
+                    {
+                        "header": "What goes in one?",
+                        "body": "<p>You might add demographic data, market reach, and user engagement metrics. You may even add slides for each ad product to explain their features and benefits. And if you're working on brand campaigns, you might have slides for recommended custom content and events. </p>"
                     }
                 ]
             },
             "enter": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-proposaldeck-s4",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -106,7 +171,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-proposaldeck-s4 .reveal-item",
                     "type": "staggerFrom",
                     "duration": 0.3,
                     "startTime": 0.8,
@@ -118,7 +183,7 @@
             ],
             "leave": [
                 {
-                    "id": "css-item-container",
+                    "id": "cr-proposaldeck-s4",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -127,7 +192,7 @@
                     }
                 },
                 {
-                    "id": "css-item-container .reveal-item",
+                    "id": "cr-proposaldeck-s4 .reveal-item",
                     "type": "staggerTo",
                     "duration": 0.3,
                     "startTime": 0.8,
