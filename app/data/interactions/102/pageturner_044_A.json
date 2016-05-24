@@ -44,6 +44,15 @@
                 "top": "0px",
                 "left": "0px"
             }
+        },
+        {
+            "id": "cr-mediaplans-s7",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
+            }
         }
     ],
 
@@ -325,7 +334,7 @@
             "text": {
                 "header": "Title",
                 "body": "<p>The basic workflow for creating a media plan in Slingshot can be different for each media plan. Why? A big reason is it depends if you're building a Pandora media plan, or a media plan that uses an agency spec sheet. Let's try to figure out the core steps in the process!</p><p class='pt-callout'>First, let's learn about the Pandora Media Plan. Click each step of the workflow to uncover more details.</p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "class": "align-right"
             },
             "interaction": {
                 "name": "cr_mediaplans_s7",

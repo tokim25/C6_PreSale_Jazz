@@ -190,7 +190,7 @@ body {
   position: fixed;
   overflow: hidden; }
 
-.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, .splash-bg-elements, #video-view, #cr-mediaplans-s3, #cr-mediaplans-s6 {
+.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, .splash-bg-elements, #video-view, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7 {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -2352,4 +2352,48 @@ body {
       background-position: 0px 0px; }
     #cr-mediaplans-s6 .reveal-item.selected {
       background-position: 0px 0px;
+      cursor: default; }
+
+#cr-mediaplans-s7 {
+  position: absolute;
+  top: 0px; }
+  #cr-mediaplans-s7 .reveal-text-box {
+    position: absolute;
+    right: 750px;
+    width: 450px;
+    bottom: 120px;
+    padding-bottom: 0px; }
+  #cr-mediaplans-s7 .reveal-items-buttons-container {
+    height: 529px;
+    position: absolute;
+    right: 50%;
+    margin-right: 250px; }
+  #cr-mediaplans-s7 .reveal-item {
+    cursor: pointer;
+    position: absolute;
+    width: 435px;
+    height: 529px;
+    transition: margin 0.3s; }
+    #cr-mediaplans-s7 .reveal-item:nth-of-type(1) {
+      background: url(../assets/images/102/pt-044/light-1.png) no-repeat;
+      right: 450px;
+      margin-top: -120px; }
+      #cr-mediaplans-s7 .reveal-item:nth-of-type(1):hover, #cr-mediaplans-s7 .reveal-item:nth-of-type(1).selected {
+        margin-top: -80px; }
+    #cr-mediaplans-s7 .reveal-item:nth-of-type(2) {
+      background: url(../assets/images/102/pt-044/light-2.png) no-repeat;
+      right: 200px;
+      margin-top: -50px; }
+      #cr-mediaplans-s7 .reveal-item:nth-of-type(2):hover, #cr-mediaplans-s7 .reveal-item:nth-of-type(2).selected {
+        margin-top: -0px; }
+    #cr-mediaplans-s7 .reveal-item:nth-of-type(3) {
+      background: url(../assets/images/102/pt-044/light-3.png) no-repeat;
+      right: 0px;
+      margin-top: -100px; }
+      #cr-mediaplans-s7 .reveal-item:nth-of-type(3):hover, #cr-mediaplans-s7 .reveal-item:nth-of-type(3).selected {
+        margin-top: -20px; }
+    #cr-mediaplans-s7 .reveal-item:hover {
+      background-position: 0px -529px; }
+    #cr-mediaplans-s7 .reveal-item.selected {
+      background-position: 0px -529px;
       cursor: default; }

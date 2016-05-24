@@ -7,24 +7,26 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
 
         ui: {
             //
+            textbox: '.reveal-text-box',
             itemsContainer: '.reveal-items-container',
             revealItems: '.reveal-item'
         },
-        
+
         events: {
             'click @ui.revealItems': 'onRevealItemClicked'
         },
-        
+
         initialize: function (options) {
             this.template = options.template;
             this.model = options.model;
-            this.soundPlayer = options.soundPlayer;
             this.completedItems = [];
             this.totalItems = this.model.get('items').length;
             this.completed = false;
+
         },
 
         onRender: function() {
+            TweenMax.set(this.ui.textbox, {autoAlpha: 0.0});
             this.$win = $(window);
             this.$win.on('resize', $.proxy(this.onResize, this));
 
@@ -34,7 +36,7 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
         },
 
         onResize: function () {
-            this.winHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+            this.winHeight = Math.min(900, Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
         },
 
         onShow: function () {
@@ -42,21 +44,26 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
         },
 
         onRevealItemClicked: function (e) {
+
             var $revealItem = $(e.currentTarget),
                 index = parseInt($revealItem.attr('data-id')),
                 item = this.model.get('items')[index],
-                audioID = 'listexp_cta' + (index + 1)
-
+                $content = this.ui.textbox.find('.content');
 
             this.updateCompleted(index);
-
-            vent.trigger('play_sfx', 'shoelace');
-
-            this.soundPlayer.playSound(audioID);
 
             $('.reveal-item').removeClass('selected');
             $revealItem.addClass('selected');
 
+            //TweenMax.set('.reveal-text-box', {autoAlpha: 1.0})
+
+            TweenMax.set(this.ui.textbox, {autoAlpha: 0.0, right: 850});
+
+            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0, right: 750});
+
+            $content.html('<h1>' + item.header + '</h1>' + item.body);
+
+            vent.trigger('play_sfx', 'revealitem-click');
 
         },
 
@@ -79,8 +86,7 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
         },
 
         sceneComplete: function () {
-            this.soundPlayer.killCurrentSound();
-            //TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 0.0});
+            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 0.0});
         }
 
 

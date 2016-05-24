@@ -127,3 +127,71 @@
   }
 
 }
+
+#cr-mediaplans-s7 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 750px;
+    width: 450px;
+    bottom: 120px;
+    padding-bottom: 0px;
+  }
+
+  & .reveal-items-buttons-container {
+    height: 529px;
+    //width: 1271px;
+    position: absolute;
+    right: 50%;
+    margin-right: 250px;
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    width: 435px;
+    height: 529px;
+
+    &:nth-of-type(1) {
+      background: url(../assets/images/102/pt-044/light-1.png) no-repeat;
+      right: 450px;
+      margin-top: -120px;
+      &:hover, &.selected {
+        margin-top: -80px;
+      }
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/102/pt-044/light-2.png) no-repeat;
+      right: 200px;
+      margin-top: -50px;
+      &:hover, &.selected {
+        margin-top: -0px;
+      }
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/102/pt-044/light-3.png) no-repeat;
+      right: 0px;
+      margin-top: -100px;
+      &:hover, &.selected {
+        margin-top: -20px;
+      }
+    }
+
+    &:hover {
+      background-position: 0px -529px;
+    }
+    &.selected {
+      background-position: 0px -529px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
