@@ -6,7 +6,9 @@
             "id": "image1","src": "assets/images/players/player1.jpg"}
     ],
 
-    "backgroundColor": "#df476a",
+    "bg_info": {
+
+    },
 
     "text": {
         "splash": [
@@ -22,7 +24,11 @@
         "conclusion": [
             {
                 "header": "Conclusion",
-                "body": "<p></p>"
+                "body": "<p>Now that you have all the Matterhorn details, the last thing you need to know is how to use it!</p><p>Matterhorn reservations begin with a Salesforce opportunity and a conversation with your pod. Make sure you’re all on the same page about the media plan recommendations for this client. Afterwards, use the <b>Create Sponsorship</b> button in the opportunity to request a Matterhorn reservation.</p><p>Check out this <a target='_blank' href='https://www.brainshark.com/pandoramedia/vu?pi=zHizDtaeoz6hX2z0&r3f1=b882fcafa3e7e3e4fce88de9f6bebcb8bffefb82e7a9bdf3bfaaede88dedb9b6bcbfbfb5ea85e5e1e4edfcfab4e88bf8f4bebcb8bffefb82e7a9bdf2a4a4f6ecc4dae09ed4dd'>video</a> to walk you through the Matterhorn user interface</p>"
+            },
+            {
+                "header": "Conclusion",
+                "body": "<p>The best way to learn how to use Matterhorn is to see it in person! Make sure you ask your TA to show you how Matterhorn works during your next check-in. </p>"
             },
             {
                 "header": "Badge Earned",

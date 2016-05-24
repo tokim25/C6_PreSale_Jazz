@@ -5,7 +5,7 @@
         {"id": "", "src": "assets/images/INTERACTION/IMAGE.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#3eb2de"
     },
 

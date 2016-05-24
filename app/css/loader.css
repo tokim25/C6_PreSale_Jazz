@@ -4,6 +4,10 @@
     max-width: 1500px;
     max-height: 900px;
     top: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     overflow: hidden;
     position: fixed;
     background-color: #e1e0e0;

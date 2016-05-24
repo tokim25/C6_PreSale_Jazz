@@ -5,7 +5,7 @@
         {"id": "lab-bg", "src": "assets/images/textures/bg5.jpg"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundImage": "bg5"
     },
 

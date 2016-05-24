@@ -1,15 +1,13 @@
 <script type="text/template" id="pt-mainview-template">
 
-
-
     <div id="pt-container" >
-        <div id="pt-main-view" style="background-color:<%= colors.backgroundColor %>;">
-            <div class="bg-texture"></div>
-            <div class="module-title color-<%= modulename %>"><h1 style="color:<%= colors.highlightColor %>;"><%= name %></h1></div>
+        <div id="pt-main-view">
+            <div class="pt-bg-texture"></div>
+            <div><h1 class="module-title"><%= name %></h1></div>
 
         </div>
+        <div id="pt-color-overlay" style="background-color:<%= bg_info.bg_color %>;"></div>
         <div id="pt-content-container"></div>
-
         <div class="pt-scroll"></div>
         <div class="pt-progress-container">
             <div class="pt-progress-bar">

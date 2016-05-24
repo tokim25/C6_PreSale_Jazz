@@ -5,7 +5,7 @@
         {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#600f51"
     },
 

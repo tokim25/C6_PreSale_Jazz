@@ -12,6 +12,7 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
             container: '#pt-container',
             contentContainer: '#pt-content-container',
             mainView: '#pt-main-view',
+            colorOverlay: '#pt-color-overlay',
             progressButton: '.pt-progress-button',
             nextButton: '#pt-progress-next-button',
             prevButton: '#pt-progress-prev-button',
@@ -35,6 +36,7 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
         currentInteraction: null,
         tweenOffset: 0,
         scrollTop: 0,
+        minScroll: 10,
         scrollDirection: 1,
         scrollEnabled: false,
         $textBox: null,
@@ -256,7 +258,16 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
         detectDirection: function () {
 
             var st = window.pageYOffset,
-                direction;
+                direction, scrollDistance;
+
+            scrollDistance = Math.abs(st - this.lastScrollTop);
+
+            trace('scrollDistance: '+ scrollDistance, 5);
+
+            if(scrollDistance < this.minScroll) {
+                return 0;
+            }
+
 
             if (st > this.lastScrollTop) {
                 direction = 1;
@@ -324,7 +335,7 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
                 bgColor = scene.bg_color,
                 textClass = scene.text.class || 'align-left';
 
-            TweenMax.to(this.ui.mainView, 0.5, {delay: 0.2, backgroundColor: bgColor, ease:Linear.easeNone})
+            TweenMax.to(this.ui.colorOverlay, 0.5, {delay: 0.2, backgroundColor: bgColor, ease:Linear.easeNone})
 
             if(mode === 'enter') {
 
@@ -505,9 +516,13 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
         },
 
         bodyScroll: function () {
-            var newIndex;
+            var newIndex, direction = this.detectDirection();
 
-            this.scrollDirection = this.detectDirection();
+            if (direction == 0) {
+                return;
+            }
+
+            this.scrollDirection = direction;
 
             newIndex = this.index + this.scrollDirection;
 

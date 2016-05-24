@@ -5,7 +5,7 @@
         {"id": "img", "src": "assets/images/instruments/img.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#620c5f"
     },
 

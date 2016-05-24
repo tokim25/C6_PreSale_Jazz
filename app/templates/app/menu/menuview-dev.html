@@ -1,6 +1,6 @@
 <script type="text/template" id="menuview-dev-template">
     <div id="menu-view">
-        <div id="menu-content" style="background-color:<%= colors.backgroundColor %>;">
+        <div id="menu-content">
             <div class="bg-texture"></div>
             <img id="menu-dev-bg" src="assets/images/menu/menu-mock.jpg"/>
 
@@ -8,12 +8,21 @@
 
             <% _.each(app.model.get('menu'), function(item, index) { %>
             <div id="menu-dev-container<%= index %>">
+                <h1 class="module-name">JAZZ  <span class="module-number"><%= item.id  %></span>: <%= item.name  %></h1>
                 <% _.each(item.modules, function(module) { %>
                     <% var statusClass = module.status == 0 ? 'not-started' : module.status == 1 ? 'started' : 'completed';  %>
-                    <div id="menu-button-<%= module.moduleName %>" data-id="<%= module.moduleName %>" class="menu-button <%= statusClass %>"><div class="status-icon"></div><p><%= module.title %></p></div>
+                    <div id="menu-button-<%= module.moduleName %>" data-id="<%= module.moduleName %>" class="menu-button <%= statusClass %>"><div class="status-icon"></div><h3 class="menu-button-label"><%= module.title %></h3></div>
                 <%  }); %>
             </div>
             <%  }); %>
+
+            <div class="fancy-popup" style="position: absolute; left: 50%; top: 100px">
+                <div class="content">
+                    <h1>THIS IS THE TITLE</h1>
+                    <p>Drumstick cow meatloaf sausage strip steak ham hock short ribs shankle flank jerky bresaola pork chop pork. Prosciutto jowl doner picanha brisket leberkas frankfurter kevin capicola rump shoulder ground round pancetta pastrami. Pork loin porchetta tail pork belly spare ribs rump turducken shoulder shankle short loin turkey chuck bacon</p>
+                    <div class="popup-button continue-button enabled" data-id="continue">Continue</div>
+                </div>
+            </div>
 
         </div>
     </div>

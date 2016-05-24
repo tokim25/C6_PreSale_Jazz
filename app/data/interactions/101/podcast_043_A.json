@@ -4,8 +4,11 @@
     "assetManifest": [
     ],
 
-    "colors": {
-        "backgroundColor": "#600f51"
+    "bg_info": {
+        "backgroundColor": "#62839e",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-101",
+        "splashOffset": "300px"
     },
 
     "text": {

@@ -109,54 +109,57 @@
 
 #menu-dev-container0 {
   position: absolute;
-  width: 350px;
-  top: 1120px;
+  width: 400px;
+  top: 100px;
   left: 50%;
-  margin-left: -260px;
+  margin-left: -450px;
 }
 
 #menu-dev-container1 {
   position: absolute;
   width: 400px;
-  top: 2050px;
+  top: 400px;
   left: 50%;
-  margin-left: 210px;
+  margin-left: 50px;
 }
 
 #menu-dev-container2 {
   position: absolute;
-  width: 350px;
-  top: 2635px;
+  width: 400px;
+  top: 700px;
   left: 50%;
-  margin-left: -580px;
-  @include rotate(-8deg);
+  margin-left: -450px;
 }
 
 #menu-dev-container3 {
   position: absolute;
   width: 400px;
-  top: 3452px;
+  top: 1000px;
   left: 50%;
-  margin-left: -320px;
-  @include rotate(4deg);
+  margin-left: 50px;
 }
 
 #menu-dev-container4 {
   position: absolute;
   width: 400px;
-  top: 4120px;
+  top: 1300px;
   left: 50%;
-  margin-left: 115px;
-  @include rotate(-4deg);
+  margin-left: -450px;
 }
 
 #menu-dev-container5 {
   position: absolute;
   width: 400px;
-  top: 4672px;
+  top: 1600px;
   left: 50%;
-  margin-left: -610px;
-  @include rotate(-5deg);
+  margin-left: 50px;
+}
+#menu-dev-container5 {
+  position: absolute;
+  width: 400px;
+  top: 1900px;
+  left: 50%;
+  margin-left: -50px;
 }
 
 .menu-button {
@@ -165,33 +168,34 @@
   position: relative;
   cursor: pointer;
   margin-bottom: 12px;
+  //color: #222;
+  transition: margin .2s;
 
-  & p:hover {
-    margin-left: 5px;
+  &:hover .menu-button-label{
     text-decoration: underline;
   }
-  & p {
-    transition: margin .2s;
-    color: #333;
-    font-family: $font-body;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-
+  &:hover {
+    margin-left: 5px;
+  }
+  & .menu-button-label {
+    font-size: 2.0em;
+    pointer-events: none;
   }
 
   & .status-icon {
+
     position: absolute;
-    left: 8px;
-    top: -2px;
-    width: 16px;
+    left: 3px;
+    top: 0px;
+    width: 20px;
     height: 20px;
-    background: url('../assets/images/menu/menu-status-icons.png') no-repeat;
+    background: url(../assets/images/ui/menu-status-icons.png) no-repeat;
+    pointer-events: none;
   }
 
   &.locked {
-    & p {
-      opacity: 0.6;
+    & .menu-button-label {
+      opacity: 0.8;
     }
     cursor: default;
     pointer-events: none;
@@ -200,7 +204,7 @@
     }
   }
   &.not-started.locked {
-    opacity: 0.6;
+    opacity: 0.8;
     cursor: default;
     pointer-events: none;
     & .status-icon {
@@ -252,10 +256,16 @@
 
 .course-title {
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .module-name {
-  font-size: 27px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.module-number {
+  font-size: 30px;
 }
 
 #scroll-arrow {

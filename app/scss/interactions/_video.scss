@@ -9,7 +9,7 @@
 
 .video-container {
   @include center-align();
-  width: 75%;
+  width: 70%;
 
   pointer-events: none;
 
@@ -20,21 +20,24 @@
   }
 
   box-sizing: border-box;
-  &:before {
-    content: " ";
-    position: absolute;
+  &::before {
+    content: '';
     top: -10px;
-    left: -10px;
+    bottom: -9px;
     right: -10px;
-    bottom: -10px;
-    border: 3px solid #f707d2;
-    @include border-radius(4px);
-    box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5);
+    left: -10px;
+    pointer-events: none;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    border-image: url(../assets/images/ui/popup/fancy-border.png) 5 round;
+    border-width: 5px;
+    border-image-slice: 11;
+    border-image-width: 5;
+    border-image-outset: 11 11;
+
+    border-image-outset: 0px;
   }
-
-  border: 3px solid #f707d2;
-  box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5);
-
 
 }
 

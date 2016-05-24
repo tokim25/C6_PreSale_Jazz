@@ -1,48 +1,41 @@
-
-
-.generic-popup {
-  position: absolute;
-
-  width: 600px;
-  height: 564px;
+.fancy-popup {
+  width: 550px;
+  position: relative;
   box-sizing: border-box;
+  border-style: solid;
+
+  border-image: url(../assets/images/ui/popup/fancy-border.png) 5 round;
+  border-width: 5px;
+  border-image-slice: 11;
+  border-image-width: 5;
+  border-image-outset: 11 11;
+
+  padding-bottom: 70px;
 
   & .content {
-    position: absolute;
-    top: 150px;
-    left: 125px;
-    width: 430px;
-    max-height: 5000px;
-    padding: 0px;
-  }
-
-  & .popup-button {
-    @include standard-button(white, 2.0em, #663366);
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-  }
-
-  &.correct {
-    & h1 {
-      color: #ff61bd;
+    box-sizing: border-box;
+    margin: -40px -10px;
+    & h1, h2 {
+      text-align: center;
+      text-transform: uppercase;
     }
-    & {
-      .popup-button {
-        @include standard-button(white, 2.0em, #ff61bd);
-        position: absolute;
-        right: 50px;
-        bottom: 50px;
-      }
+    & h2 {
+      margin-top: 50px;
+      font-size: 4.5em;
+    }
+    p {
+      font-size: 2em;
     }
   }
 
-
-  & p, li {
-    color: black;
-    font-size: 1.8em;
+  & {
+    .popup-button {
+      position: absolute;
+      right: 0px;
+    }
   }
 }
+
 
 
 

@@ -1,18 +1,18 @@
 {
-    "projectTitle": "The School of Hip Hop: Intro to Products",
-    "projectID": "products",
+    "projectTitle": "The School of Jazz: Intro to Pre-Sale",
+    "projectID": "presale",
     "version": "Alpha 1.0",
-    "schoolName": "Hip Hop",
+    "schoolName": "Jazz",
     "JIRAEnabled": true,
     "inLMS": false,
     "LMSType": "SCORM",
-    "hasIntro": true,
+    "hasIntro": false,
     "hasConclusion": true,
     "isRoleFiltered": true,
     "defaultRole": "national",
     "alwaysShowIntro": false,
     "roleType": "",
-    "lockingMode": "linear",
+    "lockingMode": "open",
     "setAllComplete": false,
     "returnToMenuAfterInteraction": true,
     "returnToMenuAfterLastSubModule": true,
@@ -58,7 +58,7 @@
         },
         {
             "name": "Menu",
-            "path": "app/menu/menumodule",
+            "path": "app/menu/menumodule-dev",
             "url": "data/app/menu.json"
         },
         {

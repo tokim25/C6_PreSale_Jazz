@@ -1,10 +1,9 @@
 <script type="text/template" id="mainview-template">
 
-    <div id="video-view" style="background-color:<%= colors.backgroundColor %>;">
-        <div class="bg-texture">
-        </div>
+    <div id="video-view" style="background-color: <%=bg_info.backgroundColor%>;">
+        <div class="<%=bg_info.backgroundClass%>"></div>
 
-        <div class="module-title color-<%= modulename %>"><h1 style="color:<%= colors.highlightColor %>;"><%= name %></h1></div>
+        <div><h1 class="module-title"><%= name %></h1></div>
 
         <div class="video-container">
             <video controls class="video"></video>

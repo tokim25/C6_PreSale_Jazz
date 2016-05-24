@@ -5,7 +5,7 @@
         {"id": "popup-bg", "src": "assets/images/ui/popup/splatter_box/splatter-top.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#bb27dd"
     },
 

@@ -14,11 +14,30 @@
 }
 
 @font-face {
-  font-family: 'avenir-black';
-  src: url("../assets/fonts/avenirltstd-black-webfont.eot");
-  src: url("../assets/fonts/avenirltstd-black-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/avenirltstd-black-webfont.woff") format("woff"), url("../assets/fonts/avenirltstd-black-webfont.ttf") format("truetype");
+  font-family: 'caviar_dreamsbold';
+  src: url('../assets/fonts/caviar_dreams_bold-webfont.woff2') format('woff2'),
+  url('../assets/fonts/caviar_dreams_bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url('../assets/fonts/caviardreams-webfont.woff2') format('woff2'),
+  url('../assets/fonts/caviardreams-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'parisishregular';
+  src: url('../assets/fonts/parisish-webfont.woff2') format('woff2'),
+  url('../assets/fonts/parisish-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 %overlay-text {
@@ -36,7 +55,19 @@ body{
   font-family: $font-body;
   font-weight: 300;
   font-size:62.5%; /* 1em = 10px */
-  color: white;
+  color: $main-white;
+}
+
+.module-title {
+  //letter-spacing: 5px;
+  text-transform: uppercase;
+  max-width: $max-width;
+  width: 100vw;
+  margin: 10px;
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  @extend %unselectable;
 }
 
 h1 {
@@ -44,7 +75,7 @@ h1 {
   font-size: 3em;
   font-weight: 700;
   margin: 10px 0px;
-  color: white;
+  color: $main-white;
 
 
 }
@@ -54,27 +85,28 @@ h2 {
   font-size: 2.2em;
   font-weight: 400;
   margin: 10px 0px;
-  color: white;
+  color: $main-white;
 }
 
 h3 {
   font-family: $font-h3;
   font-size: 1.6em;
   font-weight: 300;
-  color: $main-gray;
+  color: $main-white;
 
 }
 
 p {
   font-family: $font-body;
   line-height:120%;
-  font-size:1.6em;
+  font-size:16px;
   margin: 5px 0px;
-  color: white;
+  color: $main-white;
 }
 
 ul, ol {
   margin-left: 15px;
+  font-size:16px;
 }
 
 ol li {
@@ -86,6 +118,7 @@ li {
   line-height:120%;
   font-family: inherit;
   margin-left: 1em;
+  font-size:16px;
   //text-indent: -1em;
 }
 

@@ -1,14 +1,14 @@
 {
-    "name": "Media Plans",
+    "name": "Media Plans Overview",
 
     "assetManifest": [
         {
             "id": "img1",
-            "src": "assets/images/102/img1.png"
+            "src": "assets/images/102/pt-044/microphone.png"
         }
     ],
-    "colors": {
-        "backgroundColor": "#5bbcc8"
+    "bg_info": {
+        "bg_color": "#1959b3"
     },
 
     "behavior": {
@@ -20,11 +20,29 @@
 
     "elements": [
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/102/img1.png'/>",
+            "id": "mic",
+            "el": "<img src='assets/images/102/pt-044/microphone.png'/>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "left": "30px",
+                "bottom": "0px"
+            }
+        },
+        {
+            "id": "cr-mediaplans-s3",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
+            }
+        },
+        {
+            "id": "cr-mediaplans-s6",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],
@@ -36,24 +54,23 @@
             "text": {
                 "header": "Overview",
                 "body": "<p>The core deliverable of the pre-sale phase is the <b>media plan</b>. The core deliverable of the pre-sale phase is the media plan. </p><p>It’s like the first beats of song. That’s because it's our first opportunity to create a solid impressions. And it's our first chance to recommend strategies to meet their goals. They send out their RFP to multiple publishers, looking to invest in the best media plans. </p><p>That's why we want our media plan to showcase:</p><ul><li>our expertise with our ad product catalog</li><li>our media strategy skills</li><li>the badassery that is you and your pod</li></ul>",
-                "class": "align-right"
+                "class": "align-center-wide"
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
                         "autoAlpha": 0.0,
-                        "right": "80%",
                         "ease": "Back.easeOut"
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -69,24 +86,23 @@
             "text": {
                 "header": "Who Does What?",
                 "body": "<p>Remember! Media plans don't guarantee that clients will run their campaign with us. Media plans are just proposals that we send back to the client. Clients choose us to run their campaigns when we sign an insertion order. </p><p>In this lesson, let's focus on who does what when building a media plan. Let's also highlight the core resources and systems needed in the pre-sale phase.</p>",
-                "class": "align-left"
+                "class": "align-right"
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
                         "autoAlpha": 0.0,
-                        "right": "80%",
                         "ease": "Back.easeOut"
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -101,8 +117,8 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Media Planning Roles",
-                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. Many of these tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p><p>Click on each role to get a list of the media planning responsibilities owned by each role.</p>",
-                "class": "align-center-wide"
+                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. Many of these tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p><p class='pt-callout'>Click on each role to get a list of the media planning responsibilities owned by each role.</p>",
+                "class": "align-left"
             },
             "interaction": {
                 "name": "cr_mediaplans_s3",
@@ -176,7 +192,7 @@
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -189,7 +205,7 @@
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -205,11 +221,11 @@
             "text": {
                 "header": "Third Party Media Plans and Media Buying Systems",
                 "body": "<p>Third party media plans are a common ask from clients during the media planning process. <b>Third party media plan templates</b> are also known as agency spec sheets. Many larger agencies might request us to format our media plans with their templates. That's so they can compare media plans across publishers without worrying about formatting issues. They want to make the metrics, products and budgets easy to compare across media plans. </p><p>Clients might also ask us to build media plans right into their own order management system. Just like we use Slingshot to make media planning easy, clients might use their own system too. Some examples of media planning systems they might use include STRATA, MediaOcean and Prisma. </p><p>In your pod, the campaign specialist handles both of these tasks. </p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "class": "align-center-wide"
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -222,7 +238,7 @@
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "mic",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -238,7 +254,7 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Media Planning Resources",
-                "body": "<p>Knowing who handles what task is only half the battle. Lucky for you we have tons of tools and resources to help you develop the best media plans for your clients. </p><p>Click on each of the tools listed for more details.</p>",
+                "body": "<p>Knowing who handles what task is only half the battle. Lucky for you we have tons of tools and resources to help you develop the best media plans for your clients. </p><p class='pt-callout'>Click on each of the tools listed for more details.</p>",
                 "class": "align-left"
             },
             "interaction": {
@@ -308,7 +324,7 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Title",
-                "body": "<p>The basic workflow for creating a media plan in Slingshot can be different for each media plan. Why? A big reason is it depends if you're building a Pandora media plan, or a media plan that uses an agency spec sheet. Let's try to figure out the core steps in the process!</p><p>First, let's learn about the Pandora Media Plan. Click each step of the workflow to uncover more details.</p>",
+                "body": "<p>The basic workflow for creating a media plan in Slingshot can be different for each media plan. Why? A big reason is it depends if you're building a Pandora media plan, or a media plan that uses an agency spec sheet. Let's try to figure out the core steps in the process!</p><p class='pt-callout'>First, let's learn about the Pandora Media Plan. Click each step of the workflow to uncover more details.</p>",
                 "class": "align-right|align-left|align-center|align-center-wide"
             },
             "interaction": {

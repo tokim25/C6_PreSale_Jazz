@@ -5,7 +5,7 @@
         {"id": "audio2-bg-bl", "src": "assets/images/splashpages/audio2-bg-bl.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#3d8c95",
         "highlightColor": "#FFFF66",
         "accentColor": "#ff58ee"

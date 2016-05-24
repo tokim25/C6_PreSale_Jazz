@@ -2,16 +2,7 @@
  * Created by jhoffsis on 7/13/15.
  */
 
-define(['backbone',
-        'marionette',
-        'app/vent',
-        'app/app',
-        '/model',
-        '/mainview',
-        '/clickreveal/listexp',
-        'text!templates/interactions/page_turner/clickreveal/listexp.html'
-    ],
-    function(Backbone, Marionette, vent, app, Model, MainView, CRListexp, templateListexp){
+define(['backbone', 'marionette', 'app/vent', 'app/app', 'interactions/lab/model', 'interactions/lab/mainview'], function(Backbone, Marionette, vent, app, Model, MainView){
 
     var Module = Marionette.Object.extend({
 
@@ -22,7 +13,6 @@ define(['backbone',
         },
 
         start: function() {
-            trace('page_turner onStart', 1);
 
             // create model, passing in url and menu data
             // model calls fetch(), then fires init-complete when data is loaded
@@ -31,24 +21,20 @@ define(['backbone',
         },
 
         onModelLoaded: function () {
-            trace('page_turner: onModelLoaded()');
+            trace('module: onModelLoaded()');
             this.initView();
             vent.trigger('module:ready', this.model.get('assetManifest'));
         },
 
         initView: function () {
-            this.view = new MainView({
-                model:this.model,
-                interactions: {
-                    cr_listexp: {
-                        module: CRListexp,
-                        template: templateListexp
-                    }
-                },
-                soundPlayer: app.soundPlayer
-            });
-            this.listenTo(this.view, 'mainview:activity-start', this.onActivityStart);
+            this.view = new MainView({model:this.model, soundPlayer: app.soundPlayer});
             this.listenTo(this.view, 'mainview:activity-complete', this.onActivityComplete);
+            this.listenTo(this.view, 'mainview:activity-start', this.onActivityStart);
+            this.listenTo(this.view, 'mainview:show-conclusion', this.onShowConclusion);
+        },
+
+        onShowConclusion: function () {
+            vent.trigger('module:show-conclusion');
         },
 
         onActivityStart: function () {

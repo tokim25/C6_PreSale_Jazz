@@ -7,7 +7,7 @@
             "src": "assets/images/pt-directory/img1.png"
         }
     ],
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#5bbcc8"
     },
 

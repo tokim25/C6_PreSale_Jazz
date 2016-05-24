@@ -6,8 +6,8 @@ define(['backbone',
         'marionette',
         'app/vent',
         'app/app',
-        '/model',
-        '/mainview'
+        'interactions/page_turner/model',
+        'interactions/page_turner/mainview'
     ],
     function(Backbone, Marionette, vent, app, Model, MainView){
 

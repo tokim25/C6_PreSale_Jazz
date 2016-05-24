@@ -5,7 +5,7 @@
         {"id": "corevideo-bg-bl", "src": "assets/images/splashpages/corevideo-bg-bl.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#362f2d",
         "highlightColor": "#ffff66",
         "accentColor": "#d97cd2"

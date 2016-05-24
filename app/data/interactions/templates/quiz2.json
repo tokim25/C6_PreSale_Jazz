@@ -5,7 +5,7 @@
         {"id": "addedvaluepolicies-bg-fixed", "src": "assets/images/ratecard/addedvaluepolicies-bg-fixed.png"}
     ],
 
-    "colors": {
+    "bg_info": {
         "backgroundColor": "#2f90cf",
         "highlightColor": "#ff6",
         "accentColor": "#1c549a"

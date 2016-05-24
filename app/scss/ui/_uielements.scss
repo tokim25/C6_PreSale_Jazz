@@ -22,6 +22,26 @@
   mix-blend-mode: multiply;
 }
 
+.pt-bg-texture{
+  background: url(../assets/images/backgrounds/page-turner.jpg) repeat-y;
+  @include horizontal-align();
+  position: absolute;
+  width: 100vw;
+  max-width: $max-width;
+  top: 0px;
+  bottom: 0px;
+}
+
+.booth-bg {
+  background: url(../assets/images/backgrounds/booth.jpg);
+  @include horizontal-align();
+  position: absolute;
+  width: $max-width;
+  height: $max-height;
+  top: 0px;
+  mix-blend-mode: multiply;
+}
+
 .module-title {
   @include horizontal-align();
 

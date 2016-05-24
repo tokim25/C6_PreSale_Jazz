@@ -55,7 +55,7 @@ define([
             this.ui.feedbackContainer.append(this.feedback.render().el);
 
             var splashObj = {
-                colors: this.model.get('colors'),
+                bg_info: this.model.get('bg_info'),
                 name: this.model.get('name'),
                 modulename: this.model.get('menuModel').get('moduleName').toLowerCase(),
                 template: 'splash',
@@ -69,7 +69,7 @@ define([
 
             if (this.model.get('text').conclusion != undefined) {
                 var conclObj = {
-                    colors: this.model.get('colors'),
+                    bg_info: this.model.get('bg_info'),
                     name: this.model.get('name'),
                     modulename: this.model.get('menuModel').get('moduleName').toLowerCase(),
                     template: 'conclusion',

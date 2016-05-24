@@ -6,7 +6,9 @@
             "id": "image1","src": "assets/images/players/player1.jpg"}
     ],
 
-    "backgroundColor": "#df476a",
+    "bg_info": {
+
+    },
 
     "text": {
         "splash": [

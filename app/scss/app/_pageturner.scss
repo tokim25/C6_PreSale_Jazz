@@ -16,6 +16,16 @@
   position: fixed;
   overflow: hidden;
 }
+#pt-color-overlay {
+  width: 100vw;
+  height: 100vh;
+  max-width: $max-width;
+  max-height: $max-height;
+  @include horizontal-align();
+  position: fixed;
+  mix-blend-mode: overlay;
+  pointer-events: none !important;
+}
 
 #pt-content-container {
   width: 100vw;
@@ -176,7 +186,7 @@
   font-size: 28px;
   color: white;
   font-family: $font-body;
-  font-weight: 400;
+  font-weight: 600;
 
 }
 
@@ -196,7 +206,7 @@
   color: white;
 
   position: absolute;
-  top: 144px;
+  top: 140px;
 }
 
 .pt-text-body {
@@ -207,7 +217,7 @@
   line-height: 120%;
 
   position: absolute;
-  top: 208px;
+  top: 190px;
 }
 
 .pt-text-hr {
@@ -222,16 +232,16 @@
 
 .pt-txt-box {
   position: absolute;
-  width: 500px;
-  top: 25%;
+  width: 600px;
+  top: 20%;
   //overflow: hidden;
   &.align-left {
-    right: 55%;
+    right: 48%;
     left: auto;
     margin-left: 0px;
   }
   &.align-right {
-    left: 55%;
+    left: 48%;
     right: auto;
     margin-left: 0px;
   }
@@ -242,8 +252,8 @@
   }
   &.align-center-wide {
    // top: 25%;
-    margin-left: -350px;
-    width: 700px;
+    margin-left: -400px;
+    width: 800px;
     left: 50%;
     right: auto;
   }
@@ -251,9 +261,9 @@
 .pt-txt-header {
   position: relative;
   color: white;
-  font-family: $font-h1;
+  font-family: $font-h2;
   font-weight: 400;
-  font-size: 2.4em;
+  font-size: 3.4em;
   //width: 400px;
 }
 .pt-txt-body {
@@ -261,7 +271,7 @@
     position: relative;
     color: white;
     font-family: $font-body;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 10px;
   }
   p, ul, li {
@@ -285,11 +295,11 @@
   margin: 8px 0;
   position: relative;
   overflow: hidden;
-  background: url('../assets/images/pageturner/pt_text_hr.png') no-repeat;
+  //background: url('../assets/images/pageturner/pt_text_hr.png') no-repeat;
   background-position: 0px 0px;
 }
 .pt-txt-ornament {
-  background: url('../assets/images/pageturner/hr-ornament.png');
+  //background: url('../assets/images/pageturner/hr-ornament.png');
   left: -100px;
   top: 30px;
   width: 23px;
@@ -302,7 +312,8 @@
 .pt-callout {
   margin-top: 15px;
   font-weight: bold !important;
-  background: rgba(255,255,255,0.15);
+  //background: rgba(255,255,255,0.35);
+  border:2px solid rgba(255,255,255,0.5);
   padding: 3px 3px 3px 10px;
 }
 
@@ -326,6 +337,8 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
+  max-width: $max-width;
+  max-height: $max-height;
 }
 
 .reveal-item {
