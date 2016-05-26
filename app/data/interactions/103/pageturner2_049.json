@@ -2,10 +2,10 @@
     "name": "The IPAW Laws",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/pt-directory/img1.png"
-        }
+        {"id": "img1", "src": "assets/images/103/pt-049/horns.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/horn-1.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/horn-2.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/horn-3.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -20,11 +20,12 @@
 
     "elements": [
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "id": "cr-ipaw2-s1",
+            "class": "reveal-container",
+            "el": "<div></div>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],
@@ -33,11 +34,11 @@
         
         {
             "id": "s1",
-            "bg_color": "#993333",
+            "bg_color": "#5bbcc8",
             "text": {
                 "header": "The IPAW Laws",
-                "body": "<p>There are no actual laws for IPAW. But if you want your plan's pricing to auto-approve, you'll need to make sure that it's following three rules. </p><p>Click on each rule to find out more about the IPAW rules.</p>",
-                "class": "align-center-wide"
+                "body": "<p>There are no actual laws for IPAW. But if you want your plan's pricing to auto-approve, you'll need to make sure that it's following three rules. </p><p class='pt-callout'>Click on each instruments to find out more about the IPAW rules.</p>",
+                "class": "align-right"
             },
             "interaction": {
                 "name": "cr_ipaw2_s1",

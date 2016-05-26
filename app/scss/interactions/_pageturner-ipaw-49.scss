@@ -1,0 +1,282 @@
+
+#cr-ipaw1-s2 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+    background: url(../assets/images/103/pt-049/drums.png) no-repeat;
+    height: 559px;
+    width: 694px;
+    right: 50px;
+    bottom: 0px;
+    position: absolute;
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    &:nth-of-type(1) {
+      background: url(../assets/images/103/pt-049/drum-1.png) no-repeat 0px 152px;
+      top: 42px;
+      left: 88px;
+      height: 152px;
+      width: 144px;
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/103/pt-049/drum-2.png) no-repeat 0px 152px;
+      top: 42px;
+      left: 232px;
+      height: 152px;
+      width: 117px;
+
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/103/pt-049/drum-3.png) no-repeat 0px 360px;
+      top: 139px;
+      left: 300px;
+      height: 360px;
+      width: 185px;
+
+    }
+    &:nth-of-type(4) {
+      background: url(../assets/images/103/pt-049/drum-4.png) no-repeat 0px 360px;
+      top: 134px;
+      left: 477px;
+      height: 360px;
+      width: 185px;
+
+    }
+
+    &:hover {
+      background-position: 0px 0px;
+    }
+    &.selected {
+      background-position: 0px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+
+#cr-ipaw2-s1 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 120px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+    background: url(../assets/images/103/pt-049/horns.png) no-repeat;
+    height: 710px;
+    width: 574px;
+    left: 50px;
+    bottom: 0px;
+    position: absolute;
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    &:nth-of-type(1) {
+      background: url(../assets/images/103/pt-049/horn-1.png) no-repeat 0px 562px;
+      top: 0px;
+      left: 0px;
+      height: 562px;
+      width: 247px;
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/103/pt-049/horn-2.png) no-repeat 0px 562px;
+      top: 0px;
+      left: 247px;
+      height: 562px;
+      width: 104px;
+
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/103/pt-049/horn-3.png) no-repeat 0px 562px;
+      top: 0px;
+      right: 0px;
+      height: 562px;
+      width: 223px;
+
+    }
+
+
+    &:hover {
+      background-position: 0px 0px;
+    }
+    &.selected {
+      background-position: 0px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+
+#cr-pym-s1 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 80px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+    background: url(../assets/images/103/pt-049/cocktails.png) no-repeat;
+    height: 451px;
+    width: 603px;
+    right: 50px;
+    bottom: 0px;
+    position: absolute;
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    width: 132px;
+    height: 267px;
+    &:nth-of-type(1) {
+      background: url(../assets/images/103/pt-049/cocktail-1.png) no-repeat 0px 267px;
+      top: 0px;
+      left: 103px;
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/103/pt-049/cocktail-2.png) no-repeat 0px 267px;
+      top: 0px;
+      left: 238px;
+
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/103/pt-049/cocktail-3.png) no-repeat 0px 267px;
+      top: 0px;
+      left: 370px;
+
+    }
+
+
+    &:hover {
+      background-position: 0px 0px;
+    }
+    &.selected {
+      background-position: 0px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+
+#cr-pym-s2 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 170px;
+    padding-bottom: 10px;
+  }
+
+
+
+
+  & #trombone-container {
+    background: url(../assets/images/103/pt-049/trombone.png) no-repeat;
+    height: 370px;
+    width: 996px;
+    left: 0px;
+    bottom: -30px;
+    position: absolute;
+
+    filter: grayscale(40%); /* Standard CSS */
+    -webkit-filter: grayscale(40%); /* CSS for Webkit Browsers */
+    filter: url(/elements/grayscale.svg#desaturate); /* Firefox 4-34 */
+    -webkit-filter: grayscale(.4); /* Old WebKit Browsers */
+
+    &.saturate {
+
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+  }
+
+  & #trombone-slide {
+    background: url(../assets/images/103/pt-049/trombone-slide.png) no-repeat;
+    height: 370px;
+    width: 996px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+  }
+
+  & .reveal-items-buttons-container {
+
+    height: 250px;
+    width: 435px;
+    left: 50px;
+    bottom: 360px;
+    position: absolute;
+  }
+
+  & .reveal-item {
+    background: url(../assets/images/103/pt-049/note.png) no-repeat;
+    cursor:pointer;
+    position: relative;
+    width: 77px;
+    height: 109px;
+    float: left;
+    margin-right: 10px;
+
+
+
+    &:hover {
+      background-position: -77px 0px;
+    }
+    &.selected {
+      background-position: -77px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}

@@ -35,13 +35,17 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
 
             var enter_down = new TimelineMax({onComplete:this.onTweenComplete, onCompleteScope:this, onCompleteParams:['enter_down']});
 
+            enter_down.add(TweenMax.set(this.ui.textbox, {
+                background: 'rgba(0,0,0,0)'
+            }));
+
             enter_down.add(TweenMax.from(this.ui.body, 0.5, {
                 autoAlpha: 0.0,
                 top: '+=40',
                 ease: Power3.easeIn
             }));
 
-            enter_down.add(TweenMax.from(this.ui.ornament, 0.38, {
+            /*enter_down.add(TweenMax.from(this.ui.ornament, 0.38, {
                 left: '700px',
                 autoAlpha: 0.0
             }), 0.3);
@@ -51,16 +55,24 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
             }), 0.3);
             enter_down.set(this.ui.ornament, {
                 autoAlpha: 0.0
-            })
+            })*/
 
             enter_down.add(TweenMax.from(this.ui.header, 0.5, {
                 rotationX: '-=180deg',
                 autoAlpha: 0.0
             }), '-=.2');
 
+            enter_down.add(TweenMax.to(this.ui.textbox, 1.0, {
+                background: 'rgba(0,0,0,0.3)'
+            }));
+
             tl.add(enter_down, 'enter_down');
 
             var leave_down = new TimelineMax({onComplete:this.onTweenComplete, onCompleteScope:this, onCompleteParams:['leave_down']});
+
+            leave_down.add(TweenMax.to(this.ui.textbox, 1.0, {
+                background: 'rgba(0,0,0,0.0)'
+            }));
 
             leave_down.add(TweenMax.to(this.ui.textbox, 0.7, {
                 top: '-=50px',
@@ -76,6 +88,10 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
                 top: '+=50px',
                 autoAlpha: 1.0,
                 ease:Power1.easeOut
+            }));
+
+            enter_up.add(TweenMax.to(this.ui.textbox, 1.0, {
+                background: 'rgba(0,0,0,0.3)'
             }));
 
             tl.add(enter_up, 'enter_up');
@@ -111,11 +127,15 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
                 this.ui.body.html(textObj.body);
             }
 
-            this.ui.ornament.css('top', this.ui.hr.position().top);
+            //this.ui.ornament.css('top', this.ui.hr.position().top);
         },
 
         setClass: function (newClass) {
             this.ui.textbox.removeClass().addClass('pt-txt-box ' + newClass);
+        },
+
+        setCSS: function (css) {
+            this.ui.textbox.css(css);
         }
     });
 

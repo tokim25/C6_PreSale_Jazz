@@ -2,10 +2,16 @@
     "name": "Matterhorn Overview",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/pt-directory/img1.png"
-        }
+        {"id": "img1", "src": "assets/images/104/pt-050/sax.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/key-1.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/key-2.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/key-3.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/key-4.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/microphones.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/microphone-1.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/microphone-2.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/trumpet.png"},
+        {"id": "img1", "src": "assets/images/104/pt-050/trumpet-valve.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -20,11 +26,30 @@
 
     "elements": [
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "id": "cr-matterhorn-s3",
+            "class": "reveal-container",
+            "el": "<div></div>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "top": "0px",
+                "left": "0px"
+            }
+        },
+        {
+            "id": "cr-matterhorn-s4",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
+            }
+        },
+        {
+            "id": "cr-matterhorn-s5",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],

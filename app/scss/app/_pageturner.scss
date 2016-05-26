@@ -234,6 +234,9 @@
   position: absolute;
   width: 600px;
   top: 20%;
+  @include border-radius(20px);
+  padding: 30px;
+  box-sizing: border-box;
   //overflow: hidden;
   &.align-left {
     right: 48%;
@@ -257,13 +260,18 @@
     left: 50%;
     right: auto;
   }
+  &.pt-neg-margin-top {
+    margin-top: -75px;
+  }
 }
 .pt-txt-header {
+
   position: relative;
   color: white;
-  font-family: $font-h2;
-  font-weight: 400;
-  font-size: 3.4em;
+  font-family: $font-h1;
+  font-weight: 600;
+  font-size: 3em;
+  text-transform: uppercase;
   //width: 400px;
 }
 .pt-txt-body {
@@ -273,6 +281,7 @@
     font-family: $font-body;
     font-weight: 600;
     margin-bottom: 10px;
+    //text-align: justify;
   }
   p, ul, li {
     line-height: 140%;
@@ -321,6 +330,16 @@
 
 .reveal-text-box {
   position: absolute;
+  a {
+    color: white;
+    font-weight: bold;
+  }
+  b {
+    font-weight: bold;
+  }
+  & h1 {
+    font-size: 18px !important;
+  }
 
 }
 
@@ -339,6 +358,7 @@
   width: 100vw;
   max-width: $max-width;
   max-height: $max-height;
+
 }
 
 .reveal-item {

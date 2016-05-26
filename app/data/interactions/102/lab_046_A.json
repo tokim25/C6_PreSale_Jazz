@@ -2,11 +2,13 @@
     "name": "Lab: Digital Media Plans",
 
     "assetManifest": [
-        {"id": "lab-bg", "src": "assets/images/textures/bg5.jpg"}
     ],
 
     "bg_info": {
-        "backgroundImage": "bg5"
+        "backgroundColor": "#9e483d",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-102",
+        "splashOffset": "300px"
     },
 
     "text": {

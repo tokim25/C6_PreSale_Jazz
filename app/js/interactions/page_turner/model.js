@@ -20,7 +20,13 @@ define(["backbone", "app/vent"], function (Backbone, vent) {
                 success: function () {
                     trace('page_turner module.model.fetch success');
                     this.onDataReady();
-                }.bind(this)
+                }.bind(this),
+                error: function (m, r, o) {
+                    trace('page_turner module.model.fetch error: ', 5);
+                    trace(m, 5);
+                    trace(r, 5);
+                    trace(o, 5);
+                }
             });
         },
 

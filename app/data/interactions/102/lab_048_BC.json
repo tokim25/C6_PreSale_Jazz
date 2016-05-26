@@ -6,7 +6,10 @@
     ],
 
     "bg_info": {
-        "backgroundImage": "bg5"
+        "backgroundColor": "#9e483d",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-102",
+        "splashOffset": "300px"
     },
 
     "text": {

@@ -1,0 +1,22 @@
+<script type="text/template" id="cr-pym-s2-template">
+
+    <div id="cr-pym-s2-items-container" class="reveal-items-container">
+        <div id="trombone-container">
+            <div id="trombone-slide"></div>
+        </div>
+        <div class="reveal-items-buttons-container">
+            <% _.each(items, function (item, i) { %>
+                <div class="reveal-item" data-id="<%= i %>">
+
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+    <div id="cr-pym-s2-text-box" class="reveal-text-box menu-popup">
+        <div class="content"></div>
+    </div>
+
+
+</script>
+

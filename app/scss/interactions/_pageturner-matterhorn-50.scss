@@ -1,0 +1,204 @@
+
+#cr-matterhorn-s3 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+    background: url(../assets/images/104/pt-050/microphones.png) no-repeat;
+    height: 563px;
+    width: 579px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    &:nth-of-type(1) {
+      background: url(../assets/images/104/pt-050/microphone-1.png) no-repeat 0px 563px;
+      left: 0px;
+      top: 0px;
+      width: 291px;
+      height: 563px;
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/104/pt-050/microphone-2.png) no-repeat 0px 563px;
+      right: 0px;
+      top: 0px;
+      width: 288px;
+      height: 563px;
+
+    }
+
+
+    &:hover {
+      background-position: 0px 0px;
+    }
+    &.selected {
+      background-position: 0px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+
+#cr-matterhorn-s4 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+
+    height: 348px;
+    width: 1500px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 0;
+
+    &::after {
+      background: url(../assets/images/104/pt-050/trumpet.png) no-repeat;
+      height: 348px;
+      width: 1500px;
+      left: 0px;
+      bottom: 0px;
+      position: absolute;
+      content: '';
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+
+  & .reveal-item {
+    background: url(../assets/images/104/pt-050/trumpet-valve.png) no-repeat 0px 0px;
+    cursor:pointer;
+    position: absolute;
+    width: 110px;
+    height: 135px;
+    top: 110px;
+    &:nth-of-type(1) {
+      left: 35px;
+    }
+    &:nth-of-type(2) {
+      left: 35px;
+    }
+    &:nth-of-type(2) {
+      left: 135px;
+    }
+    &:nth-of-type(3) {
+      left: 235px;
+    }
+
+    &:hover {
+      background-position: 0px -135px;
+      margin-top: 15px;
+    }
+    &.selected {
+      background-position: 0px 0px;
+      margin-top: 60px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+
+#cr-matterhorn-s5 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+    background: url(../assets/images/104/pt-050/sax.png) no-repeat;
+    height: 684px;
+    width: 402px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    &:nth-of-type(1) {
+      background: url(../assets/images/104/pt-050/key-1.png) no-repeat 0px 100px;
+      left: 148px;
+      top: 260px;
+      width: 100px;
+      height: 93px;
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/104/pt-050/key-2.png) no-repeat 0px 100px;
+      left: 183px;
+      top: 352px;
+      width: 96px;
+      height: 93px;
+
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/104/pt-050/key-3.png) no-repeat 0px 100px;
+      left: 226px;
+      top: 439px;
+      width: 83px;
+      height: 80px;
+
+    }
+    
+    &:nth-of-type(4) {
+      background: url(../assets/images/104/pt-050/key-4.png) no-repeat 0px 100px;
+      left: 173px;
+      top: 512px;
+      width: 83px;
+      height: 80px;
+
+    }
+
+    &:hover {
+      background-position: 0px 0px;
+    }
+    &.selected {
+      background-position: 0px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+

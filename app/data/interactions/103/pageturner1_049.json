@@ -2,10 +2,14 @@
     "name": "IPAW Overview",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/pt-directory/img1.png"
-        }
+        {"id": "img1", "src": "assets/images/103/pt-049/bistro-table.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/drums.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/drum-1.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/drum-2.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/drum-3.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/drum-4.png"}
+
+
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -20,11 +24,20 @@
 
     "elements": [
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "id": "table",
+            "el": "<img src='assets/images/103/pt-049/bistro-table.png'/>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "left": "30px",
+                "bottom": "0px"
+            }
+        },
+        {
+            "id": "cr-ipaw1-s2",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],
@@ -32,7 +45,7 @@
     "scenes": [
         {
             "id": "s1",
-            "bg_color": "#44aade",
+            "bg_color": "#5bbcc8",
             "text": {
                 "header": "Overview",
                 "body": "<p>In the Pre-Sale phase, you'll need to make sure your media plan pricing meets or exceeds our thresholds. And you definitely have to make sure this happens before sending it to the client.</p><p>Discounting products and entire orders are a normal part of selling. That's what discount thresholds and added values are for. That gives you and your account executives the freedom to make quick pricing decisions. But if your pricing goes way under, you risk losing more money than generating.</p><p>That's why we have a simple solution to help track pricing for your orders. We call it the Integrated Pricing Approval Workflow, or IPAW for short.  </p>",
@@ -40,7 +53,7 @@
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "table",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -53,7 +66,7 @@
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "table",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -65,10 +78,10 @@
         },
         {
             "id": "s2",
-            "bg_color": "#993333",
+            "bg_color": "#44aade",
             "text": {
                 "header": "What is IPAW",
-                "body": "<p>IPAW is a pricing approval system that's built right into Slingshot. It helps you during sales planning to save time and keep accountable. Let's see how!</p><p>Click on each icon to uncover how you'll see IPAW working in your Slingshot order.</p>",
+                "body": "<p>IPAW is a pricing approval system that's built right into Slingshot. It helps you during sales planning to save time and keep accountable. Let's see how!</p><p class='pt-callout'>Click on each drum to uncover how you'll see IPAW working in your Slingshot order.</p>",
                 "class": "align-left"
             },
             "interaction": {

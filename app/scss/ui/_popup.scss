@@ -36,6 +36,49 @@
   }
 }
 
+.menu-popup {
+  width: 550px;
+  position: relative;
+  box-sizing: border-box;
+  border-style: solid;
+
+  border-image: url(../assets/images/ui/popup/menu-border.png) 5 round;
+  border-width: 50px;
+  border-image-slice: 80;
+  background-color: #fffaee;
+  padding-bottom: 70px;
+  padding-top: 20px;
+  @include box-shadow(black 5px 5px 10px);
+
+  & .content {
+    box-sizing: border-box;
+    margin: -40px -10px;
+    & h1, h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #433a35;
+      font-size: 24px;
+    }
+    & h2 {
+      margin-top: 50px;
+      font-size: 4.5em;
+    }
+    p, a, b, ul, ol, li {
+      font-size: 16px;
+      color: #433a35;
+    }
+  }
+
+  & {
+    .popup-button {
+      position: absolute;
+      right: 0px;
+    }
+  }
+}
+
+
+
 
 
 

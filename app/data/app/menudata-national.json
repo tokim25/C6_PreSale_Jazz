@@ -93,7 +93,7 @@
                 {
                     "title": "IPAW Overview",
                     "moduleName": "Pageturner1_049",
-                    "path": "interactions/page_turner/module",
+                    "path": "interactions/page_turner/module_ipaw1_049",
                     "url": "data/interactions/103/pageturner1_049.json",
                     "status": 0,
                     "points": 10
@@ -109,7 +109,7 @@
                 {
                     "title": "The IPAW Laws",
                     "moduleName": "Pageturner2_049",
-                    "path": "interactions/page_turner/module",
+                    "path": "interactions/page_turner/module_ipaw2_049",
                     "url": "data/interactions/103/pageturner2_049.json",
                     "status": 0,
                     "points": 10
@@ -125,7 +125,7 @@
                 {
                     "title": "PYM Approvals",
                     "moduleName": "Pageturner3_049",
-                    "path": "interactions/page_turner/module",
+                    "path": "interactions/page_turner/module_pym_049",
                     "url": "data/interactions/103/pageturner3_049.json",
                     "status": 0,
                     "points": 10
@@ -140,7 +140,7 @@
                 {
                     "title": "Matterhorn Overview",
                     "moduleName": "Pageturner1_050",
-                    "path": "interactions/page_turner/module",
+                    "path": "interactions/page_turner/module_matterhorn_050",
                     "url": "data/interactions/104/pageturner_050.json",
                     "status": 0,
                     "points": 10

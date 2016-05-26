@@ -3,14 +3,14 @@
     <div id="cr-mediaplans-s7-items-container" class="reveal-items-container">
         <div class="reveal-items-buttons-container">
             <% _.each(items, function (item, i) { %>
-            <div class="reveal-item" data-id="<%= i %>">
-
+            <div class="reveal-item-parent">
+                <div class="reveal-item" data-id="<%= i %>"></div>
             </div>
             <% }); %>
         </div>
     </div>
 
-    <div id="cr-mediaplans-s7-text-box" class="reveal-text-box fancy-popup">
+    <div id="cr-mediaplans-s7-text-box" class="reveal-text-box menu-popup">
         <div class="content"></div>
     </div>
 

@@ -2,10 +2,10 @@
     "name": "PYM Approvals",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/pt-directory/img1.png"
-        }
+        {"id": "img1", "src": "assets/images/103/pt-049/cocktails.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/cocktail-1.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/cocktail-2.png"},
+        {"id": "img1", "src": "assets/images/103/pt-049/cocktail-3.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -20,11 +20,21 @@
 
     "elements": [
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "id": "cr-pym-s1",
+            "class": "reveal-container",
+            "el": "<div></div>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "top": "0px",
+                "left": "0px"
+            }
+        },
+        {
+            "id": "cr-pym-s2",
+            "class": "reveal-container",
+            "el": "<div></div>",
+            "props": {
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],
@@ -36,8 +46,8 @@
             "bg_color": "#993333",
             "text": {
                 "header": "PYM Approvals",
-                "body": "<p>Every now and then, your recommended media plan might have a pricing approval issue. Hey, it happens! If that happens, you'll submit your plan to PYM for approval through Slingshot. But what happens after that?</p><p>Move the timeline from left to right to see the basic steps for pricing approval</p>",
-                "class": "align-center-wide"
+                "body": "<p>Every now and then, your recommended media plan might have a pricing approval issue. Hey, it happens! If that happens, you'll submit your plan to PYM for approval through Slingshot. But what happens after that?</p><p class='pt-callout'>Click the cocktails to see the basic steps for pricing approval</p>",
+                "class": "align-left"
             },
             "interaction": {
                 "name": "cr_pym_s1",
@@ -50,7 +60,7 @@
                     },
                     {
                         "header": "Step 2",
-                        "body": "<p>You might need to revise your plan a few times for PYM to approve it. Any following submissions or resubmissions go to the same approval case. And each new submission becomes a new comment. This makes it easy for PYM to track what's been going on with your plan.	</p>"
+                        "body": "<p>You might need to revise your plan a few times for PYM to approve it. Any following submissions or resubmissions go to the same approval case. And each new submission becomes a new comment. This makes it easy for PYM to track what's been going on with your plan.</p>"
                     },
                     {
                         "header": "Step 3",
@@ -105,9 +115,9 @@
             "id": "s2",
             "bg_color": "#993333",
             "text": {
-                "header": "",
-                "body": "<p></p>",
-                "class": "align-center-wide"
+                "header": "Manual PYM Approval Cases",
+                "body": "<p>Slingshot can't automate all PYM approval cases. It's sad, we know. The good news is is it does automate the majority of the PYM approvals you’ll need. Other types of approvals will still need Sales and Client Services to make manual approval cases within Salesforce or Matterhorn.</p><p class='pt-callout'>Click the notes to reveal each PYM approval that needs manual approval cases in Salesforce or Matterhorn.</p>",
+                "class": "align-right pt-neg-margin-top"
             },
             "interaction": {
                 "name": "cr_pym_s2",

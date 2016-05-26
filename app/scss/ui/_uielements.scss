@@ -23,9 +23,9 @@
 }
 
 .pt-bg-texture{
-  background: url(../assets/images/backgrounds/page-turner.jpg) repeat-y;
+  background: url(../assets/images/backgrounds/page-turner2.jpg);
+  background-size:100% 100%;
   @include horizontal-align();
-  position: absolute;
   width: 100vw;
   max-width: $max-width;
   top: 0px;

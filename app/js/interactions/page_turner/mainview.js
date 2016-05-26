@@ -333,7 +333,8 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
             var scene_str = this.scene_ar[this.index], label = '', tweenObj = this.tweens[scene_str],
                 scene = this.model.get('scenes')[this.index],
                 bgColor = scene.bg_color,
-                textClass = scene.text.class || 'align-left';
+                textClass = scene.text.class || 'align-left',
+                css = scene.text.css || null;
 
             TweenMax.to(this.ui.colorOverlay, 0.5, {delay: 0.2, backgroundColor: bgColor, ease:Linear.easeNone})
 
