@@ -7,15 +7,15 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
 
         ui: {
             //
-            textbox: '.blob2-popup',
+            textbox: '.reveal-text-box',
             itemsContainer: '.reveal-items-container',
             revealItems: '.reveal-item'
         },
-        
+
         events: {
             'click @ui.revealItems': 'onRevealItemClicked'
         },
-        
+
         initialize: function (options) {
             this.template = options.template;
             this.model = options.model;
@@ -57,11 +57,13 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
 
             //TweenMax.set('.reveal-text-box', {autoAlpha: 1.0})
 
-            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0});
+            TweenMax.set(this.ui.textbox, {autoAlpha: 0.0, right: '65%'});
+
+            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0, right: '55%'});
 
             $content.html('<h1>' + item.header + '</h1>' + item.body);
 
-            vent.trigger('play_sfx', 'cassette_click');
+            vent.trigger('play_sfx', 'revealitem-click');
 
         },
 

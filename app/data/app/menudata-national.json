@@ -216,15 +216,15 @@
             "id": "106",
             "modules": [
                 {
-                    "title": "Media Plans Overview",
+                    "title": "Proposal Decks Overview",
                     "moduleName": "Pageturner1_058",
-                    "path": "interactions/page_turner/module",
+                    "path": "interactions/page_turner/module_proposaldecks1_058",
                     "url": "data/interactions/106/pageturner1_058.json",
                     "status": 0,
                     "points": 10
                 },
                 {
-                    "title": "Third Party Media Plans",
+                    "title": "Anatomy of a Proposal Deck",
                     "moduleName": "ClickReveal_058",
                     "path": "interactions/clickreveal/module",
                     "url": "data/interactions/106/clickreveal_058.json",
@@ -232,15 +232,15 @@
                     "points": 10
                 },
                 {
-                    "title": "Media Plans Overview",
+                    "title": "Proposal Decks Tips & Tricks",
                     "moduleName": "Pageturner2_058",
-                    "path": "interactions/page_turner/module",
+                    "path": "interactions/page_turner/module_proposaldecks2_058",
                     "url": "data/interactions/106/pageturner2_058.json",
                     "status": 0,
                     "points": 10
                 },
                 {
-                    "title": "Lab: Media Plans",
+                    "title": "Lab: Proposal Decks",
                     "moduleName": "Lab_058",
                     "path": "interactions/lab/module",
                     "url": "data/interactions/106/lab_058_A.json",

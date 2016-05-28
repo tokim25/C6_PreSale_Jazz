@@ -59,7 +59,7 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
 
             TweenMax.set(this.ui.textbox, {autoAlpha: 0.0, right: '65%'});
 
-            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0, right: '55%'});
+            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0, right: '50%'});
 
             $content.html('<h1>' + item.header + '</h1>' + item.body);
 

@@ -57,9 +57,9 @@ define( ["marionette", "app/vent"], function (Marionette, vent) {
 
             //TweenMax.set('.reveal-text-box', {autoAlpha: 1.0})
 
-            TweenMax.set(this.ui.textbox, {autoAlpha: 0.0, left: '65%'});
+            TweenMax.set(this.ui.textbox, {autoAlpha: 0.0, left: '200px'});
 
-            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0, left: '55%'});
+            TweenMax.to(this.ui.textbox, 0.5, {autoAlpha: 1.0, left: '55px'});
 
             $content.html('<h1>' + item.header + '</h1>' + item.body);
 

@@ -190,7 +190,7 @@ body {
   position: fixed;
   overflow: hidden; }
 
-.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, .splash-bg-elements, #video-view, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7, #cr-ipaw1-s2, #cr-ipaw2-s1, #cr-pym-s1, #cr-pym-s2, #cr-matterhorn-s3, #cr-matterhorn-s4, #cr-matterhorn-s5 {
+.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, .splash-bg-elements, #video-view, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7, #cr-ipaw1-s2, #cr-ipaw2-s1, #cr-pym-s1, #cr-pym-s2, #cr-matterhorn-s3, #cr-matterhorn-s4, #cr-matterhorn-s5, #cr-proposaldecks-s4, #cr-proposaldecks-s1 {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -2590,7 +2590,7 @@ body {
   top: 0px; }
   #cr-pym-s2 .reveal-text-box {
     position: absolute;
-    right: 350px;
+    left: 55%;
     width: 450px;
     bottom: 170px;
     padding-bottom: 10px; }
@@ -2686,7 +2686,7 @@ body {
     position: absolute;
     right: 350px;
     width: 450px;
-    bottom: 50px;
+    bottom: 350px;
     padding-bottom: 20px; }
   #cr-matterhorn-s4 .reveal-items-buttons-container {
     height: 348px;
@@ -2716,17 +2716,15 @@ body {
     #cr-matterhorn-s4 .reveal-item:nth-of-type(1) {
       left: 35px; }
     #cr-matterhorn-s4 .reveal-item:nth-of-type(2) {
-      left: 35px; }
-    #cr-matterhorn-s4 .reveal-item:nth-of-type(2) {
-      left: 135px; }
+      left: 138px; }
     #cr-matterhorn-s4 .reveal-item:nth-of-type(3) {
-      left: 235px; }
+      left: 240px; }
     #cr-matterhorn-s4 .reveal-item:hover {
       background-position: 0px -135px;
       margin-top: 15px; }
     #cr-matterhorn-s4 .reveal-item.selected {
       background-position: 0px 0px;
-      margin-top: 60px;
+      margin-top: 55px;
       cursor: default; }
 
 #cr-matterhorn-s5 {
@@ -2734,9 +2732,10 @@ body {
   top: 0px; }
   #cr-matterhorn-s5 .reveal-text-box {
     position: absolute;
-    right: 350px;
-    width: 450px;
-    bottom: 50px;
+    right: 50%;
+    margin-right: -275px;
+    width: 550px;
+    bottom: 100px;
     padding-bottom: 20px; }
   #cr-matterhorn-s5 .reveal-items-buttons-container {
     background: url(../assets/images/104/pt-050/sax.png) no-repeat;
@@ -2778,3 +2777,117 @@ body {
     #cr-matterhorn-s5 .reveal-item.selected {
       background-position: 0px 0px;
       cursor: default; }
+
+#cr-proposaldecks-s4 {
+  position: absolute;
+  top: 0px; }
+  #cr-proposaldecks-s4 .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 100px;
+    padding-bottom: 20px; }
+  #cr-proposaldecks-s4 .reveal-items-buttons-container {
+    height: 408px;
+    width: 654px;
+    right: 0px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 0; }
+    #cr-proposaldecks-s4 .reveal-items-buttons-container::after {
+      background: url(../assets/images/106/pt-058/bass.png) no-repeat;
+      height: 408px;
+      width: 654px;
+      top: 0px;
+      position: absolute;
+      content: '';
+      z-index: 2;
+      pointer-events: none; }
+  #cr-proposaldecks-s4 .reveal-item {
+    cursor: pointer;
+    position: absolute;
+    width: 111px;
+    height: 183px;
+    transition: margin 0.3s; }
+    #cr-proposaldecks-s4 .reveal-item:nth-of-type(1) {
+      background: url(../assets/images/106/pt-058/peg-top.png) no-repeat 0px 0px;
+      left: 210px;
+      top: 0px; }
+    #cr-proposaldecks-s4 .reveal-item:nth-of-type(2) {
+      background: url(../assets/images/106/pt-058/peg-top.png) no-repeat 0px 0px;
+      left: 310px;
+      top: 10px; }
+    #cr-proposaldecks-s4 .reveal-item:nth-of-type(3) {
+      background: url(../assets/images/106/pt-058/peg-bottom.png) no-repeat 0px 0px;
+      left: 173px;
+      bottom: 30px; }
+    #cr-proposaldecks-s4 .reveal-item:nth-of-type(4) {
+      background: url(../assets/images/106/pt-058/peg-bottom.png) no-repeat 0px 0px;
+      left: 280px;
+      bottom: 50px; }
+    #cr-proposaldecks-s4 .reveal-item:hover {
+      background-position: -111px 0px; }
+    #cr-proposaldecks-s4 .reveal-item.selected {
+      background-position: -111px 0px;
+      cursor: default; }
+
+#cr-proposaldecks-s1 {
+  position: absolute;
+  top: 0px; }
+  #cr-proposaldecks-s1 .reveal-text-box {
+    position: absolute;
+    width: 450px;
+    bottom: 100px;
+    padding-bottom: 20px; }
+  #cr-proposaldecks-s1 .reveal-items-buttons-container {
+    background: url(../assets/images/106/pt-058/piano.png) no-repeat;
+    height: 643px;
+    width: 479px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute; }
+    #cr-proposaldecks-s1 .reveal-items-buttons-container::after {
+      background: url(../assets/images/106/pt-058/vase.png) no-repeat;
+      height: 643px;
+      width: 479px;
+      top: 0px;
+      position: absolute;
+      content: '';
+      z-index: 2;
+      pointer-events: none; }
+  #cr-proposaldecks-s1 .reveal-item {
+    cursor: pointer;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 286px;
+    filter: grayscale(80%);
+    /* Standard CSS */
+    -webkit-filter: grayscale(80%);
+    /* CSS for Webkit Browsers */
+    filter: url(/elements/grayscale.svg#desaturate);
+    /* Firefox 4-34 */
+    -webkit-filter: grayscale(0.8);
+    /* Old WebKit Browsers */
+    transition: margin 0.3s; }
+    #cr-proposaldecks-s1 .reveal-item:nth-of-type(1) {
+      background: url(../assets/images/106/pt-058/tulip-1.png) no-repeat;
+      top: 0px; }
+    #cr-proposaldecks-s1 .reveal-item:nth-of-type(2) {
+      background: url(../assets/images/106/pt-058/tulip-2.png) no-repeat;
+      top: 54px; }
+    #cr-proposaldecks-s1 .reveal-item:nth-of-type(3) {
+      background: url(../assets/images/106/pt-058/tulip-3.png) no-repeat;
+      top: 108px; }
+    #cr-proposaldecks-s1 .reveal-item:hover {
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0); }
+    #cr-proposaldecks-s1 .reveal-item.selected {
+      cursor: default;
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0); }

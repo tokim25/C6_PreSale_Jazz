@@ -66,7 +66,7 @@
     position: absolute;
     right: 350px;
     width: 450px;
-    bottom: 50px;
+    bottom: 350px;
     padding-bottom: 20px;
   }
 
@@ -103,13 +103,10 @@
       left: 35px;
     }
     &:nth-of-type(2) {
-      left: 35px;
-    }
-    &:nth-of-type(2) {
-      left: 135px;
+      left: 138px;
     }
     &:nth-of-type(3) {
-      left: 235px;
+      left: 240px;
     }
 
     &:hover {
@@ -118,7 +115,7 @@
     }
     &.selected {
       background-position: 0px 0px;
-      margin-top: 60px;
+      margin-top: 55px;
       cursor:default;
     }
 
@@ -135,9 +132,10 @@
 
   & .reveal-text-box {
     position: absolute;
-    right: 350px;
-    width: 450px;
-    bottom: 50px;
+    right: 50%;
+    margin-right: -275px;
+    width: 550px;
+    bottom: 100px;
     padding-bottom: 20px;
   }
 

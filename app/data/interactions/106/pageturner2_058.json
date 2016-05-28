@@ -2,10 +2,11 @@
     "name": "Overview",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/pt-directory/img1.png"
-        }
+        {"id": "img1", "src": "assets/images/106/pt-058/piano.png"},
+        {"id": "img1", "src": "assets/images/106/pt-058/vase.png"},
+        {"id": "img1", "src": "assets/images/106/pt-058/tulip-1.png"},
+        {"id": "img1", "src": "assets/images/106/pt-058/tulip-2.png"},
+        {"id": "img1", "src": "assets/images/106/pt-058/tulip-3.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -19,50 +20,60 @@
     },
 
     "elements": [
+
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "id": "cr-proposaldecks-s1",
+            "class": "reveal-container",
+            "el": "<div></div>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],
 
     "scenes": [
         {
-            "id": "basic",
-            "bg_color": "#44aade",
+            "id": "s1",
+            "bg_color": "#993333",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            }
-        },
-        {
-            "id": "basicWithItems",
-            "bg_color": "#44aade",
-            "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "header": "Personalization",
+                "body": "<p>Pandora proposal decks should feel as personalized as Pandora stations. In this last section, let's learn some tips on how to do this!</p><p class='pt-callout'>Click on each tulip to uncover another tip.</p>",
+                "class": "align-right"
+            },
+            "interaction": {
+                "name": "cr_proposaldecks_s1",
+                "id": "cr-proposaldecks-s1",
+                "type": "clickReveal",
+                "items": [
+                    {
+                        "header": "Templates",
+                        "body": "<p>Look through these <a href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026chB' target='_blank'>template slides</a> to personalize your deck's imagery for your client. For instance, let's say you're pitching to an auto client. This template deck has imagery of cars using Pandora's theme already made for you! That'll save you time and impress the heck outta your clients!</p>"
+                    },
+                    {
+                        "header": "Sales Research",
+                        "body": "<p>Sales Research data provides information about our market reach, user engagement and index scores. Use these data points to make to show your clients that we know their audience! </p>"
+                    },
+                    {
+                        "header": "Branding",
+                        "body": "<p>Include brand mentions whenever you can! It has the same effect as someone saying your name. It draws attention, creates direct connection, and oozes personalization! You can personalize your proposal deck is by including the client's logo and taglines.</p>"
+                    }
+                ]
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "cr-proposaldecks-s1",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0.0,
-                        "right": "80%",
-                        "ease": "Back.easeOut"
+                        "autoAlpha": 0.0
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "cr-proposaldecks-s1",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -73,70 +84,13 @@
             ]
         },
         {
-            "id": "lifeofdeal",
-            "bg_color": "#993333",
+            "id": "s2",
+            "bg_color": "#44aade",
             "text": {
-                "header": "Title",
-                "body": "<p></p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
-            },
-            "interaction": {
-                "name": "cr_process",
-                "id": "css-item-container",
-                "type": "clickReveal",
-                "items": [
-                    {
-                        "header": "",
-                        "body": "<p></p>"
-                    },
-                    {
-                        "header": "",
-                        "body": "<p></p>"
-                    }
-                ]
-            },
-            "enter": [
-                {
-                    "id": "css-item-container",
-                    "type": "from",
-                    "duration": 0.5,
-                    "startTime": 0.3,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "css-item-container .reveal-item",
-                    "type": "staggerFrom",
-                    "duration": 0.3,
-                    "startTime": 0.8,
-                    "staggerOffset": 0.15,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                }
-            ],
-            "leave": [
-                {
-                    "id": "css-item-container",
-                    "type": "to",
-                    "duration": 0.5,
-                    "startTime": 0.3,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "css-item-container .reveal-item",
-                    "type": "staggerTo",
-                    "duration": 0.3,
-                    "startTime": 0.8,
-                    "staggerOffset": 0.15,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                }
-            ]
+                "header": "Next Steps",
+                "body": "<p>The best way to learn how to build a proposal deck is practice! We know you're waiting to start digging into your role. In the meantime, take a look at some great examples proposal decks that other pandas designed!</p><ol><li><a href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=06940000001bV7E' target='_blank'>Walt Disney World Night of Joy Campaign</a></li><li><a href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026xVa' target='_blank'>Mad Max: Fury Road Campaign</a></li><li><a href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=0694000000273Rt' target='_blank'>LL Bean Holiday Campaign</a></li></ol><p>If you'd like to get a bit more hands-on, ask your TA to send you some older RFPs and media plans for practice!</p>",
+                "class": "align-center-wide"
+            }
         }
 
     ]

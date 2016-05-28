@@ -1,0 +1,161 @@
+
+
+
+#cr-proposaldecks-s4 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+  & .reveal-text-box {
+    position: absolute;
+    right: 350px;
+    width: 450px;
+    bottom: 100px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+
+    height: 408px;
+    width: 654px;
+    right: 0px;
+    @include vertical-align;
+    z-index: 0;
+
+    &::after {
+      background: url(../assets/images/106/pt-058/bass.png) no-repeat;
+      height: 408px;
+      width: 654px;
+      top: 0px;
+      position: absolute;
+      content: '';
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    width: 111px;
+    height: 183px;
+    &:nth-of-type(1) {
+      background: url(../assets/images/106/pt-058/peg-top.png) no-repeat 0px 0px;
+      left: 210px;
+      top: 0px;
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/106/pt-058/peg-top.png) no-repeat 0px 0px;
+      left: 310px;
+      top: 10px;
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/106/pt-058/peg-bottom.png) no-repeat 0px 0px;
+      left: 173px;
+      bottom: 30px;
+    }
+    &:nth-of-type(4) {
+      background: url(../assets/images/106/pt-058/peg-bottom.png) no-repeat 0px 0px;
+      left: 280px;
+      bottom: 50px;
+    }
+
+    &:hover {
+      background-position: -111px 0px;
+    }
+    &.selected {
+      background-position: -111px 0px;
+      cursor:default;
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+
+
+
+#cr-proposaldecks-s1 {
+  @extend %view;
+  position: absolute;
+  top: 0px;
+
+
+
+
+
+  & .reveal-text-box {
+    position: absolute;
+    width: 450px;
+    bottom: 100px;
+    padding-bottom: 20px;
+  }
+
+  & .reveal-items-buttons-container {
+    background: url(../assets/images/106/pt-058/piano.png) no-repeat;
+    height: 643px;
+    width: 479px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    &::after {
+      background: url(../assets/images/106/pt-058/vase.png) no-repeat;
+      height: 643px;
+      width: 479px;
+      top: 0px;
+      position: absolute;
+      content: '';
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+
+  & .reveal-item {
+
+    cursor:pointer;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 286px;
+    filter: grayscale(80%); /* Standard CSS */
+    -webkit-filter: grayscale(80%); /* CSS for Webkit Browsers */
+    filter: url(/elements/grayscale.svg#desaturate); /* Firefox 4-34 */
+    -webkit-filter: grayscale(.8); /* Old WebKit Browsers */
+    &:nth-of-type(1) {
+      background: url(../assets/images/106/pt-058/tulip-1.png) no-repeat;
+      top: 0px;
+
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/106/pt-058/tulip-2.png) no-repeat;
+      top: 54px;
+
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/106/pt-058/tulip-3.png) no-repeat ;
+      top: 108px;
+
+    }
+    
+
+
+    &:hover {
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+    &.selected {
+      cursor:default;
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+    transition: margin 0.3s;
+
+  }
+
+}
+

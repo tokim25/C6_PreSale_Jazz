@@ -2,10 +2,9 @@
     "name": "Proposal Decks",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/pt-directory/img1.png"
-        }
+        {"id": "img1", "src": "assets/images/106/pt-058/bass.png"},
+        {"id": "img1", "src": "assets/images/106/pt-058/peg-top.png"},
+        {"id": "img1", "src": "assets/images/106/pt-058/peg-bottom.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -20,11 +19,12 @@
 
     "elements": [
         {
-            "id": "img-1",
-            "el": "<img src='assets/images/pt-directory/img1.png'/>",
+            "id": "cr-proposaldecks-s4",
+            "class": "reveal-container",
+            "el": "<div></div>",
             "props": {
-                "left": "0px",
-                "top": "5%"
+                "top": "0px",
+                "left": "0px"
             }
         }
     ],
@@ -36,7 +36,7 @@
             "text": {
                 "header": "Overview",
                 "body": "<p>Sometimes, your solid media plan recommendations might not be enough. To woo some clients, you might need to give them more than a media plan document. They might want mock ups of what their campaign would look like on Pandora. Or user engagement metrics from our Sales Research tools. Maybe even ComScore index scores to help round it out. </p><p>That sounds like a lot of information. If only there was an easy way to gather all this information into a simple presentation. Enter, the proposal deck!</p>",
-                "class": "align-center-wide"
+                "class": "align-left"
             },
             "enter": [
                 {
@@ -134,12 +134,12 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Proposal Deck FAQs",
-                "body": "<p>Let’s start by answering the most frequently asked questions about proposal decks.</p><p>Click each button to find answers to these frequently asked questions.</p>",
-                "class": "align-right"
+                "body": "<p>Let’s start by answering the most frequently asked questions about proposal decks.</p><p class='pt-callout'>Turn each tuning peg to find answers to these frequently asked questions.</p>",
+                "class": "align-left"
             },
             "interaction": {
-                "name": "cr_proposaldeck_s4",
-                "id": "cr-proposaldeck-s4",
+                "name": "cr_proposaldecks_s4",
+                "id": "cr-proposaldecks-s4",
                 "type": "clickReveal",
                 "items": [
                     {
@@ -162,43 +162,23 @@
             },
             "enter": [
                 {
-                    "id": "cr-proposaldeck-s4",
+                    "id": "cr-proposaldecks-s4",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "cr-proposaldeck-s4 .reveal-item",
-                    "type": "staggerFrom",
-                    "duration": 0.3,
-                    "startTime": 0.8,
-                    "staggerOffset": 0.15,
-                    "props": {
-                        "autoAlpha": 0
+                        "autoAlpha": 0.0
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "cr-proposaldeck-s4",
+                    "id": "cr-proposaldecks-s4",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "cr-proposaldeck-s4 .reveal-item",
-                    "type": "staggerTo",
-                    "duration": 0.3,
-                    "startTime": 0.8,
-                    "staggerOffset": 0.15,
-                    "props": {
-                        "autoAlpha": 0
+                        "autoAlpha": 0.0
                     }
                 }
             ]

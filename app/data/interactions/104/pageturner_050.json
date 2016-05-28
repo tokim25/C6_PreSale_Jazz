@@ -61,7 +61,7 @@
             "text": {
                 "header": "Overview",
                 "body": "<p>You might know the Matterhorn as a mountain in the Swiss Alps, or as one of the best rides at Disneyland. At Pandora, Matterhorn is a reservation request system!</p><p>Let’s learn what Matterhorn is and when to use it. During your next check-in, ask your TA to give you a demonstration of how to use this tool for your campaigns. </p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "class": "align-center-wide"
             },
             "enter": [
                 {
@@ -94,7 +94,7 @@
             "text": {
                 "header": "What is Matterhorn?",
                 "body": "<p>Matterhorn is an internal reservation request system managed by PYM. Client Services uses this tool for campaigns that have heavy-ups, takeovers and/or sponsorship opportunities. Don't know what those terms mean? It's okay, we'll get to that in a little bit!</p><p>After Client Services requests a reservation, PYM can approve or deny it. They decide using a lot of different variables, like revenue and competing reservations. </p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "class": "align-center-wide"
             },
             "enter": [
                 {
@@ -126,8 +126,8 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Who uses Matterhorn?",
-                "body": "<p>Some client services teams might use Matterhorn for different purposes. Let's see how your team uses Matterhorn for your campaigns!</p><p>Click on both icons to see how different teams at Pandora use Matterhorn for their campaigns.</p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "body": "<p>Some client services teams might use Matterhorn for different purposes. Let's see how your team uses Matterhorn for your campaigns!</p><p class='pt-callout'>Click on the microphones to see how different teams at Pandora use Matterhorn for their campaigns.</p>",
+                "class": "align-left"
             },
             "interaction": {
                 "name": "cr_matterhorn_s3",
@@ -192,8 +192,8 @@
             "bg_color": "#993333",
             "text": {
                 "header": "When to use Matterhorn?",
-                "body": "<p>So… when’s the right time to put in a reservation request? Usually, this happens in the pre-sale phase of your deal (duh).</p><p>Click on each icon to learn more.</p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "body": "<p>So… when’s the right time to put in a reservation request? Usually, this happens in the pre-sale phase of your deal (duh).</p><p class='pt-callout'>Play the trumpet to learn more.</p>",
+                "class": "align-right"
             },
             "interaction": {
                 "name": "cr_matterhorn_s4",
@@ -262,8 +262,8 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Matterhorn Reservation Types",
-                "body": "<p>What's the difference between a takeover and heavy-up? What's a Pandora sponsorship and a DFP sponsorship? Let's explore what these terms mean, and how they fit into Matterhorn!</p><p>Click on the icons to learn more about each Matterhorn reservation type.</p>",
-                "class": "align-right|align-left|align-center|align-center-wide"
+                "body": "<p>What's the difference between a takeover and heavy-up? What's a Pandora sponsorship and a DFP sponsorship? Let's explore what these terms mean, and how they fit into Matterhorn!</p><p class='pt-callout'>Play the sax to learn more about each Matterhorn reservation type.</p>",
+                "class": "align-center-wide"
             },
             "interaction": {
                 "name": "cr_matterhorn_s5",

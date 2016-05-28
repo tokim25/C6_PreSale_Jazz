@@ -6,12 +6,12 @@ define(['backbone',
         'marionette',
         'app/vent',
         'app/app',
-        '/model',
-        '/mainview',
-        '/clickreveal/yieldmax',
-        'text!templates/interactions/page_turner/clickreveal/yieldmax.html'
+        'interactions/page_turner/model',
+        'interactions/page_turner/mainview',
+        'interactions/page_turner/clickreveal/cr_proposaldecks_s4',
+        'text!templates/interactions/page_turner/clickreveal/cr_proposaldecks.html'
     ],
-    function(Backbone, Marionette, vent, app, Model, MainView, CRYieldmax, templateYieldmax){
+    function(Backbone, Marionette, vent, app, Model, MainView, CR, template){
 
     var Module = Marionette.Object.extend({
 
@@ -40,9 +40,9 @@ define(['backbone',
             this.view = new MainView({
                 model:this.model,
                 interactions: {
-                    cr_yieldmax: {
-                        module: CRYieldmax,
-                        template: templateYieldmax
+                    cr_proposaldecks_s4: {
+                        module: CR,
+                        template: template
                     }
                 },
                 soundPlayer: app.soundPlayer

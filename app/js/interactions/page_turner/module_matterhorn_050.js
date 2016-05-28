@@ -9,7 +9,7 @@ define(['backbone',
         'interactions/page_turner/model',
         'interactions/page_turner/mainview',
         'interactions/page_turner/clickreveal/cr_matterhorn_s3',
-        'interactions/page_turner/clickreveal/cr_matterhorn_s3',
+        'interactions/page_turner/clickreveal/cr_matterhorn_s4',
         'interactions/page_turner/clickreveal/cr_matterhorn_s5',
         'text!templates/interactions/page_turner/clickreveal/cr_matterhorn.html'
     ],

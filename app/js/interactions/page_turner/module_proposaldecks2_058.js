@@ -6,12 +6,12 @@ define(['backbone',
         'marionette',
         'app/vent',
         'app/app',
-        '/model',
-        '/mainview',
-        '/clickreveal/workflows',
-        'text!templates/interactions/page_turner/clickreveal/workflows.html'
+        'interactions/page_turner/model',
+        'interactions/page_turner/mainview',
+        'interactions/page_turner/clickreveal/cr_proposaldecks_s1',
+        'text!templates/interactions/page_turner/clickreveal/cr_proposaldecks.html'
     ],
-    function(Backbone, Marionette, vent, app, Model, MainView, CRWorkflows, templateWorkflows){
+    function(Backbone, Marionette, vent, app, Model, MainView, CR, template){
 
     var Module = Marionette.Object.extend({
 
@@ -40,11 +40,12 @@ define(['backbone',
             this.view = new MainView({
                 model:this.model,
                 interactions: {
-                    cr_workflows: {
-                        module: CRWorkflows,
-                        template: templateWorkflows
+                    cr_proposaldecks_s1: {
+                        module: CR,
+                        template: template
                     }
-                }
+                },
+                soundPlayer: app.soundPlayer
             });
             this.listenTo(this.view, 'mainview:activity-start', this.onActivityStart);
             this.listenTo(this.view, 'mainview:activity-complete', this.onActivityComplete);
