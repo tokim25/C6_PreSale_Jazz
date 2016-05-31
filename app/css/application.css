@@ -2144,9 +2144,11 @@ body {
   width: 650px; }
   .splash-text-container .popup-title {
     position: relative;
-    font-family: "caviar_dreamsbold", sans-serif;
+    font-family: "parisishregular", sans-serif;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
     margin: 20px 0px 10px 0px; }
   .splash-text-container .popup-body {
     position: relative; }
