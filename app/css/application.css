@@ -1695,7 +1695,8 @@ body {
   font-family: "parisishregular", sans-serif;
   font-weight: 600;
   font-size: 3em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .pt-txt-body {
   position: relative; }
@@ -1703,7 +1704,6 @@ body {
     position: relative;
     color: white;
     font-family: "Avenir", sans-serif;
-    font-weight: 600;
     margin-bottom: 10px; }
   .pt-txt-body p, .pt-txt-body ul, .pt-txt-body li {
     line-height: 140%;

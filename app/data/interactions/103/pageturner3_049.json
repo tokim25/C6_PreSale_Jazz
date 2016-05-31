@@ -215,7 +215,7 @@
             "text": {
                 "header": "Nice Work!",
                 "body": "<p>You did it! Pricing approvals aren't that scary. And with resources like Slingshot to keep you in the clear, it should make sales planning a cinch!</p><p>If you want any practice with pricing approvals before working on a real campaign, don't sweat it! Just practice in our Slingshot training environment! </p>",
-                "class": "align-right"
+                "class": "align-left"
             },
             "enter": [
                 {
@@ -248,7 +248,7 @@
             "text": {
                 "header": "Resources",
                 "body": "<ul><li><a href='https://wiki.savagebeast.com/display/eng/Integrated+Pricing+Approvals+Workflow+%28IPAW%29+FAQ' target='_blank'>IPAW FAQ Wiki page</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0dzJWbVN5V1ppVUE/view?usp=sharing' target='_blank'>IPAW in the Order Entry Wizard for Digital Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0WlZRNFBCemFyQk0/view?usp=sharing' target='_blank'>IPAW in the Order Entry Wizard for Broadcast Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0OTZTODFOeDVXRjQ/view?usp=sharing' target='_blank'>IPAW in the Plan View for Digital Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0MjJCcHpSamFxNjQ/view?usp=sharing' target='_blank'>IPAW in the Plan View for Broadcast Orders</a></li><li>Video: <a href='https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0eHEwM2ZvRjBWQ3M/view?usp=sharing' target='_blank'>Submitting IPAW Cases</a></li></ul>",
-                "class": "align-right"
+                "class": "align-center-wide"
             },
             "enter": [
                 {

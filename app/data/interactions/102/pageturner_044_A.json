@@ -228,7 +228,7 @@
             "id": "s5",
             "bg_color": "#44aade",
             "text": {
-                "header": "Third Party Media Plans & Media Buying Systems",
+                "header": "Third Party Media Plans &<br>Media Buying Systems",
                 "body": "<p>Third party media plans are a common ask from clients during the media planning process. <b>Third party media plan templates</b> are also known as agency spec sheets. Many larger agencies might request us to format our media plans with their templates. That's so they can compare media plans across publishers without worrying about formatting issues. They want to make the metrics, products and budgets easy to compare across media plans. </p><p>Clients might also ask us to build media plans right into their own order management system. Just like we use Slingshot to make media planning easy, clients might use their own system too. Some examples of media planning systems they might use include STRATA, MediaOcean and Prisma. </p><p>In your pod, the campaign specialist handles both of these tasks. </p>",
                 "class": "align-center-wide"
             },
@@ -332,7 +332,7 @@
             "id": "s7",
             "bg_color": "#993333",
             "text": {
-                "header": "Title",
+                "header": "Pandora Media Plan Workflow",
                 "body": "<p>The basic workflow for creating a media plan in Slingshot can be different for each media plan. Why? A big reason is it depends if you're building a Pandora media plan, or a media plan that uses an agency spec sheet. Let's try to figure out the core steps in the process!</p><p class='pt-callout'>First, let's learn about the Pandora Media Plan. Click the lights to uncover more details about each step of the workflow.</p>",
                 "class": "align-right"
             },

@@ -36,7 +36,7 @@
             "text": {
                 "header": "Overview",
                 "body": "<p>Sometimes, your solid media plan recommendations might not be enough. To woo some clients, you might need to give them more than a media plan document. They might want mock ups of what their campaign would look like on Pandora. Or user engagement metrics from our Sales Research tools. Maybe even ComScore index scores to help round it out. </p><p>That sounds like a lot of information. If only there was an easy way to gather all this information into a simple presentation. Enter, the proposal deck!</p>",
-                "class": "align-left"
+                "class": "align-center-wide"
             },
             "enter": [
                 {

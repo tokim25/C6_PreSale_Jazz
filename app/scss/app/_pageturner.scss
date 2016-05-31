@@ -272,6 +272,7 @@
   font-weight: 600;
   font-size: 3em;
   text-transform: uppercase;
+  text-align: center;
   //width: 400px;
 }
 .pt-txt-body {
@@ -279,7 +280,7 @@
     position: relative;
     color: white;
     font-family: $font-body;
-    font-weight: 600;
+    //font-weight: 600;
     margin-bottom: 10px;
     //text-align: justify;
   }
