@@ -2,10 +2,13 @@
     "name": "PYM Approvals",
 
     "assetManifest": [
-        {"id": "img1", "src": "assets/images/103/pt-049/cocktails.png"},
-        {"id": "img1", "src": "assets/images/103/pt-049/cocktail-1.png"},
-        {"id": "img1", "src": "assets/images/103/pt-049/cocktail-2.png"},
-        {"id": "img1", "src": "assets/images/103/pt-049/cocktail-3.png"}
+        {"id": "cocktails", "src": "assets/images/103/pt-049/cocktails.png"},
+        {"id": "cocktails1", "src": "assets/images/103/pt-049/cocktail-1.png"},
+        {"id": "cocktails2", "src": "assets/images/103/pt-049/cocktail-2.png"},
+        {"id": "cocktails3", "src": "assets/images/103/pt-049/cocktail-3.png"},
+        {"id": "trombone", "src": "assets/images/103/pt-049/trombone.png"},
+        {"id": "trombone-slide", "src": "assets/images/103/pt-049/trombone-slide.png"},
+        {"id": "guitar-amp", "src": "assets/images/103/pt-049/guitar-amp.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -34,6 +37,14 @@
             "el": "<div></div>",
             "props": {
                 "top": "0px",
+                "left": "0px"
+            }
+        },
+        {
+            "id": "guitar-amp",
+            "el": "<img src='assets/images/103/pt-049/guitar-amp.png' />",
+            "props": {
+                "bottom": "0px",
                 "left": "0px"
             }
         }
@@ -215,24 +226,22 @@
             "text": {
                 "header": "Nice Work!",
                 "body": "<p>You did it! Pricing approvals aren't that scary. And with resources like Slingshot to keep you in the clear, it should make sales planning a cinch!</p><p>If you want any practice with pricing approvals before working on a real campaign, don't sweat it! Just practice in our Slingshot training environment! </p>",
-                "class": "align-left"
+                "class": "align-right"
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "guitar-amp",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0.0,
-                        "right": "80%",
-                        "ease": "Back.easeOut"
+                        "autoAlpha": 0.0
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "guitar-amp",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,

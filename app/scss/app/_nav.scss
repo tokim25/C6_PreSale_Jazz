@@ -45,10 +45,15 @@
 }
 
 .overlay-title {
-  @include horizontal-align;
   @extend %overlay-text;
-  font-size: 6.2em;
-  top: 75px;
+  max-width: $max-width;
+  top: 35px;
+  width: 100vw;
+  margin: 10px;
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  @extend %unselectable;
   & .title-icon {
     width: 45px;
     height: 45px;

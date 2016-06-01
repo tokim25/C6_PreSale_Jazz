@@ -2,9 +2,11 @@
     "name": "Proposal Decks",
 
     "assetManifest": [
-        {"id": "img1", "src": "assets/images/106/pt-058/bass.png"},
-        {"id": "img1", "src": "assets/images/106/pt-058/peg-top.png"},
-        {"id": "img1", "src": "assets/images/106/pt-058/peg-bottom.png"}
+        {"id": "bass", "src": "assets/images/106/pt-058/bass.png"},
+        {"id": "peg-top", "src": "assets/images/106/pt-058/peg-top.png"},
+        {"id": "peg-bottom", "src": "assets/images/106/pt-058/peg-bottom.png"},
+        {"id": "chair-sax", "src": "assets/images/106/pt-058/chair-sax.png"},
+        {"id": "trombone", "src": "assets/images/106/pt-058/trombone.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"
@@ -25,6 +27,22 @@
             "props": {
                 "top": "0px",
                 "left": "0px"
+            }
+        },
+        {
+            "id": "trombone",
+            "el": "<img src='assets/images/106/pt-058/trombone.png' />",
+            "props": {
+                "bottom": "0px",
+                "left": "0px"
+            }
+        },
+        {
+            "id": "chair-sax",
+            "el": "<img src='assets/images/106/pt-058/chair-sax.png' />",
+            "props": {
+                "bottom": "0px",
+                "right": "0px"
             }
         }
     ],
@@ -73,20 +91,18 @@
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "chair-sax",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0.0,
-                        "right": "80%",
-                        "ease": "Back.easeOut"
+                        "autoAlpha": 0.0
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "chair-sax",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -106,20 +122,18 @@
             },
             "enter": [
                 {
-                    "id": "img-1",
+                    "id": "trombone",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0.0,
-                        "right": "80%",
-                        "ease": "Back.easeOut"
+                        "autoAlpha": 0.0
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "img-1",
+                    "id": "trombone",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,

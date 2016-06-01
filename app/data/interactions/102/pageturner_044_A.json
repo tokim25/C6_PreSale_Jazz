@@ -2,10 +2,8 @@
     "name": "Media Plans Overview",
 
     "assetManifest": [
-        {
-            "id": "img1",
-            "src": "assets/images/102/pt-044/microphone.png"
-        }
+        {"id": "mic", "src": "assets/images/102/pt-044/microphone.png"},
+        {"id": "solo-bass", "src": "assets/images/102/pt-044/solo-bass.png"}
     ],
     "bg_info": {
         "bg_color": "#1959b3"
@@ -24,6 +22,14 @@
             "el": "<img src='assets/images/102/pt-044/microphone.png'/>",
             "props": {
                 "left": "30px",
+                "bottom": "0px"
+            }
+        },
+        {
+            "id": "solo-bass",
+            "el": "<img src='assets/images/102/pt-044/solo-bass.png'/>",
+            "props": {
+                "left": "0px",
                 "bottom": "0px"
             }
         },
@@ -201,20 +207,18 @@
             },
             "enter": [
                 {
-                    "id": "mic",
+                    "id": "solo-bass",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
                     "props": {
-                        "autoAlpha": 0.0,
-                        "right": "80%",
-                        "ease": "Back.easeOut"
+                        "autoAlpha": 0.0
                     }
                 }
             ],
             "leave": [
                 {
-                    "id": "mic",
+                    "id": "solo-bass",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,
