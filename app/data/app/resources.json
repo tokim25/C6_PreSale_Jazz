@@ -2,54 +2,84 @@
     "name": "Resources",
     "groups": [
         {
-            "label": "Third Party Served",
+            "label": "Proposal Deck Resources",
             "role": "all",
             "links": [
                 {
                     "type": "link",
-                    "text": "Pandora Advertising Product Specs",
-                    "url": "http://advertising.pandora.com/products-specs/"
+                    "text": "Audience Segment Template Slide Images",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026chB"
                 },
                 {
                     "type": "link",
-                    "text": "Creative Specs Wiki Page",
-                    "url": "https://wiki.savagebeast.com/display/SALESOPS/Creative+Specs"
+                    "text": "Ad Product Overview Deck",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Cpz"
                 },
                 {
                     "type": "link",
-                    "text": "Creative Asset Specifications",
-                    "url": "https://wiki.savagebeast.com/display/CS/Creative+Asset+Specs"
+                    "text": "Core Narrative",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Ynl"
                 },
                 {
                     "type": "link",
-                    "text": "Third Party Vendor Acceptance Matrix",
-                    "url": "https://wiki.savagebeast.com/display/SALESOPS/3rd+Party+Vendor+Acceptance+Matrix"
-                },
-                {
-                    "type": "link",
-                    "text": "Product Guides",
-                    "url": "https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&searchTerm=product%20guide&shepherdToken=VmpFPSxNakF4TlMwd055MHlPVlF4T0RveU5Ub3lPUzR4TVRkYSxwRFFOLE9XUmlPREl4&searchExtensions=%5B%5D&searchWorkspaceIds=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&resultsListType=s&searchRefreshFacets=false"
+                    "text": "Audience Profiles + Vertical Decks",
+                    "url": "https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&masterWorkspaceId=05840000000HBNo&searchWorkspaceIds=%5B%2205840000000HBNo%22%5D&prop_00N40000003JOPA=0AAZ&shepherdToken=VmpFPSxNakF4TlMwd09DMHlOMVF5TURveE1qb3pPUzQzTVRCYSxCX2FNLE9XUmlPREl4&searchExtensions=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&searchProperties=%7B%2200N40000003JOPA%22%3A%5B%220AAZ%22%5D%7D&resultsListType=s&searchRefreshFacets=false"
                 }
             ]
         },
         {
-            "label": "YieldMax Pricing Guidance Tool",
-            "role": ["performance"],
+            "label": "Guides",
+            "role": ["all"],
             "links": [
                 {
                     "type": "link",
-                    "text": "YieldMax Pricing Guidance Tool",
-                    "url": "https://sv5-tableauqa-1.savagebeast.com/views/PricingGuide_YieldMax/NEWImpressionDistribution?:embed=y&:display_count=no"
+                    "text": "Product Guides",
+                    "url": "https://pandora.my.salesforce.com/sfc/#workspaceView?selectedWorkspaceId=05840000000HBNZ"
                 },
                 {
                     "type": "link",
-                    "text": "YieldMax Pricing Guidance document",
-                    "url": "https://docs.google.com/spreadsheets/d/1TNr88VNf_sWxQhhEqjwRAAVEE4oxToJjafGDx8uSdOs/edit#gid=2112918301&vpid=A1"
+                    "text": "IPAW FAQ Wiki Page",
+                    "url": "https://wiki.savagebeast.com/display/eng/Integrated+Pricing+Approvals+Workflow+%28IPAW%29+FAQ"
                 },
                 {
                     "type": "link",
-                    "text": "PYM's policies for performance campaigns",
-                    "url": "https://pandora.my.salesforce.com/06940000001cZjs"
+                    "text": "IPAW In the Order Entry Wizard for Digital Orders",
+                    "url": "https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0dzJWbVN5V1ppVUE/view?usp=sharing"
+                },
+                {
+                    "type": "link",
+                    "text": "IPAW in the Order Entry Wizard for Broadcast Orders",
+                    "url": "https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0WlZRNFBCemFyQk0/view?usp=sharing"
+                },
+                {
+                    "type": "link",
+                    "text": "IPAW in the Plan View for Digital Orders",
+                    "url": "https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0OTZTODFOeDVXRjQ/view?usp=sharing"
+                },
+                {
+                    "type": "link",
+                    "text": "IPAW in the Plan View for Broadcast Orders",
+                    "url": "https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0MjJCcHpSamFxNjQ/view?usp=sharing"
+                },
+                {
+                    "type": "link",
+                    "text": "Submitting IPAW Cases",
+                    "url": "https://drive.google.com/a/pandora.com/file/d/0B0bdtSoqSuf0eHEwM2ZvRjBWQ3M/view?usp=sharing"
+                },
+                {
+                    "type": "link",
+                    "text": "Matterhorn Walkthrough",
+                    "url": "https://www.brainshark.com/pandoramedia/vu?pi=zHizDtaeoz6hX2z0&r3f1=b882fcafa3e7e3e4fce88de9f6bebcb8bffefb82e7a9bdf3bfaaede88dedb9b6bcbfbfb5ea85e5e1e4edfcfab4e88bf8f4bebcb8bffefb82e7a9bdf2a4a4f6ecc4dae09ed4dd"
+                },
+                {
+                    "type": "link",
+                    "text": "Matterhorn Training Documentation",
+                    "url": "https://wiki.savagebeast.com/display/ENIT/Matterhorn+Training+Documentation"
+                },
+                {
+                    "type": "link",
+                    "text": "Matterhorn FAQ",
+                    "url": "https://wiki.savagebeast.com/display/pym/Matterhorn+FAQ"
                 }
             ]
         },
@@ -59,8 +89,23 @@
             "links": [
                 {
                     "type": "link",
-                    "text": "Using the Advertiser Objectives Matrix and Marketing Funnel",
-                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026kLr"
+                    "text": "Avails Tool",
+                    "url": "http://slingshot/aap/slingshot/forecast"
+                },
+                {
+                    "type": "link",
+                    "text": "Sales Research Home",
+                    "url": "https://wiki.savagebeast.com/display/sr/Sales+Research+Home"
+                },
+                {
+                    "type": "link",
+                    "text": "ComScore (Login Required)",
+                    "url": "http://mymetrix.comscore.com/app/report.aspx"
+                },
+                {
+                    "type": "link",
+                    "text": "Matterhorn",
+                    "url": "http://crossbow1-matterhorn.savagebeast.com:7001/aap/matterhorn/home.html"
                 }
             ]
         }
