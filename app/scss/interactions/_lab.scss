@@ -2,5 +2,74 @@
   @extend %view;
 
 
+
+}
+
+.lab-popup {
+  @extend %view;
+  & .popup-button {
+    position: absolute;
+    bottom: 50px;
+    &[data-id="back"] {
+      left: 50px;
+    }
+    &[data-id="continue"] {
+      right: 50px;
+    }
+  }
+
+  & .lab-download {
+    @include standard-button();
+
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+    display: block;
+    text-decoration: none;
+
+  }
+
+  & .content {
+    @include horizontal-align;
+    width: 550px;
+    top: 250px;
+    background: rgba(0,0,0,0.4);
+    @include border-radius(20px);
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    & .popup-title {
+      position: relative;
+      font-family: $font-h1;
+      font-weight: 400;
+      font-size: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 20px 0px 10px 0px;
+    }
+    & .popup-body {
+      p, ul, li, b, a {
+        color: inherit;
+        line-height: 130%;
+        font-size: 17px;
+        font-weight: 400;
+      }
+      p {
+        position: relative;
+        font-family: $font-body;
+
+        margin-bottom: 10px;
+        color: inherit;
+      }
+      a {
+        font-weight: bold;
+
+      }
+      b {
+        font-weight: bold;
+      }
+      position: relative;
+    }
+  }
 }
 

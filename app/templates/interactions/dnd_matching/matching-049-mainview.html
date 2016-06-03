@@ -1,0 +1,43 @@
+<script type="text/template" id="mainview-template">
+
+    <div id="match-049-view" style="background-color: <%=bg_info.backgroundColor%>;">
+        <div class="<%=bg_info.backgroundClass%>"></div>
+
+        <div><h1 class="module-title"><%= name %></h1></div>
+
+        <div class="match-049-items drag-container">
+            <% _.each(items, function (item, index) { %>
+            <div class="match-049-item drag-item" data-id="<%= item.id %>">
+                <h1 class="match-049-label"><%= item.title %></h1>
+            </div>
+            <% }); %>
+        </div>
+
+        <div class="match-049-targets target-container">
+            <% _.each(items, function (item, index) { %>
+            <div class="match-049-target drag-target" data-id="<%= item.id %>">
+                <div class="content">
+                    <h1 class="match-049-label">-- ? --</h1>
+                    <p class="match-049-description"><%= item.description %></p>
+                </div>
+                <div class="match-049-undo-button undo-button">UNDO DRAG</div>
+            </div>
+            <% }); %>
+        </div>
+
+
+
+        <div class="main-button submit-button">Check Answers</div>
+
+        <div class="scrim-background"></div>
+
+        <div class="popup-container"></div>
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+
+    </div>
+
+
+</script>

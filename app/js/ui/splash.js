@@ -13,7 +13,8 @@ define( ["marionette", "app/vent", "text!templates/splashscreens/splash.html", "
             container: '.popup-view',
             content: '.splash-text-container',
             buttons: '.popup-button',
-            closeButton: '.close-x-button'
+            closeButton: '.close-x-button',
+
         },
 
         events : {
@@ -67,7 +68,6 @@ define( ["marionette", "app/vent", "text!templates/splashscreens/splash.html", "
             this.ui.container.addClass(this.containerClass);
 
 
-            this.ui.continueButton.html('Next')
             this.nextScreen();
 
             this.$el.hide();
@@ -108,7 +108,9 @@ define( ["marionette", "app/vent", "text!templates/splashscreens/splash.html", "
             this.setText(textObj);
             if (this.elements.length == 0) {
                 this.ui.continueButton.html('Continue');
-                this.lastScreen();
+                setTimeout(function () {
+                    this.lastScreen();
+                }.bind(this), 500);
             }
         },
 

@@ -2,13 +2,16 @@
     "name": "Third Party Media Plans",
 
     "assetManifest": [
-        {"id": "", "src": "assets/images/INTERACTION/IMAGE.png"}
+        {"id": "", "src": "assets/images/102/cr-044/cr-044-bg.jpg"},
+        {"id": "", "src": "assets/images/102/cr-044/coaster.png"}
     ],
 
     "bg_info": {
-        "backgroundColor": "#3eb2de"
+        "backgroundColor": "#62839e",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-102",
+        "splashClass": "splash-left-align"
     },
-
     "text": {
         "splash": [
             {

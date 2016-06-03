@@ -1,0 +1,37 @@
+<script type="text/template" id="cr44-mainview-template">
+
+
+    <div id="cr-44-view" >
+        <div class="bg-img"></div>
+
+        <div><h1 class="module-title"><%= name %></h1></div>
+
+
+        <div class="cr-44-container">
+
+
+            <%  _.each(items, function (item, index) { %>
+                <div class="coaster cr-item" data-id="<%= item.id %>">
+                    <div class="coaster-label">
+                        <div class="coaster-done-check"></div>
+                        <h1><%= (index + 1) %></h1>
+                        <h2>STEP</h2>
+                    </div>
+                </div>
+            <% }); %>
+
+        </div>
+
+        <div class="scrim-background"></div>
+
+        <div class="feedback-container"></div>
+
+        <div class="continue-button main-button enabled" data-id="continue">Continue</div>
+
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+    </div>
+
+</script>

@@ -5,17 +5,17 @@
 define([
     "marionette",
     "app/vent",
-    "ui/popup",
+    "interactions/lab/lab_popup",
     "ui/splash",
     "text!templates/interactions/lab/mainview.html",
-    "text!templates/ui/popup.html"], function (Marionette, vent, Popup, Splash, text, popuptext) {
+    "text!templates/interactions/lab/popup_lab.html"], function (Marionette, vent, LabPopup, Splash, text, labtext) {
     return Marionette.ItemView.extend({
 
         template : text,
 
         ui: {
             //
-            textboxContainer: '.popup-container',
+            labContainer: '.lab-container',
             splashContainer: '.splash-container',
             conclusionContainer: '.conclusion-container',
             continueButton: '.continue-button'
@@ -34,17 +34,19 @@ define([
         },
 
         onRender: function() {
-            var textObj = {
-                'template': popuptext,
+            var labObj = {
+                'template': labtext,
+                'items': this.model.get('lab'),
                 'showTitle': true,
                 'title': '',
                 'body': '',
-                'buttons': [],
-                'containerClass': ''
+                buttons: [{'id': 'back', 'label': 'Back'}, {'id': 'continue', 'label': 'Next'}],
+                'containerClass': 'lab-popup'
             }
-            this.textbox = new Popup(textObj);
+            this.lab = new LabPopup(labObj);
+            this.listenToOnce(this.lab, 'popup:complete', this.onLabComplete);
 
-            this.ui.textboxContainer.append(this.textbox.render().el);
+            this.ui.labContainer.append(this.lab.render().el);
 
             var splashObj = {
                 bg_info: this.model.get('bg_info'),
@@ -86,7 +88,8 @@ define([
         startInteraction: function () {
             this.splash.$el.fadeOut();
             this.trigger('mainview:activity-start');
-            this.showConclusion();
+            //this.showConclusion();
+            this.lab.fadeIn();
         },
 
         onButtonClicked: function (e) {
@@ -115,10 +118,9 @@ define([
             }
         },
 
-        onModelUpdate: function () {
-            /*if (this.model.isComplete()) {
-             this.buttonEnable(this.ui.continueButton, true);
-             }*/
+        onLabComplete: function () {
+            this.lab.fadeOut();
+            this.showConclusion();
         },
 
         constructInteraction: function () {

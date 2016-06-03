@@ -38,11 +38,60 @@
   transition: all 0.2s;
 
   cursor: pointer;
+
+  -webkit-font-smoothing: antialiased;
 }
 
 .standard-button {
   position: absolute;
   @include standard-button();
+}
+
+@mixin dark-button ($textcolor:#433a35, $fontsize:2.0em, $bgcolor:white) {
+  box-sizing: border-box;
+  min-width: 120px;
+  height: 36px;
+  padding: 3px 20px;
+  color: $textcolor;
+  font-size: $fontsize;
+  font-weight: 700;
+  font-family: $font-button;
+
+  border-image: url(../assets/images/ui/buttons/button-dark-border.png);
+  border-width: 9px;
+  border-image-slice: 13 14;
+  border-image-width: 9;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    //color: darken($textcolor, 0.2%);
+    @include scale(1.1, 1.1);
+  }
+
+  &:active {
+    @include scale(1.0, 1.0);
+  }
+
+  &.disabled {
+    //background: #999999;
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  pointer-events: all;
+  transition: all 0.2s;
+
+  cursor: pointer;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark-button {
+  position: absolute;
+  @include dark-button();
 }
 
 @mixin icon-button($bg-offset){
@@ -166,9 +215,18 @@
   position: relative;
   float: right;
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
 
   @include standard-button();
+
+}
+
+.popup-button.dark-button {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+
+  @include dark-button();
 
 }
 

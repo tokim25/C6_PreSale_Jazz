@@ -5,10 +5,10 @@
     ],
 
     "bg_info": {
-        "backgroundColor": "#9e483d",
+        "backgroundColor": "#62839e",
         "backgroundClass": "booth-bg",
         "splash": "splash-102",
-        "splashOffset": "300px"
+        "splashClass": "splash-left-align"
     },
 
     "text": {

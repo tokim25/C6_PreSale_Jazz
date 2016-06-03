@@ -2,12 +2,16 @@
     "name": "Benefits of IPAW",
 
     "assetManifest": [
-        {
-            "id": "image1","src": "assets/images/players/player1.jpg"}
+        {"id": "match-bg","src": "assets/images/103/match-049/match-bg.jpg"},
+        {"id": "match-napkin","src": "assets/images/103/match-049/match-napkin.png"},
+        {"id": "match-photos","src": "assets/images/103/match-049/match-photos.jpg"}
     ],
 
     "bg_info": {
-
+        "backgroundColor": "#62839e",
+        "backgroundClass": "matching049-bg",
+        "splash": "splash-103",
+        "splashClass": "splash-center-align"
     },
 
     "text": {
@@ -28,9 +32,19 @@
             },
             {
                 "header": "Badge Earned",
-                "body": "<p></p>"
+                "body": "<h2>The Cloudy Rollins</h2><p></p>"
             }
         ],
+        "feedback": {
+            "correct": {
+                "header": "That's a Gas, Daddy-o!",
+                "body": "<p>You're IPAW chops are outta sight, cool cat!</p>"
+            },
+            "incorrect": {
+                "header": "That's a Bum Rap, Baby!",
+                "body": "<p>Not to bust your chops, but your draggin' and droppin' just ain't got that swing. Now get back in there and try again.</p>"
+            }
+        },
         "onscreenDirections": ""
     },
 
@@ -38,17 +52,17 @@
         {
             "id": "item1",
             "title": "PYM",
-            "description": "<p>The good ol' Pricing and Yield Management team! Pricing approvals through Slingshot mean client services submits fewer orders to PYM. That means they can focus on orders with negative deal scores and low average line item spends. That's a faster turnaround time for everyone!</p>"
+            "description": "Pricing approvals through Slingshot mean client services submits fewer orders to this bandmate. That means they can focus on orders with negative deal scores and low average line item spends. That's a faster turnaround time for everyone!"
         },
         {
             "id": "item2",
             "title": "Client Services",
-            "description": "<p>Less waiting for pricing approvals means faster sales planning! Slingshot simplifies the pricing approval process. That's because it integrates the discount threshold and the deal score, among other details. That'll help you make faster pricing decisions and to get that plan to your client asap!</p>"
+            "description": "Less waiting for pricing approvals means faster sales planning for this role! Slingshot simplifies the pricing approval process. That's because it integrates the discount threshold and the deal score, among other details. That'll help this bandmate make faster pricing decisions and to get that plan to your client asap!"
         },
         {
             "id": "item3",
             "title": "Clients",
-            "description": "<p>Ain't nobody got time for that! We might be one of many publishers that are bidding for their budget. They want our media plan options now! With Slingshot's automated pricing approvals, it'll speed up the deal approval process. Fo sho.</p>"
+            "description": "We might be one of many publishers that are bidding for this bandmate’s budget. They want our media plan options now! With Slingshot's automated pricing approvals, it'll speed up the deal approval process. Fo sho."
         }
     ]
 }

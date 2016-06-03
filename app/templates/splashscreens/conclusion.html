@@ -3,20 +3,21 @@
     <div class="popup-view splash-view" >
         <img class="splash-bg-image" src="assets/images/backgrounds/<%=bg_info.splash%>.jpg" />
 
-        <div class="conclusion-image-container">
-            <% if (badge != null) { %>
-            <img class="conclusion-badge" src="assets/images/badges/<%= badge.id %>.png"/>
-            <h1 class="conclusion-badge-title"><%= badge.name %></h1>
-            <% } %>
-            <h1 class="conclusion-title"><%= name %></h1>
+        <h1 class="module-title"><%= name %></h1>
 
-        </div>
+
 
 
 
         <hr class="splash-hr" />
-        <div class="splash-text-container ">
+        <div class="splash-text-container <%= bg_info.splashClass %>">
             <h2 class="popup-title"></h2>
+            <% if (badge != null) { %>
+            <div class="conclusion-image-container">
+                <img class="conclusion-badge" src="assets/images/badges/<%= badge.id %>.png"/>
+
+            </div>
+            <% } %>
             <div class="popup-body"></div>
         </div>
         <hr class="splash-hr" />

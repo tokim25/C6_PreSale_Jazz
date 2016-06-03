@@ -20,6 +20,19 @@
   top: 0px;
   bottom: 0px;
   mix-blend-mode: multiply;
+
+}
+
+.overlay-texture {
+
+  background: url(../assets/images/backgrounds/page-turner2.jpg);
+  background-size:100% 100%;
+  @include horizontal-align();
+  width: 100vw;
+  max-width: $max-width;
+  top: 0px;
+  bottom: 0px;
+  mix-blend-mode: multiply;
 }
 
 .pt-bg-texture{
@@ -40,6 +53,24 @@
   height: $max-height;
   top: 0px;
   mix-blend-mode: multiply;
+}
+.lab-bg {
+  background: url(../assets/images/backgrounds/lab.jpg);
+  @include horizontal-align();
+  position: absolute;
+  width: $max-width;
+  height: $max-height;
+  top: 0px;
+  mix-blend-mode: multiply;
+}
+.matching049-bg {
+  background: url(../assets/images/103/match-049/match-bg.jpg);
+  @include horizontal-align();
+  position: absolute;
+  width: $max-width;
+  height: $max-height;
+  top: 0px;
+  //mix-blend-mode: multiply;
 }
 
 .module-title {

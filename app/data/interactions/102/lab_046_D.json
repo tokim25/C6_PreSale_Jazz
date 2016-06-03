@@ -2,14 +2,14 @@
     "name": "Lab: Digital Media Plans",
 
     "assetManifest": [
-        {"id": "lab-bg", "src": "assets/images/textures/bg5.jpg"}
+        {"id": "lab-bg", "src": "assets/images/backgrounds/lab.jpg"}
     ],
 
     "bg_info": {
-        "backgroundColor": "#9e483d",
-        "backgroundClass": "booth-bg",
+        "backgroundColor": "#62839e",
+        "backgroundClass": "lab-bg",
         "splash": "splash-102",
-        "splashOffset": "300px"
+        "splashClass": "splash-left-align"
     },
 
     "text": {
@@ -17,27 +17,8 @@
             {
                 "header": "Overview",
                 "body": "<p>Let’s practice building some media plans!</p><p>Your account executive, Ryan Giordano, forwarded you an email from his media buyer. They want you to build a media plan for their Home Depot campaign.</p>"
-            },
-            {
-                "header": "The Goal",
-                "body": "<p>You have two goals in this lab:</p><ol><li>Build a Slingshot media plan that matches the order details</li><li>Use your Pandora media plan to fill out the third party media plan template</li></ol>"
-            },
-            {
-                "header": "Um... How?",
-                "body": "<p>Great question. We've created some specific resources to help you with this lab. Let's organize these resources as systems and documents.</p>"
-            },
-            {
-                "header": "Systems",
-                "body": "<p><b>Salesforce TOPS Classroom</b>. A sandbox version of Salesforce. You're free to explore, mess things up and get a good feel of Salesforce without screwing up any live orders. You should have a <b>Home Depot</b> opportunity assigned to you in the sandbox.</p><p><b>Slingshot TOPS Classroom</b>. A sandbox version of Slingshot. We use this for media planning, pulling avails and trafficking orders. Show your Slingshot order to your TA during your check-in for feedback.</p>"
-            },
-            {
-                "header": "Documents",
-                "body": "<p><b>Client Email</b>. Your account executive forwarded an email from the Home Depot media buyer. This email tells <li>Any negotiated rates</li><li>Total budget</li><li>Budget allocation</li><li>Demo + Geo Information</li><ul></ul></p><p><b>Third Party Template</b>. Your media buyer wants you to send them a media plan using a third party template. You'll need to build a Pandora media plan in Slingshot first. Then, copy and paste the information in the appropriate fields. You up for the challenge?</p><p><b>Rate Card</b>. Use your channel's rate card to pull avails and rates for your media plan.</p>"
-            },
-            {
-                "header": "Resources",
-                "body": "<p>Click the link below to get your lab resources.</p><p><a class='lab-download' target='_blank' href=''>Lab Assets</a></p><p>Once you've completed your lab assignment, click the Continue button.</p>"
             }
+
         ],
         "conclusion": [
             {
@@ -46,8 +27,31 @@
             },
             {
                 "header": "Badge Earned",
-                "body": "<p></p>"
+                "body": "<h2>The Elephants Gerald</h2><p></p>"
             }
         ]
-    }
+    },
+
+    "lab": [
+        {
+            "header": "The Goal",
+            "body": "<p>You have two goals in this lab:</p><ol><li>Build a Slingshot media plan that matches the order details</li><li>Use your Pandora media plan to fill out the third party media plan template</li></ol>"
+        },
+        {
+            "header": "Um... How?",
+            "body": "<p>Great question. We've created some specific resources to help you with this lab. Let's organize these resources as systems and documents.</p>"
+        },
+        {
+            "header": "Systems",
+            "body": "<p><b>Salesforce TOPS Classroom</b>. A sandbox version of Salesforce. You're free to explore, mess things up and get a good feel of Salesforce without screwing up any live orders. You should have a <b>Home Depot</b> opportunity assigned to you in the sandbox.</p><p><b>Slingshot TOPS Classroom</b>. A sandbox version of Slingshot. We use this for media planning, pulling avails and trafficking orders. Show your Slingshot order to your TA during your check-in for feedback.</p>"
+        },
+        {
+            "header": "Documents",
+            "body": "<p><b>Client Email</b>. Your account executive forwarded an email from the Home Depot media buyer. This email tells <li>Any negotiated rates</li><li>Total budget</li><li>Budget allocation</li><li>Demo + Geo Information</li><ul></ul></p><p><b>Third Party Template</b>. Your media buyer wants you to send them a media plan using a third party template. You'll need to build a Pandora media plan in Slingshot first. Then, copy and paste the information in the appropriate fields. You up for the challenge?</p><p><b>Rate Card</b>. Use your channel's rate card to pull avails and rates for your media plan.</p>"
+        },
+        {
+            "header": "Resources",
+            "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href=''>Download Lab Assets</a>"
+        }
+    ]
 }

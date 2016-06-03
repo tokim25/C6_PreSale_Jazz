@@ -14,12 +14,9 @@
   }
 }
 
-.splash-bg-elements {
-  @extend %view;
-
-  position: absolute;
-  top: 0px;
-
+.splash-bg-image {
+    @include horizontal-align();
+    top: 0px;
 }
 
 .splash-image-container {
@@ -37,51 +34,69 @@
 }
 
 .conclusion-image-container {
-  @include horizontal-align();
   position: relative;
-
-  width: 500px;
-  height: 440px;
+  margin-right: 20px;
+  float: left;
+  display:none;
 
   & .conclusion-badge {
-    width: 254px;
-    height: 300px;
-    display: block;
-    @include horizontal-align;
-    bottom: 90px;
-    opacity: 0;
-    transition: .5s opacity;
-  }
-  & .conclusion-badge-title {
-    @include horizontal-align;
-    bottom: 0px;
-    width: 1200px;
-    font-family: $font-h1;
-    font-weight: 700;
-    font-size: 6.0em;
-    margin: 20px 0px 10px 0px;
-    text-align: center;
-    opacity: 0;
-    transition: .5s opacity;
+    position: relative;
   }
 
+  & .conclusion-badge-title{
+    font-size: 26px;
+    margin-top: -30px;
+    text-align: center;
+    width: 275px;
+  }
+
+
   &.show-badge {
-    & .conclusion-title {
-      opacity: 0;
-    }
-    & .conclusion-badge {
-      opacity: 1;
-    }
-    & .conclusion-badge-title {
-      opacity: 1;
-    }
+    animation: show-badge 1s forwards;
+    display: block;
   }
 }
 
+@-webkit-keyframes show-badge {
+  0% {
+    opacity: 0.01;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+@keyframes show-badge {
+  0% {
+    opacity: 0.01;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+
 .splash-text-container {
   @include horizontal-align();
-
+  top: 30%;
+  background: rgba(0,0,0,0.3);
+  @include border-radius(20px);
+  padding: 20px 30px;
+  box-sizing: border-box;
   width: 650px;
+
+  &.splash-center-align {
+    top: 45%;
+  }
+
+  &.splash-left-align {
+    margin-left: -16%;
+  }
+
+  &.splash-right-align {
+    margin-left: 16%;
+  }
 
   & .popup-title {
     position: relative;
@@ -91,6 +106,14 @@
     text-align: center;
     text-transform: uppercase;
     margin: 20px 0px 10px 0px;
+  }
+
+  & h2 {
+    position: relative;
+    font-family: $font-h1;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
   }
   & .popup-body {
     p, ul, li, b, a {

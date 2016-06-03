@@ -8,7 +8,7 @@
         "backgroundColor": "#62839e",
         "backgroundClass": "booth-bg",
         "splash": "splash-101",
-        "splashOffset": "300px"
+        "splashClass": "splash-center-align"
     },
 
     "text": {

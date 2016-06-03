@@ -60,6 +60,7 @@ define( ["marionette", "app/vent", "text!templates/ui/popup.html"], function (Ma
             _.each(this.buttons, function (button, i) {
                 id = button.id, label = button.label,
                     bclass = id != 'close' ? 'popup-button' : 'close-x-button';
+                if (button.class != undefined) {bclass += (' ' + button.class)}
                 $button = $('<div data-id="' + id + '" class="' + bclass + '">' + label + '</div>');
                 this.ui.container.append($button);
             }.bind(this));
@@ -84,6 +85,22 @@ define( ["marionette", "app/vent", "text!templates/ui/popup.html"], function (Ma
             this.ui.container.addClass(this.containerClass);
 
             this.$el.hide();
+        },
+
+        show: function () {
+            this.$el.show();
+        },
+
+        fadeIn: function () {
+            this.$el.fadeIn();
+        },
+
+        hide: function () {
+            this.$el.hide();
+        },
+
+        fadeOut: function () {
+            this.$el.fadeOut();
         },
 
         setText: function (textObj) {

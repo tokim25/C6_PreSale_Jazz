@@ -33,7 +33,7 @@
             },
             {
                 "header": "Resources",
-                "body": "<p>Click the link below to get your lab resources.</p><p><a class='lab-download' target='_blank' href=''>Lab Assets</a></p><p>Once you've completed your lab assignment, click the Continue button.</p>"
+                "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href=''>Download Lab Assets</a>"
             }
         ],
         "conclusion": [

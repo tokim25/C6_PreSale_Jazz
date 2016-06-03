@@ -51,6 +51,31 @@ define(["backbone", "app/vent"], function (Backbone, vent) {
             this.trigger('model:update', this.numCompleted == this.items.length)
         },
 
+        unsetID: function (dropID, dragID) {
+            if(this.descriptions[dropID] != undefined) {
+                this.numCompleted = this.numCompleted - 1;
+            }
+            this.descriptions[dropID] = undefined;
+
+            this.trigger('model:update', this.numCompleted == this.items.length)
+        },
+
+        getTitleForID: function (id) {
+            /*this.items.find(function (item) {
+                if (item.get('id') == id) {
+                    return item.get('title');
+                }
+            })*/
+            var items = this.items;
+            var item = _.find(this.get('items'), function(item){
+                return item.id == id;
+            });
+            trace('item: ', 4);
+            trace(item, 4);
+            return item.title;
+
+        },
+
         resetCount: function () {
             this.descriptions = {};
             this.numCompleted = 0;

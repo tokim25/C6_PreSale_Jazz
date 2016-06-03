@@ -50,8 +50,8 @@
 }
 
 @mixin scale ($percentX, $percentY) {
-  -webkit-transform: scale($percentX, $percentY);
-  transform: scale($percentX, $percentY);
+  -webkit-transform: perspective(1px) scale($percentX, $percentY);
+  transform: perspective(1px) scale($percentX, $percentY);
 }
 
 @mixin vertical-align {

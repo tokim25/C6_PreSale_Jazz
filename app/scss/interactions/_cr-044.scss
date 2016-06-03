@@ -1,0 +1,107 @@
+
+#cr-44-view {
+  @extend %view;
+
+  & .bg-img {
+    background: url(../assets/images/102/cr-044/cr-044-bg.jpg);
+    @include horizontal-align();
+    position: absolute;
+    width: $max-width;
+    height: $max-height;
+    top: 0px;
+  }
+
+
+  & .feedback-container {
+    @include horizontal-align;
+    top: 100px;
+  }
+}
+
+.cr-44-container {
+  width: 1000px;
+  height: 425px;
+  position: absolute;
+  left: 100px;
+  bottom: 0px;
+
+
+  & .coaster {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    background: url(../assets/images/102/cr-044/coaster.png) no-repeat;
+
+    & .coaster-label {
+      @include center-align;
+      width: 150px;
+      opacity: 0.5;
+      mix-blend-mode: overlay;
+      & h1, & h2 {
+        color: rgb(255,244,176);
+        font-family: $font-h1;
+        text-align: center;
+      }
+      & h1 {
+        font-size: 50px;
+      }
+      & h2 {
+        font-size: 20px;
+      }
+
+      & .coaster-done-check {
+        background: url(../assets/images/ui/menu-status-icons.png) 0px -40px;
+        width: 16px;
+        height: 20px;
+        @include center-align;
+        margin-left: -50px;
+        display: none;
+      }
+    }
+
+
+    &:nth-of-type(1) {
+      bottom: 0px;
+      left: 0px;
+    }
+    &:nth-of-type(2) {
+      left: 175px;
+      top: 15px;
+    }
+    &:nth-of-type(3) {
+      left: 335px;
+      top: 100px;
+    }
+    &:nth-of-type(4) {
+      left: 540px;
+      top: 50px;
+    }
+    &:nth-of-type(5) {
+      left: 700px;
+      top: 150px;
+    }
+
+    &:hover, &.selected {
+      & .coaster-label {
+        mix-blend-mode: unset;
+      }
+    }
+
+    &.selected, &.selected.completed {
+      & p {
+      }
+    }
+    &.completed {
+      & p {
+      }
+      & .coaster-done-check {
+        display: block;
+      }
+    }
+    cursor: pointer;
+    & p {
+    }
+  }
+
+}
+

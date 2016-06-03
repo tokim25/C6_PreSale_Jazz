@@ -28,9 +28,9 @@
                     "points": 10
                 },
                 {
-                    "title": "Third Party Media Plans",
+                    "title": "Third Party Media Plan Workflow",
                     "moduleName": "ClickReveal_044",
-                    "path": "interactions/clickreveal/module",
+                    "path": "interactions/clickreveal/module_cr_044",
                     "url": "data/interactions/102/clickreveal_044_A.json",
                     "status": 0,
                     "points": 10
@@ -103,7 +103,7 @@
                 {
                     "title": "Benefits of IPAW",
                     "moduleName": "Matching_049",
-                    "path": "interactions/matching/module",
+                    "path": "interactions/dnd_matching/module_matching_049",
                     "url": "data/interactions/103/matching_049.json",
                     "badge": {"id":"badge3", "name": "The \"Cloudy\" Rollins'"},
                     "status": 0,

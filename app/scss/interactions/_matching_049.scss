@@ -1,0 +1,140 @@
+#match-049-view {
+  @extend %view;
+  & .submit-button {
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+
+  }
+
+  & .main-popup {
+    @include vertical-align;
+    width: 500px;
+    right: 50%;
+    margin-right: 75px;
+
+    & .popup-button {
+      @include dark-button();
+    }
+  }
+}
+
+.match-049-items {
+  position: absolute;
+  width: 460px;
+  height: 600px;
+  right: 65%;
+  top: 150px;
+  & .match-049-item {
+    position: absolute;
+    background: url(../assets/images/103/match-049/match-photos.jpg);
+    width: 220px;
+    height: 265px;
+    @include box-shadow(1px 1px 4px rgba(0,0,0,0.8));
+
+    &:nth-of-type(1) {
+      top: 20px;
+      left: 125px;
+      @include rotate(24deg);
+    }
+    &:nth-of-type(2) {
+      top: 0px;
+      left: 400px;
+      @include rotate(6deg);
+      background-position: -220px 0px ;
+    }
+    &:nth-of-type(3) {
+      top: 300px;
+      left: 340px;
+      @include rotate(-4deg);
+      background-position: -440px 0px ;
+    }
+
+    &.dragging {
+      @include box-shadow(4px 4px 8px rgba(0,0,0,0.8));
+    }
+
+    & .match-049-label {
+      @include horizontal-align;
+      width: 200px;
+      bottom: 10px;
+    }
+  }
+}
+
+.match-049-targets {
+  position: absolute;
+  width: 650px;
+  height: 600px;
+  left: 45%;
+  top: 100px;
+
+  & .match-049-target {
+    position: absolute;
+    background: url(../assets/images/103/match-049/match-napkin.png);
+    width: 350px;
+    height: 344px;
+    box-sizing: border-box;
+    padding: 25px 45px 20px 50px;
+
+    &.active {
+      background-position: 0px -344px;
+    }
+
+
+    &:nth-of-type(1) {
+      top: 240px;
+      left: 0px;
+      @include rotate(3deg);
+    }
+    &:nth-of-type(2) {
+      top: -30px;
+      left: 170px;
+      @include rotate(13deg);
+    }
+    &:nth-of-type(3) {
+      top: 320px;
+      left: 320px;
+      @include rotate(-10deg);
+    }
+
+
+    & .content {
+      mix-blend-mode: color-burn;
+    }
+
+    & .match-049-label {
+      margin-bottom: 10px;
+
+    }
+    & .match-049-description {
+      font-family: $font-cursive;
+      color: #354093;
+      font-size: 16px;
+    }
+  }
+}
+
+.match-049-label {
+  font-family: $font-cursive;
+  text-align: center;
+  color: #354093;
+  font-size: 18px;
+  @extend %unselectable;
+}
+
+.match-049-undo-button {
+  @include horizontal-align;
+  bottom: 40px;
+  font-family: $font-cursive;
+  color: #354093;
+  font-size: 16px;
+  mix-blend-mode: color-burn;
+  &:hover {
+    font-weight:bold;
+  }
+  cursor: pointer;
+}
+
+
+
