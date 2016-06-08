@@ -1,0 +1,213 @@
+
+#hs-049-view {
+  @extend %view;
+
+  & .bg-img {
+    background: url(../assets/images/103/hotspots-049/hotspots-049-bg.jpg);
+    @include horizontal-align();
+    position: absolute;
+    width: $max-width;
+    height: $max-height;
+    top: 0px;
+  }
+
+
+  & .feedback-container {
+    @include horizontal-align;
+    top: 100px;
+  }
+
+  .items-container {
+    width: 270px;
+    height: 534px;
+    position: relative;
+    margin-left: -100px;
+    padding-top: 270px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 150px;
+    @include rotate(-25deg);
+    @include box-shadow(3px 3px 5px rgba(0,0,0,0.8));
+    background: url(../assets/images/103/hotspots-049/hotspots-049-menu.png) no-repeat;
+
+
+    & .item-container {
+      margin-bottom: 20px;
+      @include border-radius(20px);
+      width: 210px;
+      @include horizontal-align;
+      box-sizing: border-box;
+      padding: 10px 0px;
+      position: relative;
+
+      & h1, & h2 {
+        color: #433a35;
+        text-align: center;
+        text-transform: uppercase;
+
+      }
+      & h1 {
+        font-size: 20px;
+      }
+      & h2 {
+        font-family: $font-h1;
+        font-size: 18px;
+      }
+
+      & .item-done-check {
+        background: url(../assets/images/103/hotspots-049/hotspots-049-done-check.png);
+        width: 16px;
+        height: 20px;
+        position: absolute;
+        top: 17px;
+        left: 10px;
+        display: none;
+      }
+
+
+      &:hover, &.selected {
+        background-color: rgba(0,0,0,0.2);
+      }
+
+      &.selected, &.selected.completed {
+        & p {
+        }
+      }
+      &.completed {
+        & p {
+        }
+        & .item-done-check {
+          display: block;
+        }
+      }
+      cursor: pointer;
+      & p {
+      }
+    }
+
+  }
+
+  & .details-container {
+    @include center-align();
+    width: 1200px;
+    height: 590px;
+
+    & .screenshot-bg {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      pointer-events: none;
+    }
+
+    & .detail-set {
+      @include center-align();
+      width: 1200px;
+      height: 590px;
+
+      z-index: 0;
+
+      box-sizing: border-box;
+      &::before {
+        content: '';
+        z-index: -1;
+        top: -11px;
+        bottom: -10px;
+        right: -11px;
+        left: -11px;
+        pointer-events: none;
+        position: absolute;
+        box-sizing: border-box;
+        border-style: solid;
+        border-image: url(../assets/images/ui/popup/fancy-border-gold.png) 5 round;
+        border-width: 5px;
+        border-image-slice: 11;
+        border-image-width: 5;
+        border-image-outset: 11 11;
+
+        border-image-outset: 0px;
+        pointer-events: none;
+      }
+
+      & .detail-info-button {
+        position: absolute;
+        background: url(../assets/images/103/hotspots-049/detail-info-button.png);
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        &:hover {
+          background-position: 0px -35px;
+        }
+
+        &.completed, &.selected {
+          background-position: 0px -70px;
+        }
+      }
+    }
+
+    & .detail-highlight {
+      position: absolute;
+      background: rgba(255,255,0, 0.5);;
+      opacity: 0.8;
+      border: 3px solid gold;
+      box-sizing: border-box;
+      display: none;
+    }
+
+    & .tooltip {
+      position: absolute;
+      background: rgba(0,0,0,0.7);
+      width: auto;
+      @include border-radius(6px);
+      & .label {
+        font-size: 1.6em;
+        font-weight: bold;
+        padding: 4px 12px;
+      }
+      & .tooltip-body {
+        font-size: 1.6em;
+        padding: 0px 12px 4px 12px;
+        width: 250px;
+        //display: none;
+      }
+
+      & .close-x-light-button {
+
+        display: none;
+      }
+
+      &.visible {
+        & .close-x-light-button {
+          display: block;
+        }
+      }
+      //transition: max-width 0.7s, height 0.7s;
+
+    }
+
+    & .back-button {
+      position: absolute;
+      font-size: 1.6em;
+      font-family: $font-body;
+      line-height:120%;
+      padding: 5px 10px;
+      margin: 0px;
+      font-weight: 500;
+      @include gradient(#57a0c4, #5195b7);
+      @include border-radius(6px);
+      border: 1px solid #333;
+      color: white;
+      cursor: pointer;
+      bottom: 25px;
+      right: 25px;
+      margin: 0 2px;
+      &:hover {
+        @include gradient(darken(#57a0c4, 10%), darken(#5195b7, 10%));
+      }
+    }
+  }
+}
+
+
+
+

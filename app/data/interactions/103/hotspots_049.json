@@ -1,98 +1,103 @@
 {
-    "name": "Broadcast Processes in the Life of a Deal",
+    "name": "Order Entry Wizard & Plan View",
 
     "assetManifest": [
-        {"id": "img", "src": "assets/images/instruments/img.png"}
+        {"id": "hotspots-bg", "src": "assets/images/103/hotspots-049/hotspots-049-bg.jpg"},
+        {"id": "screenshot-plan", "src": "assets/images/103/hotspots-049/hotspots-screenshot-plan.png"},
+        {"id": "screenshot-wizard", "src": "assets/images/103/hotspots-049/hotspots-screenshot-wizard.png"}
     ],
 
     "bg_info": {
-        "backgroundColor": "#620c5f"
+        "backgroundColor": "#62839e",
+        "backgroundClass": "matching049-bg",
+        "splash": "splash-103",
+        "splashClass": "splash-center-align"
     },
 
     "text": {
         "splash": [
             {
                 "header": "Introduction",
-                "body": "<p>I feel it in my fingers, I feel it in my toes! IPAW is all around you, so your time savings grow! Let's see where IPAW pops up in the Order Entry Wizard and the Plan View. </p>"
+                 "body": "<p>I feel it in my fingers, I feel it in my toes! IPAW is all around you, so your time savings grow! Let's see where IPAW pops up in the Order Entry Wizard and the Plan View. </p>"
             },
             {
                 "header": "Directions",
-                "body": "<p>Click on the icons to learn more!</p>"
+                 "body": "<p>Click on the icons to learn more!</p>"
             }
         ],
         "conclusion": [
             {
                 "header": "Conclusion",
-                "body": "<p>Ya see, kids? We don’t lie- IPAW *is* everywhere in Slingshot! Now let’s paint this town with the next jive.</p>"
+                 "body": "<p>Ya see, kids? We don’t lie- IPAW *is* everywhere in Slingshot! Now let’s paint this town with the next jive.</p>"
             },
             {
                 "header": "Badge Earned",
-                "body": "<p></p>"
+                 "body": "<p></p>"
             }
         ],
         "onscreenDirections": ""
     },
 
+
+
     "items": [
         {
             "id": "item1",
-            "hotspot": {"x": "", "y": ""},
-            "image": {
-                "id": "",
-                "coords": {"x": "", "y": ""}
-            },
-            "label": "Calculations Field",
-            "body": "<p>List rates display in Slingshot in the calculations field. These are the same rates from your rate card!</p>"
+            "label": "Order Entry Wizard",
+            "price": "$20",
+            "image": "assets/images/103/hotspots-049/hotspots-screenshot-wizard.png",
+            "details": [
+                {
+                    "id": "detail1",
+                    "label": "Product List",
+                    "hotspot": {"x": 797, "y": 118, "width": 391, "height": 460},
+                    "button": {"x": 750, "y": 125},
+                    "direction": "right-top",
+                     "body": "Each ad product you build for your order shows up in this product list view. If the rate is beyond the discount threshold, that product's total will highlight in red."
+                },
+                {
+                    "id": "detail2",
+                    "hotspot": {"x": 163, "y": 463, "width": 504, "height": 124},
+                    "button": {"x": 105, "y": 420},
+                    "label": "Calculations Field",
+                    "direction": "left-bottom",
+                     "body": "Rates will highlight in red if they are beyond the discount threshold."
+                }
+            ]
         },
         {
             "id": "item2",
-            "hotspot": {"x": "", "y": ""},
-            "image": {
-                "id": "",
-                "coords": {"x": "", "y": ""}
-            },
-            "label": "CPM/CPP Field",
-            "body": "<p>Rates will highlight in red if they are beyond the discount threshold.</p>"
-        },
-        {
-            "id": "item3",
-            "hotspot": {"x": "", "y": ""},
-            "image": {
-                "id": "",
-                "coords": {"x": "", "y": ""}
-            },
-            "label": "Product List",
-            "body": "<p>Each ad product you build for your order shows up in this product list view. If the rate is beyond the discount threshold, that product's total will highlight in red.</p>"
-        },
-        {
-            "id": "item4",
-            "hotspot": {"x": "", "y": ""},
-            "image": {
-                "id": "",
-                "coords": {"x": "", "y": ""}
-            },
-            "label": "CPM/CPP Column",
-            "body": "<p>In case you missed it in the Order Entry Wizard view, any troublesome rates will pop up here! If your product's rate is beyond the discount threshold, it'll highlight in red.</p>"
-        },
-        {
-            "id": "item5",
-            "hotspot": {"x": "", "y": ""},
-            "image": {
-                "id": "",
-                "coords": {"x": "", "y": ""}
-            },
-            "label": "PYM Status Bar",
-            "body": "<p>This status bar tells you your Deal Score and Average Line Spend. If either value has a pricing approval issue, it'll underline in red. </p>"
-        },
-        {
-            "id": "item6",
-            "hotspot": {"x": "", "y": ""},
-            "image": {
-                "id": "",
-                "coords": {"x": "", "y": ""}
-            },
-            "label": "Submit For Approval",
-            "body": "<p>If your order needs PYM approval, you'll need to submit it to PYM for approval before sending it to the client. A Submit for PYM Approval button appears if your deal score or average line spend have pricing approval issues.</p>"
+            "label": "Plan View",
+            "price": "$25",
+            "image": "assets/images/103/hotspots-049/hotspots-screenshot-plan.png",
+            "details": [
+                {
+                    "id": "detail1",
+
+                    "hotspot": {"x": 683, "y": 231, "width":55, "height": 273},
+                    "button": {"x": 675, "y": 194},
+                    "label": "Net Rate Column",
+                    "direction": "right-top",
+                     "body": "In case you missed it in the Order Entry Wizard view, any troublesome rates will pop up here! If your product's rate is beyond the discount threshold, it'll highlight in red."
+                },
+                {
+                    "id": "detail2",
+                    "hotspot": {"x": 450, "y": 10, "width": 85, "height": 70},
+                    "button": {"x": 400, "y": 45},
+                    "label": "PYM Status Bar",
+                    "direction": "right-top",
+                     "body": "This status bar tells you your Deal Score and Average Line Spend. If either value has a pricing approval issue, it'll underline in red."
+                },
+                {
+                    "id": "detail3",
+                    "hotspot": {"x": 918, "y": 84, "width": 152, "height": 36},
+                    "button": {"x": 876, "y":125},
+                    "label": "Submit For Approval",
+                    "direction": "left-top",
+                     "body": "If your order needs PYM approval, you'll need to submit it to PYM for approval before sending it to the client. A Submit for PYM Approval button appears if your deal score or average line spend have pricing approval issues."
+                }
+            ]
         }
+
     ]
 }
