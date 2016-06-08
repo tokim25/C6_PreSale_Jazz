@@ -18,9 +18,14 @@
         ],
         "conclusion": [
             {
-                "header": "Directions",
+                "header": "Conclusion",
                 "body": "<p></p>"
+            },
+            {
+                "header": "Badge Earned",
+                "body": "<h2>The Millie Holiday</h2><p></p>"
             }
+
         ],
         "onscreenDirections": ""
     },

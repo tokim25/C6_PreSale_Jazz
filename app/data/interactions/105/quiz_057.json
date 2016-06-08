@@ -24,8 +24,12 @@
         ],
         "conclusion": [
             {
-                "header": "Directions",
-                "body": "<p>Click on the correct answer and click submit.</p>"
+                "header": "Conclusion",
+                "body": "<p></p>"
+            },
+            {
+                "header": "Badge Earned",
+                "body": "<h2>The John Soultrain</h2><p></p>"
             }
         ],
         "onscreenDirections": ""
