@@ -19,11 +19,11 @@
         "conclusion": [
             {
                 "header": "Conclusion",
-                "body": "<p></p>"
+                "body": "<p>Good job, Slick! I knew you could do it!</p>"
             },
             {
                 "header": "Badge Earned",
-                "body": "<h2>BADGE-NAME</h2><p></p>"
+                "body": "<h2>The Tim Eastergren</h2><p>Timothy “Brooks-N-Done” Eastergren is a former musician and bandleader who co-founded the music streaming and music recommendation service known as Athena Radio. As an early project, Eastergren created the Music DNA Project, a mathematical algorithm to organize music. This software is what powers Athena Radio.</p>"
             }
         ]
     },

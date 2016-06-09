@@ -24,8 +24,12 @@
         ],
         "conclusion": [
             {
-                "header": "Directions",
-                "body": "<p>Click on the correct answer and click submit.</p>"
+                "header": "Conclusions",
+                "body": "<p>Good job, slick! Knew you could do it!</p>"
+            },
+            {
+                "header": "Badge Earned",
+                "body": "<h2>The John Soultrain</h2><p>Also known as “Soul Train in the Membrane,” this jazz saxophonist and composer helped pioneer the use of modes in jazz and was later at the forefront of the “Soul Train” dance. </p>"
             }
         ],
         "onscreenDirections": ""

@@ -18,10 +18,13 @@
         ],
         "conclusion": [
             {
-                "header": "Directions",
-                "body": "<p></p>"
-            }
-        ],
+                "header": "Conclusions",
+                "body": "<p>Good job, slick! Knew you could do it!</p>"
+            },
+            {
+                "header": "Badge Earned",
+                "body": "<h2>The Millie Holiday</h2><p>Eleanor Sephora, professionally known as Millie Holiday, was a jazz musician and singer-songwriter with a career spanning nearly forty years. Nicknamed “Queen Mey,” she is credited with having one of the first fan clubs, affectionally nicknamed the “May-hive.”</p>"
+            },
         "onscreenDirections": ""
     },
 
