@@ -53,7 +53,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-.module-title, .overlay-title, .unselectable, .match-049-label, .match-050-label {
+.module-title, .standard-button, .dark-button, .main-button, .main-dark-button, .popup-button, .popup-button.dark-button, .overlay-title, #intro-continue-button, .nav-info-container .help-popup .popup-button, .unselectable, .lab-popup .lab-download, #match-049-view .main-popup .popup-button, .match-049-label, #match-050-view .main-popup .popup-button, .match-050-label {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -3657,9 +3657,7 @@ body {
       /* W3C */ }
 
 #match-050-view .submit-button {
-  width: 250px;
-  right: 50%;
-  margin-right: 170px; }
+  width: 230px; }
 #match-050-view .main-popup {
   position: absolute;
   top: 50%;
@@ -3703,7 +3701,7 @@ body {
   position: absolute;
   width: 350px;
   height: 550px;
-  left: 20px;
+  right: 70%;
   top: 150px; }
   .match-050-items .match-050-item {
     position: absolute;
@@ -3757,13 +3755,7 @@ body {
     .match-050-items .match-050-item.dragging .match-050-item-img {
       background-position: 0px -220px; }
     .match-050-items .match-050-item.dragging .match-050-label {
-      top: 110px;
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      display: block; }
+      text-shadow: 2px 2px 4px #000; }
     .match-050-items .match-050-item:hover .match-050-label {
       display: block; }
     .match-050-items .match-050-item .match-050-label {
@@ -3779,18 +3771,18 @@ body {
   position: absolute;
   width: 750px;
   height: 550px;
-  right: 5%;
+  right: 2%;
   top: 50%;
-  margin-top: -250px;
+  margin-top: -275px;
   background: white;
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0px 0px 0px;
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0px 0px 0px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0px 0px 0px; }
+  -moz-box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.8), 0px 0px 0px;
+  -webkit-box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.8), 0px 0px 0px;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.8), 0px 0px 0px; }
   .match-050-targets .match-050-music-title {
     text-align: center;
     color: #433a35;
@@ -3813,7 +3805,7 @@ body {
     width: 744px;
     height: 123px;
     box-sizing: border-box;
-    margin: 3px;
+    margin: -5px 3px;
     padding-top: 48px;
     padding-left: 130px;
     z-index: 0; }

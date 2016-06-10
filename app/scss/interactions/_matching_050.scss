@@ -1,9 +1,8 @@
 #match-050-view {
   @extend %view;
   & .submit-button {
-    width: 250px;
-    right: 50%;
-    margin-right: 170px;
+    width: 230px;
+
 
   }
 
@@ -23,7 +22,7 @@
   position: absolute;
   width: 350px;
   height: 550px;
-  left: 20px;
+  right: 70%;
   top: 150px;
   & .match-050-item {
     position: absolute;
@@ -80,9 +79,7 @@
 
     }
     &.dragging .match-050-label {
-      top: 110px;
-      @include horizontal-align;
-      display: block;
+      text-shadow: 2px 2px 4px #000;
     }
 
     &:hover .match-050-label {
@@ -102,12 +99,12 @@
   position: absolute;
   width: 750px;
   height: 550px;
-  right: 5%;
+  right: 2%;
   top: 50%;
-  margin-top: -250px;
+  margin-top: -275px;
   background: white;
   @include rotate(-3deg);
-  @include box-shadow(1px 1px 4px rgba(0,0,0,0.8));
+  @include box-shadow(-2px -2px 4px rgba(0,0,0,0.8));
 
   & .match-050-music-title {
     text-align: center;
@@ -136,7 +133,7 @@
     width: 744px;
     height: 123px;
     box-sizing: border-box;
-    margin: 3px;
+    margin: -5px 3px;
     padding-top: 48px;
     padding-left: 130px;
     z-index: 0;

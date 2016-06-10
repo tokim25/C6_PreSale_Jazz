@@ -5,15 +5,6 @@
 
         <div><h1 class="module-title"><%= name %></h1></div>
 
-        <div class="match-050-items drag-container">
-            <% _.each(items, function (item, index) { %>
-            <div class="match-050-item drag-item" data-id="<%= item.id %>">
-                <div class="match-050-item-img" data-id="<%= item.id %>"></div>
-                <h1 class="match-050-label"><%= item.title %></h1>
-            </div>
-            <% }); %>
-        </div>
-
         <div class="match-050-targets target-container">
             <h1 class="match-050-music-title"><%= text.targetTitle %></h1>
             <% _.each(items, function (item, index) { %>
@@ -26,6 +17,16 @@
             </div>
             <% }); %>
             <div class="match-050-targets-bg"></div>
+        </div>
+
+        <div class="match-050-items drag-container">
+            <% if(randomize) { items = _.shuffle(items); } %>
+            <% _.each(items, function (item, index) { %>
+            <div class="match-050-item drag-item" data-id="<%= item.id %>">
+                <div class="match-050-item-img" data-id="<%= item.id %>"></div>
+                <h1 class="match-050-label"><%= item.title %></h1>
+            </div>
+            <% }); %>
         </div>
 
 

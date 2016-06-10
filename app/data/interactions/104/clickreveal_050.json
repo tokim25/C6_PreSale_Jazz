@@ -17,6 +17,8 @@
         "splash": "splash-104",
         "splashClass": "splash-right-align"
     },
+
+    "randomize": true,
     "text": {
         "splash": [
             {
@@ -42,6 +44,16 @@
                 "body": "<h2>The Thelonious Funk</h2><p></p>"
             }
         ],
+        "feedback": {
+            "correct": {
+                "header": "That’s smooth like butter!",
+                "body": "<p>You really got the chops to play at this club, huh? Glad to see a youngblood like you coming in here, showing up all the regulars!</p>"
+            },
+            "incorrect": {
+                "header": "Ya missed a note!",
+                "body": "<p>A little choppy, huh? It’s okay, you’re warming up. Try again!</p>"
+            }
+        },
         "targetTitle": "AIN'T NOTHIN' THE MATTER-HORN",
         "onscreenDirections": ""
     },
