@@ -151,9 +151,9 @@
                 },
                 {
                     "title": "Third Party Media Plans",
-                    "moduleName": "ClickReveal_044",
-                    "path": "interactions/clickreveal/module",
-                    "url": "data/interactions/104/clickreveal_50.json",
+                    "moduleName": "Matching_050",
+                    "path": "interactions/dnd_matching/module_matching_050",
+                    "url": "data/interactions/104/clickreveal_050.json",
                     "badge": {"id":"badge5", "name": "The Thelonious Funk"},
                     "status": 0,
                     "points": 10

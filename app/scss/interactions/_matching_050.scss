@@ -1,0 +1,225 @@
+#match-050-view {
+  @extend %view;
+  & .submit-button {
+    width: 250px;
+    right: 50%;
+    margin-right: 170px;
+
+  }
+
+  & .main-popup {
+    @include vertical-align;
+    width: 500px;
+    right: 50%;
+    margin-right: 75px;
+
+    & .popup-button {
+      @include dark-button();
+    }
+  }
+}
+
+.match-050-items {
+  position: absolute;
+  width: 350px;
+  height: 550px;
+  left: 20px;
+  top: 150px;
+  & .match-050-item {
+    position: absolute;
+    width: 95px;
+    height: 110px;
+    cursor: move;
+
+    & .match-050-item-img {
+      background: url(../assets/images/104/match-050/match-pick.png);
+      width: 95px;
+      height: 110px;
+
+
+
+    }
+    &:nth-of-type(1) {
+      top: 0px;
+      left: 0px;
+      & .match-050-item-img {
+        @include rotate(-34deg);
+      }
+    }
+    &:nth-of-type(2){
+      top: 100px;
+      left: 90px;
+      & .match-050-item-img {
+        @include rotate(16deg);
+      }
+    }
+    &:nth-of-type(3) {
+      top: 250px;
+      right: 0px;
+      & .match-050-item-img {
+        @include rotate(-4deg);
+      }
+    }
+    &:nth-of-type(4) {
+      bottom: 0px;
+      right: 50px;
+      & .match-050-item-img {
+        @include rotate(-12deg);
+      }
+    }
+
+    &:hover .match-050-item-img {
+      background-position:0px -110px;
+      & .match-050-label {
+        display: block;
+      }
+    }
+
+    &.dragging .match-050-item-img {
+      background-position:0px -220px;
+
+    }
+    &.dragging .match-050-label {
+      top: 110px;
+      @include horizontal-align;
+      display: block;
+    }
+
+    &:hover .match-050-label {
+      display: block;
+    }
+
+
+    & .match-050-label {
+      @include vertical-align;
+      left: 100px;
+      display: none;
+    }
+  }
+}
+
+.match-050-targets {
+  position: absolute;
+  width: 750px;
+  height: 550px;
+  right: 5%;
+  top: 50%;
+  margin-top: -250px;
+  background: white;
+  @include rotate(-3deg);
+  @include box-shadow(1px 1px 4px rgba(0,0,0,0.8));
+
+  & .match-050-music-title {
+    text-align: center;
+    color: #433a35;
+    margin-left: 45px;
+    font-size: 24px;
+    top: 15px;
+    width: 750px;
+    position: absolute;
+  }
+
+  & .match-050-targets-bg {
+    width: 750px;
+    height: 550px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../assets/images/104/match-050/music-bg.jpg);
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+
+  & .match-050-target {
+    position: relative;
+
+    width: 744px;
+    height: 123px;
+    box-sizing: border-box;
+    margin: 3px;
+    padding-top: 48px;
+    padding-left: 130px;
+    z-index: 0;
+
+
+    &.active {
+      &::before {
+        position: absolute;
+        content: '';
+        z-index: 1;
+        pointer-events: none;
+        top: 2px;
+        bottom: 2px;
+        left: 4px;
+        right: 4px;
+        background: rgba(0,0,0,0.15);
+        @include border-radius(16px);
+      }
+    }
+
+
+    &:nth-of-type(1) {
+      margin-top: 50px;
+      background: url(../assets/images/104/match-050/score-1.png) right center no-repeat;
+    }
+    &:nth-of-type(2) {
+      background: url(../assets/images/104/match-050/score-2.png) right center no-repeat;
+    }
+    &:nth-of-type(3) {
+      background: url(../assets/images/104/match-050/score-3.png) right center no-repeat;
+    }
+    &:nth-of-type(4) {
+      background: url(../assets/images/104/match-050/score-4.png) right center no-repeat;
+    }
+
+
+    & .content {
+      //mix-blend-mode: color-burn;
+    }
+
+    & .match-050-label {
+      @include vertical-align;
+      margin-top: 2px;
+      text-align: center;
+      width: 110px;
+      color: black;
+      left: 0px;
+
+    }
+    & .match-050-description {
+      font-family: $font-body;
+      color: black;
+      font-size: 14px;
+    }
+  }
+}
+
+.match-050-label {
+  font-family: $font-h1;
+  text-align: left;
+  left: 150px;
+  margin-top: -10px;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  @extend %unselectable;
+}
+
+.match-050-undo-button {
+  position: absolute;
+  bottom: 20px;
+  font-family: $font-h1;
+  color: black;
+  width: 110px;
+  text-align: center;
+  left: 0px;
+  font-size: 15px;
+  text-transform: lowercase;
+  &:hover {
+    font-weight:bold;
+  }
+  cursor: pointer;
+}
+
+
+
