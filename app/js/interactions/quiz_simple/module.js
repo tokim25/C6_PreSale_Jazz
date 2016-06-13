@@ -2,7 +2,7 @@
  * Created by jhoffsis on 7/13/15.
  */
 
-define(['backbone', 'marionette', 'app/vent', 'app/app', '/model', '/mainview'],
+define(['backbone', 'marionette', 'app/vent', 'app/app', 'interactions/quiz_simple/model', 'interactions/quiz_simple/mainview'],
     function(Backbone, Marionette, vent, app, Model, MainView){
 
     var Module = Marionette.Object.extend({
@@ -28,7 +28,7 @@ define(['backbone', 'marionette', 'app/vent', 'app/app', '/model', '/mainview'],
         },
 
         initView: function () {
-            this.view = new MainView({model:this.model});
+            this.view = new MainView({model:this.model, soundPlayer: app.soundPlayer});
             this.listenTo(this.view, 'mainview:activity-complete', this.onActivityComplete);
             this.listenTo(this.view, 'mainview:activity-start', this.onActivityStart);
             this.listenTo(this.view, 'mainview:show-conclusion', this.onShowConclusion);

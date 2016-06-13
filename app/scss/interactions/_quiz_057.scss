@@ -1,133 +1,117 @@
-#introqz-view {
+#quiz-057-view {
   @extend %view;
 
-  & .blob4-popup {
+  & .main-popup {
     left: 100px;
     @include vertical-align;
     margin-top: -100px;
   }
 }
 
-.introqz-game-bg {
-  @include horizontal-align;
-  background: url(../assets/images/quiz_intro/game-bg.png) no-repeat;
-  top: -30px;
-  width: 1600px;
-  height: 800px;
-  mix-blend-mode: overlay;
+.quiz-057-anim-container {
+  right: 55%;
+  @include vertical-align;
+  width: 546px;
+  height: 600px;
+  & .quiz-057-image {
+    position: absolute;
+    width: 220px;
+    height: 265px;
+    background: url(../assets/images/105/quiz-057/quiz-photos.jpg) no-repeat;
+    @include box-shadow(2px -2px 8px rgba(0,0,0,0.7));
+    &:nth-of-type(1) {
+      @include rotate(-20deg);
+      top: 40px;
+      right: 30px;
+    }
+    &:nth-of-type(2) {
+      background-position: -220px 0px;
+      @include rotate(2deg);
+      top: 140px;
+      right: 130px;
+    }
+    &:nth-of-type(3) {
+      background-position: -440px 0px;
+      @include rotate(27deg);
+      top: 200px;
+      right: -50px;
+    }
+    &:nth-of-type(4) {
+      background-position: -660px 0px;
+      @include rotate(10deg);
+      top: 300px;
+      right: 280px;
+    }
+    &:nth-of-type(5) {
+      background-position: -880px 0px;
+      @include rotate(-5deg);
+      top: 350px;
+      right: 30px;
+    }
+    &:nth-of-type(6) {
+      background-position: -1100px 0px;
+      @include rotate(35deg);
+      top: 375px;
+      right: -150px;
+    }
+  }
+
 }
 
-.introqz-game-container {
-  @include horizontal-align;
+.quiz-057-qa-container {
   position: absolute;
-  width: 1800px;
-  height: 100vh;
+  right: 5%;
+  width: 550px;
+  height: 578px;
+  top: 50%;
+  margin-top: -275px;
+  @include rotate(-15deg);
+
+  & .quiz-057-question-box{
+
+    font-size: 20px;
+    font-weight: 400;
+  }
 
 }
 
-.introqz-scenario-container {
-  position: absolute;
-  right: 50%;
-  top: 100px;
-  width: 725px;
-  height: 500px;
-  background: url(../assets/images/quiz_intro/scenario-bg.png) no-repeat;
-  background-size: cover;
+.quiz-057-answer-box {
+  position: relative;
   & .content {
-    margin: 160px auto 0px auto;
-    position: relative;
-    left: 50px;
-    width: 400px;
-    width: 400px;
-    & h1 {
-    }
-    & .body {
-    }
-  }
-
-}
-
-.introqz-qa-container {
-  position: absolute;
-  left: 55%;
-  width: 450px;
-  top: 190px;
-
-  & .introqz-question-box{
-    position: absolute;
-    width: 450px;
-
-    & .introqz-q {
-      margin-left: -35px;
-      margin-top: 5px;
-      color: #ffa;
-      font-family: $font-h1;
-      font-size: 2.8em;
-    }
-    & .content {
-      position: absolute;
-      top: 2px;
-      margin-left: 15px;
-      color: #ffa;
-      font-family: $font-work;
-      //font-weight: bold;
-      font-size: 1.8em;
-      font-weight: 400;
-    }
-  }
-
-}
-
-.introqz-answer-box {
-  position: absolute;
-  left: 15px;
-  & .content {
-    width: 450px;
-    position: absolute;
-  }
-  & .introqz-answer-letter {
-    color: #ffa;
-    font-family: $font-h1;
-    font-size: 2.2em;
-    margin-top: 1px;
-    position: absolute;
-  }
-
-  & .introqz-answer-choice {
+    @include center-align;
     box-sizing: border-box;
+    width: 400px;
+  }
 
-    width: 450px;
-    margin: 15px 0;
-    padding: 10px 20px;
+  & .quiz-057-answer-choice {
+    box-sizing: border-box;
     @include border-radius(10px);
-    border: 2px solid rgba(255,255,255,0.6);
-    background: rgba(255,255,255,0.3);
+    border: 2px solid rgba(255,255,255,0.0);
+    margin: 15px 0;
+    padding: 5px 20px;
+
 
     cursor: pointer;
 
     & .content {
       padding: 20px;
+
     }
 
     &.selected, &:hover.enabled {
       & p {
-        color: #56e7f5;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
         //font-weight: 700
       }
-      & .introqz-answer-letter {
-        color: #56e7f5;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 
-      }
-      background: rgba(255,255,255,0.1);
-      border: 2px solid rgba(255,255,255,0.3);
+      border: 2px solid rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.3);
     }
 
     &.disabled {
       opacity: 0.4 !important;
-      border: 2px solid rgba(255,255,255,0.1);
+      //border: 2px solid rgba(255,255,255,0.1);
       cursor: default;
     }
 
@@ -137,12 +121,12 @@
     padding: 15px;
   }
 
-  & p {
-    color: #ffa;
-    font-family: $font-body;
+  & p {//..color: #ffa;
+    font-family: $font-h1;
     font-weight: 400;
     font-size: 1.8em;
     line-height: 110%;
-    margin-left: 35px;
+    text-transform: uppercase;
   }
 }
+

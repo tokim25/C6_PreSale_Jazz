@@ -17,11 +17,14 @@ define(["marionette",
                 //
                 splashContainer: '.splash-container',
                 conclusionContainer: '.conclusion-container',
-                feedbackContainer: '.introqz-feedback-box',
-                scenarioBox: '.introqz-scenario-container',
-                questionBox: '.introqz-question-box',
-                answerBox: '.introqz-answer-box',
-                answerChoice: '.introqz-answer-choice.enabled',
+                feedbackContainer: '.feedback-box',
+                animationContainer: '.anim-container',
+                animItem: '.quiz-anim-item',
+                qaContainer: '.qa-container',
+                questionBox: '.question-box',
+                answerBox: '.answer-box',
+                answerChoice: '.answer-choice.enabled',
+                continueButton: '.continue-button',
                 scrim: '.scrim-background'
             },
 
@@ -32,6 +35,7 @@ define(["marionette",
 
             initialize: function (options) {
                 this.model = options.model;
+                this.soundPlayer = options.soundPlayer;
 
                 this.listenTo(this.model, 'model:update', this.onModelUpdate);
                 this.listenTo(this.model, 'model:complete', this.onInteractionComplete);
@@ -44,8 +48,8 @@ define(["marionette",
                     'showTitle': true,
                     'title': '',
                     'body': '',
-                    'buttons': [{'id': 'continue', 'label': 'Got it!'}],
-                    'containerClass': 'blob4-popup'
+                    'buttons': [{'id': 'continue', 'label': 'Got it!', 'class': 'dark-button'}],
+                    'containerClass': 'main-popup'
                 }
                 this.feedback = new Popup(textObj);
                 this.listenTo(this.feedback, 'continue:clicked', this.checkAnswer);
@@ -89,8 +93,11 @@ define(["marionette",
                 this.$win = $(document);
 
                 TweenMax.set(this.ui.questionBox, {autoAlpha: 0.0});
-                TweenMax.set('.introqz-answer-choice', {autoAlpha: 0.0});
+                TweenMax.set('.answer-choice', {autoAlpha: 0.0});
+                TweenMax.set(this.ui.animItem, {autoAlpha: 0.0});
                 TweenMax.set(this.feedback.$el.find('.popup-view'), {autoAlpha: 0.0});
+
+                this.buttonEnable(this.ui.continueButton, false);
 
                 this.splash.show();
             },
@@ -119,25 +126,20 @@ define(["marionette",
 
             onModelUpdate: function () {
                 var curQuestion = this.model.curQuestion,
-                    $questionDiv = this.ui.questionBox.find('.content'),
+                    $questionDiv = this.ui.questionBox,
                     $answerDiv = this.ui.answerBox.find('.content'),
                     $proto = this.$('.proto'),
-                    $choice, letters = ["A:", "B:", "C:", "D:"],
-                    scenarioText = 'Scenario ' + (this.model.curIndex + 1);
-
-
-                this.ui.scenarioBox.find('h1').html(scenarioText);
-                this.ui.scenarioBox.find('p').html(curQuestion.scenario);
+                    $choice;
 
                 this.tl_enter = new TimelineMax();
-                this.tl_enter.fromTo(this.ui.scenarioBox.find('.content'), 0.5, {scale: 0.4, transformOrigin: '50% 50%'}, {scale: 1, transformOrigin: '50% 50%',autoAlpha: 1.0, ease:Back.easeOut});
+                //this.tl_enter.fromTo(this.ui.scenarioBox.find('.content'), 0.5, {scale: 0.4, transformOrigin: '50% 50%'}, {scale: 1, transformOrigin: '50% 50%',autoAlpha: 1.0, ease:Back.easeOut});
 
                 $answerDiv.empty();
 
                 _.each(curQuestion.choices, function (choice, index) {
                     $choice = $proto.clone();
                     $choice.removeClass('proto');
-                    $choice.html('<span class="introqz-answer-letter">' + letters[index] +'</span><p>' + choice.text + '</p>')
+                    $choice.html('<p>' + choice.text + '</p>')
                     $choice.data('choice', choice);
                     $choice.data('index', index);
                     $answerDiv.append($choice);
@@ -146,29 +148,20 @@ define(["marionette",
 
                 $questionDiv.html(curQuestion.text);
 
+
+
+
                 this.numWrong = 0;
 
-                TweenMax.set(this.ui.questionBox, {rotationX: '-180deg'});
-
                 setTimeout(function () {
-                    TweenMax.set(this.ui.questionBox, {autoAlpha: 1.0});
-                    var heightOffset = this.ui.questionBox.find('.content').height() + this.ui.questionBox.position().top,
-                        maxHeight = 0;
-                    TweenMax.set(this.ui.questionBox, {autoAlpha: 0.0});
+                    var qaHT = this.ui.qaContainer.height(),
+                        qbHT = this.ui.questionBox.height(),
+                        ansContentHeight = qaHT - qbHT - 40;
 
-                    // Ensure all the answer choices are of the same height
-                    /*TweenMax.set(this.ui.answerChoice, {autoAlpha: 1.0});
-                    this.$('.introqz-answer.enabled p').each(function () {
-                        maxHeight = Math.max(maxHeight, $(this).height());
-                    });
+                    TweenMax.set(this.ui.answerBox, {height: ansContentHeight});
 
-                    this.$('.introqz-answer.enabled p').height(maxHeight);*/
-
-
-                    this.ui.answerBox.css('top', heightOffset + 25 + 'px');
-
-                    this.tl_enter.add(TweenMax.to(this.ui.questionBox, 0.5, {rotationX: '0deg', autoAlpha: 1.0}), '+=.5')
-                        .add(TweenMax.staggerTo('.introqz-answer', 1.0, {delay: 0.3, autoAlpha: 1.0}, 0.4));
+                    this.tl_enter.add(TweenMax.to(this.ui.questionBox, 0.5, {autoAlpha: 1.0}), '+=.5')
+                        .add(TweenMax.staggerTo('.answer-choice', 1.0, {delay: 0.3, autoAlpha: 1.0}, 0.4));
                 }.bind(this), 100);
 
 
@@ -207,7 +200,18 @@ define(["marionette",
 
                 vent.trigger('play_sfx', 'button_click');
 
-                // Interaction is complete
+                this.showConclusion();
+            },
+
+            buttonEnable: function ($button, enable) {
+                if(enable) {
+                    $button.addClass('enabled button-reveal').removeClass('disabled');
+                    setTimeout(function () {
+                        $button.removeClass('button-reveal');
+                    }.bind(this), 1600)
+                } else {
+                    $button.removeClass('enabled').addClass('disabled');
+                }
             },
 
             checkAnswer: function () {
@@ -215,16 +219,27 @@ define(["marionette",
                 this.hideFeedback(0);
 
                 if(this.model.isCorrect()) {
+                    var index = this.model.curIndex,
+                        $animItem = this.$('#anim-item-' + index),
+
+                        audioID = 'quiz-track-' + (index + 1);
+
                     this.tl_leave = new TimelineMax({
 
                     })
                     this.tl_leave.add(TweenMax.to(this.ui.questionBox, 0.5, {autoAlpha: 0.0}))
-                        .add(TweenMax.staggerTo('.introqz-answer', 0.5, {autoAlpha: 0.0}, 0.2))
-                        .add(TweenMax.to(this.ui.scenarioBox.find('.content'), 0.5, {autoAlpha: 0.0}))
+                        .add(TweenMax.staggerTo('.answer-choice', 0.5, {autoAlpha: 0.0}, 0.2))
+                        .add(TweenMax.set($animItem, {autoAlpha: 1.0}))
+                        .addCallback(this.playLoop, '+=0.1', [audioID], this)
+                        .add(TweenMax.from($animItem, 0.75, {scale: 2.0, top: 1000, right: 500, rotation: '-700deg', ease: Circ.easeOut}))
                         .addCallback(this.nextQuestion, '+=.5', [], this);
                 } else {
                     this.$selectedChoice.addClass('disabled').removeClass('enabled selected');
                 }
+            },
+
+            playLoop: function (audioID) {
+                this.soundPlayer.playLoop(audioID);
             },
 
             showFeedback: function (content, delay) {
@@ -259,13 +274,15 @@ define(["marionette",
                 var $popup = this.feedback.$el.find('.popup-view');
 
                 $popup.removeClass('correct');
-                TweenMax.to($popup, 0.5, {delay:delay, autoAlpha: 0.0, ease: Power3.easeOut})
+                TweenMax.to($popup, 0.5, {delay:delay, scale: 0.9, autoAlpha: 0.0, ease: Power3.easeOut})
 
                 this.ui.scrim.fadeOut(300);
             },
 
             onInteractionComplete: function () {
-                this.showConclusion();
+                //this.showConclusion();
+                this.ui.qaContainer.fadeOut();
+                this.buttonEnable(this.ui.continueButton, true);
 
             },
 

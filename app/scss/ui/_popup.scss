@@ -124,6 +124,34 @@
   }
 }
 
+.menu-card-popup {
+  background: url(../assets/images/ui/popup/menu-card.png) no-repeat;
+  width: 550px;
+  height: 578px;
+  box-sizing: border-box;
+  padding: 120px 50px 50px;
+  position: absolute;
+  text-align: center;
+
+  & h1 {
+    position: relative;
+    margin: 10px 0 40px 0;
+    //text-transform: lowercase;
+    &::after {
+      background: url(../assets/images/ui/popup/menu-card-hr.png);
+      content: '';
+      width: 325px;
+      left: 50%;
+      margin-left: -162px;
+      position: absolute;;
+      height: 17px;
+      margin-top: 40px;
+    }
+
+
+  }
+}
+
 
 
 

@@ -81,6 +81,15 @@
   top: 0px;
   //mix-blend-mode: multiply;
 }
+.quiz057-bg {
+  background: url(../assets/images/105/quiz-057/quiz-bg.jpg);
+  @include horizontal-align();
+  position: absolute;
+  width: $max-width;
+  height: $max-height;
+  top: 0px;
+  //mix-blend-mode: multiply;
+}
 
 .module-title {
   @include horizontal-align();

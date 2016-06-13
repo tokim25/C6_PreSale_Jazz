@@ -11,7 +11,7 @@
   position: absolute;
   width: 100vw;
   max-width: $max-width;
-  height: 6000px;
+  height: 7364px;
   //overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
   @include horizontal-align();
   max-width: $max-width;
   width: 100vw;
-  height: 6000px;
+  height: 7364px;
 }
 
 #menu-dev-bg {
@@ -39,6 +39,7 @@
     position: absolute;
     left: 50px;
     top: 85px;
+    text-align: center;
   }
 }
 
@@ -107,20 +108,33 @@
   }
 }
 
-#menu-dev-container0 {
+.menu-dev-container {
   position: absolute;
-  width: 400px;
-  top: 100px;
+  width: 600px;
+  height: 625px;
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+  & h1 {
+
+  }
+}
+
+#menu-dev-container0 {
+
+  top: 1075px;
   left: 50%;
-  margin-left: -450px;
+  //margin-left: 70px;
+  @include rotate(14deg);
 }
 
 #menu-dev-container1 {
   position: absolute;
-  width: 400px;
-  top: 400px;
-  left: 50%;
-  margin-left: 50px;
+  width: 600px;
+  top: 625px;
+  left: 150%;
+  margin-left: 70px;
+  @include rotate(14deg);
 }
 
 #menu-dev-container2 {

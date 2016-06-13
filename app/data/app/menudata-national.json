@@ -208,7 +208,7 @@
                 {
                     "title": "Quiz: Market Research",
                     "moduleName": "Quiz_057",
-                    "path": "interactions/quiz/module",
+                    "path": "interactions/quiz_simple/module",
                     "url": "data/interactions/105/quiz_057.json",
                     "badge": {"id":"badge6", "name": "The John Soultrain"},
 

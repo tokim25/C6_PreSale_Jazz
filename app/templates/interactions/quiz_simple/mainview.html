@@ -1,39 +1,33 @@
 <script type="text/template" id="quiz-fishing-mainview-template">
 
-    <div id="introqz-view" style="background-color:<%= colors.backgroundColor %>;">
-        <div class="bg-texture"></div>
+    <div id="quiz-057-view" style="background-color: <%=bg_info.backgroundColor%>;">
+        <div class="<%=bg_info.backgroundClass%>"></div>
 
-        <div class="module-title color-<%= modulename %>"><h1 style="color:<%= colors.highlightColor %>;"><%= name %></h1></div>
+        <div><h1 class="module-title"><%= name %></h1></div>
 
-       <div class="introqz-game-bg"></div>
-        <div class="introqz-game-container">
-       </div>
+        <div class="quiz-057-anim-container anim-container">
+            <% _.each(questions, function(choice, index){ %>
+                <div class="quiz-057-image quiz-anim-item" id="anim-item-<%= index %>"></div>
+            <% }); %>
 
-        <div class="introqz-scenario-container">
-            <div class="content">
-                <h1></h1>
-                <p></p>
-            </div>
         </div>
-        <div class="introqz-qa-container bg-<%= modulename %>">
+        <div class="quiz-057-qa-container qa-container menu-card-popup">
 
-            <div class="introqz-question-box">
-                <div class="introqz-q">Q:</div>
-                <h2 class="content"></h2>
-            </div>
+            <h1 class="quiz-057-question-box question-box">
+            </h1>
 
-            <div class="introqz-answer-box ">
+            <div class="quiz-057-answer-box answer-box">
 
                 <div class="content"></div>
             </div>
 
-            <div class="introqz-answer introqz-answer-choice enabled proto"> </div>
+            <div class="quiz-057-answer-choice answer-choice enabled proto"> </div>
 
         </div>
 
         <div class="scrim-background"></div>
-
-        <div class="introqz-feedback-box popup-container"></div>
+        <div class="continue-button main-button enabled" data-id="continue">Continue</div>
+        <div class="quiz-057-feedback-box feedback-box popup-container"></div>
 
 
         <div class="splash-container"></div>

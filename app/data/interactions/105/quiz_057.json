@@ -2,12 +2,20 @@
     "name": "Quiz: Sales Research",
 
     "assetManifest": [
-        {"id": "gofish-bg-bl", "src": "assets/images/splashpages/gofish-bg-bl.png"}
+        {"id": "quiz-track-1", "src": "assets/sounds/misc/quiz-track-1.mp3"},
+        {"id": "quiz-track-2", "src": "assets/sounds/misc/quiz-track-2.mp3"},
+        {"id": "quiz-track-3", "src": "assets/sounds/misc/quiz-track-3.mp3"},
+        {"id": "quiz-track-4", "src": "assets/sounds/misc/quiz-track-4.mp3"},
+        {"id": "quiz-track-5", "src": "assets/sounds/misc/quiz-track-5.mp3"},
+        {"id": "quiz-track-6", "src": "assets/sounds/misc/quiz-track-6.mp3"}
 
     ],
 
     "bg_info": {
-        "backgroundColor": "#846899"
+        "backgroundColor": "#9e5b63",
+        "backgroundClass": "quiz057-bg",
+        "splash": "splash-105",
+        "splashClass": "splash-left-align"
     },
 
     "randomize": true,
