@@ -1,0 +1,132 @@
+#quiz-057-view {
+  @extend %view;
+
+  & .main-popup {
+    left: 100px;
+    @include vertical-align;
+    margin-top: -100px;
+  }
+}
+
+.quiz-057-anim-container {
+  right: 55%;
+  @include vertical-align;
+  width: 546px;
+  height: 600px;
+  & .quiz-057-image {
+    position: absolute;
+    width: 220px;
+    height: 265px;
+    background: url(../assets/images/105/quiz-057/quiz-photos.jpg) no-repeat;
+    @include box-shadow(2px -2px 8px rgba(0,0,0,0.7));
+    &:nth-of-type(1) {
+      @include rotate(-20deg);
+      top: 40px;
+      right: 30px;
+    }
+    &:nth-of-type(2) {
+      background-position: -220px 0px;
+      @include rotate(2deg);
+      top: 140px;
+      right: 130px;
+    }
+    &:nth-of-type(3) {
+      background-position: -440px 0px;
+      @include rotate(27deg);
+      top: 200px;
+      right: -50px;
+    }
+    &:nth-of-type(4) {
+      background-position: -660px 0px;
+      @include rotate(10deg);
+      top: 300px;
+      right: 280px;
+    }
+    &:nth-of-type(5) {
+      background-position: -880px 0px;
+      @include rotate(-5deg);
+      top: 350px;
+      right: 30px;
+    }
+    &:nth-of-type(6) {
+      background-position: -1100px 0px;
+      @include rotate(35deg);
+      top: 375px;
+      right: -150px;
+    }
+  }
+
+}
+
+.quiz-057-qa-container {
+  position: absolute;
+  right: 5%;
+  width: 550px;
+  height: 578px;
+  top: 50%;
+  margin-top: -275px;
+  @include rotate(-15deg);
+
+  & .quiz-057-question-box{
+
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+}
+
+.quiz-057-answer-box {
+  position: relative;
+  & .content {
+    @include center-align;
+    box-sizing: border-box;
+    width: 400px;
+  }
+
+  & .quiz-057-answer-choice {
+    box-sizing: border-box;
+    @include border-radius(10px);
+    border: 2px solid rgba(255,255,255,0.0);
+    margin: 15px 0;
+    padding: 5px 20px;
+
+
+    cursor: pointer;
+
+    & .content {
+      padding: 20px;
+
+    }
+
+    &.selected, &:hover.enabled {
+      & p {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+        //font-weight: 700
+      }
+
+      border: 2px solid rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.3);
+    }
+
+    &.disabled {
+      opacity: 0.4 !important;
+      //border: 2px solid rgba(255,255,255,0.1);
+      cursor: default;
+    }
+
+  }
+
+  & .ans-content {
+    padding: 15px;
+  }
+
+  & p {//..color: #ffa;
+    font-family: $font-h1;
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+}
+

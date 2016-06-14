@@ -7,7 +7,7 @@
 
 
             <% _.each(app.model.get('menu'), function(item, index) { %>
-            <div id="menu-dev-container<%= index %>">
+            <div id="menu-dev-container<%= index %>" class="menu-dev-container">
                 <h1 class="module-name">JAZZ  <span class="module-number"><%= item.id  %></span>: <%= item.name  %></h1>
                 <% _.each(item.modules, function(module) { %>
                     <% var statusClass = module.status == 0 ? 'not-started' : module.status == 1 ? 'started' : 'completed';  %>
@@ -16,11 +16,10 @@
             </div>
             <%  }); %>
 
-            <div class="menu-popup" style="position: absolute; left: 50%; top: 100px">
+            <div class="menu-card-popup" style="position: absolute; left: 50%; top: 100px">
                 <div class="content">
-                    <h1>THIS IS THE TITLE</h1>
+                    <h1>This is the title.</h1>
                     <p>Drumstick cow meatloaf sausage strip steak ham hock short ribs shankle flank jerky bresaola pork chop pork. Prosciutto jowl doner picanha brisket leberkas frankfurter kevin capicola rump shoulder ground round pancetta pastrami. Pork loin porchetta tail pork belly spare ribs rump turducken shoulder shankle short loin turkey chuck bacon</p>
-                    <div class="popup-button continue-button enabled" data-id="continue">Continue</div>
                 </div>
             </div>
 

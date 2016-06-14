@@ -125,6 +125,7 @@ define([
         },
 
         buttonEnable: function ($button, enable) {
+
             if(enable) {
                 $button.addClass('enabled button-reveal').removeClass('disabled');
                 setTimeout(function () {

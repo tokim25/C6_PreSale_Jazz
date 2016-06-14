@@ -5,7 +5,7 @@
     ],
 
     "bg_info": {
-        "backgroundColor": "#62839e",
+        "backgroundColor": "#9e5b63",
         "backgroundClass": "booth-bg",
         "splash": "splash-105",
         "splashClass": "splash-left-align"
