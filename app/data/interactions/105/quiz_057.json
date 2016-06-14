@@ -45,32 +45,32 @@
                     "text": "Third Party Audience Segmentation",
                     "result": "correct",
                     "feedback": {
-                        "title": "PosFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "You got it!",
+                        "body": "The Third Party Audience Segmentation helps us to figure out the monthly unique visitors within specific audience segmentations."
                     }
                 },
                 {
                     "text": "Zip Code Radius",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Sounds like you need some practice! ",
+                        "body": "Maybe practice going up and down the scales (or through these modules) again?"
                     }
                 },
                 {
                     "text": "Industry Display Benchmark CTRs",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Uh-Oh.",
+                        "body": "Sounds like you’re not in sync with your bandmates!"
                     }
                 },
                 {
                     "text": "User Engagement",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Screech!",
+                        "body": "Think you hit a sour note there."
                     }
                 }
             ]
@@ -84,32 +84,32 @@
                     "text": "User Engagement",
                     "result": "correct",
                     "feedback": {
-                        "title": "PosFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "You’re in the groove now, Slick!",
+                        "body": "The User Engagement tool helps you pull thumbs, stations created, station shares and time spent listening by demographic and DMA."
                     }
                 },
                 {
                     "text": "Segmented Market Reach",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Uh-oh. ",
+                        "body": "Sounds like you’re not in sync with your bandmates!"
                     }
                 },
                 {
                     "text": "Historical Monthly Update",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Are we in the same key? ",
+                        "body": "Because we’re playing chromatic, and it sounds like you’re just in the minors."
                     }
                 },
                 {
                     "text": "Share of Ear Tool",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Sounds like you need some practice!",
+                        "body": "Maybe practice going up and down the scales (or through these modules) again?"
                     }
                 }
             ]
@@ -123,71 +123,71 @@
                     "text": "Nielsen Scarborough",
                     "result": "correct",
                     "feedback": {
-                        "title": "PosFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Those drums are getting people to jive!",
+                        "body": "Nielsen Scarborough is an external resource that helps us provide insights on an audience segment’s buying behaviors using an index score."
                     }
                 },
                 {
                     "text": "User Engagement",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Yikes.",
+                        "body": "Missed a beat there, huh, Slick?"
                     }
                 },
                 {
                     "text": "Historical Monthly Update",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Screech! ",
+                        "body": "Think you hit a sour note there."
                     }
                 },
                 {
                     "text": "Third Party Audience Segmentation",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Um…",
+                        "body": "Are you playing the same song as everyone else?"
                     }
                 }
             ]
         },
         {
             "type": "choice",
-            "text": "This salesforce chatter topic contains digestible sales research data to provide to a client.",
+            "text": "This Salesforce chatter topic contains digestible sales research data to provide to a client.",
             "pattern": 0,
             "choices": [
                 {
                     "text": "#researchnuggets",
                     "result": "correct",
                     "feedback": {
-                        "title": "PosFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "#TheSweetLife! You got it!",
+                        "body": "The #ResearchNuggets chatter topic contains digestible sales research data that can help you create a strong story for your client!"
                     }
                 },
                 {
                     "text": "#rorocall",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Are we in the same key?",
+                        "body": "Because we’re playing chromatic, and it sounds like you’re just in the minors."
                     }
                 },
                 {
                     "text": "#successstories",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Sounds like you need some practice! ",
+                        "body": "Maybe practice going up and down the scales (or through these modules) again?"
                     }
                 },
                 {
                     "text": "#shakeyourbooty",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Yikes.",
+                        "body": "Missed a beat there, huh, Slick?"
                     }
                 }
             ]
@@ -201,32 +201,32 @@
                     "text": "Consumer Insights",
                     "result": "correct",
                     "feedback": {
-                        "title": "PosFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Two thumbs WAY up for that!",
+                        "body": "The Consumer Insights Wiki page provides you pre-made one-sheet insights for all kinds of audience segments!"
                     }
                 },
                 {
                     "text": "External Tools",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Um...",
+                        "body": "Are you playing the same song as everyone else?"
                     }
                 },
                 {
                     "text": "Ad Effectiveness",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Uh-oh.",
+                        "body": "Sounds like you’re not in sync with your bandmates!"
                     }
                 },
                 {
                     "text": "Industry Research",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Are we in the same key?",
+                        "body": "Because we’re playing chromatic, and it sounds like you’re just in the minors."
                     }
                 }
             ]
@@ -240,32 +240,32 @@
                     "text": "Artist Popularity",
                     "result": "correct",
                     "feedback": {
-                        "title": "PosFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "That one was easy, right?",
+                        "body": "The Artist Popularity tool helps you figure out which artist stations were the most population in the last month by demographic. Maybe we’ll see your name on there?"
                     }
                 },
                 {
                     "text": "Genre Station/Sponsorship Tool",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Yikes",
+                        "body": "Missed a beat there, huh, Slick?"
                     }
                 },
                 {
                     "text": "Share of Ear Tool",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Screech!",
+                        "body": "Think you hit a sour note there."
                     }
                 },
                 {
                     "text": "Top Genre by Demo/Geo",
                     "result": "wrong",
                     "feedback": {
-                        "title": "NegativeFeedbackTitle",
-                        "body": "feedbackBody"
+                        "title": "Um…",
+                        "body": "Are you playing the same song as everyone else?"
                     }
                 }
             ]
