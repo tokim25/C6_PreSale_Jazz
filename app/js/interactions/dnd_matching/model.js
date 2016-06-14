@@ -38,7 +38,11 @@ define(["backbone", "app/vent"], function (Backbone, vent) {
 
         reinitialize: function() {
             // set initial values here
-            this.set('items', _.shuffle(this.get('items')));
+            var items = this.get('items');
+            if(this.get('randomize')) {
+                //items = _.shuffle(items);
+            }
+            this.set('items', items);
             this.items = new Backbone.Collection(this.get('items'));
         },
 

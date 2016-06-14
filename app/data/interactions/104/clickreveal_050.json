@@ -2,14 +2,23 @@
     "name": "Matterhorn Reservation Statuses",
 
     "assetManifest": [
-        {
-            "id": "image1","src": "assets/images/players/player1.jpg"}
+        {"id": "match-bg","src": "assets/images/104/match-050/match-bg.jpg"},
+        {"id": "music-bg","src": "assets/images/104/match-050/music-bg.jpg"},
+        {"id": "score-1","src": "assets/images/104/match-050/score-1.png"},
+        {"id": "score-2","src": "assets/images/104/match-050/score-2.png"},
+        {"id": "score-3","src": "assets/images/104/match-050/score-3.png"},
+        {"id": "score-4","src": "assets/images/104/match-050/score-4.png"},
+        {"id": "match-pick","src": "assets/images/104/match-050/match-pick.png"}
     ],
 
     "bg_info": {
-
+        "backgroundColor": "#62839e",
+        "backgroundClass": "matching050-bg",
+        "splash": "splash-104",
+        "splashClass": "splash-right-align"
     },
 
+    "randomize": true,
     "text": {
         "splash": [
             {
@@ -35,6 +44,17 @@
                 "body": "<h2>The Thelonious Funk</h2><p>Funk was an American funk jazz pianist and subway car dancer. His songs always started with his iconic yell, “It’s Showtime!” He was renowned for his distinctive style in suits, hats, tie-dye shirts and sunglasses. </p>"
             }
         ],
+        "feedback": {
+            "correct": {
+                "header": "That’s smooth like butter!",
+                "body": "<p>You really got the chops to play at this club, huh? Glad to see a youngblood like you coming in here, showing up all the regulars!</p>"
+            },
+            "incorrect": {
+                "header": "Ya missed a note!",
+                "body": "<p>A little choppy, huh? It’s okay, you’re warming up. Try again!</p>"
+            }
+        },
+        "targetTitle": "AIN'T NOTHIN' THE MATTER-HORN",
         "onscreenDirections": ""
     },
 
@@ -42,22 +62,22 @@
         {
             "id": "item1",
             "title": "Pending",
-            "description": "<p>This sponsorship doesn't have any conflicts or violate restrictions, but is awaiting PYM approval.</p>"
+            "description": "This sponsorship doesn't have any conflicts or violate restrictions, but is awaiting PYM approval."
         },
         {
             "id": "item2",
             "title": "Pending Conflicts",
-            "description": "<p>This sponsorship may conflict or violate restrictions, and is awaiting PYM approval.</p>"
+            "description": "This sponsorship may conflict or violate restrictions, and is awaiting PYM approval."
         },
         {
             "id": "item3",
             "title": "Pitched",
-            "description": "<p>PYM approved this sponsorship and reserved these impressions for your order. Now, you can pitch this campaign to your client!</p>"
+            "description": "PYM approved this sponsorship and reserved these impressions for your order."
         },
         {
-            "id": "item3",
+            "id": "item4",
             "title": "Sold",
-            "description": "<p>Your pod closed the deal and the Salesforce probability greater than 100 percent! </p>"
+            "description": "Your pod closed the deal and the Salesforce probability greater than 100 percent! "
         }
     ]
 }

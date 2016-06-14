@@ -14,6 +14,8 @@
         "splashClass": "splash-center-align"
     },
 
+    "randomize": true,
+
     "text": {
         "splash": [
             {

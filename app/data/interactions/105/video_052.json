@@ -2,11 +2,13 @@
     "name": "Performance Orders",
 
     "assetManifest": [
-        {"id": "intropodcast-bg-bl", "src": "assets/images/splashpages/intropodcast-bg-bl.png"}
     ],
 
     "bg_info": {
-        "backgroundColor": "#600f51"
+        "backgroundColor": "#62839e",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-105",
+        "splashClass": "splash-left-align"
     },
 
     "text": {
