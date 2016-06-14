@@ -1,0 +1,57 @@
+<script type="text/template" id="hotspots-mainview-template">
+
+    <div id="hs-049-view" style="background-color: <%=bg_info.backgroundColor%>;">
+        <div class="bg-img"></div>
+
+        <div><h1 class="module-title"><%= name %></h1></div>
+
+
+        <div class="items-container">
+
+                <%  _.each(items, function (item, index) { %>
+                <div class="item-container item-button>" data-id="<%= item.id  %>">
+                    <h1><%= item.label %></h1>
+                    <h2><%= item.price %></h2>
+                    <div class="item-done-check"></div>
+                </div>
+
+                <% }); %>
+
+
+        </div>
+
+        <div class="scrim-background"></div>
+
+        <div class="details-container">
+            <% var index = 0 %>
+            <%  _.each(items, function (item, i) { %>
+                <div class="detail-set" data-id="<%= item.id  %>">
+                    <img class="screenshot-bg" src="<%= item.image  %>" />
+
+                    <%  _.each(item.details, function (detail, j) { %>
+                        <div class="detail-info-button detail-button" data-id="<%= j %>" data-index="<%= index %>" style="top: <%= detail.button.y %>px; left: <%= detail.button.x %>px;">
+                        </div>
+                    <% }); %>
+
+                    <% index++; %>
+                </div>
+
+            <% }); %>
+            <div class="tooltip"><div class="close-x-light-button"></div><p class="label"></p><p class="tooltip-body"></p></div>
+            <div class="detail-highlight"></div>
+            <div class="back-button enabled" data-id="back">Back</div>
+        </div>
+
+
+
+
+
+
+        <div class="main-button continue-button enabled" data-id="continue">Continue</div>
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+    </div>
+
+</script>
