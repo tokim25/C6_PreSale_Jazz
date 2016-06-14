@@ -250,9 +250,9 @@
                 },
                 {
                     "title": "Lab: Proposal Decks",
-                    "moduleName": "Lab_058",
+                    "moduleName": "Lab_059",
                     "path": "interactions/lab/module",
-                    "url": "data/interactions/106/lab_058_A.json",
+                    "url": "data/interactions/106/lab_059_A.json",
                     "badge": {"id":"badge8", "name": "The Tim Eastergren"},
                     "status": 0,
                     "points": 10

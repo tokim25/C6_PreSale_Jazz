@@ -30,9 +30,9 @@
   }
 
   & .content {
-    @include horizontal-align;
-    width: 550px;
-    top: 250px;
+    @include center-align;
+    width: 600px;
+    margin-top: -50px;
     background: rgba(0,0,0,0.4);
     @include border-radius(20px);
     padding: 20px 30px;
