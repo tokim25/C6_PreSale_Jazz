@@ -1,0 +1,123 @@
+
+#cr-58-view {
+  @extend %view;
+
+  & .bg-img {
+    background: url(../assets/images/106/cr-058/cr-bg.jpg);
+    @include horizontal-align();
+    position: absolute;
+    width: $max-width;
+    height: $max-height;
+    top: 0px;
+  }
+
+
+  & .main-popup {
+    @include center-align;
+  }
+}
+
+.cr-58-container {
+  width: 900px;
+  height: 680px;
+  @include horizontal-align;  
+  top: 100px;
+
+
+  & .napkin {
+    width: 350px;
+    height: 344px;
+    position: absolute;
+    z-index: 0;
+
+    background: url(../assets/images/106/cr-058/cr-napkin.png) no-repeat;
+
+    & .napkin-label {
+      @include horizontal-align;
+      font-family: $font-cursive;
+      text-align: center;
+      top: 20px;
+      width: 200px;
+      opacity: 0.0;
+      font-size: 18px;
+      color: #463e64;
+      mix-blend-mode: color-burn;
+
+    }
+    & .napkin-done-check {
+      background: url(../assets/images/106/cr-058/cr-done-check.png);
+      width: 17px;
+      height: 19px;
+      top: 30px;
+      left: 50px;
+      position: absolute;
+      display: none;
+    }
+    & .doodle {
+      width: 350px;
+      height: 344px;
+      background: url(../assets/images/106/cr-058/cr-doodles.png) no-repeat;
+      mix-blend-mode: color-burn;
+    }
+
+    &:nth-of-type(1) {
+      top: 0px;
+      left: 0px;
+      @include rotate(-20deg);
+    }
+    &:nth-of-type(2) {
+      left: 400px;
+      top: 0px;
+      @include rotate(10deg);
+      & .doodle {
+        background-position: -350px 0px;
+      }
+    }
+    &:nth-of-type(3) {
+      left: 700px;
+      top: 120px;
+      @include rotate(14deg);
+      & .doodle {
+        background-position: -700px 0px;
+      }
+    }
+    &:nth-of-type(4) {
+      left: 275px;
+      bottom: 120px;
+      @include rotate(5deg);
+      & .doodle {
+        background-position: -1050px 0px;
+      }
+    }
+    &:nth-of-type(5)  {
+      right: 0px;
+      bottom: 0px;
+      @include rotate(30deg);
+      & .doodle {
+        background-position: -1400px 0px;
+      }
+    }
+
+    &:hover, &.selected {
+      background-position: 0 -344px;
+      & .napkin-label {
+        opacity: 1.0;
+      }
+      & .doodle{
+        mix-blend-mode: unset;
+      }
+
+    }
+
+    &.completed {
+      & p {
+      }
+      & .napkin-done-check {
+        display: block;
+      }
+    }
+    cursor: pointer;
+  }
+
+}
+

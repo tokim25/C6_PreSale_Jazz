@@ -47,7 +47,7 @@
         {
             "id": "item3",
             "header": "Step 3: <span class='step-subhead'>Make the Third Party Media Plan</span>",
-            "body": "<p>First, campaign specialists export a Pandora version of the media plan using Slingshot. Then, they copy the information to fit in the client-provided agency spec sheet. They'll need to check the ad placements, impressions, rates and other data for accuracy. This process is more or less the same as building an order in a third party media buying system like Prisma. Campaign specialists log on to Prisma and build the plan in Prisma’s interface. Afterwards, the account strategist or account executive sends it to the client.</p>"
+            "body": "<p>First, campaign specialists export a Pandora version of the media plan using Slingshot. Then, they copy the information to fit in the client-provided agency spec sheet. They'll need to check the ad placements, impressions, rates and other data for accuracy. This process is more or less the same as building an order in a third party media buying system like <a target='_blank' href='http://www.mediaocean.com/products/prisma'>Prisma</a>. Campaign specialists log on to Prisma and build the plan in Prisma’s interface. Afterwards, the account strategist or account executive sends it to the client.</p>"
         },
         {
             "id": "item4",

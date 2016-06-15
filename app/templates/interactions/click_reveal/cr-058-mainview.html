@@ -1,0 +1,35 @@
+<script type="text/template" id="cr58-mainview-template">
+
+
+    <div id="cr-58-view" >
+        <div class="bg-img"></div>
+
+        <div><h1 class="module-title"><%= name %></h1></div>
+
+
+        <div class="cr-58-container">
+
+
+            <%  _.each(items, function (item, index) { %>
+                <div class="napkin cr-item" data-id="<%= item.id %>">
+                    <div class="doodle"></div>
+                    <div class="napkin-done-check"></div>
+                    <h1 class="napkin-label"><%= item.header %></h1>
+                </div>
+            <% }); %>
+
+        </div>
+
+        <div class="scrim-background"></div>
+
+        <div class="feedback-container"></div>
+
+        <div class="continue-button main-button enabled" data-id="continue">Continue</div>
+
+
+        <div class="splash-container"></div>
+        <div class="conclusion-container"></div>
+
+    </div>
+
+</script>

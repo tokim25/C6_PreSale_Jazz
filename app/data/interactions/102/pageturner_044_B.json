@@ -144,7 +144,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Media Planning Roles",
-                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. Many of these tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p><p class='pt-callout'>Click on each hat to get a list of the media planning responsibilities owned by each role.</p>",
+                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. As a local campaign specialists, some of your tasks may change between named and non-named accounts. Many of your tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p>",
                 "class": "align-left"
             },
             "interaction": {
@@ -154,15 +154,15 @@
                 "items": [
                     {
                         "header": "Account Executive",
-                        "body": "<ul><li>Engages Client Services with the RFP</li><li>Develops initial media plan recommendations</li><li>Reviews media plan with the client for RFP alignment</li><li>Sends the media plan to the client</li><li>Submits and manages PYM pricing approval cases</li><li>Submits and manages COGS approval requests</li></ul>"
+                        "body": "<ul><li>Engages Client Services with the RFP</li><li>Develops initial media plan recommendations for named accounts</li><li>Reviews media plan with the client for RFP alignment for all accounts</li><li>Sends the media plan to the client for non-named accounts</li><li>Submits and manages PYM pricing approval cases for non-named accounts</li><li>Submits and manages COGS approval requests for non-named accounts</li></ul>"
                     },
                     {
                         "header": "Account Strategist",
-                        "body": "<ul><li>Develops initial media plan recommendations</li><li>Reviews media plan with the client for RFP alignment</li><li>Sends the media plan to the client</li><li>Submits and manages PYM pricing approval cases</li><li>Submits and manages COGS approval requests</li></ul>"
+                        "body": "<ul><li>Develops initial media plan recommendations for named accounts</li><li>Reviews media plan with the client for RFP alignment for named accounts</li><li>Sends the media plan to the client for named accounts</li><li>Submits and manages PYM pricing approval cases for named accounts</li><li>Submits and manages COGS approval requests for named accounts</li></ul>"
                     },
                     {
                         "header": "Campaign Specialist",
-                        "body": "<ul><li>Enters first version of media plan into Slingshot</li><li>Pulls inventory forecasts</li><li>Revises media plan based on client feedback</li><li>Formats media plans using client templates</li><li>Enters plan details into the client's third party order management system</li></ul>"
+                        "body": "<ul><li>Develops initial media plan recommendations for non-named accounts</li><li>Enters first version of media plan into Slingshot</li><li>Pulls inventory forecasts</li><li>Revises media plan based on client feedback</li><li>Formats media plans using client templates</li><li>Enters plan details into the client's third party order management system</li><li>Submits and manages PYM pricing approval cases for non-named accounts</li><li>Submits and manages COGS approval requests for non-named accounts</li></ul>"
                     }
                 ]
             },

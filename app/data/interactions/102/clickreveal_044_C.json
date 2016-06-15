@@ -16,7 +16,7 @@
         "splash": [
             {
                 "header": "Introduction",
-                "body": "<p>Third party media plans! Scary? I think not! Here's all it is: campaign specialists take the data from Slingshot. Then, they format it for the client’s agency spec sheet. Poof! All done!</p>"
+                "body": "<p>Third party media plans! Scary? I think not! Here's all it is: account executives take the data from Slingshot. Then, they format it for the client’s agency spec sheet. Poof! All done!</p>"
             },
             {
                 "header": "Directions",
@@ -36,22 +36,22 @@
         {
             "id": "item1",
             "title": "Step 1: Create Media Plan and Pull Avails in Slingshot",
-            "body": "<p>Campaign specialists plan out line items in Slingshot and pull the avails. That's how you figure out the percentage of inventory that's still available. Work with your pod to recommend revisions. Afterwards campaign specialists make the appropriate revisions to the media plan.</p>"
+            "body": "<p>Account executives plan out line items in Slingshot and pull the avails. That's how they figure out the percentage of inventory that's still available. </p>"
         },
         {
             "id": "item2",
             "title": "Step 2: Revise Media Plan and Re-Pull Avails in Slingshot",
-            "body": "<p>Some line items in your plan might not have enough impression inventory for your budget. It happens! Revise these line items and re-pull the impressions within Slingshot. You might need to revise your media plan a few times. </p>"
+            "body": "<p>Some line items in the plan might not have enough impression inventory for the budget. It happens! The account executive revises these line items and re-pulls the impressions within Slingshot. They might need to revise your media plan a few times. </p>"
         },
         {
             "id": "item3",
             "title": "Step 3: Make the Third Party Media Plan",
-            "body": "<p>First, campaign specialists export a Pandora version of the media plan using Slingshot. Then, they copy the information to fit in the client-provided agency spec sheet. They'll need to check the ad placements, impressions, rates and other data for accuracy. This process is more or less the same as building an order in a third party media buying system like Prisma. Campaign specialists log on to Prisma and build the plan in Prisma’s interface. Afterwards, the account strategist or account executive sends it to the client.</p>"
+            "body": "<p>First, account executives export a Pandora version of the media plan using Slingshot. Then, they copy the information to fit in the client-provided agency spec sheet. They'll need to check the ad placements, impressions, rates and other data for accuracy. This process is more or less the same as building an order in a third party media buying system like <a target='_blank' href='http://www.mediaocean.com/products/prisma'>Prisma</a>. Account executives log on to Prisma and build the plan in Prisma’s interface. Afterwards, they'll send it to the client.</p>"
         },
         {
             "id": "item4",
             "title": "Step 4: Revise Third Party Media Plan",
-            "body": "<p>Clients might have feedback, and that leads to revisions! This means building pulling more avails, and rebuilding the media plan by campaign specialists. Afterwards, the account strategist or account executive will present the plan back to the client. </p>"
+            "body": "<p>Clients might have feedback, and that leads to revisions! This means building pulling more avails, and rebuilding the media plan by account executives. Afterwards, the account executives will present the plan back to the client. </p>"
         },
         {
             "id": "item5",

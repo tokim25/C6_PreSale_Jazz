@@ -52,7 +52,7 @@
         },
         {
             "header": "Resources",
-            "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href=''>Download Lab Assets</a>"
+            "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=06940000002WIP9'>Download Lab Assets</a>"
         }
     ]
 }

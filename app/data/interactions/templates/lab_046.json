@@ -14,26 +14,6 @@
             {
                 "header": "Overview",
                 "body": "<p></p><p></p><p></p>"
-            },
-            {
-                "header": "The Goal",
-                "body": "<p>You have two goals in this lab:</p><ol><li></li><li></li></ol>"
-            },
-            {
-                "header": "Um... How?",
-                "body": "<p>Great question. We've created some specific resources to help you with this lab. Let's organize these resources as systems and documents.</p>"
-            },
-            {
-                "header": "Systems",
-                "body": "<p><b></b>.</p>"
-            },
-            {
-                "header": "Documents",
-                "body": "<p><b></b>. </p>"
-            },
-            {
-                "header": "Resources",
-                "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href=''>Download Lab Assets</a>"
             }
         ],
         "conclusion": [
@@ -46,5 +26,29 @@
                 "body": "<p></p>"
             }
         ]
-    }
+    },
+
+    "lab": [
+        {
+            "header": "The Goal",
+            "body": "<p>You have two goals in this lab:</p><ol><li></li><li></li></ol>"
+        },
+        {
+            "header": "Um... How?",
+            "body": "<p>Great question. We've created some specific resources to help you with this lab. Let's organize these resources as systems and documents.</p>"
+        },
+        {
+            "header": "Systems",
+            "body": "<p><b></b>.</p>"
+        },
+        {
+            "header": "Documents",
+            "body": "<p><b></b>. </p>"
+        },
+        {
+            "header": "Resources",
+            "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href=''>Download Lab Assets</a>"
+        }
+    ]
+
 }

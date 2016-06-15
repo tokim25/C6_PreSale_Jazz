@@ -31,7 +31,7 @@
                     "title": "Third Party Media Plan Workflow",
                     "moduleName": "ClickReveal_044",
                     "path": "interactions/clickreveal/module_cr_044",
-                    "url": "data/interactions/102/clickreveal_044_A.json",
+                    "url": "data/interactions/102/clickreveal_044_AB.json",
                     "status": 0,
                     "points": 10
                 },
@@ -233,7 +233,7 @@
                 {
                     "title": "Anatomy of a Proposal Deck",
                     "moduleName": "ClickReveal_058",
-                    "path": "interactions/clickreveal/module",
+                    "path": "interactions/clickreveal/module_cr_058",
                     "url": "data/interactions/106/clickreveal_058.json",
 
                     "badge": {"id":"badge7", "name": "The Millie Holiday"},

@@ -190,7 +190,7 @@ body {
   position: fixed;
   overflow: hidden; }
 
-.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, #video-view, #lab-view, .lab-popup, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7, #cr-ipaw1-s2, #cr-ipaw2-s1, #cr-pym-s1, #cr-pym-s2, #cr-matterhorn-s3, #cr-matterhorn-s4, #cr-matterhorn-s5, #cr-proposaldecks-s4, #cr-proposaldecks-s1, #cr-44-view, #match-049-view, #hs-049-view, #match-050-view, #quiz-057-view {
+.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, #video-view, #lab-view, .lab-popup, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7, #cr-ipaw1-s2, #cr-ipaw2-s1, #cr-pym-s1, #cr-pym-s2, #cr-matterhorn-s3, #cr-matterhorn-s4, #cr-matterhorn-s5, #cr-proposaldecks-s4, #cr-proposaldecks-s1, #cr-44-view, #match-049-view, #hs-049-view, #match-050-view, #quiz-057-view, #cr-58-view {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -946,7 +946,7 @@ body {
   position: absolute;
   width: 600px;
   top: 625px;
-  left: 150%;
+  left: 50%;
   margin-left: 70px;
   -webkit-transform: rotate(14deg);
   -moz-transform: rotate(14deg);
@@ -959,7 +959,7 @@ body {
   width: 400px;
   top: 700px;
   left: 50%;
-  margin-left: -450px; }
+  margin-left: -50px; }
 
 #menu-dev-container3 {
   position: absolute;
@@ -2729,42 +2729,56 @@ body {
     bottom: 50px;
     padding-bottom: 20px; }
   #cr-mediaplans-s6 .reveal-items-buttons-container {
-    background: url(../assets/images/102/pt-044/instruments.png) no-repeat;
-    height: 900px;
-    width: 725px;
-    right: 0px;
-    bottom: 0px;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    height: 864px;
+    width: 967px;
+    right: 0px;
+    bottom: -50px;
+    z-index: 0; }
   #cr-mediaplans-s6 .reveal-item {
     cursor: pointer;
     position: absolute;
+    filter: grayscale(80%);
+    /* Standard CSS */
+    -webkit-filter: grayscale(80%);
+    /* CSS for Webkit Browsers */
+    filter: url(/elements/grayscale.svg#desaturate);
+    /* Firefox 4-34 */
+    -webkit-filter: grayscale(0.8);
+    /* Old WebKit Browsers */
     transition: margin 0.3s; }
     #cr-mediaplans-s6 .reveal-item:nth-of-type(1) {
-      background: url(../assets/images/102/pt-044/bass.png) no-repeat 0px 900px;
+      background: url(../assets/images/102/pt-044/bass.png) no-repeat 0px 0px;
       top: 0px;
       right: 0px;
       height: 900px;
-      width: 289px; }
+      width: 288px; }
     #cr-mediaplans-s6 .reveal-item:nth-of-type(2) {
-      background: url(../assets/images/102/pt-044/guitar.png) no-repeat 0px 900px;
+      background: url(../assets/images/102/pt-044/guitar.png) no-repeat 0px 0px;
       top: 0px;
-      left: 200px;
+      left: 483px;
       height: 900px;
-      width: 269px; }
+      width: 288px; }
     #cr-mediaplans-s6 .reveal-item:nth-of-type(3) {
-      background: url(../assets/images/102/pt-044/sax.png) no-repeat 0px 900px;
+      background: url(../assets/images/102/pt-044/snare.png) no-repeat 0px 0px;
       top: 0px;
-      left: 00px;
+      left: 349px;
       height: 900px;
-      width: 215px; }
+      width: 288px; }
+    #cr-mediaplans-s6 .reveal-item:nth-of-type(4) {
+      background: url(../assets/images/102/pt-044/sax.png) no-repeat 0px 0px;
+      top: 0px;
+      left: 0px;
+      height: 900px;
+      width: 493px;
+      z-index: 1; }
     #cr-mediaplans-s6 .reveal-item:hover {
-      background-position: 0px 0px; }
+      background-position: 0px -844px;
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0); }
     #cr-mediaplans-s6 .reveal-item.selected {
-      background-position: 0px 0px;
+      background-position: 0px -844px;
       cursor: default; }
 
 #cr-mediaplans-s7 {
@@ -4052,3 +4066,121 @@ body {
     font-size: 1.8em;
     line-height: 110%;
     text-transform: uppercase; }
+
+#cr-58-view .bg-img {
+  background: url(../assets/images/106/cr-058/cr-bg.jpg);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  width: 1500px;
+  height: 900px;
+  top: 0px; }
+#cr-58-view .main-popup {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute; }
+
+.cr-58-container {
+  width: 900px;
+  height: 680px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100px; }
+  .cr-58-container .napkin {
+    width: 350px;
+    height: 344px;
+    position: absolute;
+    z-index: 0;
+    background: url(../assets/images/106/cr-058/cr-napkin.png) no-repeat;
+    cursor: pointer; }
+    .cr-58-container .napkin .napkin-label {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      font-family: "Gloria Hallelujah", cursive;
+      text-align: center;
+      top: 20px;
+      width: 200px;
+      opacity: 0.0;
+      font-size: 18px;
+      color: #463e64;
+      mix-blend-mode: color-burn; }
+    .cr-58-container .napkin .napkin-done-check {
+      background: url(../assets/images/106/cr-058/cr-done-check.png);
+      width: 17px;
+      height: 19px;
+      top: 30px;
+      left: 50px;
+      position: absolute;
+      display: none; }
+    .cr-58-container .napkin .doodle {
+      width: 350px;
+      height: 344px;
+      background: url(../assets/images/106/cr-058/cr-doodles.png) no-repeat;
+      mix-blend-mode: color-burn; }
+    .cr-58-container .napkin:nth-of-type(1) {
+      top: 0px;
+      left: 0px;
+      -webkit-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      transform: rotate(-20deg); }
+    .cr-58-container .napkin:nth-of-type(2) {
+      left: 400px;
+      top: 0px;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg); }
+      .cr-58-container .napkin:nth-of-type(2) .doodle {
+        background-position: -350px 0px; }
+    .cr-58-container .napkin:nth-of-type(3) {
+      left: 700px;
+      top: 120px;
+      -webkit-transform: rotate(14deg);
+      -moz-transform: rotate(14deg);
+      -ms-transform: rotate(14deg);
+      -o-transform: rotate(14deg);
+      transform: rotate(14deg); }
+      .cr-58-container .napkin:nth-of-type(3) .doodle {
+        background-position: -700px 0px; }
+    .cr-58-container .napkin:nth-of-type(4) {
+      left: 275px;
+      bottom: 120px;
+      -webkit-transform: rotate(5deg);
+      -moz-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+      -o-transform: rotate(5deg);
+      transform: rotate(5deg); }
+      .cr-58-container .napkin:nth-of-type(4) .doodle {
+        background-position: -1050px 0px; }
+    .cr-58-container .napkin:nth-of-type(5) {
+      right: 0px;
+      bottom: 0px;
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      transform: rotate(30deg); }
+      .cr-58-container .napkin:nth-of-type(5) .doodle {
+        background-position: -1400px 0px; }
+    .cr-58-container .napkin:hover, .cr-58-container .napkin.selected {
+      background-position: 0 -344px; }
+      .cr-58-container .napkin:hover .napkin-label, .cr-58-container .napkin.selected .napkin-label {
+        opacity: 1.0; }
+      .cr-58-container .napkin:hover .doodle, .cr-58-container .napkin.selected .doodle {
+        mix-blend-mode: unset; }
+    .cr-58-container .napkin.completed .napkin-done-check {
+      display: block; }

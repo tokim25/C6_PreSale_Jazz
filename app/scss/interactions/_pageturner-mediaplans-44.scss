@@ -27,6 +27,7 @@
 
     cursor:pointer;
     position: absolute;
+
     &:nth-of-type(1) {
       background: url(../assets/images/102/pt-044/hat-1.png) no-repeat 0px 300px;
       top: 155px;
@@ -52,6 +53,7 @@
 
     &:hover {
       background-position: 0px 0px;
+
     }
     &.selected {
       background-position: 0px 0px;
@@ -78,46 +80,62 @@
   }
 
   & .reveal-items-buttons-container {
-    background: url(../assets/images/102/pt-044/instruments.png) no-repeat;
-    height: 900px;
-    width: 725px;
+    position: absolute;
+    height: 864px;
+    width: 967px;
     right: 0px;
-    bottom: 0px;
-    @include vertical-align();
+    bottom: -50px;
+    z-index: 0;
   }
 
   & .reveal-item {
 
     cursor:pointer;
     position: absolute;
+    filter: grayscale(80%); /* Standard CSS */
+    -webkit-filter: grayscale(80%); /* CSS for Webkit Browsers */
+    filter: url(/elements/grayscale.svg#desaturate); /* Firefox 4-34 */
+    -webkit-filter: grayscale(.8); /* Old WebKit Browsers */
     &:nth-of-type(1) {
-      background: url(../assets/images/102/pt-044/bass.png) no-repeat 0px 900px;
+      background: url(../assets/images/102/pt-044/bass.png) no-repeat 0px 0px;
       top: 0px;
       right: 0px;
       height: 900px;
-      width: 289px;
+      width: 288px;
 
     }
     &:nth-of-type(2) {
-      background: url(../assets/images/102/pt-044/guitar.png) no-repeat 0px 900px;
+      background: url(../assets/images/102/pt-044/guitar.png) no-repeat 0px 0px;
       top: 0px;
-      left: 200px;
+      left: 483px;
       height: 900px;
-      width: 269px;
+      width: 288px;
     }
     &:nth-of-type(3) {
-      background: url(../assets/images/102/pt-044/sax.png) no-repeat 0px 900px;
+      background: url(../assets/images/102/pt-044/snare.png) no-repeat 0px 0px;
       top: 0px;
-      left: 00px;
+      left: 349px;
       height: 900px;
-      width: 215px;
+      width: 288px;
+    }
+
+    &:nth-of-type(4) {
+      background: url(../assets/images/102/pt-044/sax.png) no-repeat 0px 0px;
+      top: 0px;
+      left: 0px;
+      height: 900px;
+      width: 493px;
+      z-index:1;
     }
 
     &:hover {
-      background-position: 0px 0px;
+      background-position: 0px -844px;
+      filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0);
     }
     &.selected {
-      background-position: 0px 0px;
+      background-position: 0px -844px;
       cursor:default;
     }
 

@@ -1,13 +1,14 @@
 {
-    "name": "Title",
+    "name": "Anatomy of a Proposal Deck",
 
     "assetManifest": [
-        {"id": "", "src": "assets/images/INTERACTION/IMAGE.png"}
+        {"id": "cr-bg", "src": "assets/images/106/cr-058/cr-bg.jpg"},
+        {"id": "cr-napkin", "src": "assets/images/106/cr-058/cr-napkin.png"},
+        {"id": "cr-doodles", "src": "assets/images/106/cr-058/cr-doodles.png"}
     ],
 
     "bg_info": {
         "backgroundColor": "#335671",
-        "backgroundClass": "booth-bg",
         "splash": "splash-106",
         "splashClass": "splash-right-align"
     },
@@ -15,8 +16,12 @@
     "text": {
         "splash": [
             {
+                "header": "Introduction",
+                "body": "<p>There are tons of moving parts to a proposal deck. Some decks are a lot more detailed than others, but they all pull from the same pool of resources. These resources exist to help you make proposal decks quicker and easier. Let's explore what each of these resources are! In the next few pages, we’ll take a look at each proposal deck resource in a bit more detail. Wanna know more? We’ve included a link for you to subscribe and download the files in Salesforce.</p>"
+            },
+            {
                 "header": "Directions",
-                "body": "<p></p>"
+                "body": "<p>Click on each of the jazzy doodles to learn more about the proposal deck resources available to you.</p>"
             }
         ],
         "conclusion": [
@@ -34,14 +39,34 @@
 
     "items": [
         {
-            "id": "itemID",
-            "audioID": "audioID",
-            "title": "ItemTitle",
-            "result": "correct|wrong",
-            "feedback": {
-                "title": "feedbackTitle",
-                "body": "feedbackBody"
-            }
+            "id": "item1",
+            "audioID": "cr_audio1",
+            "header": "Core Narrative",
+            "body": "<p><a target='_blank' href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Ynl'>The core narrative deck</a> showcases Pandora's user engagement and value with various age ranges. Think of it as the skeleton for all our proposal decks! No matter what sales channel or client, there is one core story for our entire organization.</p><p>You can find this resource in the Sales Marketing Library in Salesforce. Or, just type in <b>\"New Core Story\"</b> into Salesforce.</p>"
+        },
+        {
+            "id": "item2",
+            "audioID": "cr_audio2",
+            "header": "Core Narrative Local Appendices",
+            "body": "<p><a target='_blank' href='https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&masterWorkspaceId=05840000000HBNo&searchWorkspaceIds=%5B%2205840000000HBNo%22%5D&prop_00N40000003JOPA=0AAF&shepherdToken=VmpFPSxNakF4TlMwd09DMHlOMVF5TURveE9UbzBOUzQyTlRWYSxCc2d2LE9XUmlPREl4&searchExtensions=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&searchProperties=%7B%2200N40000003JOPA%22%3A%5B%220AAF%22%5D%7D&resultsListType=s&searchRefreshFacets=false'>These slide decks</a> are the localized details of the core story for a local market. For example, you'll find local user engagement metrics for your client's local market. Sales Marketing has produced almost 40 of these slide decks to help you with your clients! </p><p>You can find these decks in the Salesforce Marketing Libraries!</p>"
+        },
+        {
+            "id": "item3",
+            "audioID": "c_raudio3",
+            "header": "Audience Profiles + Vertical Decks",
+            "body": "<p>The Sales Marketing team designed <a target='_blank' href='https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&masterWorkspaceId=05840000000HBNo&searchWorkspaceIds=%5B%2205840000000HBNo%22%5D&prop_00N40000003JOPA=0AAZ&shepherdToken=VmpFPSxNakF4TlMwd09DMHlOMVF5TURveE1qb3pPUzQzTVRCYSxCX2FNLE9XUmlPREl4&searchExtensions=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&searchProperties=%7B%2200N40000003JOPA%22%3A%5B%220AAZ%22%5D%7D&resultsListType=s&searchRefreshFacets=false'>these slides</a> to highlight various audience profiles and verticals. In fact, there are almost 50 audience profiles that'll help you tell a stronger story in your deck! </p><p>For example, do you have an automotive client? We have national vertical decks for tier 1 and tier 2 automotive narratives to help you win them over! We even have tier 3 automative narratives just for local clients!</p><p>Are you pitching Pandora's strength with teens and young adults? There's an audience profile deck for that! What about if your client is an education client? You might want to pull in some data from the <a target='_blank' href='EDU vertical deck'>EDU vertical deck!</a></p><p>You can find these decks in the Salesforce Marketing Libraries! </p>"
+        },
+        {
+            "id": "item4",
+            "audioID": "cr_audio4",
+            "header": "Ad Product Overview Deck",
+            "body": "<p>So you're recommending a few different ad products to your client. Awesome! Show them the features and benefits of your recommendation using slides from this <a target='_blank' href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Cpz'>deck</a>!</p><p>This contains slides of our ad products for you to add to your proposal deck \"a la carte.\" The benefit is that this pulls images and positioning statements into one easy-to-add slide. </p><p>Some pods go so far as personalizing the text using the buzzwords from the RFP. That personalizes these slides to speak to the client's goals. Some go even further to replace the stock images of ad products. They work with the Ad Design team to create mocks of what their campaign might look like on Pandora. ​</p>"
+        },
+        {
+            "id": "item5",
+            "audioID": "cr_audio4",
+            "header": "High-level overview of the media plan",
+            "body": "<p>Proposal decks work in tandem with your media plan. So it only makes sense to talk about your media plan recommendations in the deck! </p><p>Many times, you might present a few media plan options to your client. For example, the client may have requested proposals for two different budget levels. Add a teaser to the media plan documents in the proposal deck to help connect the dots for your client!</p>"
         }
     ]
 }
