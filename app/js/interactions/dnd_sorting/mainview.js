@@ -46,7 +46,7 @@ define([
                 'showTitle': true,
                 'title': 'The new and IMPROVED title!',
                 'body': '<p></p>',
-                'buttons': [{'id': 'ok', 'label': 'Got it!'}],
+                'buttons': [{'id': 'ok', 'label': 'OK'}],
                 'containerClass': 'licenseplate-popup'
             }
             this.feedback = new Popup(feedbackObj);

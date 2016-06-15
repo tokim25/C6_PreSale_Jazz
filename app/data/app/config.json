@@ -58,7 +58,7 @@
         },
         {
             "name": "Menu",
-            "path": "app/menu/menumodule-dev",
+            "path": "app/menu/menumodule",
             "url": "data/app/menu.json"
         },
         {

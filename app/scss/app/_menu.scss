@@ -11,7 +11,7 @@
   position: absolute;
   width: 100vw;
   max-width: $max-width;
-  height: 7364px;
+  height: 8042px;
   //overflow: hidden;
 }
 
@@ -24,88 +24,71 @@
   @include horizontal-align();
   max-width: $max-width;
   width: 100vw;
-  height: 7364px;
+  height: 8042px;
 }
 
-#menu-dev-bg {
+
+#menu-bg {
   position: absolute;
   @include horizontal-align;
   top: 0px;
-
 }
 
 .menu-module {
+  //background: url(../assets/images/ui/popup/menu-card.png) no-repeat;
+  background-image: url(../assets/images/menu/menu-card-top.png), url(../assets/images/menu/menu-card-bottom.png), url(../assets/images/menu/menu-card-center.png);
+  background-position: center top, center bottom, center center;
+  background-repeat: no-repeat, no-repeat, repeat;
+  width: 550px;
+  min-height: 550px;
+  left: 50%;
+  box-sizing: border-box;
+  padding: 120px 50px 50px;
+  position: absolute;
+  @include box-shadow(2px 2px 8px rgba(0,0,0,0.8));
+
   & .content {
-    position: absolute;
-    left: 50px;
-    top: 85px;
     text-align: center;
   }
 }
 
+
+
 #mod-1 {
-  background: url(../assets/images/menu/mod-bg-1.png);
-  width: 478px;
-  height: 174px;
-  & .content {
-    left: 50px;
-    top: 50px;
-  }
+  margin-left: 0px;
+  top: 980px;
+  @include rotate(13deg);
 }
 #mod-2 {
-  background: url(../assets/images/menu/mod-bg-2.png);
-  width: 469px;
-  height: 497px;
-  & .content {
-    left: 30px;
-    top: 85px;
-  }
-  &.performance {
-    background: url(../assets/images/menu/mod-bg-2-performance.png);
-    width: 474px;
-    height: 170px;
-    & .content {
-      left: 30px;
-      top: 70px;
-    }
-  }
+  margin-left: -550px;
+  top: 1955px;
+  @include rotate(-10deg);
 }
 #mod-3 {
-  background: url(../assets/images/menu/mod-bg-3.png);
-  width: 555px;
-  height: 195px;
+  margin-left: -50px;
+  top: 3100px;
+  @include rotate(12deg);
 }
 #mod-4 {
-  background: url(../assets/images/menu/mod-bg-4.png);
-  width: 603px;
-  height: 257px;
-  & .content {
-    left: 100px;
-    top: 50px;
-  }
+  margin-left: -380px;
+  top: 4150px;
+  @include rotate(-30deg);
 }
 #mod-5 {
-  background: url(../assets/images/menu/mod-bg-5.png);
-  width: 589px;
-  height: 263px;
-  & .content {
-    top: 100px;
-    left: 40px;
-  }
+  margin-left: -50px;
+  top: 5150px;
+  @include rotate(26deg);
 }
 #mod-6 {
-  background: url(../assets/images/menu/mod-bg-6.png);
-  width: 475px;
-  height: 425px;
+  margin-left: -200px;
+  top: 6550px;
+  @include rotate(-5deg);
 
 }
 #mod-7 {
-  background: url(../assets/images/menu/mod-bg-7.png);
-  width: 474px;
-  height: 170px;
-  & .content {
-    top: 70px;
-  }
+  margin-left: -50px;
+  top: 7325px;
+  @include rotate(-30deg);
 }
 
 .menu-dev-container {
@@ -176,30 +159,33 @@
   margin-left: -50px;
 }
 
+
 .menu-button {
 
-  padding-left: 30px;
+
   position: relative;
   cursor: pointer;
   margin-bottom: 12px;
-  //color: #222;
-  transition: margin .2s;
+  transition: all .2s;
 
   &:hover .menu-button-label{
     text-decoration: underline;
   }
   &:hover {
-    margin-left: 5px;
+    @include scaleX(1.1);
   }
   & .menu-button-label {
-    font-size: 2.0em;
+    display: inline-block;
+    font-family: $font-h1;
+    font-size: 28px;
+    //text-transform: uppercase;
     pointer-events: none;
+    -webkit-font-smoothing: antialiased;
   }
 
   & .status-icon {
-
-    position: absolute;
-    left: 3px;
+    float:left;
+    margin-left: -28px;
     top: 0px;
     width: 20px;
     height: 20px;
@@ -209,7 +195,7 @@
 
   &.locked {
     & .menu-button-label {
-      opacity: 0.8;
+      opacity: 0.6;
     }
     cursor: default;
     pointer-events: none;
@@ -218,7 +204,7 @@
     }
   }
   &.not-started.locked {
-    opacity: 0.8;
+    opacity: 0.6;
     cursor: default;
     pointer-events: none;
     & .status-icon {
@@ -249,28 +235,30 @@
   stroke-miterlimit:10;
 }
 
-.menu-banner {
-  background: url(../assets/images/menu/banner-bg-blue.png);
-  width: 571px;
-  height: 264px;
-  pointer-events: none;
-  & .content {
-    position: absolute;
-    top: 120px;
-    left: 120px;
-  }
-  & h2 {
-    font-family: 'avenir-black';
-    color:white;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
-    text-transform: uppercase;
-    margin: 0px;
-  }
-}
 
 .course-title {
-  font-size: 16px;
+  @include horizontal-align;
+  position: relative;
+  margin: 10px 0 60px 0;
+  text-align: center;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  &::after {
+    background: url(../assets/images/ui/popup/menu-card-hr.png);
+    content: '';
+    width: 325px;
+    left: 50%;
+    margin-left: -162px;
+    position: absolute;;
+    height: 17px;
+    margin-top: 40px;
+  }
+
+  & .course-name-num {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 
 .module-name {
@@ -280,6 +268,13 @@
 
 .module-number {
   font-size: 30px;
+}
+
+.menu-snap {
+  left: 50%;
+  @include box-shadow(2px 2px 8px rgba(0,0,0,0.8));
+  width: 235px;
+  z-index: 3;
 }
 
 #scroll-arrow {
@@ -297,25 +292,6 @@
   50% {transform: translateY(5px);}
 }
 
-#tv {
-  width: 646px;
-  height: 425px;
-  & #tv-screen {
-    background: url(../assets/images/menu/tv-screen.png) no-repeat;
-    width: 646px;
-    height: 425px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
 
-  }
-  &.active #tv-screen {
-    animation: tvplay .6s steps(4) infinite;
-  }
-}
-
-@keyframes tvplay {
-  100% { background-position:0px -1700px; }
-}
 
 
