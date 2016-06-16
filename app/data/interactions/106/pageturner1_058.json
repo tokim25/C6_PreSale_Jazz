@@ -117,7 +117,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Content and Resources",
-                "body": "<p>et's learn what's in a proposal deck and what resources you have to make one. Afterwards, download the resources for yourself! Look through the Salesforce libraries to scout out some good examples. And connect with your TA to help you learn how they build proposal decks!</p>",
+                "body": "<p>Let's learn what's in a proposal deck and what resources you have to make one. Afterwards, download the resources for yourself! Look through the Salesforce libraries to scout out some good examples. And connect with your TA to help you learn how they build proposal decks!</p>",
                 "class": "align-right"
             },
             "enter": [
