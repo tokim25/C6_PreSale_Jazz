@@ -24,13 +24,13 @@
             },
             {
                 "header": "Directions",
-                "body": "<p>Click on each icon to read how IPAW benefits each </p>"
+                "body": "<p>Match the description written on the napkins with the correct bandmate. Once you're done, click submit to check your answers.</p>"
             }
         ],
         "conclusion": [
             {
                 "header": "Conclusion",
-                "body": "<p>Conclusion Text Now that you know how to track pricing for your orders with IPAW, it’s time to jive on, Slick!</p>"
+                "body": "<p>Now that you know how to track pricing for your orders with IPAW, it’s time to jive on, Slick!</p>"
             },
             {
                 "header": "Badge Earned",
