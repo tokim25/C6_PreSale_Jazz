@@ -150,7 +150,7 @@
                     "points": 10
                 },
                 {
-                    "title": "Third Party Media Plans",
+                    "title": "Matterhorn Reservation Statuses",
                     "moduleName": "Matching_050",
                     "path": "interactions/dnd_matching/module_matching_050",
                     "url": "data/interactions/104/clickreveal_050.json",

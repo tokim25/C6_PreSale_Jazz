@@ -14,8 +14,8 @@
     "text": {
         "splash": [
             {
-                "header": "Directions",
-                "body": "<p></p>"
+                "header": "Introduction",
+                "body": "<p>Now that you've built your broadcast order in the Order Entry Wizard, let's see what it looks like in the Slingshot Plan View! Let's tune back into Erin as she walks us through this view.</p>"
             }
         ],
         "conclusion": [
