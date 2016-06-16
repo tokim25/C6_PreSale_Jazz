@@ -1,18 +1,18 @@
 {
     "projectTitle": "The School of Jazz: Pre-Sale",
     "projectID": "presale",
-    "version": "Alpha 1.0",
+    "version": "Alpha 2.0",
     "schoolName": "Jazz",
     "JIRAEnabled": true,
     "inLMS": false,
     "LMSType": "SCORM",
-    "hasIntro": false,
+    "hasIntro": true,
     "hasConclusion": true,
     "isRoleFiltered": true,
     "defaultRole": "national",
     "alwaysShowIntro": false,
     "roleType": "",
-    "lockingMode": "open",
+    "lockingMode": "linear",
     "setAllComplete": false,
     "returnToMenuAfterInteraction": true,
     "returnToMenuAfterLastSubModule": true,
@@ -58,7 +58,7 @@
         },
         {
             "name": "Menu",
-            "path": "app/menu/menumodule-dev",
+            "path": "app/menu/menumodule",
             "url": "data/app/menu.json"
         },
         {

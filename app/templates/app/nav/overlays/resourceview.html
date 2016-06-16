@@ -4,15 +4,15 @@
     <div id="resources-view">
         <div class="overlay-title"><div class="resources-ititle title-icon"></div>Resources</div>
         <div class="resource-container">
-            <div class="resource-list-temp">
+            <div class="resource-list">
                 <%  _.each(filteredGroups, function (group) { %>
                 <div class="resource-group">
-                <h2><%= group.label %></h2>
-                <ul>
+                <h1><%= group.label %></h1>
+
                     <%  _.each(group.links, function (link) { %>
-                        <li><a target="_blank" href="<%= link.url %>"><%= link.text %></a></li>
+                    <p><a target="_blank" href="<%= link.url %>"><%= link.text %></a></p>
                     <%  }); %>
-                </ul>
+
                 </div>
                 <%  }); %>
             </div>

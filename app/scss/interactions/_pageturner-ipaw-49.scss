@@ -225,15 +225,15 @@
     position: absolute;
 
     filter: grayscale(40%); /* Standard CSS */
-    -webkit-filter: grayscale(40%); /* CSS for Webkit Browsers */
-    filter: url(/elements/grayscale.svg#desaturate); /* Firefox 4-34 */
-    -webkit-filter: grayscale(.4); /* Old WebKit Browsers */
+    /*-webkit-filter: grayscale(40%); !* CSS for Webkit Browsers *!
+    filter: url(/elements/grayscale.svg#desaturate); !* Firefox 4-34 *!
+    -webkit-filter: grayscale(.4); !* Old WebKit Browsers *!*/
 
     &.saturate {
 
       filter: grayscale(0%);
-      filter: none;
-      -webkit-filter: grayscale(0);
+      /*filter: none;
+      -webkit-filter: grayscale(0);*/
     }
 
   }

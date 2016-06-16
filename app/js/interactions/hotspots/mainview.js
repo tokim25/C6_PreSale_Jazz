@@ -36,6 +36,7 @@ define([
 
         events: {
             'click .back-button': 'onButtonClicked',
+            'click .continue-button': 'onButtonClicked',
             'mouseover @ui.detailItem': 'onDetailOver',
             'mouseout @ui.detailItem': 'onDetailOut',
             'click @ui.mainItem': 'onMainItemClicked',

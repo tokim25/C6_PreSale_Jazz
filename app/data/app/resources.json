@@ -2,32 +2,6 @@
     "name": "Resources",
     "groups": [
         {
-            "label": "Proposal Deck Resources",
-            "role": "all",
-            "links": [
-                {
-                    "type": "link",
-                    "text": "Audience Segment Template Slide Images",
-                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026chB"
-                },
-                {
-                    "type": "link",
-                    "text": "Ad Product Overview Deck",
-                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Cpz"
-                },
-                {
-                    "type": "link",
-                    "text": "Core Narrative",
-                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Ynl"
-                },
-                {
-                    "type": "link",
-                    "text": "Audience Profiles + Vertical Decks",
-                    "url": "https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&masterWorkspaceId=05840000000HBNo&searchWorkspaceIds=%5B%2205840000000HBNo%22%5D&prop_00N40000003JOPA=0AAZ&shepherdToken=VmpFPSxNakF4TlMwd09DMHlOMVF5TURveE1qb3pPUzQzTVRCYSxCX2FNLE9XUmlPREl4&searchExtensions=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&searchProperties=%7B%2200N40000003JOPA%22%3A%5B%220AAZ%22%5D%7D&resultsListType=s&searchRefreshFacets=false"
-                }
-            ]
-        },
-        {
             "label": "Guides",
             "role": ["all"],
             "links": [
@@ -84,6 +58,32 @@
             ]
         },
         {
+            "label": "Proposal Deck Resources",
+            "role": "all",
+            "links": [
+                {
+                    "type": "link",
+                    "text": "Audience Segment Template Slide Images",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000026chB"
+                },
+                {
+                    "type": "link",
+                    "text": "Ad Product Overview Deck",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Cpz"
+                },
+                {
+                    "type": "link",
+                    "text": "Core Narrative",
+                    "url": "https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=069400000009Ynl"
+                },
+                {
+                    "type": "link",
+                    "text": "Audience Profiles + Vertical Decks",
+                    "url": "https://pandora.my.salesforce.com/sfc/#search?searchPageNum=0&masterWorkspaceId=05840000000HBNo&searchWorkspaceIds=%5B%2205840000000HBNo%22%5D&prop_00N40000003JOPA=0AAZ&shepherdToken=VmpFPSxNakF4TlMwd09DMHlOMVF5TURveE1qb3pPUzQzTVRCYSxCX2FNLE9XUmlPREl4&searchExtensions=%5B%5D&searchLanguageFilters=%5B%5D&searchCreatorIds=%5B%5D&searchTags=%5B%5D&searchProperties=%7B%2200N40000003JOPA%22%3A%5B%220AAZ%22%5D%7D&resultsListType=s&searchRefreshFacets=false"
+                }
+            ]
+        },
+        {
             "label": "Advertiser Objectives Matrix",
             "role": "all",
             "links": [
@@ -109,5 +109,6 @@
                 }
             ]
         }
+
     ]
 }

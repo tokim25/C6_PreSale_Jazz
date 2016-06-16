@@ -1,14 +1,24 @@
 {
     "assetManifest": [
-        {"id": "menu-bg", "src": "assets/images/menu/menu-mock.jpg"}
+        {"id": "menu-bg", "src": "assets/images/menu/menu-bg.jpg"},
+        {"id": "snap-1", "src": "assets/images/menu/snap-1.jpg"},
+        {"id": "snap-2", "src": "assets/images/menu/snap-2.jpg"},
+        {"id": "snap-3", "src": "assets/images/menu/snap-3.jpg"},
+        {"id": "snap-4", "src": "assets/images/menu/snap-4.jpg"},
+        {"id": "snap-5", "src": "assets/images/menu/snap-5.jpg"},
+        {"id": "snap-6", "src": "assets/images/menu/snap-6.jpg"},
+        {"id": "snap-7", "src": "assets/images/menu/snap-7.jpg"},
+        {"id": "snap-8", "src": "assets/images/menu/snap-8.jpg"},
+        {"id": "snap-9", "src": "assets/images/menu/snap-9.jpg"},
+        {"id": "snap-10", "src": "assets/images/menu/snap-10.jpg"}
+
 
     ],
-    "colors": {"backgroundColor": "#e1e0e0"},
 
     "elements": [
         {
-            "id": "menu-dev-bg",
-            "el": "<img src='assets/images/menu/menu-mock.jpg'/>",
+            "id": "menu-bg",
+            "el": "<img src='assets/images/menu/menu-bg.jpg'/>",
             "props": {
             }
         },
@@ -144,6 +154,106 @@
             "el": "<div><div class='content'><h1 id='banner-7' class='menu-mod-header'></h1></div></div>",
             "props": {
             }
+        },
+        {
+            "id": "snap-1",
+            "class": "menu-snap snap-group-1",
+            "el": "<img src='assets/images/menu/snap-1.jpg'/>",
+            "props": {
+                "top": "1400px",
+                "marginLeft": "-580px",
+                "transform": "rotate(-22deg)"
+            }
+        },
+        {
+            "id": "snap-2",
+            "class": "menu-snap snap-group-1",
+            "el": "<img src='assets/images/menu/snap-2.jpg'/>",
+            "props": {
+                "top": "1500px",
+                "marginLeft": "-400px",
+                "transform": "rotate(4deg)"
+            }
+        },
+        {
+            "id": "snap-3",
+            "class": "menu-snap snap-group-2",
+            "el": "<img src='assets/images/menu/snap-5.jpg'/>",
+            "props": {
+                "top": "2700px",
+                "marginLeft": "-30px",
+                "transform": "rotate(-4deg)"
+            }
+        },
+        {
+            "id": "snap-4",
+            "class": "menu-snap snap-group-2",
+            "el": "<img src='assets/images/menu/snap-4.jpg'/>",
+            "props": {
+                "top": "2500px",
+                "marginLeft": "150px",
+                "transform": "rotate(18deg)"
+            }
+        },
+        {
+            "id": "snap-5",
+            "class": "menu-snap snap-group-2",
+            "el": "<img src='assets/images/menu/snap-3.jpg'/>",
+            "props": {
+                "top": "2570px",
+                "marginLeft": "380px",
+                "transform": "rotate(44deg)"
+            }
+        },
+        {
+            "id": "snap-6",
+            "class": "menu-snap snap-group-3",
+            "el": "<img src='assets/images/menu/snap-7.jpg'/>",
+            "props": {
+                "top": "5170px",
+                "marginLeft": "-480px",
+                "transform": "rotate(-18deg)"
+            }
+        },
+        {
+            "id": "snap-7",
+            "class": "menu-snap snap-group-3",
+            "el": "<img src='assets/images/menu/snap-6.jpg'/>",
+            "props": {
+                "top": "4980px",
+                "marginLeft": "-340px",
+                "transform": "rotate(8deg)"
+            }
+        },
+        {
+            "id": "snap-8",
+            "class": "menu-snap snap-group-4",
+            "el": "<img src='assets/images/menu/snap-8.jpg'/>",
+            "props": {
+                "top": "6000px",
+                "marginLeft": "-480px",
+                "transform": "rotate(-15deg)"
+            }
+        },
+        {
+            "id": "snap-9",
+            "class": "menu-snap snap-group-4",
+            "el": "<img src='assets/images/menu/snap-9.jpg'/>",
+            "props": {
+                "top": "5880px",
+                "marginLeft": "-260px",
+                "transform": "rotate(18deg)"
+            }
+        },
+        {
+            "id": "snap-10",
+            "class": "menu-snap snap-group-4",
+            "el": "<img src='assets/images/menu/snap-10.jpg'/>",
+            "props": {
+                "top": "6050px",
+                "marginLeft": "-120px",
+                "transform": "rotate(50deg)"
+            }
         }
 
 
@@ -172,6 +282,24 @@
                             "ease": "Linear.easeNone"
                         }
                     }
+                },
+                {
+                    "el": "menu-content .snap-group-1",
+                    "scene": {
+                        "triggerElement": "#mod-1",
+                        "offset": 150
+                    },
+                    "tween": {
+                        "type": "staggerFrom",
+                        "duration": 0.6,
+                        "staggerOffset": 0.3,
+                        "props": {
+                            "marginLeft": "1000",
+                            "top": "-=250",
+                            "rotation": "+=360deg",
+                            "ease": "Circ.easeOut"
+                        }
+                    }
                 }
             ]
         },
@@ -192,6 +320,24 @@
                         "props": {
                             "drawSVG": "0 100%",
                             "ease": "Linear.easeNone"
+                        }
+                    }
+                },
+                {
+                    "el": "menu-content .snap-group-2",
+                    "scene": {
+                        "triggerElement": "#mod-2",
+                        "offset": 450
+                    },
+                    "tween": {
+                        "type": "staggerFrom",
+                        "duration": 0.6,
+                        "staggerOffset": 0.3,
+                        "props": {
+                            "marginLeft": "1300",
+                            "top": "-=250",
+                            "rotation": "+=360deg",
+                            "ease": "Circ.easeOut"
                         }
                     }
                 }
@@ -260,6 +406,24 @@
                             "ease": "Linear.easeNone"
                         }
                     }
+                },
+                {
+                    "el": "menu-content .snap-group-3",
+                    "scene": {
+                        "triggerElement": "#mod-5",
+                        "offset": -100
+                    },
+                    "tween": {
+                        "type": "staggerFrom",
+                        "duration": 0.6,
+                        "staggerOffset": 0.3,
+                        "props": {
+                            "marginLeft": "1000",
+                            "top": "-=250",
+                            "rotation": "+=360deg",
+                            "ease": "Circ.easeOut"
+                        }
+                    }
                 }
             ]
         },
@@ -280,6 +444,24 @@
                         "props": {
                             "drawSVG": "0 100%",
                             "ease": "Linear.easeNone"
+                        }
+                    }
+                },
+                {
+                    "el": "menu-content .snap-group-4",
+                    "scene": {
+                        "triggerElement": "#mod-5",
+                        "offset": 600
+                    },
+                    "tween": {
+                        "type": "staggerFrom",
+                        "duration": 0.6,
+                        "staggerOffset": 0.3,
+                        "props": {
+                            "marginLeft": "1300",
+                            "top": "-=250",
+                            "rotation": "+=360deg",
+                            "ease": "Circ.easeOut"
                         }
                     }
                 }

@@ -7,21 +7,19 @@
 }
 
 .resource-container {
-  width: 70vw;
+  width: 80vw;
   @include horizontal-align;
-  top: 150px;
+  top: 125px;
   padding: 25px;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,0,0.5);
   @include border-radius(16px);
-  border: 2px solid rgba(255,255,255,0.4);
 
-  & h2 {
-    font-weight: 800;
+  & h1{
+    text-transform: uppercase;
   }
 
-  & li {
-    list-style: none;
-    line-height:120%;
+  & p {
+    padding: 5px 0;
 
   }
   & a {
@@ -29,7 +27,6 @@
     font-size: 20px;
     font-family: $font-body;
     list-style: none;
-    line-height:120%;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -40,28 +37,26 @@
 .resource-list {
   -webkit-column-width: 20em;
   -webkit-column-gap: 2em;
-  -webkit-column-rule: 1px solid #eee;
   -webkit-column-count: 2;
   -moz-column-width: 20em;
   -moz-column-gap: 2em;
-  -moz-column-rule: 1px solid #eee;
   -moz-column-count: 2;
   -ms-column-width: 20em;
   -ms-column-gap: 2em;
-  -ms-column-rule: 1px solid #eee;
   -ms-column-count: 2;
   column-width: 20em;
   column-gap: 2em;
-  column-rule: 1px solid #eee;
   column-count: 2;
+
 }
 
 .resource-group {
-  /*break-inside: avoid-column;
+  //min-width: 400px;
+  text-align: center;
+  break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   overflow: hidden;
-  display:inline-block;*/
+  display:inline-block;
   margin-bottom: 20px;
-
 }

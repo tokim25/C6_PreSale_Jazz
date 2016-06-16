@@ -1,45 +1,51 @@
-.conclusion-record-container {
+#conclusion-record-container {
   @include horizontal-align;
-  position: relative;
-  margin: 50px 0px;
-  padding: 20px 0px 30px 30px;
-  width: 400px;
-  height: 300px;
-  border: 2px white solid;
-
-}
-
-.conclusion-record {
-  background: url(../assets/images/conclusion/conclusion-record.png) no-repeat;
-  background-size: cover;
-  width: 330px;
-  height: 330px;
+  top: 20px;
+  width: 1200px;
+  height: 800px;
+  left: 50%;
+  top: 30px;
+  margin-left: -600px;
   position: absolute;
-  left: 20px;
-  display: block;
+  @include scale(0.45, 0.45);
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  transform-origin: center top;
 
-}
-
-.conclusion-record-light {
-  background: url(../assets/images/conclusion/conclusion-record-light.png) no-repeat;
-  background-size: cover;
-  width: 330px;
-  height: 330px;
-  position: absolute;
-  left: 20px;
-  display: block;
-
-}
-
-.conclusion-record-arm {
-  background: url(../assets/images/conclusion/conclusion-record-arm.png) no-repeat;
-  width: 224px;
-  height: 300px;
-  right: 0px;
-  position: absolute;
-  display: block;
-}
-
-.conclusion-banner {
-
+  & #img-intro-record-bg {
+    background: url(../assets/images/intro/intro-record-player.png);
+    position: absolute;
+    left: 900px;
+    top: 155px;
+    width: 200px;
+    height: 350px;
+  }
+  & .conclusion-record {
+    background: url(../assets/images/intro/intro-record.png);
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    margin-top: -400px;
+    left: 50%;
+    margin-left: -400px;
+  }
+  & #img-intro-record-light {
+    background: url(../assets/images/intro/intro-record-light.png);
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    margin-top: -400px;
+    left: 50%;
+    margin-left: -400px;
+  }
+  & #img-intro-record-arm {
+    background: url(../assets/images/intro/intro-record-arm.png);
+    position: absolute;
+    left: 750px;
+    top: 91px;
+    width: 457px;
+    height: 700px;
+  }
 }

@@ -48,7 +48,7 @@ define(["marionette",
                     'showTitle': true,
                     'title': '',
                     'body': '',
-                    'buttons': [{'id': 'continue', 'label': 'Got it!', 'class': 'dark-button'}],
+                    'buttons': [{'id': 'continue', 'label': 'OK', 'class': 'dark-button'}],
                     'containerClass': 'main-popup'
                 }
                 this.feedback = new Popup(textObj);

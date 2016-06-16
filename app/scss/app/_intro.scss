@@ -1,14 +1,15 @@
 #intro-view {
   @extend %view;
 
+  & .bg-image {
+    @include horizontal-align();
+    top: 0px;
+  }
+
 }
 
 .intro-container {
   @extend %view;
-  & .intro-title {
-    @include horizontal-align;
-    top: 5%;
-  }
 }
 
 .intro-elements {
@@ -19,8 +20,109 @@
   position: absolute;
 }
 
+#intro-txt-container {
+
+  width: 1000px;
+  height: 550px;
+  left: 50%;
+  margin-left: -500px;
+  top: 100px;
+  text-align: center;
+  & h1 {
+
+
+  }
+  & #txt-intro-welcome {
+    font-size: 44px;
+  }
+  & #img-intro-banner {
+    background: url(../assets/images/intro/intro-banner.png);
+    width: 1000px;
+    height: 468px;
+    margin: -20px 0 -40px;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    &.active {
+      animation: bannerblink 0.4s ease-out 3;
+    }
+  }
+  & #txt-intro-subhead {
+    text-transform: uppercase;
+    font-size: 44px;
+  }
+}
+
+
+
+@-webkit-keyframes bannerblink {
+  0% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  100% {
+    -webkit-filter: grayscale(.9);
+    filter: grayscale(.9);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  100% {
+    -webkit-filter: grayscale(.9);
+    filter: grayscale(.9);
+  }
+}
+
+#intro-record-container {
+  width: 1200px;
+  height: 800px;
+  left: 50%;
+  top: 100%;
+  margin-left: -600px;
+  & #img-intro-record-bg {
+    background: url(../assets/images/intro/intro-record-player.png);
+    position: absolute;
+    left: 900px;
+    top: 155px;
+    width: 200px;
+    height: 350px;
+  }
+  & #img-intro-record-disc {
+    background: url(../assets/images/intro/intro-record.png);
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    margin-top: -400px;
+    left: 50%;
+    margin-left: -400px;
+  }
+  & #img-intro-record-light {
+    background: url(../assets/images/intro/intro-record-light.png);
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    margin-top: -400px;
+    left: 50%;
+    margin-left: -400px;
+  }
+  & #img-intro-record-arm {
+    background: url(../assets/images/intro/intro-record-arm.png);
+    position: absolute;
+    left: 750px;
+    top: 91px;
+    width: 457px;
+    height: 700px;
+  }
+}
+
+
+
 #intro-continue-button {
-  @include standard-button(white, 2.0em, #1fb7e7);
+  //@include standard-button();
 }
 
 #intro-rolechooser-container {
@@ -73,7 +175,7 @@
 }
 
 .intro-text {
-  font-family: $font-body;
+  font-family: $font-h1;
   text-transform: uppercase;
   font-size: 3em;
   color: white;
@@ -84,10 +186,6 @@
   text-shadow: 0px 0px 6px rgba(0,0,0,.8);
 }
 
-#img-intro-record img{
-  position: absolute;
-  display: block;
-}
 
 
 
