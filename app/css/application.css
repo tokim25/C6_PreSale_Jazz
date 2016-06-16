@@ -1345,6 +1345,8 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around; }
+  #badge-view .badge-box.performance {
+    width: 800px; }
 #badge-view .badge-holder {
   position: relative;
   width: 183px;

@@ -2,6 +2,9 @@
   @extend %view;
   .badge-box {
     width: 1000px;
+    &.performance {
+      width: 800px;
+    }
     @include center-align;
     padding: 0;
     margin: 0;

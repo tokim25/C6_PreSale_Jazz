@@ -71,6 +71,7 @@ define([
             this.listenTo(this.splash, 'splash:complete', this.startInteraction);
 
             if (this.model.get('text').conclusion != undefined) {
+                this.hasConclusion = true;
                 var conclObj = {
                     bg_info: this.model.get('bg_info'),
                     name: this.model.get('name'),

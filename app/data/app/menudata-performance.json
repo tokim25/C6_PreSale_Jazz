@@ -169,6 +169,7 @@
                     "moduleName": "Video2_052",
                     "path": "interactions/video/module",
                     "url": "data/interactions/105/video2_052.json",
+                    "badge": {"id":"badge2", "name": "The Smiles Davis"},
                     "status": 0,
                     "points": 10
                 },
