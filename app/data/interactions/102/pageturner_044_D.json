@@ -354,7 +354,7 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Pandora Media Plan Workflow",
-                "body": "<p>The basic workflow for creating an order in Slingshot is pretty straightforward for a performance order. Let's try to figure out the core steps in the process!</p>",
+                "body": "<p>The basic workflow for creating an order in Slingshot is pretty straightforward for a performance order. Click on the light bulbs to see the core steps in the process.</p>",
                 "class": "align-right"
             },
             "interaction": {
