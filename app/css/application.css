@@ -1439,7 +1439,7 @@ body {
   transform: translateX(-50%); }
 
 .resource-container {
-  width: 80vw;
+  width: 1200px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1485,7 +1485,8 @@ body {
   page-break-inside: avoid;
   overflow: hidden;
   display: inline-block;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 550px; }
 
 #customJiraTrigger {
   position: fixed;
@@ -2644,7 +2645,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
-  width: 70%;
+  width: 60%;
   pointer-events: none;
   z-index: 0;
   box-sizing: border-box; }

@@ -1,0 +1,25 @@
+{
+    "name": "Performance Orders - Plan View",
+
+    "assetManifest": [
+    ],
+
+    "bg_info": {
+        "backgroundColor": "#9e5b63",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-105",
+        "splashClass": "splash-left-align"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Introduction",
+                "body": "<p>Oooh, Baby, Oooh! Impress other cool cats with your know-how on using the Plan View for CPM-Based Performance orders after watching this video.</p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "videoPath": "assets/videos/video1_052"
+}

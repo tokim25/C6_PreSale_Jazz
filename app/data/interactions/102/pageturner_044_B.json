@@ -144,7 +144,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Media Planning Roles",
-                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. As a local campaign specialists, some of your tasks may change between named and non-named accounts. Many of your tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p>",
+                "body": "<p>Each teammate in a pod has a role in helping to develop the media plan. As a local campaign specialists, some of your tasks may change between named and non-named accounts. Many of your tasks overlap across a pod. You'll see this happen quite often throughout the life of a deal. </p><p class='pt-callout'>Click on each hat to get a list of the media planning responsibilities owned by each role.</p>",
                 "class": "align-left"
             },
             "interaction": {

@@ -143,7 +143,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Media Planning Roles",
-                "body": "<p>Inside client services teams aren’t involved in this phase as much as your peers in the national and local channels. It’s still just as important for you to know, in case your account executives need your support.</p>",
+                "body": "<p>Inside client services teams aren’t involved in this phase as much as your peers in the national and local channels. It’s still just as important for you to know, in case your account executives need your support.</p><p class='pt-callout'>Click on each hat to get a list of the media planning responsibilities owned by each role.</p>",
                 "class": "align-left"
             },
             "interaction": {

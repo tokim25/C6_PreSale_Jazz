@@ -145,7 +145,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Media Planning Roles",
-                "body": "<p>Your role might not be as involved in this phase as much as your peers in the other channels. But It’s just as important for you to know, in case your account executives need your support.</p>",
+                "body": "<p>Your role might not be as involved in this phase as much as your peers in the other channels. But It’s just as important for you to know, in case your account executives need your support.</p><p class='pt-callout'>Click on each hat to get a list of the media planning responsibilities owned by each role.</p>",
                 "class": "align-left"
             },
             "interaction": {
