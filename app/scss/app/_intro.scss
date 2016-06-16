@@ -33,16 +33,45 @@
 
   }
   & #txt-intro-welcome {
-    font-size: 30px;
+    font-size: 44px;
   }
   & #img-intro-banner {
     background: url(../assets/images/intro/intro-banner.png);
     width: 1000px;
     height: 468px;
     margin: -20px 0 -40px;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    &.active {
+      animation: bannerblink 0.4s ease-out 3;
+    }
   }
   & #txt-intro-subhead {
     text-transform: uppercase;
+    font-size: 44px;
+  }
+}
+
+
+
+@-webkit-keyframes bannerblink {
+  0% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  100% {
+    -webkit-filter: grayscale(.9);
+    filter: grayscale(.9);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  100% {
+    -webkit-filter: grayscale(.9);
+    filter: grayscale(.9);
   }
 }
 
@@ -89,6 +118,8 @@
     height: 700px;
   }
 }
+
+
 
 #intro-continue-button {
   //@include standard-button();

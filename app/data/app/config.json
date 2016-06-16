@@ -12,7 +12,7 @@
     "defaultRole": "national",
     "alwaysShowIntro": false,
     "roleType": "",
-    "lockingMode": "open",
+    "lockingMode": "linear",
     "setAllComplete": false,
     "returnToMenuAfterInteraction": true,
     "returnToMenuAfterLastSubModule": true,

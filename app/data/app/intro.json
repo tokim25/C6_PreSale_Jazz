@@ -125,10 +125,36 @@
                 "autoAlpha": 0
             }
         },
+        {
+            "id": "img-intro-banner",
+            "type": "to",
+            "startTime": "+=1",
+            "duration": 0.01,
+            "props": {
+                "className": "active"
+            }
+        },
+
+
+        {
+            "id": "img-intro-banner",
+            "type": "fromTo",
+            "startTime": "+=0.2",
+            "duration": 0.3,
+            "props1": {
+                "-webkit-filter": "grayscale(.9)",
+                "filter": "grayscale(.9)"
+            },
+            "props2": {
+                "-webkit-filter": "grayscale(0)",
+                "filter": "grayscale(0)"
+            }
+        },
 
         {
             "id": "txt-intro-subhead",
             "type": "from",
+            "startTime": "+=1",
             "duration": 0.6,
             "props": {
                 "autoAlpha": 0
@@ -139,6 +165,7 @@
             "id": "intro-txt-container",
             "type": "to",
             "duration": 0.6,
+            "startTime": "+=1.5",
             "props": {
                 "scale": 0.35,
                 "transformOrigin": "center top",

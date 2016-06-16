@@ -846,6 +846,9 @@ body {
   width: 100vw;
   max-width: 1500px;
   height: 8042px; }
+  #menu-content.performance {
+    height: 7200px;
+    overflow: hidden; }
 
 .menu-element {
   position: absolute; }
@@ -1154,15 +1157,34 @@ body {
   top: 100px;
   text-align: center; }
   #intro-txt-container #txt-intro-welcome {
-    font-size: 30px; }
+    font-size: 44px; }
   #intro-txt-container #img-intro-banner {
     background: url(../assets/images/intro/intro-banner.png);
     width: 1000px;
     height: 468px;
-    margin: -20px 0 -40px; }
+    margin: -20px 0 -40px;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+    #intro-txt-container #img-intro-banner.active {
+      animation: bannerblink 0.4s ease-out 3; }
   #intro-txt-container #txt-intro-subhead {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 44px; }
 
+@-webkit-keyframes bannerblink {
+  0% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+  100% {
+    -webkit-filter: grayscale(0.9);
+    filter: grayscale(0.9); } }
+@keyframes bounce {
+  0% {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+  100% {
+    -webkit-filter: grayscale(0.9);
+    filter: grayscale(0.9); } }
 #intro-record-container {
   width: 1200px;
   height: 800px;

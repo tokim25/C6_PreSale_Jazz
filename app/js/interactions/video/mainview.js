@@ -135,7 +135,12 @@ define([
                 case 'submit':
                     break;
                 case 'continue':
-                    this.showConclusion();
+                    if (this.hasConclusion) {
+                        this.showConclusion();
+                    } else {
+                        this.endInteraction();
+                    }
+                    break;
             }
 
             vent.trigger('play_sfx', 'button_click');
