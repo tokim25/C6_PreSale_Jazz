@@ -81,10 +81,10 @@
 
   & .reveal-items-buttons-container {
     position: absolute;
-    height: 864px;
+    height: 844px;
     width: 967px;
     right: 0px;
-    bottom: -50px;
+    bottom: 0px;
     z-index: 0;
   }
 
@@ -98,44 +98,55 @@
     -webkit-filter: grayscale(.8); /* Old WebKit Browsers */
     &:nth-of-type(1) {
       background: url(../assets/images/102/pt-044/bass.png) no-repeat 0px 0px;
-      top: 0px;
+      bottom: 0px;
       right: 0px;
-      height: 900px;
+      height: 844px;
       width: 288px;
+
 
     }
     &:nth-of-type(2) {
       background: url(../assets/images/102/pt-044/guitar.png) no-repeat 0px 0px;
-      top: 0px;
+      bottom: -10px;
       left: 483px;
-      height: 900px;
+      height: 844px;
       width: 288px;
     }
     &:nth-of-type(3) {
       background: url(../assets/images/102/pt-044/snare.png) no-repeat 0px 0px;
-      top: 0px;
+      bottom: 0px;
       left: 349px;
-      height: 900px;
+      height: 844px;
       width: 288px;
     }
 
     &:nth-of-type(4) {
       background: url(../assets/images/102/pt-044/sax.png) no-repeat 0px 0px;
-      top: 0px;
+      bottom: 0px;
       left: 0px;
-      height: 900px;
+      height: 200px;
       width: 493px;
       z-index:1;
+      /*&:hover {
+        background-position: 0px -844px;
+      }*/
     }
 
     &:hover {
-      background-position: 0px -844px;
+
       filter: grayscale(0%);
       filter: none;
       -webkit-filter: grayscale(0);
     }
     &.selected {
-      background-position: 0px -844px;
+      background-position: 0 -844px;
+      &:nth-of-type(4) {
+        background-position: 0 -200px;
+      }
+      background-position: 0 -844px;
+      &:nth-of-type(4) {
+        background-position: 0 -200px;
+      }
       cursor:default;
     }
 
