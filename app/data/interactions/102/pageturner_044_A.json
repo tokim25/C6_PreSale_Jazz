@@ -279,7 +279,7 @@
             "bg_color": "#993333",
             "text": {
                 "header": "Media Planning Resources",
-                "body": "<p>Knowing who handles what task is only half the battle. Lucky for you we have tons of tools and resources to help you develop the best media plans for your clients. </p><p class='pt-callout'>Click on each instrument listed for more details.</p>",
+                "body": "<p>Knowing who handles what task is only half the battle. Lucky for you we have tons of tools and resources to help you develop the best media plans for your clients. </p><p class='pt-callout'>Click on each instrument for more details.</p>",
                 "class": "align-left"
             },
             "interaction": {
