@@ -63,7 +63,7 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
             }), '-=.2');
 
             enter_down.add(TweenMax.to(this.ui.textbox, 1.0, {
-                background: 'rgba(0,0,0,0.3)'
+                background: 'rgba(0,0,0,0.5)'
             }));
 
             tl.add(enter_down, 'enter_down');
@@ -91,7 +91,7 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
             }));
 
             enter_up.add(TweenMax.to(this.ui.textbox, 1.0, {
-                background: 'rgba(0,0,0,0.3)'
+                background: 'rgba(0,0,0,0.5)'
             }));
 
             tl.add(enter_up, 'enter_up');

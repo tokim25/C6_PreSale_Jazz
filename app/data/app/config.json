@@ -6,7 +6,7 @@
     "JIRAEnabled": true,
     "inLMS": false,
     "LMSType": "SCORM",
-    "hasIntro": false,
+    "hasIntro": true,
     "hasConclusion": true,
     "isRoleFiltered": true,
     "defaultRole": "national",

@@ -8,7 +8,8 @@
         {"id": "intro-record-light", "src": "assets/images/intro/intro-record-light.png"},
         {"id": "intro-record", "src": "assets/images/intro/intro-record.png"},
         {"id": "intro-record-bg", "src": "assets/images/intro/intro-record-bg.png"},
-        {"id": "intro-record-arm", "src": "assets/images/intro/intro-record-arm.png"}
+        {"id": "intro-record-arm", "src": "assets/images/intro/intro-record-arm.png"},
+        {"id": "intro-record", "src": "assets/images/intro/intro-bg.jpg"}
     ],
 
     "modulename": "intro",
@@ -21,68 +22,20 @@
 
     "elements": [
 
-
         {
-            "id": "txt-intro-welcome",
-            "class": "intro-text",
-            "el": "<h2>welcome to</h2>",
+            "id": "intro-txt-container",
+            "el": "<div><h1 id='txt-intro-welcome'>Welcome to the School of</h1><div id='img-intro-banner'></div><h1 id='txt-intro-subhead'>pre-sale at Pandora</h1></div>",
             "props": {
-                "top": "200px",
-                "scale": 2
-            }
-        },
-
-        {
-            "id": "img-intro-banner",
-            "class": "",
-            "el": "<div><img src='assets/images/intro/intro-banner.png'/></div>",
-            "props": {
-                "width": "500px",
-                "height": "241px",
-                "position": "relative",
-                "margin": "0px auto",
                 "top": "100px"
             }
         },
-
         {
-            "id": "txt-intro-subhead",
-            "class": "intro-text",
-            "el": "<h2>introduction to products</h2>",
+            "id": "intro-record-container",
+            "el": "<div><div id='img-intro-record-bg'></div><div id='img-intro-record-disc'></div><div id='img-intro-record-light'></div><div id='img-intro-record-arm'></div></div>",
             "props": {
-                "top": "150px"
-            }
-        },
-        {
-            "id": "img-intro-record-bg",
-            "el": "<img src='assets/images/intro/intro-record-bg.png'/>",
-            "props": {
-                "top": "50%",
+                "top": "45%",
                 "marginTop": "-130px",
-                "width": "790px",
-                "marginLeft": "-395px",
-                "left": "50%"
-            }
-        },
-        {
-            "id": "img-intro-record",
-            "el": "<div><img id='img-intro-record-disc' src='assets/images/intro/intro-record.png'/><img src='assets/images/intro/intro-record-light.png'/></div>",
-            "props": {
-                "top": "50%",
-                "marginTop": "-180px",
-                "width": "900px",
-                "marginLeft": "-450px",
-                "left": "50%"
-            }
-        },
-        {
-            "id": "img-intro-record-arm",
-            "el": "<img src='assets/images/intro/intro-record-arm.png'/>",
-            "props": {
-                "top": "50%",
-                "marginTop": "-180px",
-                "marginLeft": "250px",
-                "left": "50%"
+                "scale": 0.9
             }
         },
         {
@@ -108,9 +61,9 @@
         {
             "id": "txt-intro-maximize-browser",
             "class": "intro-text horizontal-center",
-            "el": "<h2>For the best experience, maximize your browser window!</h2>",
+            "el": "<h2>For the best experience,<br>maximize your browser window!</h2>",
             "props": {
-                "top": "0px"
+                "top": "300px"
             }
         }
     ],
@@ -120,8 +73,8 @@
         {
             "id": "img-rote-logo",
             "type": "from",
-            "duration": 4,
-            "startTime": 2,
+            "duration": 2,
+            "startTime": 1,
             "props": {
                 "autoAlpha": 0
             }
@@ -132,7 +85,7 @@
                 {
                     "id": "img-pandora-logo",
                     "type": "from",
-                    "duration": 2,
+                    "duration": 1.5,
                     "props": {
                         "top": "300px",
                         "right": "50%",
@@ -143,7 +96,7 @@
                 {
                     "id": "img-rote-logo",
                     "type": "to",
-                    "duration": 2,
+                    "duration": 1.5,
                     "props": {
                         "bottom": "0px",
                         "left": "0%",
@@ -154,176 +107,65 @@
                 }
             ]
         },
-
         {
             "id": "txt-intro-welcome",
-            "type": "splitText",
-            "splitConfig": {"type": "chars", "position": "absolute"},
-            "tweenProps": {
-                "type": "staggerFromTo",
-                "duration": 1.4,
-                "startTime": 1.3,
-                "staggerOffset": 0.06,
-                "props1": {
-                    "transformOrigin": "center bottom'",
-                    "scaleY": 0.0,
-                    "scaleX": 1.2
-                },
-                "props2": {
-                    "autoAlpha": 1.0,
-                    "scale": 1,
-                    "ease": "Elastic.easeOut"
-                }
+            "type": "from",
+            "duration": 0.6,
+            "props": {
+                "autoAlpha": 0
             }
 
         },
         {
-            "id": "txt-intro-welcome",
+            "id": "img-intro-banner",
+            "type": "from",
+            "startTime": "+=1",
+            "duration": 0.9,
+            "props": {
+                "autoAlpha": 0
+            }
+        },
+
+        {
+            "id": "txt-intro-subhead",
+            "type": "from",
+            "duration": 0.6,
+            "props": {
+                "autoAlpha": 0
+            }
+
+        },
+        {
+            "id": "intro-txt-container",
             "type": "to",
             "duration": 0.6,
             "props": {
-                "alpha": 0.4,
-                "scale": 1,
-                "ease": "Back.easeOut",
-                "y": "-=100"
+                "scale": 0.35,
+                "transformOrigin": "center top",
+                "top": "30px"
             }
 
         },
         {
-            "id": "img-intro-banner",
-            "type": "fromTo",
-            "duration": 0.9,
-            "props1": {
-                "alpha": 0.0,
-                "scaleY": 0.0,
-                "scaleX": 0.0,
-                "transformOrigin": "center center",
-                "ease": "Quad.easeIn"
-            },
-            "props2": {
-                "scaleY": 1.5,
-                "scaleX": 1.5,
-                "alpha": 0.7,
-                "transformOrigin": "center center",
-                "ease": "Quad.easeIn"
-            }
-        },
-
-        {
-            "id": "img-intro-banner",
-            "type": "to",
-            "duration": 0.5,
-            "props": {
-                "scale": 1,
-                "alpha": 1,
-                "transformOrigin": "center center",
-                "ease": "Elastic.easeOut"
-            }
-        },
-        {
-            "id": "txt-intro-subhead",
-            "type": "splitText",
-            "splitConfig": {"type": "chars", "position": "absolute"},
-            "tweenProps": {
-                "type": "staggerFrom",
-                "duration": 0.7,
-                "startTime": "+=1.3",
-                "staggerOffset": 0.06,
-                "props": {
-                    "scale": 5,
-                    "transformOrigin": "center center",
-                    "autoAlpha": 0.0,
-                    "ease": "Elastic.easeIn"
-                }
-            }
-
-        },
-        {
-            "type": "group",
-            "startTime": "+=1.5",
-            "tweens": [
-                {
-                    "id": "txt-intro-welcome",
-                    "type": "to",
-                    "duration": 0.5,
-
-                    "props": {
-                        "scale": 0.5,
-                        "ease": "Circ.easeOut",
-                        "y": "-=60"
-                    }
-
-                },
-                {
-                    "id": "img-intro-banner",
-                    "type": "to",
-                    "duration": 0.5,
-                    "props": {
-                        "scale": 0.7,
-                        "ease": "Circ.easeOut",
-                        "y": "-=140"
-                    }
-                },
-                {
-                    "id": "txt-intro-subhead",
-                    "type": "to",
-                    "duration": 0.5,
-                    "props": {
-                        "scale": 0.5,
-                        "alpha": 0.7,
-                        "transformOrigin": "center center",
-
-                        "ease": "Circ.easeOut",
-                        "y": "-=230"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "group",
-            "startTime": "+=1.5",
-            "tweens": [
-                {
-                    "id": "img-intro-record-bg",
-                    "type": "from",
-                    "duration": 1.5,
-                    "props": {
-                        "autoAlpha": 0,
-                        "top": "100%"
-                    }
-                },
-                {
-                    "id": "img-intro-record-arm",
-                    "type": "from",
-                    "duration": 1.5,
-                    "props": {
-                        "autoAlpha": 0,
-                        "top": "100%"
-                    }
-                }
-            ]
-        },
-
-        {
-            "id": "img-intro-record",
+            "id": "intro-record-container",
             "type": "from",
-            "duration": 1.5,
+            "duration": 0.6,
             "props": {
-                "autoAlpha": 0,
-                "scale": 1.5,
-                "transformOrigin": "center bottom",
-                "ease": "Circ.easeOut"
+                "top": "100%",
+                "autoAlpha": 0
             }
+
         },
         {
             "id": "img-intro-record-arm",
             "type": "from",
             "duration": 1.5,
             "props": {
-                "rotation": "-20deg",
-                "transformOrigin": "103px 91px"
+                "rotation": "-30deg",
+                "transformOrigin": "357px 121px"
             }
         },
+
         {
             "id": "",
             "startTime": "+=1",
@@ -358,7 +200,7 @@
             "startTime": "+=0.5",
             "tweens": [
                 {
-                    "id": "img-intro-banner",
+                    "id": "intro-txt-container",
                     "type": "to",
                     "duration": 1.5,
                     "startTime": 0.3,
@@ -367,39 +209,7 @@
                     }
                 },
                 {
-                    "id": "txt-intro-welcome",
-                    "type": "to",
-                    "duration": 1.5,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "txt-intro-subhead",
-                    "type": "to",
-                    "duration": 1.5,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "img-intro-record-bg",
-                    "type": "to",
-                    "duration": 1.5,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "img-intro-record",
-                    "type": "to",
-                    "duration": 1.5,
-                    "props": {
-                        "autoAlpha": 0
-                    }
-                },
-                {
-                    "id": "img-intro-record-arm",
+                    "id": "intro-record-container",
                     "type": "to",
                     "duration": 1.5,
                     "props": {
@@ -431,7 +241,6 @@
             "duration": 1.5,
             "props": {
                 "autoAlpha": 0,
-                "marginTop": "100px",
                 "scale": 0.7
             }
         },

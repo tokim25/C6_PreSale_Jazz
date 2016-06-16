@@ -277,6 +277,26 @@
   z-index: 3;
 }
 
+.snap-group-3{
+  filter: grayscale(40%);
+  /* Standard CSS */
+  -webkit-filter: grayscale(40%);
+  /* CSS for Webkit Browsers */
+  filter: url(/elements/grayscale.svg#desaturate);
+  /* Firefox 4-34 */
+  -webkit-filter: grayscale(0.4);
+}
+
+.snap-group-4 {
+  filter: grayscale(60%);
+  /* Standard CSS */
+  -webkit-filter: grayscale(60%);
+  /* CSS for Webkit Browsers */
+  filter: url(/elements/grayscale.svg#desaturate);
+  /* Firefox 4-34 */
+  -webkit-filter: grayscale(0.6);
+}
+
 #scroll-arrow {
   &.active {
     animation: bounce 1s infinite;
