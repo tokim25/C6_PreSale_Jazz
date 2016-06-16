@@ -1,5 +1,5 @@
 {
-    "name": "Performance Orders",
+    "name": "Performance Orders - Order Entry Wizard",
 
     "assetManifest": [
     ],
@@ -21,5 +21,5 @@
         "onscreenDirections": ""
     },
 
-    "videoPath": "assets/videos/video_052"
+    "videoPath": "assets/videos/video1_052"
 }

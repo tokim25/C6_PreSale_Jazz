@@ -1,0 +1,31 @@
+{
+    "name": "Performance Orders - Plan View",
+
+    "assetManifest": [
+    ],
+
+    "bg_info": {
+        "backgroundColor": "#9e5b63",
+        "backgroundClass": "booth-bg",
+        "splash": "splash-105",
+        "splashClass": "splash-left-align"
+    },
+
+    "text": {
+        "splash": [
+            {
+                "header": "Introduction",
+                "body": "<p>Oooh, Baby, Oooh! Impress other cool cats with your know-how on using the Plan View for CPM-Based Performance orders after watching this video.</p>"
+            }
+        ],
+        "conclusion": [
+            {
+                "header": "Badge Earned",
+                "body": "<h2>The Smiles Davis</h2><p>Smiles Davis was a happy jazz musician, bandleader and composer. Davis was at the forefront of several major developments in jazz music, including happy jazz, glad jazz (AKA glazz), and teeth music. Cloudy Rollins named him inarguably one of the most influential and innovative musicians of the 20th century. </p>"
+            }
+        ],
+        "onscreenDirections": ""
+    },
+
+    "videoPath": "assets/videos/video1_052"
+}

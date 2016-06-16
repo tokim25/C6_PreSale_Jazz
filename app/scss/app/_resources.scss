@@ -7,7 +7,7 @@
 }
 
 .resource-container {
-  width: 80vw;
+  width: 1200px;
   @include horizontal-align;
   top: 125px;
   padding: 25px;
@@ -59,4 +59,5 @@
   overflow: hidden;
   display:inline-block;
   margin-bottom: 20px;
+  width: 550px;
 }

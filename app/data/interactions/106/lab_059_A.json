@@ -1,8 +1,7 @@
 {
-    "name": "Lab: Broadcast Media Plans",
+    "name": "Lab: Proposal Decks",
 
     "assetManifest": [
-        {"id": "lab-bg", "src": "assets/images/textures/bg5.jpg"}
     ],
 
     "bg_info": {

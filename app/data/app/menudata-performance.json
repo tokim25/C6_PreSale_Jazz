@@ -149,7 +149,7 @@
             "id": "105",
             "modules": [
                 {
-                    "title": "Video: Media Plans 1",
+                    "title": "Video: Media Plans",
                     "moduleName": "Video_051",
                     "path": "interactions/video/module",
                     "url": "data/interactions/105/video_051.json",
@@ -157,10 +157,19 @@
                     "points": 10
                 },
                 {
-                    "title": "Video: Media Plans 2",
-                    "moduleName": "Video_052",
+                    "title": "Video: Performance Orders 1",
+                    "moduleName": "Video1_052",
                     "path": "interactions/video/module",
-                    "url": "data/interactions/105/video_052.json",
+                    "url": "data/interactions/105/video1_052.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Performance Orders 2",
+                    "moduleName": "Video2_052",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/video2_052.json",
+                    "badge": {"id":"badge2", "name": "The Smiles Davis"},
                     "status": 0,
                     "points": 10
                 },
@@ -197,7 +206,7 @@
                     "points": 10
                 },
                 {
-                    "title": "Quiz: Market Research",
+                    "title": "Quiz: Sales Research",
                     "moduleName": "Quiz_057",
                     "path": "interactions/quiz_simple/module",
                     "url": "data/interactions/105/quiz_057.json",
