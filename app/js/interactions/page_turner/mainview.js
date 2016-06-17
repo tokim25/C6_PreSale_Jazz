@@ -466,6 +466,8 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
                 this.currentInteraction = this.interactions[name].interaction;
                 if (this.currentInteraction.isComplete()) {
                     this.enableScroll();
+                } else {
+                    TweenMax.delayedCall(0.5, this.updateNextPrev, [false, true], this)
                 }
             }
 
@@ -476,7 +478,7 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
             this.goToNext();
         },
 
-        updateNextPrev: function (enabled) {
+        updateNextPrev: function (enabled, disableNext) {
             var newIndex;
             if (enabled) {
 
@@ -498,6 +500,10 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
                 }
 
 
+            } else if (!enabled && disableNext) {
+                //disable next
+                this.ui.nextButton.addClass('disabled');
+                this.ui.prevButton.removeClass('disabled');
             } else {
                 this.ui.nextButton.addClass('disabled');
                 this.ui.prevButton.addClass('disabled');

@@ -2448,7 +2448,7 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 30%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
@@ -2796,6 +2796,8 @@ body {
     right: 50px;
     top: 100px;
     position: absolute; }
+  #cr-mediaplans-s3.hat-rack-C .reveal-items-buttons-container {
+    background: url(../assets/images/102/pt-044/hat-rack-C.png) no-repeat; }
   #cr-mediaplans-s3 .reveal-item {
     cursor: pointer;
     position: absolute;
@@ -3749,13 +3751,13 @@ body {
     #hs-049-view .details-container .detail-set .detail-info-button {
       position: absolute;
       background: url(../assets/images/103/hotspots-049/detail-info-button.png);
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       cursor: pointer; }
       #hs-049-view .details-container .detail-set .detail-info-button:hover {
-        background-position: 0px -35px; }
+        background-position: 0px -40px; }
       #hs-049-view .details-container .detail-set .detail-info-button.completed, #hs-049-view .details-container .detail-set .detail-info-button.selected {
-        background-position: 0px -70px; }
+        background-position: 0px -80px; }
   #hs-049-view .details-container .detail-highlight {
     position: absolute;
     background: rgba(255, 255, 0, 0.5);
@@ -3783,51 +3785,7 @@ body {
     #hs-049-view .details-container .tooltip.visible .close-x-light-button {
       display: block; }
   #hs-049-view .details-container .back-button {
-    position: absolute;
-    font-size: 1.6em;
-    font-family: "Avenir", sans-serif;
-    line-height: 120%;
-    padding: 5px 10px;
-    margin: 0px;
-    font-weight: 500;
-    background: #57a0c4;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #57a0c4 0%, #5195b7 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #57a0c4), color-stop(100%, #5195b7));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #57a0c4 0%, #5195b7 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #57a0c4 0%, #5195b7 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #57a0c4 0%, #5195b7 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #57a0c4 0%, #5195b7 100%);
-    /* W3C */
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border: 1px solid #333;
-    color: white;
-    cursor: pointer;
-    bottom: 25px;
-    right: 25px;
-    margin: 0 2px; }
-    #hs-049-view .details-container .back-button:hover {
-      background: #3c87ac;
-      /* Old browsers */
-      background: -moz-linear-gradient(top, #3c87ac 0%, #3e7997 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c87ac), color-stop(100%, #3e7997));
-      /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #3c87ac 0%, #3e7997 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #3c87ac 0%, #3e7997 100%);
-      /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, #3c87ac 0%, #3e7997 100%);
-      /* IE10+ */
-      background: linear-gradient(to bottom, #3c87ac 0%, #3e7997 100%);
-      /* W3C */ }
+    min-width: 80px; }
 
 #match-050-view .submit-button {
   width: 230px; }

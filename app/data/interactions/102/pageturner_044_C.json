@@ -3,6 +3,7 @@
 
     "assetManifest": [
         {"id": "mic", "src": "assets/images/102/pt-044/microphone.png"},
+        {"id": "piano", "src": "assets/images/106/pt-058/piano.png"},
         {"id": "solo-bass", "src": "assets/images/102/pt-044/solo-bass.png"},
         {"id": "bass", "src": "assets/images/102/pt-044/bass.png"},
         {"id": "guitar", "src": "assets/images/102/pt-044/guitar.png"},
@@ -37,6 +38,14 @@
             }
         },
         {
+            "id": "piano",
+            "el": "<img src='assets/images/106/pt-058/piano.png'/>",
+            "props": {
+                "left": "0px",
+                "bottom": "0px"
+            }
+        },
+        {
             "id": "solo-bass",
             "el": "<img src='assets/images/102/pt-044/solo-bass.png'/>",
             "props": {
@@ -46,7 +55,7 @@
         },
         {
             "id": "cr-mediaplans-s3",
-            "class": "reveal-container",
+            "class": "reveal-container hat-rack-C",
             "el": "<div></div>",
             "props": {
                 "top": "0px",
@@ -79,7 +88,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Overview",
-                "body": "<p>The core deliverable of the pre-sale phase is the <b>media plan</b>.</p><p>It’s like the first beats of song. That’s because it's our first opportunity to create a solid impressions. And it's our first chance to recommend strategies to meet their goals. They send out their RFP to multiple publishers, looking to invest in the best media plans. </p><p>That's why we want our media plan to showcase:</p><ul><li>our expertise with our ad product catalog</li><li>our media strategy skills</li><li>the badassery that is you and your pod</li></ul>",
+                "body": "<p>The core deliverable of the pre-sale phase is the <b>media plan</b>.</p><p>It’s like the first beats of song. That’s because it's our first opportunity to create a solid impression. And it's our first chance to recommend strategies to meet their goals. They send out their RFP to multiple publishers, looking to invest in the best media plans. </p><p>That's why we want our media plan to showcase:</p><ul><li>our expertise with our ad product catalog</li><li>our media strategy skills</li><li>the badassery that is you and your pod</li></ul>",
                 "class": "align-center-wide"
             },
             "enter": [
@@ -116,7 +125,7 @@
             },
             "enter": [
                 {
-                    "id": "mic",
+                    "id": "piano",
                     "type": "from",
                     "duration": 0.5,
                     "startTime": 0.3,
@@ -128,7 +137,7 @@
             ],
             "leave": [
                 {
-                    "id": "mic",
+                    "id": "piano",
                     "type": "to",
                     "duration": 0.5,
                     "startTime": 0.3,

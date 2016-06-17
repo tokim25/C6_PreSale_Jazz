@@ -27,7 +27,7 @@
             "id": "table",
             "el": "<img src='assets/images/103/pt-049/bistro-table.png'/>",
             "props": {
-                "left": "30px",
+                "left": "0px",
                 "bottom": "0px"
             }
         },
@@ -45,7 +45,7 @@
     "scenes": [
         {
             "id": "s1",
-            "bg_color": "#5bbcc8",
+            "bg_color": "#3d6c84",
             "text": {
                 "header": "Overview",
                 "body": "<p>In the Pre-Sale phase, you'll need to make sure your media plan pricing meets or exceeds our thresholds. And you definitely have to make sure this happens before sending it to the client.</p><p>Discounting products and entire orders are a normal part of selling. That's what discount thresholds and added values are for. That gives you and your account executives the freedom to make quick pricing decisions. But if your pricing goes way under, you risk losing more money than generating.</p><p>That's why we have a simple solution to help track pricing for your orders. We call it the Integrated Pricing Approval Workflow, or IPAW for short.  </p>",

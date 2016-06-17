@@ -36,14 +36,18 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
             var enter_down = new TimelineMax({onComplete:this.onTweenComplete, onCompleteScope:this, onCompleteParams:['enter_down']});
 
             enter_down.add(TweenMax.set(this.ui.textbox, {
-                background: 'rgba(0,0,0,0)'
+                background: 'rgba(0,0,0,0.0)'
             }));
 
-            enter_down.add(TweenMax.from(this.ui.body, 0.5, {
-                autoAlpha: 0.0,
-                top: '+=40',
-                ease: Power3.easeIn
-            }));
+            enter_down.add([TweenMax.from(this.ui.body, 0.5, {
+                    autoAlpha: 0.0,
+                    top: '+=40',
+                    ease: Power3.easeIn
+                }),
+                TweenMax.to(this.ui.textbox, 0.4, {
+                    background: 'rgba(0,0,0,0.6)'
+                })]
+            );
 
             /*enter_down.add(TweenMax.from(this.ui.ornament, 0.38, {
                 left: '700px',
@@ -62,9 +66,9 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
                 autoAlpha: 0.0
             }), '-=.2');
 
-            enter_down.add(TweenMax.to(this.ui.textbox, 1.0, {
-                background: 'rgba(0,0,0,0.5)'
-            }));
+            /*enter_down.add(TweenMax.to(this.ui.textbox, 0.4, {
+                background: 'rgba(0,0,0,0.6)'
+            }));*/
 
             tl.add(enter_down, 'enter_down');
 
@@ -87,12 +91,13 @@ define( ["marionette", "text!templates/ui/pageturner_textbox.html"], function (M
             enter_up.add(TweenMax.to(this.ui.textbox, 0.5, {
                 top: '+=50px',
                 autoAlpha: 1.0,
+                background: 'rgba(0,0,0,0.6)',
                 ease:Power1.easeOut
             }));
 
-            enter_up.add(TweenMax.to(this.ui.textbox, 1.0, {
-                background: 'rgba(0,0,0,0.5)'
-            }));
+            /*enter_up.add(TweenMax.to(this.ui.textbox, 0.4, {
+                background: 'rgba(0,0,0,0.6)'
+            }));*/
 
             tl.add(enter_up, 'enter_up');
 

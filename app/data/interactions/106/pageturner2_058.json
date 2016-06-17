@@ -2,11 +2,11 @@
     "name": "Overview",
 
     "assetManifest": [
-        {"id": "img1", "src": "assets/images/106/pt-058/piano.png"},
-        {"id": "img1", "src": "assets/images/106/pt-058/vase.png"},
-        {"id": "img1", "src": "assets/images/106/pt-058/tulip-1.png"},
-        {"id": "img1", "src": "assets/images/106/pt-058/tulip-2.png"},
-        {"id": "img1", "src": "assets/images/106/pt-058/tulip-3.png"}
+        {"id": "piano", "src": "assets/images/106/pt-058/piano.png"},
+        {"id": "vase", "src": "assets/images/106/pt-058/vase.png"},
+        {"id": "tulip-1", "src": "assets/images/106/pt-058/tulip-1.png"},
+        {"id": "tulip-2", "src": "assets/images/106/pt-058/tulip-2.png"},
+        {"id": "tulip-3", "src": "assets/images/106/pt-058/tulip-3.png"}
     ],
     "bg_info": {
         "backgroundColor": "#5bbcc8"

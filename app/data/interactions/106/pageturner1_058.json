@@ -53,7 +53,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "Overview",
-                "body": "<p>Sometimes, your solid media plan recommendations might not be enough. To woo some clients, you might need to give them more than a media plan document. They might want mock ups of what their campaign would look like on Pandora. Or user engagement metrics from our Sales Research tools. Maybe even ComScore index scores to help round it out. </p><p>That sounds like a lot of information. If only there was an easy way to gather all this information into a simple presentation. Enter, the proposal deck!</p>",
+                "body": "<p>Sometimes, your solid media plan recommendations might not be enough. To woo some clients, you might need to give them more than a media plan document. They might want mock ups of what their campaign would look like on Pandora. Or user engagement metrics from our Sales Research tools. Or possibly ComScore index scores to help round it out. </p><p>That sounds like a lot of information. If only there was an easy way to gather all this information into a simple presentation. Enter, the proposal deck!</p>",
                 "class": "align-center-wide"
             },
             "enter": [
@@ -86,7 +86,7 @@
             "bg_color": "#44aade",
             "text": {
                 "header": "A Team Effort",
-                "body": "<p>Building a proposal deck is a team effort. That's because these decks bring together research, statistics, mocks and plans into one document. That's a lot of moving pieces!</p><p>You might even need to pull in someone outside your pod to help out! That's because your recommendations might include custom or complex products. They might even include a Pandora-sponsored event. If so, your account executive might loop in the Sales Dev team to help make extra slides for your deck.</p>",
+                "body": "<p>Building a proposal deck is a team effort. That's because these decks bring together research, statistics, mocks and plans into one document. That's a lot of moving pieces!</p><p>You might even need to pull in someone outside your pod to help out! That's because your recommendations might include custom or complex products. They might include a Pandora-sponsored event. If so, your account executive might loop in the Sales Dev team to help make extra slides for your deck.</p>",
                 "class": "align-left"
             },
             "enter": [
@@ -170,7 +170,7 @@
                     },
                     {
                         "header": "What goes in one?",
-                        "body": "<p>You might add demographic data, market reach, and user engagement metrics. You may even add slides for each ad product to explain their features and benefits. And if you're working on brand campaigns, you might have slides for recommended custom content and events. </p>"
+                        "body": "<p>You might add demographic data, market reach, and user engagement metrics. You may add slides for each ad product to explain their features and benefits. And if you're working on brand campaigns, you might have slides for recommended custom content and events. </p>"
                     }
                 ]
             },

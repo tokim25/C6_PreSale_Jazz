@@ -16,11 +16,16 @@
 
   & .reveal-items-buttons-container {
     background: url(../assets/images/102/pt-044/hat-rack.png) no-repeat;
+
     height: 1000px;
     width: 385px;
     right: 50px;
     top: 100px;
     position: absolute;
+  }
+
+  &.hat-rack-C .reveal-items-buttons-container {
+    background: url(../assets/images/102/pt-044/hat-rack-C.png) no-repeat;
   }
 
   & .reveal-item {

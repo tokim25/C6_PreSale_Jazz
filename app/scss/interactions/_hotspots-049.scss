@@ -132,15 +132,15 @@
       & .detail-info-button {
         position: absolute;
         background: url(../assets/images/103/hotspots-049/detail-info-button.png);
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
         &:hover {
-          background-position: 0px -35px;
+          background-position: 0px -40px;
         }
 
         &.completed, &.selected {
-          background-position: 0px -70px;
+          background-position: 0px -80px;
         }
       }
     }
@@ -186,24 +186,7 @@
     }
 
     & .back-button {
-      position: absolute;
-      font-size: 1.6em;
-      font-family: $font-body;
-      line-height:120%;
-      padding: 5px 10px;
-      margin: 0px;
-      font-weight: 500;
-      @include gradient(#57a0c4, #5195b7);
-      @include border-radius(6px);
-      border: 1px solid #333;
-      color: white;
-      cursor: pointer;
-      bottom: 25px;
-      right: 25px;
-      margin: 0 2px;
-      &:hover {
-        @include gradient(darken(#57a0c4, 10%), darken(#5195b7, 10%));
-      }
+      min-width: 80px;
     }
   }
 }
