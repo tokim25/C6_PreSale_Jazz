@@ -61,7 +61,7 @@
 
 #mod-1 {
   margin-left: 0px;
-  top: 980px;
+  top: 1000px;
   @include rotate(13deg);
 }
 #mod-2 {
@@ -236,8 +236,10 @@
 
 .menu-path {
   fill:none;
-  stroke-width:3;
-  stroke:#fff;
+  stroke-width:2;
+  stroke:#c0bcb9;
+  //color: #fff;
+  mix-blend-mode: color-dodge;
   stroke-miterlimit:10;
 }
 
@@ -283,15 +285,6 @@
   z-index: 3;
 }
 
-.snap-group-3{
-  filter: grayscale(40%);
-  /* Standard CSS */
-  -webkit-filter: grayscale(40%);
-  /* CSS for Webkit Browsers */
-  filter: url(/elements/grayscale.svg#desaturate);
-  /* Firefox 4-34 */
-  -webkit-filter: grayscale(0.4);
-}
 
 .snap-group-4 {
   filter: grayscale(60%);

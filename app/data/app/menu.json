@@ -25,85 +25,85 @@
         {
             "id": "line-101",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 534.4 190.6'><path class='menu-path' d='M110.5 6.6c9.1 63.4-30.8 100.2-62 106 -21.5 4-48-8.5-48-20 0-44.2 121.6-81.4 230-50 118.6 34.3 285.1 47.4 302 10C544.7 25.6 477-6.5 431.6 1.9c-48.4 8.9-91.5 103.7-79.1 188.7'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-155px",
-                "top": "585",
-                "width": "306",
-                "height": "837"
+                "marginLeft": "-24px",
+                "top": "829",
+                "width": "535",
+                "height": "191"
             }
         },
         {
             "id": "line-102",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 566 403'><path class='menu-path' d='M560.2 0c-2.8 40-15.2 131.2-86 202 -22.5 22.5-72.7 51.4-125.3 30 -51.8-21.1-89-82.8-50.7-130 39.9-49.2 130.6-23.9 178 6 56.4 35.6 104.5 111 84 168 -25.8 71.7-128.9 79.6-214.5 68 -121.3-16.4-211.5-78.1-277.1-52.7C26.2 307.8-14.2 352 5.8 402'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-242px",
-                "top": "1635",
-                "width": "653",
-                "height": "563"
+                "marginLeft": "-345px",
+                "top": "1555",
+                "width": "566",
+                "height": "403"
             }
         },
         {
             "id": "line-103",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 640 520'><path class='menu-path' d='M74.3 0.5c31.3 11.1 52.6 38.1 54 67.5 1.8 39-31.6 80-70.5 76.5 -32.8-3-60.8-36.8-57-66C5.3 44 53 25.5 86.3 27.5c52 3 104.4 56.6 115.5 114 18 93-60.2 159.9-9 244.5 64.5 106.5 466.5 133.5 445.5 30 -4.5-22-56.4-26.3-76.5-13.5 -26.4 16.8-34.5 79.5-3 117'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-263px",
-                "top": "2430",
-                "width": "612",
-                "height": "550"
+                "marginLeft": "-275px",
+                "top": "2580",
+                "width": "640",
+                "height": "520"
             }
         },
         {
             "id": "line-104",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 461 543'><path class='menu-path' d='M459.7 2.2c-0.2 6.7-2.4 62.5-45 90 -50.1 32.3-127.9 7.1-135-24 -6.2-27 38.2-71.3 75-67.5 43.1 4.4 69.1 73.9 69 124.5 -0.2 91.1-85.1 155.3-100.5 166.5 -85.1 62-439.5 151.5-283.5 250.5'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-306px",
-                "top": "3255",
-                "width": "612",
-                "height": "551"
+                "marginLeft": "-287px",
+                "top": "3645",
+                "width": "461",
+                "height": "543"
             }
         },
         {
             "id": "line-105",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 491 528'><path class='menu-path' d='M150.9 0.5c2.8 0.3 69.7 7.3 93 60 22.7 51.4-13.7 105.8-43.5 130.5 -63.8 53-177.3 36.2-196.5-9 -12.8-30.2 12.3-82.7 54-97.5 39.5-14 81.5 10.2 102 36 24.2 30.5 32.6 146.4 77.9 214.4 70 105 242.2 108.9 251 76 7-26-21.4-41.5-37.9-27.9 -29.1 23.9 20.9 78.9 2.9 144.9'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-650px",
-                "top": "3830",
-                "width": "386",
-                "height": "877"
+                "marginLeft": "-100px",
+                "top": "4650",
+                "width": "491",
+                "height": "528"
             }
         },
         {
             "id": "line-106",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 395 889'><path class='menu-path' d='M124.2 0.4c-57.5 43.2-73.9 87.2-79.5 108 -44.7 165 174 303.3 227.8 319.8 10.7 3.3 55.9 16.4 82.7 11.7 13.1-2.3 30.7-5.7 37.5-19.5 4.6-9.4 2-19.1 1.5-21 -3.2-12.1-12.8-19.4-19.5-22.5 -18.9-8.7-44.8 2.9-57 18 -19.9 24.7-6.8 62.9-1.5 88.5 22.8 110.8-52 230.3-114 286.5 -5.9 5.3-96 85.3-163.5 58.5 -6.8-2.7-32.8-13-37.5-36 -4.1-20.3 9.7-44.8 30-51 27.2-8.3 51.5 20.7 55.5 25.5 37.1 44.4 6.7 116.4 4.5 121.5'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-264px",
-                "top": "4882",
-                "width": "666",
-                "height": "839"
+                "marginLeft": "-34px",
+                "top": "5663",
+                "width": "396",
+                "height": "889"
             }
         },
         {
             "id": "line-107",
             "class": "menu-line",
-            "el": "<div><svg viewBox='0 0 306 837'><path class='menu-path' d=''/></svg></div>",
+            "el": "<div><svg x='0' y='0' viewBox='0 0 362 268'><path class='menu-path' d='M359.1 0.1c3.9 29.2 7.5 90.5-27 150 -51.9 89.5-168.5 138.3-255 108 -4.4-1.5-73.2-26.6-76.5-70.5 -3.6-48 72.4-99.3 136.5-102 79-3.4 160 66.3 198 175.5'/></svg></div>",
             "props": {
                 "left": "50%",
-                "marginLeft": "-264px",
-                "top": "4882",
-                "width": "666",
-                "height": "839"
+                "marginLeft": "-242px",
+                "top": "7095",
+                "width": "362",
+                "height": "268"
             }
         },
         {
@@ -270,9 +270,9 @@
                 {
                     "el": "line-101 .menu-path",
                     "scene": {
-                        "duration": 600,
+                        "duration": 400,
                         "triggerElement": "#line-101",
-                        "offset": 100
+                        "offset": -150
                     },
                     "tween": {
                         "type": "to",
@@ -462,6 +462,28 @@
                             "top": "-=250",
                             "rotation": "+=360deg",
                             "ease": "Circ.easeOut"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "107",
+            "animations": [
+
+                {
+                    "el": "line-107 .menu-path",
+                    "scene": {
+                        "duration": 400,
+                        "triggerElement": "#line-107",
+                        "offset": 20
+                    },
+                    "tween": {
+                        "type": "to",
+
+                        "props": {
+                            "drawSVG": "0 100%",
+                            "ease": "Linear.easeNone"
                         }
                     }
                 }
