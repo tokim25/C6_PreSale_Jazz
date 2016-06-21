@@ -1211,8 +1211,8 @@ body {
   #intro-record-container #img-intro-record-arm {
     background: url(../assets/images/intro/intro-record-arm.png);
     position: absolute;
-    left: 750px;
-    top: 91px;
+    left: 652px;
+    top: 93px;
     width: 457px;
     height: 700px; }
 
@@ -1314,8 +1314,8 @@ body {
   #conclusion-record-container #img-intro-record-arm {
     background: url(../assets/images/intro/intro-record-arm.png);
     position: absolute;
-    left: 750px;
-    top: 91px;
+    left: 652px;
+    top: 93px;
     width: 457px;
     height: 700px; }
 
@@ -2500,7 +2500,6 @@ body {
   background: rgba(0, 0, 0, 0.5); }
 
 .bg-texture {
-  background: url(../assets/images/textures/bg-texture.jpg) repeat-y;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);

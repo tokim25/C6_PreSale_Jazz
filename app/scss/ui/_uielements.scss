@@ -12,7 +12,6 @@
 
 
 .bg-texture {
-  background: url(../assets/images/textures/bg-texture.jpg) repeat-y;
   @include horizontal-align();
   position: absolute;
   width: 100vw;

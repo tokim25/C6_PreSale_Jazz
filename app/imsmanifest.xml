@@ -8,9 +8,9 @@
                               http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" >
 	<organizations default="CourseID">
 		<organization identifier="CourseID">
-			<title>Academy :: Freshman Year</title>
+			<title>School of Jazz: Pre-Sale at Pandora</title>
 			<item identifier="I_A001" identifierref="A001">
-				<title>Academy :: Freshman Year</title>
+				<title>School of Jazz: Pre-Sale at Pandora</title>
 				<adlcp:maxtimeallowed>00:00:00</adlcp:maxtimeallowed>
 				<adlcp:masteryscore>0</adlcp:masteryscore>
 				<adlcp:timelimitaction>continue,no message</adlcp:timelimitaction>
