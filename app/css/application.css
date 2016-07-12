@@ -1170,7 +1170,7 @@ body {
   100% {
     -webkit-filter: grayscale(0.9);
     filter: grayscale(0.9); } }
-@keyframes bounce {
+@keyframes bannerblink {
   0% {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
@@ -2153,6 +2153,9 @@ body {
       margin: 10px 0; }
     #debug-view .debug-popup .close-x-button {
       pointer-events: all; }
+    #debug-view .debug-popup .debug-version {
+      font-weight: 400;
+      font-style: italic; }
     #debug-view .debug-popup .debug-label-row .debug-fold-arrow {
       background: url(../assets/images/ui/debug-arrow.png);
       position: absolute;
@@ -2663,32 +2666,6 @@ body {
     border-image-width: 5;
     border-image-outset: 11 11;
     border-image-outset: 0px; }
-
-.video-embedded-container {
-  pointer-events: none;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 1000px;
-  height: 563pxpx;
-  pointer-events: none;
-  box-sizing: border-box;
-  border: 3px solid #f707d2;
-  box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5); }
-  .video-embedded-container:before {
-    content: " ";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 3px solid #f707d2;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px rgba(255, 150, 230, 0.5); }
 
 .lab-popup .popup-button {
   position: absolute;

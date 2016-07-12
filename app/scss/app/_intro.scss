@@ -64,7 +64,7 @@
     filter: grayscale(.9);
   }
 }
-@keyframes bounce {
+@keyframes bannerblink {
   0% {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);

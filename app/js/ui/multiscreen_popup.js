@@ -127,7 +127,6 @@ define( ["marionette", "app/vent", "text!templates/ui/popup.html"], function (Ma
                 this.ui.backButton.removeClass('disabled');
             }
 
-            this.ui.backButton.removeClass('disabled');
         },
 
         prevScreen: function () {
