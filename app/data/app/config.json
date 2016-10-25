@@ -1,9 +1,9 @@
 {
     "projectTitle": "The School of Jazz: Pre-Sale",
     "projectID": "presale",
-    "version": "Beta 2.2",
+    "version": "Beta 2.3",
     "schoolName": "Jazz",
-    "JIRAEnabled": true,
+    "JIRAEnabled": false,
     "inLMS": false,
     "LMSType": "SCORM",
     "hasIntro": true,
