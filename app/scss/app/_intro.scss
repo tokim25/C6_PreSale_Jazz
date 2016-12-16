@@ -1,189 +1,92 @@
 #intro-view {
   @extend %view;
-
-  & .bg-image {
-    @include horizontal-align();
-    top: 0px;
+  & img {
+    display: block;
   }
-
 }
 
-.intro-container {
-  @extend %view;
-}
-
-.intro-elements {
-  @extend %view;
-}
-
-.intro-element {
-  position: absolute;
-}
-
-#intro-txt-container {
-
-  width: 1000px;
-  height: 550px;
-  left: 50%;
-  margin-left: -500px;
-  top: 100px;
+.intro-maximize-window {
+  color: white;
+  font-family: $font-body;
+  font-size: 2.4vw;
   text-align: center;
-  & h1 {
-
-
-  }
-  & #txt-intro-welcome {
-    font-size: 44px;
-  }
-  & #img-intro-banner {
-    background: url(../assets/images/intro/intro-banner.png);
-    width: 1000px;
-    height: 468px;
-    margin: -20px 0 -40px;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    &.active {
-      animation: bannerblink 0.4s ease-out 3;
-    }
-  }
-  & #txt-intro-subhead {
-    text-transform: uppercase;
-    font-size: 44px;
-  }
+  @include center-align;
 }
 
-
-
-@-webkit-keyframes bannerblink {
-  0% {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-  100% {
-    -webkit-filter: grayscale(.9);
-    filter: grayscale(.9);
-  }
+.intro-pandora-logo {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
 }
-@keyframes bannerblink {
-  0% {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-  100% {
-    -webkit-filter: grayscale(.9);
-    filter: grayscale(.9);
-  }
+.intro-rote-logo {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
 }
+.intro-academy-group {
+  @include center-align;
+  width: 328px;
+  height: 226px;
+  text-align: center;
 
-#intro-record-container {
-  width: 1200px;
-  height: 800px;
-  left: 50%;
-  top: 100%;
-  margin-left: -600px;
-  & #img-intro-record-bg {
-    background: url(../assets/images/intro/intro-record-player.png);
+  & .intro-academy-logo {
     position: absolute;
-    left: 900px;
-    top: 155px;
-    width: 200px;
-    height: 350px;
-  }
-  & #img-intro-record-disc {
-    background: url(../assets/images/intro/intro-record.png);
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    top: 50%;
-    margin-top: -400px;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -68px;
   }
-  & #img-intro-record-light {
-    background: url(../assets/images/intro/intro-record-light.png);
+  & .intro-academy-text {
     position: absolute;
-    width: 800px;
-    height: 800px;
-    top: 50%;
-    margin-top: -400px;
-    left: 50%;
-    margin-left: -400px;
-  }
-  & #img-intro-record-arm {
-    background: url(../assets/images/intro/intro-record-arm.png);
-    position: absolute;
-    left: 652px;
-    top: 93px;
-    width: 457px;
-    height: 700px;
+    bottom: 0px;
   }
 }
-
+.intro-banner-container {
+  top: 0;
+  width: 75%;
+  height: 50%;
+  @include horizontal-align;
+  & .intro-banner {
+    @include center-align;
+  }
+}
 
 
 #intro-continue-button {
-  //@include standard-button();
+  background: url(../assets/images/intro/intro-continue-button.png) no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: -13px;
+  float: right;
+  &:hover {
+    @include scale(1.1, 1.1);
+  }
+  cursor: pointer;
+  opacity: 0;
+  &.enabled {
+    opacity: 1;
+  }
 }
 
 #intro-rolechooser-container {
   @include horizontal-align;
-  width: 500px;
-  top: 50%;
-  margin-top: -50px;
+  margin-left: 40px;
+  top: 55%;
 
-  & .intro-rolechooser-title {
-    text-align: center;
-  }
 
-  & .intro-rolechooser-input {
-    text-align: left;
+  & .input-item {
+    position: relative;
+    height: 40px;
+    margin: 20px 0px;
 
-    input[type="text"] {
-      font-family: $font-body;
+    & #intro-user-role{
+      height: 34px;
+      overflow: hidden;
+      background-color: white;
       font-size: 20px;
-      height: 28px;
-      width: 300px;
-      padding-left: 10px;
+      border: 1px solid #ccc;
     }
-    & .input-item {
-      position: relative;
-      width: 500px;
-      height: 40px;
-      margin: 20px 0px;
-      & .input-label {
-        font-family: $font-body;
-        text-align: right;
-        width: 85px;
-        float: left;
-        font-size: 20px;
-        padding: 9px;
-      }
-      & #intro-user-name, #intro-user-role {
-        float: left;
 
-      }
-      & #intro-user-role{
-        width: 310px;
-        height: 34px;
-        overflow: hidden;
-        background-color: white;
-        font-size: 20px;
-        border: 1px solid #ccc;
-      }
-    }
   }
-}
-
-.intro-text {
-  font-family: $font-h1;
-  text-transform: uppercase;
-  font-size: 3em;
-  color: white;
-  position: relative;
-  margin: 0px auto;
-  text-align: center;
-  font-weight: 900;
-  text-shadow: 0px 0px 6px rgba(0,0,0,.8);
 }
 
 

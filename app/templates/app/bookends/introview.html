@@ -4,29 +4,33 @@
         <img class="bg-image" src="assets/images/intro/intro-bg.jpg"/>
 
 
-        <div class="intro-container">
-            <div class="intro-elements"></div>
+        <img class="intro-pandora-logo" src="assets/images/intro/intro-pandora-logo.png"/>
+        <img class="intro-rote-logo" src="assets/images/intro/intro-rote-logo.png"/>
 
-            <div id="intro-rolechooser-container">
-                <h2 class="intro-rolechooser-title"><%= roleChooserLabel %></h2>
-                <div class="intro-rolechooser-input">
-                    <div class="input-item">
-                        <div class="input-label">name</div>
-                        <input id="intro-user-name" value="" type="text"/>
-                    </div>
-                    <div class="input-item">
-                        <div class="input-label">role</div>
-                        <select id="intro-user-role" class="styled-select" name="foo">
-                            <% _.each(roleChooser.roles, function(role){ %>
-                            <option value="<%= _.escape(role.id)%>">
-                                <%= _.escape(role.title) %>
-                            </option>
-                            <% }); %>
-                        </select>
-                    </div>
-                </div>
+        <div class="intro-academy-group">
+            <img class="intro-academy-logo" src="assets/images/intro/intro-academy-logo.png"/>
+            <img class="intro-academy-text" src="assets/images/intro/intro-academy-text.png"/>
+        </div>
+
+        <div class="intro-banner-container">
+            <img class="intro-banner" src="assets/images/intro/intro-banner.png"/>
+        </div>
+
+        <div class="intro-maximize-window">For the best experience,<br>maximize your browser window!</div>
+
+        <div id="intro-rolechooser-container">
+
+            <div class="input-item">
+                <select id="intro-user-role" class="styled-select" name="foo">
+                    <option value="" disabled selected>Select your role</option>
+                    <% _.each(roleChooser.roles, function(role){ %>
+                    <option value="<%= _.escape(role.id)%>">
+                        <%= _.escape(role.title) %>
+                    </option>
+                    <% }); %>
+                </select>
+                <div id="intro-continue-button" data-id="continue"></div>
             </div>
-            <div id="intro-continue-button" class="main-button continue-button" data-id="continue">Continue</div>
         </div>
 
 

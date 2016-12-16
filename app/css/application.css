@@ -190,7 +190,7 @@ body {
   position: fixed;
   overflow: hidden; }
 
-.nav-slideout-container, #intro-view, .intro-container, .intro-elements, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, #video-view, #lab-view, .lab-popup, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7, #cr-ipaw1-s2, #cr-ipaw2-s1, #cr-pym-s1, #cr-pym-s2, #cr-matterhorn-s3, #cr-matterhorn-s4, #cr-matterhorn-s5, #cr-proposaldecks-s4, #cr-proposaldecks-s1, #cr-44-view, #match-049-view, #hs-049-view, #match-050-view, #quiz-057-view, #cr-58-view {
+.nav-slideout-container, #intro-view, #badge-view, #progress-view, #winfocus-container, #ta-view, #debug-view, .splash-view, #video-view, #lab-view, .lab-popup, #cr-mediaplans-s3, #cr-mediaplans-s6, #cr-mediaplans-s7, #cr-ipaw1-s2, #cr-ipaw2-s1, #cr-pym-s1, #cr-pym-s2, #cr-matterhorn-s3, #cr-matterhorn-s4, #cr-matterhorn-s5, #cr-proposaldecks-s4, #cr-proposaldecks-s1, #cr-44-view, #match-049-view, #hs-049-view, #match-050-view, #quiz-057-view, #cr-58-view {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -1130,91 +1130,77 @@ body {
     transform: translateY(0px); }
   50% {
     transform: translateY(5px); } }
-#intro-view .bg-image {
+#intro-view img {
+  display: block; }
+
+.intro-maximize-window {
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 2.4vw;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute; }
+
+.intro-pandora-logo {
+  position: absolute;
+  bottom: 25px;
+  left: 25px; }
+
+.intro-rote-logo {
+  position: absolute;
+  bottom: 25px;
+  right: 25px; }
+
+.intro-academy-group {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 328px;
+  height: 226px;
+  text-align: center; }
+  .intro-academy-group .intro-academy-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -68px; }
+  .intro-academy-group .intro-academy-text {
+    position: absolute;
+    bottom: 0px; }
+
+.intro-banner-container {
+  top: 0;
+  width: 75%;
+  height: 50%;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 0px; }
-
-.intro-element {
-  position: absolute; }
-
-#intro-txt-container {
-  width: 1000px;
-  height: 550px;
-  left: 50%;
-  margin-left: -500px;
-  top: 100px;
-  text-align: center; }
-  #intro-txt-container #txt-intro-welcome {
-    font-size: 44px; }
-  #intro-txt-container #img-intro-banner {
-    background: url(../assets/images/intro/intro-banner.png);
-    width: 1000px;
-    height: 468px;
-    margin: -20px 0 -40px;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0); }
-    #intro-txt-container #img-intro-banner.active {
-      animation: bannerblink 0.4s ease-out 3; }
-  #intro-txt-container #txt-intro-subhead {
-    text-transform: uppercase;
-    font-size: 44px; }
-
-@-webkit-keyframes bannerblink {
-  0% {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0); }
-  100% {
-    -webkit-filter: grayscale(0.9);
-    filter: grayscale(0.9); } }
-@keyframes bannerblink {
-  0% {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0); }
-  100% {
-    -webkit-filter: grayscale(0.9);
-    filter: grayscale(0.9); } }
-#intro-record-container {
-  width: 1200px;
-  height: 800px;
-  left: 50%;
-  top: 100%;
-  margin-left: -600px; }
-  #intro-record-container #img-intro-record-bg {
-    background: url(../assets/images/intro/intro-record-player.png);
-    position: absolute;
-    left: 900px;
-    top: 155px;
-    width: 200px;
-    height: 350px; }
-  #intro-record-container #img-intro-record-disc {
-    background: url(../assets/images/intro/intro-record.png);
-    position: absolute;
-    width: 800px;
-    height: 800px;
+  transform: translateX(-50%); }
+  .intro-banner-container .intro-banner {
     top: 50%;
-    margin-top: -400px;
     left: 50%;
-    margin-left: -400px; }
-  #intro-record-container #img-intro-record-light {
-    background: url(../assets/images/intro/intro-record-light.png);
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    top: 50%;
-    margin-top: -400px;
-    left: 50%;
-    margin-left: -400px; }
-  #intro-record-container #img-intro-record-arm {
-    background: url(../assets/images/intro/intro-record-arm.png);
-    position: absolute;
-    left: 652px;
-    top: 93px;
-    width: 457px;
-    height: 700px; }
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute; }
+
+#intro-continue-button {
+  background: url(../assets/images/intro/intro-continue-button.png) no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: -13px;
+  float: right;
+  cursor: pointer;
+  opacity: 0; }
+  #intro-continue-button:hover {
+    -webkit-transform: perspective(1px) scale(1.1, 1.1);
+    transform: perspective(1px) scale(1.1, 1.1); }
+  #intro-continue-button.enabled {
+    opacity: 1; }
 
 #intro-rolechooser-container {
   position: absolute;
@@ -1222,51 +1208,18 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 500px;
-  top: 50%;
-  margin-top: -50px; }
-  #intro-rolechooser-container .intro-rolechooser-title {
-    text-align: center; }
-  #intro-rolechooser-container .intro-rolechooser-input {
-    text-align: left; }
-    #intro-rolechooser-container .intro-rolechooser-input input[type="text"] {
-      font-family: "Avenir", sans-serif;
+  margin-left: 40px;
+  top: 55%; }
+  #intro-rolechooser-container .input-item {
+    position: relative;
+    height: 40px;
+    margin: 20px 0px; }
+    #intro-rolechooser-container .input-item #intro-user-role {
+      height: 34px;
+      overflow: hidden;
+      background-color: white;
       font-size: 20px;
-      height: 28px;
-      width: 300px;
-      padding-left: 10px; }
-    #intro-rolechooser-container .intro-rolechooser-input .input-item {
-      position: relative;
-      width: 500px;
-      height: 40px;
-      margin: 20px 0px; }
-      #intro-rolechooser-container .intro-rolechooser-input .input-item .input-label {
-        font-family: "Avenir", sans-serif;
-        text-align: right;
-        width: 85px;
-        float: left;
-        font-size: 20px;
-        padding: 9px; }
-      #intro-rolechooser-container .intro-rolechooser-input .input-item #intro-user-name, #intro-rolechooser-container .intro-rolechooser-input .input-item #intro-user-role {
-        float: left; }
-      #intro-rolechooser-container .intro-rolechooser-input .input-item #intro-user-role {
-        width: 310px;
-        height: 34px;
-        overflow: hidden;
-        background-color: white;
-        font-size: 20px;
-        border: 1px solid #ccc; }
-
-.intro-text {
-  font-family: "parisishregular", sans-serif;
-  text-transform: uppercase;
-  font-size: 3em;
-  color: white;
-  position: relative;
-  margin: 0px auto;
-  text-align: center;
-  font-weight: 900;
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8); }
+      border: 1px solid #ccc; }
 
 #conclusion-record-container {
   position: absolute;
