@@ -7,7 +7,12 @@
     max-height: 900px;
     overflow: hidden;
     background-color: #1e2b43;
-    text-align: center; 
+    text-align: center;
+
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 #temp-loading-view .loader-holder {
