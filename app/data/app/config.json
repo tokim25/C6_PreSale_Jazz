@@ -20,6 +20,7 @@
     "viewInteractionAtCourseStart": false,
     "showDebugger": false,
     "muteAudio": false,
+    "allowDeepLinks": true,
 
     "modules": [
         {
