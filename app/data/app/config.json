@@ -78,6 +78,7 @@
     "roleChooser": {
         "roles": [
             {"id": "national", "title": "National Account Strategist"},
+            {"id": "national", "title": "Non-Client Services"},
             {"id": "national", "title": "Local Account Strategist"},
             {"id": "national", "title": "National Campaign Specialist"},
             {"id": "local", "title": "Local Campaign Specialist"},
@@ -86,8 +87,7 @@
             {"id": "local", "title": "Local Associate Campaign Specialist"},
             {"id": "inside", "title": "Inside Associate Campaign Specialist"},
             {"id": "performance", "title": "Performance Account Manager"},
-            {"id": "performance", "title": "Performance Sales Planner"},
-            {"id": "national", "title": "ANZ Account Manager"}
+            {"id": "national", "title": "ANZ Campaign Specialist"}
         ]
     }
 

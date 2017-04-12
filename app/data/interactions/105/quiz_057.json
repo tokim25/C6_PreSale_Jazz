@@ -124,45 +124,6 @@
         },
         {
             "type": "choice",
-            "text": "This external tool helps connect media consumption with buying behaviors by providing insights into a Website’s audience profile. It uses a measurement known as an index score.",
-            "pattern": 0,
-            "choices": [
-                {
-                    "text": "Nielsen Scarborough",
-                    "result": "correct",
-                    "feedback": {
-                        "title": "Those drums are getting people to jive!",
-                        "body": "Nielsen Scarborough is an external resource that helps us provide insights on an audience segment’s buying behaviors using an index score."
-                    }
-                },
-                {
-                    "text": "User Engagement",
-                    "result": "wrong",
-                    "feedback": {
-                        "title": "Yikes.",
-                        "body": "Missed a beat there, huh, Slick?"
-                    }
-                },
-                {
-                    "text": "Historical Monthly Update",
-                    "result": "wrong",
-                    "feedback": {
-                        "title": "Screech! ",
-                        "body": "Think you hit a sour note there."
-                    }
-                },
-                {
-                    "text": "Third Party Audience Segmentation",
-                    "result": "wrong",
-                    "feedback": {
-                        "title": "Um…",
-                        "body": "Are you playing the same song as everyone else?"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "choice",
             "text": "This Salesforce chatter topic contains digestible sales research data to provide to a client.",
             "pattern": 0,
             "choices": [
