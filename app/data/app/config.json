@@ -2,8 +2,8 @@
     "projectTitle": "The School of Jazz: Pre-Sale",
     "projectID": "presale",
     "schoolName": "Jazz",
-    "version": "Beta 2.4",
-    "appVersion": 2.0,
+    "version": "Beta 3.1",
+    "appVersion": 3.0,
     "JIRAEnabled": false,
     "inLMS": false,
     "LMSType": "SCORM",
@@ -20,12 +20,12 @@
     "viewInteractionAtCourseStart": false,
     "showDebugger": false,
     "muteAudio": false,
-    "allowDeepLinks": true,
+    "allowDeepLinks": false,
 
     "modules": [
         {
             "name": "Tracking",
-            "path": "app/tracking/trackingmodule",
+            "path": "app/tracking/trackingmodule2004",
             "url": ""
         },
         {

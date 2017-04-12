@@ -1,6 +1,6 @@
 /**
  * Created with IntelliJ IDEA.
- * User: SamBrick
+ * User: John Hoffsis
  * Date: 25/02/2015
  * Time: 13:12
  * To change this template use File | Settings | File Templates.
@@ -10,23 +10,29 @@
 require.config({
     waitSeconds: 250,
     paths : {
-        underscore : '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min',
-        jquery : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min',
-        'jquery-ui': '//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min',
-        'jquery-ui-touch-punch': '//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min',
-        tweenmax: '//cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min',
-        backbone : '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min',
-        'backbone.wreqr' : '//cdnjs.cloudflare.com/ajax/libs/backbone.wreqr/0.1.0/backbone.wreqr.min',
-        marionette : '//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/1.8.6/backbone.marionette',
+        underscore : 'lib/underscore',
+        jquery : 'lib/jquery-1.11.3',
+        'jquery-ui': 'lib/jquery-ui-1.11.3.custom',
+        'jquery-ui-touch-punch': 'lib/jquery.ui.touch-punch',
+        tweenmax: 'lib/greensock/TweenMax',
+        drawsvgplugin: 'lib/greensock/plugins/DrawSVGPlugin',
+        scrolltoplugin: 'lib/greensock/plugins/ScrollToPlugin',
+        cssplugin: 'lib/greensock/plugins/CSSPlugin',
+        splittext: 'lib/greensock/utils/SplitText',
+        backbone : 'lib/backbone',
+        'backbone.wreqr' : 'lib/backbone.wreqr',
+        'backbone.babysitter' : 'lib/backbone.babysitter',
+        marionette : 'lib/backbone.marionette',
         templates : '../templates',
         text : 'lib/text',
         json2 : 'lib/json2',
-        apiwrapper : 'app/tracking/apiwrapper',
-        easeljs: '//code.createjs.com/easeljs-0.8.0.min',
-        preloadjs: '//code.createjs.com/preloadjs-0.6.0.min',
-        soundjs: '//code.createjs.com/soundjs-0.6.0.min',
-        tweenjs: '//code.createjs.com/tweenjs-0.6.0.min',
-        scrollmagic: 'lib/plugins/jquery.ScrollMagic'
+        apiwrapper : 'app/tracking/SCORM_API_wrapper',
+        preloadjs: 'lib/createjs/preloadjs-0.6.0.min',
+        soundjs: 'lib/createjs/soundjs-0.6.2.min',
+        ScrollMagic: 'lib/ScrollMagic',
+        'ScrollMagic.debug': 'lib/plugins/debug.addIndicators',
+        'animation.gsap': 'lib/plugins/animation.gsap',
+        'jquery.winFocus': 'lib/plugins/winfocus'
     },
     shim : {
         jquery : {
@@ -41,6 +47,25 @@ require.config({
         tweenmax: {
             deps: ['jquery'],
             exports: 'TweenMax'
+        },
+        drawsvgplugin: {
+            deps: ['tweenmax'],
+            exports: 'DrawSVGPlugin'
+        },
+        cssplugin: {
+            deps: ['tweenmax'],
+            exports: 'CSSPlugin'
+        },
+        splittext: {
+            deps: ['tweenmax'],
+            exports: 'SplitText'
+        },
+        scrolltoplugin: {
+            deps: ['tweenmax'],
+            exports: 'ScrollToPlugin'
+        },
+        'animation.gsap': {
+            deps: ['tweenmax']
         },
         underscore : {
             exports : '_'
@@ -61,15 +86,15 @@ require.config({
             deps : ['backbone'],
             exports : 'Babysitter'
         },
-        easeljs : {exports: 'createjs'},
-        tweenjs:['easeljs'],
         preloadjs: {
-            deps: ['easeljs'],
             exports: 'createjs.LoadQueue'
         },
         soundjs: {
             deps: ['preloadjs'],
             exports: 'createjs.Sound'
+        },
+        ScrollMagic: {
+            deps: ['jquery']
         }
 
     }
@@ -84,13 +109,17 @@ require(
         "backbone",
         "backbone.wreqr",
         "marionette",
-        "scrollmagic",
+        "ScrollMagic",
         "app/app",
-        "app/utils/global",
+        'ScrollMagic.debug',
+        "animation.gsap",
+        "drawsvgplugin",
+        "splittext",
+        "scrolltoplugin",
+        "cssplugin",
+        "app/utils/utilities",
         "json2",
-        "app/tracking/apiwrapper",
-        "easeljs",
-        "tweenjs",
+        "app/tracking/SCORM_API_wrapper",
         "soundjs",
         "preloadjs"
     ],
