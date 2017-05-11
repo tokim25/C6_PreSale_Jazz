@@ -3,7 +3,7 @@
     "projectID": "presale",
     "schoolName": "Jazz",
     "version": "Gold 1.0",
-    "appVersion": 3.0,
+    "appVersion": 3.1,
     "JIRAEnabled": false,
     "inLMS": false,
     "LMSType": "SCORM",
@@ -88,7 +88,12 @@
             {"id": "local", "title": "Local Associate Campaign Specialist"},
             {"id": "inside", "title": "Inside Associate Campaign Specialist"},
             {"id": "performance", "title": "Performance Account Manager"},
-            {"id": "national", "title": "ANZ Campaign Specialist"}
+            {"id": "national", "title": "ANZ Campaign Specialist"},
+
+            {"id": "nationalroadie", "title": "Roadie National"},
+            {"id": "localroadie", "title": "Roadie Local"},
+            {"id": "insideroadie", "title": "Roadie Inside"},
+            {"id": "performanceroadie", "title": "Roadie Performance"}
         ]
     }
 
