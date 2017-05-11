@@ -47,7 +47,7 @@
                     "title": "Lab: Media Plans",
                     "moduleName": "Lab_046",
                     "path": "interactions/lab/module",
-                    "url": "data/interactions/102/lab_046_BC.json",
+                    "url": "data/interactions/102/lab_046_D.json",
                     "badge": {"id":"badge1", "name": "The Elephants Gerald"},
                     "status": 0,
                     "points": 10
