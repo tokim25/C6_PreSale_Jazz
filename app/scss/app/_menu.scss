@@ -16,6 +16,13 @@
     height: 7200px;
     overflow: hidden;
   }
+  &.nationalroadie,
+  &.insideroadie,
+  &.localroadie,
+  &.performanceroadie{
+    height: 5900px;
+    overflow: hidden;
+  }
   //overflow: hidden;
 }
 
