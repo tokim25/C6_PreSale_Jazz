@@ -205,6 +205,14 @@
     pointer-events: none;
   }
 
+  &.mark-as-done {
+    opacity: 0.7;
+    & .menu-button-label {
+      text-decoration: line-through;
+    }
+  }
+
+
   &.locked {
     & .menu-button-label {
       opacity: 0.6;

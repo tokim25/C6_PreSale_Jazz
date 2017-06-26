@@ -2,8 +2,8 @@
     "projectTitle": "The School of Jazz: Pre-Sale",
     "projectID": "presale",
     "schoolName": "Jazz",
-    "version": "Gold 1.1",
-    "appVersion": 3.1,
+    "version": "Gold 1.2",
+    "appVersion": 3.2,
     "JIRAEnabled": false,
     "inLMS": false,
     "LMSType": "SCORM",
@@ -11,7 +11,7 @@
     "hasIntro": true,
     "hasConclusion": true,
     "isRoleFiltered": true,
-    "defaultRole": "national",
+    "defaultRole": "national_as",
     "alwaysShowIntro": false,
     "roleType": "",
     "lockingMode": "linear",
@@ -78,22 +78,23 @@
 
     "roleChooser": {
         "roles": [
-            {"id": "national", "title": "Non-Client Services"},
-            {"id": "national", "title": "National Account Strategist"},
-            {"id": "national", "title": "Local Account Strategist"},
-            {"id": "national", "title": "National Campaign Specialist"},
-            {"id": "local", "title": "Local Campaign Specialist"},
-            {"id": "inside", "title": "Inside Campaign Specialist"},
-            {"id": "national", "title": "National Associate Campaign Specialist"},
-            {"id": "local", "title": "Local Associate Campaign Specialist"},
-            {"id": "inside", "title": "Inside Associate Campaign Specialist"},
-            {"id": "performance", "title": "Performance Account Manager"},
-            {"id": "national", "title": "ANZ Campaign Specialist"},
+            {"id": "national_noncs", "title": "Non-Client Services", "menu": "national"},
+            {"id": "national", "title": "Account Strategist", "menu": "national"},
+            {"id": "national_cs", "title": "National Campaign Specialist", "menu": "national"},
+            {"id": "local_cs", "title": "Local Campaign Specialist", "menu": "local"},
+            {"id": "inside_cs", "title": "Inside Campaign Specialist", "menu": "inside"},
+            {"id": "national_acs", "title": "National Associate Campaign Specialist", "menu": "national"},
+            {"id": "local_acs", "title": "Local Associate Campaign Specialist", "menu": "local"},
+            {"id": "inside_acs", "title": "Inside Associate Campaign Specialist", "menu": "inside"},
+            {"id": "performance_acs", "title": "Performance Account Manager", "menu": "performance"},
+            {"id": "national_anzcs", "title": "ANZ Campaign Specialist", "menu": "national"},
 
-            {"id": "nationalroadie", "title": "Roadie National"},
-            {"id": "localroadie", "title": "Roadie Local"},
-            {"id": "insideroadie", "title": "Roadie Inside"},
-            {"id": "performanceroadie", "title": "Roadie Performance"}
+            {"id": "eng", "title": "Engineering", "filter": "eng", "menu": "eng"},
+
+            {"id": "national_rd", "title": "Roadie National", "menu": "national"},
+            {"id": "local_rd", "title": "Roadie Local", "menu": "local"},
+            {"id": "inside_rd", "title": "Roadie Inside", "menu": "inside"},
+            {"id": "performance_rd", "title": "Roadie Performance", "menu": "performance"}
         ]
     }
 

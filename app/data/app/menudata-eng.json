@@ -1,0 +1,300 @@
+{
+    "lockingMode": "open",
+    "roleAlert": {
+        "header": "Hey there!",
+        "body": "<p>It looks like you’re not in Client Services, which means you are only required to take certain parts of Freshman Year. As you scroll through the menu, some items will be crossed out. Those items are still accessible if you’re interested, but are an optional part of your coursework. Everything else in the list that is not crossed out is required for you to complete. Have fun!</p>"
+    },
+    "menu": [
+        {
+            "name": "Pre-Sale at Pandora",
+            "id": "101",
+            "modules": [
+                {
+                    "title": "Podcast: Introduction to Pre-Sale",
+                    "moduleName": "Podcast_043",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/101/podcast_043_A.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Media Plans",
+            "id": "102",
+            "modules": [
+                {
+                    "title": "Media Plans Overview",
+                    "moduleName": "Pageturner_044",
+                    "path": "interactions/page_turner/module_mediaplans_044",
+                    "url": "data/interactions/102/pageturner_044_A.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Third Party Media Plan Workflow",
+                    "moduleName": "ClickReveal_044",
+                    "path": "interactions/clickreveal/module_cr_044",
+                    "url": "data/interactions/102/clickreveal_044_AB.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Digital Media Plans 1",
+                    "moduleName": "Video1_045",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/102/video1_045.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Digital Media Plans 2",
+                    "moduleName": "Video2_045",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/102/video2_045.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Lab: Media Plans",
+                    "moduleName": "Lab_046",
+                    "path": "interactions/lab/module",
+                    "url": "data/interactions/102/lab_046_A.json",
+                    "badge": {"id":"badge1", "name": "The Elephants Gerald"},
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Broadcast Media Plans 1",
+                    "moduleName": "Video1_047",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/102/video1_047.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Broadcast Media Plans 2",
+                    "moduleName": "Video2_047",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/102/video2_047.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Lab: Media Plans",
+                    "moduleName": "Lab_048",
+                    "path": "interactions/lab/module",
+                    "url": "data/interactions/102/lab_048_A.json",
+                    "badge": {"id":"badge2", "name": "The Smiles Davis"},
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "IPAW",
+            "id": "103",
+            "modules": [
+                {
+                    "title": "IPAW Overview",
+                    "moduleName": "Pageturner1_049",
+                    "path": "interactions/page_turner/module_ipaw1_049",
+                    "url": "data/interactions/103/pageturner1_049.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Benefits of IPAW",
+                    "moduleName": "Matching_049",
+                    "path": "interactions/dnd_matching/module_matching_049",
+                    "url": "data/interactions/103/matching_049.json",
+                    "badge": {"id":"badge3", "name": "The \"Cloudy\" Rollins'"},
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "The IPAW Laws",
+                    "moduleName": "Pageturner2_049",
+                    "path": "interactions/page_turner/module_ipaw2_049",
+                    "url": "data/interactions/103/pageturner2_049.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Order Entry Wizard & Plan View",
+                    "moduleName": "Hotspots_049",
+                    "path": "interactions/hotspots/module",
+                    "url": "data/interactions/103/hotspots_049.json",
+                    "badge": {"id":"badge4", "name": "The Louis Legstrong"},
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "PYM Approvals",
+                    "moduleName": "Pageturner3_049",
+                    "path": "interactions/page_turner/module_pym_049",
+                    "url": "data/interactions/103/pageturner3_049.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Matterhorn",
+            "id": "104",
+            "modules": [
+                {
+                    "title": "Matterhorn Overview",
+                    "moduleName": "Pageturner1_050",
+                    "path": "interactions/page_turner/module_matterhorn_050",
+                    "url": "data/interactions/104/pageturner_050.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Matterhorn Reservation Statuses",
+                    "moduleName": "Matching_050",
+                    "path": "interactions/dnd_matching/module_matching_050",
+                    "url": "data/interactions/104/clickreveal_050.json",
+                    "badge": {"id":"badge5", "name": "The Thelonious Funk"},
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Pre-Sale in the Key of D",
+            "id": "105",
+            "modules": [
+                {
+                    "title": "Video: Media Plans",
+                    "moduleName": "Video_051",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/video_051.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Podcast: Sales Research",
+                    "moduleName": "Podcast_053",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/podcast_053_A.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: ComScore",
+                    "moduleName": "Video_054",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/video_054.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Segmented Market Reach Tool",
+                    "moduleName": "Video_055",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/video_055.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: User Engagement Tool",
+                    "moduleName": "Video_056",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/video_056.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Quiz: Sales Research",
+                    "moduleName": "Quiz_057",
+                    "path": "interactions/quiz_simple/module",
+                    "url": "data/interactions/105/quiz_057.json",
+                    "badge": {"id":"badge6", "name": "The John Soultrain"},
+                    "markAsDone": true,
+
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Proposal Decks",
+            "id": "106",
+            "modules": [
+                {
+                    "title": "Proposal Decks Overview",
+                    "moduleName": "Pageturner1_058",
+                    "path": "interactions/page_turner/module_proposaldecks1_058",
+                    "url": "data/interactions/106/pageturner1_058.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Anatomy of a Proposal Deck",
+                    "moduleName": "ClickReveal_058",
+                    "path": "interactions/clickreveal/module_cr_058",
+                    "url": "data/interactions/106/clickreveal_058.json",
+                    "badge": {"id":"badge7", "name": "The Millie Holiday"},
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Proposal Decks Tips & Tricks",
+                    "moduleName": "Pageturner2_058",
+                    "path": "interactions/page_turner/module_proposaldecks2_058",
+                    "url": "data/interactions/106/pageturner2_058.json",
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Lab: Proposal Decks",
+                    "moduleName": "Lab_059",
+                    "path": "interactions/lab/module",
+                    "url": "data/interactions/106/lab_059_A.json",
+                    "badge": {"id":"badge8", "name": "The Tim Eastergren"},
+                    "markAsDone": true,
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Graduation",
+            "id": "107",
+            "modules": [
+                {
+                    "title": "Conclusion",
+                    "moduleName": "Conclusion",
+                    "path": "app/conclusion/conclusionmodule",
+                    "url": "data/app/conclusion.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        }
+    ]
+}
