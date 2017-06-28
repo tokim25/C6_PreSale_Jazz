@@ -11,7 +11,7 @@
     "hasIntro": true,
     "hasConclusion": true,
     "isRoleFiltered": true,
-    "defaultRole": "national_as",
+    "defaultRole": "national",
     "alwaysShowIntro": false,
     "roleType": "",
     "lockingMode": "linear",
