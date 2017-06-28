@@ -87,7 +87,6 @@
             {"id": "local_acs", "title": "Local Associate Campaign Specialist", "menu": "local"},
             {"id": "inside_acs", "title": "Inside Associate Campaign Specialist", "menu": "inside"},
             {"id": "performance_acs", "title": "Performance Account Manager", "menu": "performance"},
-            {"id": "national_anzcs", "title": "ANZ Campaign Specialist", "menu": "national"},
 
             {"id": "eng", "title": "Engineering", "filter": "eng", "menu": "eng"},
 
