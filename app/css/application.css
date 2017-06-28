@@ -989,7 +989,7 @@ body {
     background: url(../assets/images/ui/menu-status-icons.png) no-repeat;
     pointer-events: none; }
   .menu-button.mark-as-done {
-    opacity: 0.7; }
+    opacity: 0.5; }
     .menu-button.mark-as-done .menu-button-label {
       text-decoration: line-through; }
   .menu-button.locked {
