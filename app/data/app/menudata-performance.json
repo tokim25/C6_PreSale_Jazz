@@ -224,6 +224,14 @@
             "id": "106",
             "modules": [
                 {
+                    "title": "Final Quiz",
+                    "moduleName": "FinalQuiz",
+                    "path": "app/interactions/final_quiz/module",
+                    "url": "data/interactions/107/quiz_jazz_D.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
                     "title": "Conclusion",
                     "moduleName": "Conclusion",
                     "path": "app/conclusion/conclusionmodule",

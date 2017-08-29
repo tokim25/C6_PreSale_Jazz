@@ -1,0 +1,48 @@
+<script type="text/template" id="quiz-final-mainview-template">
+
+
+    <div id="final-quiz-view" style="background-color: <%=bg_info.backgroundColor%>;">
+            <div class="<%=bg_info.backgroundClass%>"></div>
+
+            <div><h1 class="module-title"><%= name %></h1></div>
+
+
+        <div class="final-quiz-container">
+            <% _.each(questions, function (question, i) { %>
+            <div class="final-quiz-question" data-index="<%= i %>">
+                <div class="final-quiz-text"><%= question.text %></div>
+                <div class="final-quiz-feedback"></div>
+
+                <% _.each(question.choices, function (choice, j) { %>
+                <div class="final-quiz-answer-choice <%= question.type %>" data-quesnum="<%= i %>" data-choicenum="<%= j %>"><%= choice.text %></div>
+                <% }) %>
+            </div>
+
+            <% }) %>
+            <div class="button-container">
+                <div class="main-button submit-button" data-id="submit">Submit</div>
+                <div class="main-button try-again-button" data-id="tryagain">Try Again</div>
+                <div class="main-button continue-button" data-id="continue">Continue</div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="scrim-background"></div>
+
+        <div class="final-quiz-popup">
+            <div class="content">
+                <h1 class="popup-title"></h1>
+                <div class="popup-body"></div>
+            </div>
+            <div class="popup-button ok-button" data-id="ok">OK</div>
+        </div>
+
+        <div class="splash-container"></div>
+
+    </div>
+
+
+</script>

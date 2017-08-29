@@ -1,0 +1,324 @@
+{
+    "name": "Final Quiz",
+    "assetManifest": [
+        {"id": "finalquiz-bg", "src": "assets/images/107/final-quiz-bg.jpg"},
+        {"id": "splash-103", "src": "assets/images/backgrounds/splash-107.jpg"}
+    ],
+
+    "bg_info": {
+        "backgroundColor": "#62839e",
+        "backgroundClass": "final-quiz-bg",
+        "splash": "splash-107",
+        "splashClass": "splash-low-right-align"
+    },
+    "randomize": true,
+    "randomizeChoices": true,
+    "maxAttempts": 3,
+    "passingScore": 80,
+    "text": {
+        "splash": [
+            {
+                "header": "Test Your Knowledge!",
+                "body": []
+            }
+        ],
+        "introMessage": {
+            "attempt0": "<p>You’re almost done with the course, but before you go, we need to test your knowledge. On the next page, you’ll need to complete a quick multiple-choice quiz. You will have three attempts to pass (a passing score is 80%). Are you ready? Let’s go!</p>",
+            "attempt1": "<p>You’re almost done with the course, but before you go, we need to test your knowledge. On the next page, you’ll need to complete a quick multiple-choice quiz. You have two more attempts to pass (a passing score is 80%). Are you ready? Let’s go!</p>",
+            "attempt2": "<p>You’re almost done with the course, but before you go, we need to test your knowledge. On the next page, you’ll need to complete a quick multiple-choice quiz. You have one more attempt to pass (a passing score is 80%). Are you ready? Let’s go!</p>"
+        },
+        "feedback": {
+            "pass": {
+                "header": "Congratulations!",
+                "body": "<p>Congratulations, you’ve passed the quiz with a score of [score]. Feel free to review your quiz one last time!</p>"
+            },
+            "retry": {
+                "header": "Not quite!",
+                "body": "<p>Sorry, you have not passed the quiz. Review the questions you answered incorrectly, read the feedback, and then try the quiz again. Remember, you only have [nAttempts] more [attempts] to pass.</p>"
+            },
+            "fail": {
+                "header": "Sorry!",
+                "body": "<p>Your score of [score] is lower than the 80% score required to pass. Review the questions, read the feedback, and discuss the questions you answered incorrectly with your TA. Also, go back and review specific modules of the course one more time to be sure you understand why your answers were incorrect.</p>"
+            }
+        },
+        "errors": {
+            "notComplete": {
+                "header": "Not so fast!",
+                "body": "<p>You've left some questions unanswered. Make sure you've answered all of the questions before clicking Submit.</p>"
+            }
+        }
+
+    },
+    "questions": [
+        {
+            "index": 0,
+            "text": "This document is sent by an advertiser or a media agency interested in running an ad campaign. They are sent to Pandora account executives to submit their impression avails, media plans and pitch decks.",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Insertion Order",
+                    "feedback": "Insertion orders are a legally binding document that specifies the dates and scope of a media buy.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "RFP",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "Revised Insertion Order",
+                    "feedback": "A revised insertion order is a new insertion order that is created after changes have been made to the campaign",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Wrap Reports",
+                    "feedback": "Wrap reports are used for renewals and are created by Client services.",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 1,
+            "text": "This document is produced by Sales or Client Services using a client’s RFP document. This document recommends the best combination of ad products and platforms to achieve the client’s advertising objectives.",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Insertion Order",
+                    "feedback": "Insertion orders are a legally binding document that specifies the dates and scope of a media buy.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Proof of Implementation Report",
+                    "feedback": "This report shows that the campaign actually launched.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Avail Request",
+                    "feedback": "Avail Requests are the broadcast versions of the Request for Proposal.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Media Plan",
+                    "feedback": "",
+                    "result": "correct"
+                }
+            ]
+        },
+        {
+            "index": 2,
+            "text": "Which of the following is not an example of an ad product cost type?",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "CPP",
+                    "feedback": "CPP stands for cost per point and tells you how much it costs to reach one gross rating point of a target population.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "CPR",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "CPM",
+                    "feedback": "CPM tells you how much it costs to reach one gross rating point of a target population.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "CPC",
+                    "feedback": "CPC stands for cost per click!",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 3,
+            "text": "Which role is responsible for sending an IO request to Client Services?",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Campaign Specialist",
+                    "feedback": "This role is not on the Performance Team.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Account Manager",
+                    "feedback": "This role is on Client Services!",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Account Executive",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "Account Strategist",
+                    "feedback": "No, this role is on Client Services too!",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 4,
+            "text": "This type of Slingshot line item rolls up to a parent-child line. It contains a subset of the targeting details, flight dates, budget and/or impressions of the original parent line. You can tell these lines apart because their Line ID begins with FL.",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Revised Insertion Order",
+                    "feedback": "A revised insertion order is a new insertion order that is created after changes have been made to the campaign",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Creative Swaps",
+                    "feedback": "No way!",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Flighted Line",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "Reach & Frequency",
+                    "feedback": "Reach and Frequency is one of the benefits that Pandora offers broadcast media buyers.",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 5,
+            "text": "This internal tool provide Pandora unique visitor data as well as our reach across all counties, states, MSAs and DMAs",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "ComScore",
+                    "feedback": "comScore is a target marketing tool used across the digital industry for media planning, buying and selling.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Segmented Reach Tool",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "Slingshot",
+                    "feedback": "Slingshot is one of the core products used by Client Services throughout the Life of a Deal for media planning, inventory forecasting, etc.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Salesforce",
+                    "feedback": "This is a customer relationship management system used by Client Services and Sales.",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 6,
+            "text": "This is a targeting and profiling tool that helps demonstrate the value of a website's audience to advertisers through an index score.",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Segmented Reach Tool",
+                    "feedback": "The Segmented Reach Tool provides Pandora unique visitor data as well as our reach across all Counties, States, MSAs, and DMAs.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "User Engagement Tool",
+                    "feedback": "The User Engagement Tool reports key engagement metrics by demo and DMA and provides include thumbs, stations created, station shares and time spent listening, or TSL.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Ad Effectiveness Tool",
+                    "feedback": "The Ad Effectiveness tool is where you can go to learn more about brand impact, location analytics, and sales lift information studies.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "ComScore",
+                    "feedback": "",
+                    "result": "correct"
+                }
+            ]
+        },
+        {
+            "index": 7,
+            "text": "This tool helps you to track how listeners engage with pandora through thumbs, station creations, station shares and time spent listening.",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "User Engagement Tool",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "Segmented Reach Tool",
+                    "feedback": "The Segmented Reach Tool provides Pandora unique visitor data as well as our reach across all Counties, States, MSAs, and DMAs.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Avails Tool",
+                    "feedback": "The Avails tool lets you see the inventory available.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Ad Effectiveness Tool",
+                    "feedback": "The Ad Effectiveness tool is where you can go to learn more about brand impact, location analytics, and sales lift information studies.",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 8,
+            "text": "These documents provide features, benefits, advertising objectives and specifications for our products. You can find them in the Salesforce Libraries.",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Product Guides",
+                    "feedback": "",
+                    "result": "correct"
+                },
+                {
+                    "text": "Wrap Reports",
+                    "feedback": "Wrap reports are used for renewals and are created by Client services.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Insertion Orders",
+                    "feedback": "Insertion orders are a legally binding document that specifies the dates and scope of a media buy.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "RFPs",
+                    "feedback": "This document is sent by an advertiser or a media agency interested in running an ad campaign to Pandora account executives to submit their impression avails, media plans and pitch decks. Try again",
+                    "result": "incorrect"
+                }
+            ]
+        },
+        {
+            "index": 9,
+            "text": "Which role is responsible for developing initial media plan recommendations?",
+            "type": "choice",
+            "choices": [
+                {
+                    "text": "Campaign Specialist",
+                    "feedback": "This role isn't on the Performance team.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Account Strategist",
+                    "feedback": "I'm pretty sure Account Strategists review the media plans with clients to get alignment.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Account Manager",
+                    "feedback": "Nope, not quite.",
+                    "result": "incorrect"
+                },
+                {
+                    "text": "Account Executive",
+                    "feedback": "",
+                    "result": "correct"
+                }
+            ]
+        }
+    ]
+}
