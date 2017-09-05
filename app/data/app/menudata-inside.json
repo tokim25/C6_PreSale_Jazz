@@ -269,6 +269,7 @@
                     "moduleName": "FinalQuiz",
                     "path": "app/interactions/final_quiz/module",
                     "url": "data/interactions/107/quiz_jazz_ABC.json",
+                    "optional": ["national_rd","local_rd","inside_rd","performance_rd","national_noncs"],
                     "status": 0,
                     "points": 10
                 },

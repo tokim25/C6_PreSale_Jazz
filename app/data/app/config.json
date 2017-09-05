@@ -90,10 +90,10 @@
 
             {"id": "eng", "title": "Engineering", "filter": "eng", "menu": "eng"},
 
-            {"id": "national_rd", "title": "Roadie National", "menu": "national"},
-            {"id": "local_rd", "title": "Roadie Local", "menu": "local"},
-            {"id": "inside_rd", "title": "Roadie Inside", "menu": "inside"},
-            {"id": "performance_rd", "title": "Roadie Performance", "menu": "performance"}
+            {"id": "national_rd", "title": "Roadie National", "menu": "nationalroadie"},
+            {"id": "local_rd", "title": "Roadie Local", "menu": "localroadie"},
+            {"id": "inside_rd", "title": "Roadie Inside", "menu": "insideroadie"},
+            {"id": "performance_rd", "title": "Roadie Performance", "menu": "performanceroadie"}
         ]
     }
 
