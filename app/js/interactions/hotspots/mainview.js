@@ -62,10 +62,11 @@ define([
                 'showTitle': true,
                 'title': '',
                 'body': '',
-                'buttons': [],
-                'containerClass': ''
+                'buttons': [{'id': 'continue', 'class': 'dark-button', 'label': 'Got it!'}],
+                'containerClass': 'main-popup'
             }
             this.textbox = new Popup(textObj);
+            this.listenTo(this.textbox, 'continue:clicked', this.hideText);
 
 
             this.ui.detailsContainer.append(this.textbox.render().el);
@@ -110,8 +111,7 @@ define([
 
             TweenMax.set(this.ui.detailsContainer, {autoAlpha: 0.0});
             TweenMax.set(this.ui.detailSets, {autoAlpha: 0.0});
-            this.textbox.$el.show();
-            this.ui.popupView.hide();
+
             this.splash.show();
             this.ui.scrim.hide();
             this.ui.tooltip.hide();
@@ -120,6 +120,7 @@ define([
         startInteraction: function () {
             this.splash.$el.fadeOut();
             this.trigger('mainview:activity-start');
+
         },
 
         showConclusion: function () {
@@ -151,7 +152,6 @@ define([
 
             TweenMax.set($currentSet, {autoAlpha: 1.0});
             this.$currentSet = $currentSet;
-            this.hideText();
 
             this.model.setItem(itemID);
 
@@ -162,7 +162,9 @@ define([
             this.stopAnimation();
             this.doAnimation();
 
-            this.ui.scrim.fadeIn();
+            var item = this.model.getCurrentItem();
+
+            this.showText({header: item.get("label"), body:'<p>Click on each <span class="info-button detail-button"></span> button to learn more. Click the BACK button when you\'re done.</p>'});
 
         },
 
@@ -340,18 +342,19 @@ define([
             if (this.$currentDetail) {
                 this.$currentDetail.removeClass('selected').addClass('completed');
             }
-            this.hideText();
 
         },
 
         showText: function (textObj) {
 
             this.textbox.setText(textObj);
-            this.ui.popupView.fadeIn();
+            this.textbox.$el.fadeIn();
+            this.ui.scrim.show();
         },
 
         hideText: function () {
-            this.ui.popupView.fadeOut()
+            this.textbox.$el.fadeOut()
+            this.ui.scrim.fadeOut();
         },
 
         startAnimation: function (dataID) {

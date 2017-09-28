@@ -47,7 +47,7 @@
                     "title": "Lab: Media Plans",
                     "moduleName": "Lab_046",
                     "path": "interactions/lab/module",
-                    "url": "data/interactions/102/lab_046_BC.json",
+                    "url": "data/interactions/102/lab_046_D.json",
                     "badge": {"id":"badge1", "name": "The Elephants Gerald"},
                     "status": 0,
                     "points": 10
@@ -223,6 +223,15 @@
             "name": "Graduation",
             "id": "106",
             "modules": [
+                {
+                    "title": "Final Quiz",
+                    "moduleName": "FinalQuiz",
+                    "path": "app/interactions/final_quiz/module",
+                    "url": "data/interactions/107/quiz_jazz_D.json",
+                    "optional": ["national_rd","local_rd","inside_rd","performance_rd","national_noncs"],
+                    "status": 0,
+                    "points": 10
+                },
                 {
                     "title": "Conclusion",
                     "moduleName": "Conclusion",

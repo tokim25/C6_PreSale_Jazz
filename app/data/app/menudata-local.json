@@ -234,7 +234,7 @@
                 {
                     "title": "Anatomy of a Proposal Deck",
                     "moduleName": "ClickReveal_058",
-                    "path": "interactions/clickreveal/module",
+                    "path": "interactions/clickreveal/module_cr_058",
                     "url": "data/interactions/106/clickreveal_058.json",
 
                     "badge": {"id":"badge7", "name": "The Millie Holiday"},
@@ -265,6 +265,14 @@
             "name": "Graduation",
             "id": "107",
             "modules": [
+                {
+                    "title": "Final Quiz",
+                    "moduleName": "FinalQuiz",
+                    "path": "app/interactions/final_quiz/module",
+                    "url": "data/interactions/107/quiz_jazz_ABC.json",
+                    "status": 0,
+                    "points": 10
+                },
                 {
                     "title": "Conclusion",
                     "moduleName": "Conclusion",

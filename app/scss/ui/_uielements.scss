@@ -89,6 +89,14 @@
   top: 0px;
   //mix-blend-mode: multiply;
 }
+.final-quiz-bg {
+  background: url(../assets/images/107/final-quiz-bg.jpg);
+  @include horizontal-align();
+  position: absolute;
+  width: $max-width;
+  height: $max-height;
+  top: 0px;
+}
 
 .module-title {
   @include horizontal-align();

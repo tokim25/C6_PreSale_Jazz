@@ -12,8 +12,15 @@
   width: 100vw;
   max-width: $max-width;
   height: 8042px;
-  &.performance {
+  &.performance_acs {
     height: 7200px;
+    overflow: hidden;
+  }
+  &.national_rd,
+  &.inside_rd,
+  &.local_rd,
+  &.performance_rd{
+    height: 5900px;
     overflow: hidden;
   }
   //overflow: hidden;
@@ -197,6 +204,14 @@
     background: url(../assets/images/ui/menu-status-icons.png) no-repeat;
     pointer-events: none;
   }
+
+  &.mark-as-done {
+    opacity: 0.5;
+    & .menu-button-label {
+      text-decoration: line-through;
+    }
+  }
+
 
   &.locked {
     & .menu-button-label {

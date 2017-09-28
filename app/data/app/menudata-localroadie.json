@@ -1,0 +1,134 @@
+{
+    "menu": [
+        {
+            "name": "Pre-Sale at Pandora",
+            "id": "101",
+            "modules": [
+                {
+                    "title": "Podcast: Introduction to Pre-Sale",
+                    "moduleName": "Podcast_043",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/101/podcast_043_B.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Media Plans: Part 1",
+            "id": "102",
+            "modules": [
+                {
+                    "title": "Media Plans Overview",
+                    "moduleName": "Pageturner_044",
+                    "path": "interactions/page_turner/module_mediaplans_044",
+                    "url": "data/interactions/102/pageturner_044_B.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Third Party Media Plan Workflow",
+                    "moduleName": "ClickReveal_044",
+                    "path": "interactions/clickreveal/module_cr_044",
+                    "url": "data/interactions/102/clickreveal_044_AB.json",
+                    "badge": {"id":"badge2", "name": "The Smiles Davis"},
+                    "status": 0,
+                    "points": 10
+                }
+
+            ]
+
+        },
+        {
+            "name": "Media Plans: Part 2",
+            "id": "103",
+            "modules": [
+                {
+                    "title": "Video: Digital Media Plans 1",
+                    "moduleName": "Video1_045",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/102/video1_045.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Video: Digital Media Plans 2",
+                    "moduleName": "Video2_045",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/102/video2_045.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Lab: Media Plans",
+                    "moduleName": "Lab_046",
+                    "path": "interactions/lab/module",
+                    "url": "data/interactions/102/lab_046_BC.json",
+                    "badge": {"id":"badge1", "name": "The Elephants Gerald"},
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Pre-Sale in the Key of D",
+            "id": "104",
+            "modules": [
+                {
+                    "title": "Video: Media Plans",
+                    "moduleName": "Video_051",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/video_051.json",
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Podcast: Sales Research",
+                    "moduleName": "Podcast_053",
+                    "path": "interactions/video/module",
+                    "url": "data/interactions/105/podcast_053_B.json",
+                    "badge": {"id":"badge3", "name": "The \"Cloudy\" Rollins'"},
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Quiz: Sales Research",
+                    "moduleName": "Quiz_057",
+                    "path": "interactions/quiz_simple/module",
+                    "url": "data/interactions/105/quiz_057.json",
+                    "badge": {"id":"badge6", "name": "The John Soultrain"},
+
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        },
+        {
+            "name": "Graduation",
+            "id": "105",
+            "modules": [
+                {
+                    "title": "Final Quiz",
+                    "moduleName": "FinalQuiz",
+                    "path": "app/interactions/final_quiz/module",
+                    "url": "data/interactions/107/quiz_jazz_ABC.json",
+                    "optional": ["national_rd","local_rd","inside_rd","performance_rd","national_noncs"],
+                    "status": 0,
+                    "points": 10
+                },
+                {
+                    "title": "Conclusion",
+                    "moduleName": "Conclusion",
+                    "path": "app/conclusion/conclusionmodule",
+                    "url": "data/app/conclusion.json",
+                    "status": 0,
+                    "points": 10
+                }
+            ]
+
+        }
+    ]
+}

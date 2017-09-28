@@ -34,22 +34,6 @@
 
     "lab": [
         {
-            "header": "The Goal",
-            "body": "<p>You have two goals in this lab:</p><ol><li>Use the client's RFP to pull relevant sales research and market data</li><li>Use the data to build a compelling proposal deck</li></ol>"
-        },
-        {
-            "header": "Um... How?",
-            "body": "<p>Great question. We've created some specific resources to help you with this lab. Let's organize these resources as systems and documents.</p>"
-        },
-        {
-            "header": "Systems",
-            "body": "<p><b>Salesforce</b>. You'll need to access the production version of Salesforce for this lab. Navigate to the Salesforce Sales Marketing and Ad Products libraries. You'll find a ton of important resources to help you create your deck! </p><p><b>Segmented Market Reach Tool. </b>. This tool will help you quantify our reach for your client’s target audience.</p><p><b>User Engagement Tool</b>. This tool will help you quantify how active Pandora listeners are on our platform.</p><p><b>ComScore</b>. ComScore provides a look at a Web site’s market reach and engagement. Use it to pull relevant index scores for your proposal deck.</p><p><b>Nielsen Scarborough</b>. Like ComScore, this tool is another resource to pull index scores. Use @Plan to pull relevant index scores for your proposal deck.</p>"
-        },
-        {
-            "header": "Documents",
-            "body": "<p><b>Core Narrative Deck</b>. This deck showcases Pandora's user engagement and value with various age ranges. Think of it as the skeleton for all our proposal decks. No matter what sales channel or client, there is one core story for our entire organization.</p><p><b>Audience Profile + Advertising Verticals Decks</b>. These slides highlight various audience profiles and verticals. There are almost 50 audience profiles that'll help you tell a stronger story in your deck. Profiles and verticals cover everything from edu, automotive to teens and young adults. </p><p><b>Appendix Slides</b>. These decks provide localized details of the core story for a local market. For example, you'll find local user engagement metrics for your client's local market. </p><p><b>Ad Product Decks</b>. These decks contain slides of our ad products for you to add to your proposal deck a la carte. The benefit is that this pulls images and positioning statements into one easy-to-add slide.</p>"
-        },
-        {
             "header": "Resources",
             "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=06940000002WIPd'>Download Lab Assets</a>"
         }

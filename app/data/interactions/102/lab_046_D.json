@@ -34,22 +34,6 @@
 
     "lab": [
         {
-            "header": "The Goal",
-            "body": "<p>You have one goal in this lab:</p><ol><li>Build a Slingshot order that matches the client's order request.</li></ol>"
-        },
-        {
-            "header": "Um... How?",
-            "body": "<p>Great question. We've created some specific resources to help you with this lab. Let's organize these resources as systems and documents.</p>"
-        },
-        {
-            "header": "Systems",
-            "body": "<p><b>Salesforce TOPS Classroom</b>. A sandbox version of Salesforce. You're free to explore, mess things up and get a good feel of Salesforce without screwing up any live orders. You should have a <b>Home Depot</b> and an <b>Aruba Tourism</b> opportunity assigned to you in the sandbox. We’ll be using both for this lab.</p><p><b>Slingshot TOPS Classroom</b>. A sandbox version of Slingshot. We use this for media planning, pulling avails and trafficking orders. Show your Slingshot order to your TA during your check-in for feedback.</p>"
-        },
-        {
-            "header": "Documents",
-            "body": "<p>Client Email.<b></b>. Your account executive forwarded an email from the Home Depot media buyer. Lucky for you, these emails include the rates the account executive proposed.<li>Any negotiated rates</li><li>Total budget</li><li>Budget allocation</li><li>Demo + Geo Information</li></p>"
-        },
-        {
             "header": "Resources",
             "body": "<p>Click the button below to get your lab resources.</p><p>Once you've completed your lab assignment, click the NEXT button.</p><a class='lab-download' target='_blank' href='https://pandora.my.salesforce.com/sfc/#version?selectedDocumentId=06940000002WIOp'>Download Lab Assets</a>"
         }

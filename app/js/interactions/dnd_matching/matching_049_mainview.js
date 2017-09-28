@@ -128,6 +128,7 @@ define(["marionette",
                 textObj = allCorrect ? feedback.correct : feedback.incorrect;
 
             this.feedback.setText(textObj);
+            this.buttonEnable(this.ui.submitButton, false);
             this.showFeedback();
         },
 
@@ -146,6 +147,7 @@ define(["marionette",
 
             this.feedback.$el.fadeIn();
             this.ui.scrim.fadeIn();
+
             vent.trigger('play_sfx', 'popup_vintage');
 
         },

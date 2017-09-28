@@ -45,6 +45,7 @@ define(['backbone',
                         template: template
                     }
                 },
+                chapter: app.deepLinkChapter,
                 soundPlayer: app.soundPlayer
             });
             this.listenTo(this.view, 'mainview:activity-start', this.onActivityStart);

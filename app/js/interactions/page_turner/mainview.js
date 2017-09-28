@@ -49,6 +49,7 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
             this.model = options.model;
             this.interactions = options.interactions;
             this.soundPlayer = options.soundPlayer;
+            this.chapter = options.chapter;
             this.tweens= {};
             this.scrollTop = 0;
             this.index = 0;
@@ -225,9 +226,12 @@ define(["marionette", "app/vent", "text!templates/interactions/page_turner/mainv
 
                 this.ui.contentContainer.append(this.ui.continueButton);
 
-                //this.goTo(0)
+                var startPage = 0;
+                if (this.chapter != undefined && this.chapter != null) {
+                    startPage = this.chapter;
+                }
                 this.$el.fadeIn(200, function () {
-                    this.startInteraction(0);
+                    this.startInteraction(startPage);
                 }.bind(this))
 
             }.bind(this), 100);

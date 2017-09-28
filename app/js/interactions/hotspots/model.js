@@ -67,6 +67,10 @@ define(["backbone", "app/vent"], function (Backbone, vent) {
 
         },
 
+        getCurrentItem: function () {
+            return this.items.get(this.currentItem);
+        },
+
         setDetail: function (detailID) {
             var itemObj = this.completed[this.currentItem];
 
