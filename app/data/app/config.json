@@ -1,4 +1,7 @@
 {
+    "utilsConfig": {
+        "loggingEnabled": true
+    },
     "projectTitle": "The School of Jazz: Pre-Sale",
     "projectID": "presale",
     "schoolName": "Jazz",

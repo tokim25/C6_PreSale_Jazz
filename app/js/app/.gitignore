@@ -1,0 +1,8 @@
+.DS_Store
+.codekit
+*.rb
+*.sass-cache
+*.idea
+dev/config.codekit
+dev/config.rb
+*.codekit
