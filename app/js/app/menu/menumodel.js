@@ -5,6 +5,14 @@
 
 define(['backbone', 'app/vent'], function (Backbone, vent) {
 
+    // These interaction paths have no working implementation anywhere in the
+    // course (missing/incomplete files), so they stay locked regardless of
+    // lockingMode rather than crashing the menu view when clicked.
+    var UNIMPLEMENTED_PATHS = {
+        'app/conclusion/conclusionmodule': true,
+        'app/interactions/final_quiz/module': true
+    };
+
     var Model = Backbone.Model.extend({
 
         defaults: {
@@ -124,7 +132,8 @@ define(['backbone', 'app/vent'], function (Backbone, vent) {
             }
 
             this.moduleCollection.each(function (module, i) {
-                module.set('locked', i > unlockPosition)
+                var forceLocked = !!UNIMPLEMENTED_PATHS[module.get('path')];
+                module.set('locked', forceLocked || i > unlockPosition);
             });
 
             this.trigger('lockingmode:updated');

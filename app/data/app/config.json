@@ -17,7 +17,7 @@
     "defaultRole": "national",
     "alwaysShowIntro": false,
     "roleType": "",
-    "lockingMode": "linear",
+    "lockingMode": "open",
     "setAllComplete": false,
     "returnToMenuAfterInteraction": true,
     "returnToMenuAfterLastSubModule": true,
